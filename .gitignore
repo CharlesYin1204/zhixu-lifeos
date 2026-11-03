@@ -5,6 +5,8 @@ node_modules/
 .next*/
 .releases/
 private/
+project-docs/
+产品设计需求文档/
 logs/
 *.log
 database/backups/
