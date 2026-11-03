@@ -1,0 +1,193 @@
+{
+  "testedAt": "2026-10-14T13:22:38Z",
+  "base": "https://154.40.47.111:3063",
+  "scope": "voice",
+  "transport": "cascade",
+  "recoveryNote": "All 11 product assertions passed in the original run. A test-report cleanup SELECT incorrectly requested a nonexistent amount column; this report reconstructs persisted evidence from the isolated test records and captured PASS output. Exact turn.completed metrics were not persisted before that harness error; provider stage latencies below are actual usage log measurements. The harness has been fixed to save results before cleanup.",
+  "results": [
+    {
+      "name": "Published HTTPS media configuration exposes available image, voice and recording capabilities",
+      "passed": true
+    },
+    {
+      "name": "Anonymous, foreign-origin and spoofed-file API requests are rejected",
+      "passed": true
+    },
+    {
+      "name": "Real image and audio uploads remain private and foreign users cannot download or delete them",
+      "passed": true
+    },
+    {
+      "name": "Published recording transcription returns real text and creates a knowledge note with its private audio reference",
+      "passed": true
+    },
+    {
+      "name": "Public WSS endpoint requires a valid session and matching explicit origin",
+      "passed": true
+    },
+    {
+      "name": "A second simultaneous voice connection for the same user is rejected",
+      "passed": true
+    },
+    {
+      "name": "Real public WSS voice round 1 returns recognized speech, streamed text and nonempty PCM",
+      "passed": true
+    },
+    {
+      "name": "Real public WSS voice round 2 returns recognized speech, streamed text and nonempty PCM",
+      "passed": true
+    },
+    {
+      "name": "Interrupting a third voice turn cancels output and refunds its reservation exactly once",
+      "passed": true
+    },
+    {
+      "name": "Ending the voice session preserves history and every successful operation deducts exactly one credit",
+      "passed": true
+    },
+    {
+      "name": "Owner asset deletion releases storage and disables the old authenticated download URL",
+      "passed": true
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "userTranscript": "Hello, let us practice English.",
+      "assistantTranscript": "Hello! That's a great idea. What would you like to talk about today?",
+      "audioBytes": 223200,
+      "audioDurationSeconds": 4.65,
+      "nonzeroPCM": true,
+      "providerLatencies": {
+        "asrMs": 774,
+        "chatMs": 2489,
+        "ttsMs": 1326
+      },
+      "firstAudioMs": null,
+      "firstAudioMeasurement": "positive value asserted during live test; precise metric unavailable after harness cleanup error"
+    },
+    {
+      "round": 2,
+      "userTranscript": "I study English for 20 minutes every day.",
+      "assistantTranscript": "That's fantastic! Studying every day helps a lot. Do you have a favorite topic or activity you like to practice?",
+      "audioBytes": 374400,
+      "audioDurationSeconds": 7.8,
+      "nonzeroPCM": true,
+      "providerLatencies": {
+        "asrMs": 545,
+        "chatMs": 1215,
+        "ttsMs": 1789
+      },
+      "firstAudioMs": null,
+      "firstAudioMeasurement": "positive value asserted during live test; precise metric unavailable after harness cleanup error"
+    }
+  ],
+  "errors": [],
+  "providerUsage": [
+    {
+      "model_id": "media-transcribe",
+      "kind": "media_transcribe",
+      "tokens": 63,
+      "latency": 1035,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:41"
+    },
+    {
+      "model_id": "media-transcribe",
+      "kind": "media_voice_asr",
+      "tokens": 40,
+      "latency": 774,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:42"
+    },
+    {
+      "model_id": "media-gpt4o-mini",
+      "kind": "media_voice_chat",
+      "tokens": 139,
+      "latency": 2489,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:45"
+    },
+    {
+      "model_id": "media-tts",
+      "kind": "media_speech",
+      "tokens": null,
+      "latency": 1326,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:46"
+    },
+    {
+      "model_id": "media-transcribe",
+      "kind": "media_voice_asr",
+      "tokens": 52,
+      "latency": 545,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:47"
+    },
+    {
+      "model_id": "media-gpt4o-mini",
+      "kind": "media_voice_chat",
+      "tokens": 181,
+      "latency": 1215,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:48"
+    },
+    {
+      "model_id": "media-transcribe",
+      "kind": "media_voice_asr",
+      "tokens": null,
+      "latency": 1,
+      "status": "cancelled",
+      "created_at": "2026-10-14 21:22:50"
+    },
+    {
+      "model_id": "media-tts",
+      "kind": "media_speech",
+      "tokens": null,
+      "latency": 1789,
+      "status": "success",
+      "created_at": "2026-10-14 21:22:50"
+    }
+  ],
+  "operations": [
+    {
+      "kind": "voice",
+      "status": "refunded",
+      "created_at": "2026-10-14 21:22:50",
+      "updated_at": "2026-10-14 21:22:50"
+    },
+    {
+      "kind": "voice",
+      "status": "completed",
+      "created_at": "2026-10-14 21:22:46",
+      "updated_at": "2026-10-14 21:22:48"
+    },
+    {
+      "kind": "transcribe",
+      "status": "completed",
+      "created_at": "2026-10-14 21:22:40",
+      "updated_at": "2026-10-14 21:22:41"
+    },
+    {
+      "kind": "voice",
+      "status": "completed",
+      "created_at": "2026-10-14 21:22:41",
+      "updated_at": "2026-10-14 21:22:45"
+    }
+  ],
+  "billing": {
+    "initialCredits": 30,
+    "finalCredits": 27,
+    "successfulOperations": 3,
+    "interruptedRoundRefunded": true
+  },
+  "transcription": {
+    "text": "I study English for 20 minutes every day.",
+    "noteSaved": true,
+    "privateAudioReference": true
+  },
+  "cleanup": {
+    "temporaryUsers": 2,
+    "remainingUserRows": 0
+  }
+}

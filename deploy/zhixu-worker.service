@@ -1,0 +1,27 @@
+[Unit]
+Description=Zhixu LifeOS multi-agent worker
+After=network.target mysqld.service mysql.service
+
+[Service]
+Type=simple
+User=zhixu
+Group=zhixu
+WorkingDirectory=/www/wwwroot/xuexi
+EnvironmentFile=/www/wwwroot/xuexi/.env.local
+Environment=NODE_ENV=production
+Environment=NEXT_TELEMETRY_DISABLED=1
+Environment=PATH=/opt/laosiji-runtime/node-v22.16.0-linux-x64/bin:/usr/bin:/bin
+ExecStart=/opt/laosiji-runtime/node-v22.16.0-linux-x64/bin/node --max-old-space-size=180 scripts/worker.mjs
+Restart=always
+RestartSec=4
+KillSignal=SIGTERM
+TimeoutStopSec=20
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

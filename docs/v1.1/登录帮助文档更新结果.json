@@ -1,0 +1,50 @@
+[
+  {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "document": {
+        "revision_id": 54,
+        "url": "https://rjppwe2dlq09.jp.larksuite.com/docx/[REDACTED_LARK_RESOURCE_TOKEN]"
+      },
+      "result": "success",
+      "warnings": []
+    }
+  },
+  {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "document": {
+        "revision_id": 55,
+        "url": "https://rjppwe2dlq09.jp.larksuite.com/docx/[REDACTED_LARK_RESOURCE_TOKEN]"
+      },
+      "result": "success",
+      "warnings": []
+    }
+  },
+  {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "document": {
+        "revision_id": 56,
+        "url": "https://rjppwe2dlq09.jp.larksuite.com/docx/[REDACTED_LARK_RESOURCE_TOKEN]"
+      },
+      "result": "success",
+      "warnings": []
+    }
+  },
+  {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "document": {
+        "revision_id": 57,
+        "url": "https://rjppwe2dlq09.jp.larksuite.com/docx/[REDACTED_LARK_RESOURCE_TOKEN]"
+      },
+      "result": "success",
+      "warnings": []
+    }
+  }
+]

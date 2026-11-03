@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "assessment": {
+      "status": "passed"
+    },
+    "profile": {
+      "word_count": 8092,
+      "char_count": 10019,
+      "block_count": 102,
+      "blocks": [
+        {
+          "type": "p",
+          "count": 83,
+          "ratio": 0.813725
+        },
+        {
+          "type": "h1",
+          "count": 18,
+          "ratio": 0.176471
+        },
+        {
+          "type": "title",
+          "count": 1,
+          "ratio": 0.009804
+        }
+      ]
+    }
+  }
+}

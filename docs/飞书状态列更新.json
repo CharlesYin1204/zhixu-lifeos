@@ -1,0 +1,66 @@
+[
+  {
+    "sheet_name": "前台",
+    "range": "I3:J3",
+    "cells": [
+      [
+        {
+          "value": "已实现并验证"
+        },
+        {
+          "value": "browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "I44:J45",
+    "cells": [
+      [
+        {
+          "value": "已实现并验证"
+        },
+        {
+          "value": "api-results.json真实助手返回并保留本人历史且跨用户不可见；ui-flow-results.json实际浏览器获得135字模型回复，刷新后历史恢复，截图desktop-ai-real.png。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+        }
+      ],
+      [
+        {
+          "value": "已实现并验证"
+        },
+        {
+          "value": "api-results.json真实助手返回并保留本人历史且跨用户不可见；ui-flow-results.json实际浏览器获得135字模型回复，刷新后历史恢复，截图desktop-ai-real.png。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "验收与依赖",
+    "range": "I5:J5",
+    "cells": [
+      [
+        {
+          "value": "已实现并验证"
+        },
+        {
+          "value": "api-results.json后台模型Key脱敏；deployment-results.json 19项中对53个公开/归档文件扫描无已配置密钥明文、公开页面与bootstrap不泄露；受限文件0600、目录0700。此为定向检查，不是全站渗透测试。"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "验收与依赖",
+    "range": "I14:J14",
+    "cells": [
+      [
+        {
+          "value": "公开地址与外部访问日志已验证；跨网络专项未测"
+        },
+        {
+          "value": "公开IP:3060浏览器/API/APK实测通过；external-traffic-observations.json记录排除本机地址后36次外部客户端2xx（首页5、API GET29/POST2）。独立受控浏览器跨网络验收未执行。 最新release部署19项通过，新旧各8哈希资源200；未执行独立跨网络受控浏览器。"
+        }
+      ]
+    ]
+  }
+]

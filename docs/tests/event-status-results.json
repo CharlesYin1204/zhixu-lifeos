@@ -1,0 +1,51 @@
+{
+  "startedAt": "2026-10-14T13:44:03.337Z",
+  "base": "https://154.40.47.111:3063",
+  "scope": "Production browser event status, persistence, filters and mobile controls; isolated ordinary user; zero AI/payment calls",
+  "results": [
+    {
+      "name": "Event create form defaults to active and persists an explicit completed state",
+      "passed": true,
+      "durationMs": 2171
+    },
+    {
+      "name": "Desktop quick completion persists across reload without losing cross-day details",
+      "passed": true,
+      "durationMs": 696
+    },
+    {
+      "name": "Quick restore removes the event from completed results and restores active results",
+      "passed": true,
+      "durationMs": 753
+    },
+    {
+      "name": "Event edit form completes and restores records with status and date fields retained on reload",
+      "passed": true,
+      "durationMs": 1898
+    },
+    {
+      "name": "Legacy done events display as completed and can be restored through the same UI",
+      "passed": true,
+      "durationMs": 686
+    },
+    {
+      "name": "Mobile event completion, restore and all three filters remain usable without horizontal overflow",
+      "passed": true,
+      "durationMs": 889
+    },
+    {
+      "name": "No browser exceptions, disallowed operations or AI credit changes occurred",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "Temporary ordinary user, session, events and audit records removed",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "forbiddenActions": [],
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-14T13:44:11.075Z",
+  "passed": true
+}

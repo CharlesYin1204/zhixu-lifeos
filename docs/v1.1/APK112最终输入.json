@@ -1,0 +1,30 @@
+{
+  "approvedForPublication": true,
+  "release": ".releases/20261014T152414Z-38684",
+  "backup": "database/backups/xuexi-2026-10-14T15-40-00-663Z.sql.gz",
+  "primaryReport": "apk-startup-release-results.json",
+  "reports": [
+    "apk-startup-release-results.json",
+    "android-startup-results.json",
+    "apk-domain-browser-results.json"
+  ],
+  "apkVersion": "1.1.2",
+  "apkVersionCode": 5,
+  "apkBytes": 33245,
+  "apkSha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+  "apkUrl": "https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk",
+  "acceptanceHeading": "v1.1 Android1.1.2域名版与加载诊断发布",
+  "acceptanceText": "当前已发布Android1.1.2（versionCode5），下载https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk，默认站点从旧IP3063改为首选域名HTTPS。保留com.zhixu.lifeos包名及同一长期签名，支持覆盖升级，旧1.1.1文件继续保留。新增主页面网络/HTTP/TLS失败、加载超时和空页面就绪检查的原生诊断、重试及系统浏览器打开；子资源失败不会隐藏正常主文档，TLS错误仍取消连接，诊断只展示站点与原因，移除URL查询/片段/用户信息。恢复历史仅接受当前配置同源，避免升级后恢复旧IP页。用户先确认同一手机浏览器可以打开域名，随后确认同机覆盖安装1.1.2后“首页正常显示”；这确认新版安装启动首页，不延伸到录音、拍照、支付或其他设备功能。旧APK空白/网页不可用的设备根因仍未确认。",
+  "runtimeText": "apk-startup-release-results.json五组实际验证通过：管理员API异步构建building→ready、相同证书与v1/v2/v3签名及对齐、Manifest/DEX中的新域名/启动/媒体权限、版本化下载与latest别名及manifest字节一致、前台版本更新与旧产物保留；其他站点/支付/模型配置未变。新文件33245字节，SHA-256为a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404，证书SHA-256为fa8b1161063c978964b42700a09e8371905b84b28557fbfb4efef7fce2db0420。android-startup-results.json16项使用从真实MainActivity原样提取的方法/回调及确定性替身在JVM执行，并将完整源码编译到API23；覆盖主/子资源错误、TLS取消、空页面/超时、重试、过期回调、生命周期、旧IP恢复拒绝及诊断脱敏，但替身不实现Android/Chromium/TLS，DOM结果是受控值，不能称真机或模拟器测试。apk-previous-startup-audit.json仅排查旧包签名/启动/API23符号，未定位设备白屏根因。apk-domain-browser-results.json另有2项只读页面检查：使用手机视口和已观察到的Android16/Chrome138 User-Agent字符串访问域名首页与/login，实际引擎为Chromium156，页面200且有可见内容、无脚本错误或失败请求；未登录、未修改业务数据，不等同Android WebView运行。上述工具未执行真实Android安装/覆盖升级/页面渲染、录音相机或错误按钮操作；deviceTested:false保留为工具执行范围。apk-user-device-acceptance.json记录用户随后反馈同机覆盖安装1.1.2后首页正常显示，单独作为用户安装启动首页验收；不表示登录、录音、拍照、支付、错误按钮、状态恢复等真机功能已验收。Web保持.releases/20261014T152414Z-38684，最新受限备份database/backups/xuexi-2026-10-14T15-40-00-663Z.sql.gz；原支付商户及六项P2边界不变。",
+  "featureStatuses": {
+    "F-014": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常",
+    "F-015": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常",
+    "F-167": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常"
+  },
+  "featureEvidence": {
+    "F-014": "apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。",
+    "F-015": "apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。",
+    "F-167": "apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+  },
+  "userAcceptanceReport": "apk-user-device-acceptance.json"
+}

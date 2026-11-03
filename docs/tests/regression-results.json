@@ -1,0 +1,27 @@
+{
+  "testedAt": "2026-10-14T11:56:01.832Z",
+  "base": "http://127.0.0.1:3060",
+  "passed": 15,
+  "failed": 0,
+  "realModelRequests": 0,
+  "fixturesCleaned": true,
+  "paymentSettingsRestored": true,
+  "command": "REGRESSION_WORKER_PAUSED=1 node --env-file=.env.local scripts/test-regressions.mjs",
+  "results": [
+    { "name": "Passwords retain leading/trailing spaces across register, update and login", "passed": true, "ms": 2466 },
+    { "name": "bcrypt input is limited by UTF-8 bytes, without silent truncation", "passed": true, "ms": 756 },
+    { "name": "Empty or unknown workflow specialists are rejected before charging", "passed": true, "ms": 93 },
+    { "name": "Queue insertion failure rolls back the reserved credits", "passed": true, "ms": 30 },
+    { "name": "Concurrent submissions enforce two active jobs and exact credit debits", "passed": true, "ms": 172 },
+    { "name": "Workflow preflight errors fail the task and refund exactly once", "passed": true, "ms": 69 },
+    { "name": "A verified late online payment fulfills a cancelled order only once", "passed": true, "ms": 319 },
+    { "name": "Manual approval cannot revive a cancelled offline order", "passed": true, "ms": 81 },
+    { "name": "Plugins reject missing agents when configured, purchased and executed", "passed": true, "ms": 237 },
+    { "name": "APK manifest does not hide a current build or failed configuration", "passed": true, "ms": 120 },
+    { "name": "Expired membership falls back to free without removing purchased credits", "passed": true, "ms": 44 },
+    { "name": "Administrator membership edits persist expiry without double granting credits", "passed": true, "ms": 266 },
+    { "name": "Agents can follow the default model and administrators can inspect runs", "passed": true, "ms": 174 },
+    { "name": "Record ranges and external course URLs reject invalid values", "passed": true, "ms": 336 },
+    { "name": "Model retries are bounded and never retry authentication failures", "passed": true, "ms": 2100 }
+  ]
+}

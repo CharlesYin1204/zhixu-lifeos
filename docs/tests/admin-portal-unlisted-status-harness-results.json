@@ -1,0 +1,133 @@
+{
+  "testedAt": "2026-10-14T14:56:36.488Z",
+  "base": "https://154.40.47.111:3063",
+  "browserMajor": 156,
+  "fixturePolicy": "Two temporary accounts; new temporary catalog entries only; original entities and settings byte-identical; transactional cleanup",
+  "limits": [
+    "No model connectivity call",
+    "No actual money collected",
+    "Default model replacement not tested",
+    "Site settings saving not tested"
+  ],
+  "results": [
+    {
+      "name": "Ordinary account sees the administrative access denial and cannot read administrator API",
+      "requirements": [
+        "F-084"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 378
+    },
+    {
+      "name": "Administrator overview counters match persisted users, orders, paid revenue and workflow count",
+      "requirements": [
+        "F-085"
+      ],
+      "verification": "read-only-browser-ui-and-database-reconciliation",
+      "passed": true,
+      "durationMs": 45
+    },
+    {
+      "name": "New model form rejects a missing key before creating a catalog entry",
+      "requirements": [
+        "F-102",
+        "F-103"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 439
+    },
+    {
+      "name": "Model creation stores a test-only key encrypted and reopening never discloses it",
+      "requirements": [
+        "F-102",
+        "F-103"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 882
+    },
+    {
+      "name": "Temporary model can be enabled and disabled without changing the production default",
+      "requirements": [
+        "F-104"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 464
+    },
+    {
+      "name": "Agent form persists role, prompt, default-model binding, icon and color across edit and reload",
+      "requirements": [],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 1097
+    },
+    {
+      "name": "Stopping a temporary Agent removes it from user assistant choices; enabling restores it",
+      "requirements": [],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 955
+    },
+    {
+      "name": "Member plan creation and editing persist price, duration, credits and separate benefit lines",
+      "requirements": [
+        "F-089",
+        "F-090"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 932
+    },
+    {
+      "name": "Stopping a temporary plan removes its user-facing purchase card and enabling restores it",
+      "requirements": [
+        "F-091"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 823
+    },
+    {
+      "name": "User search and profile edit apply name, custom membership expiry and an exact AI balance",
+      "requirements": [
+        "F-086",
+        "F-088"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 668
+    },
+    {
+      "name": "Promoted account signs into the independent admin portal; demotion revokes its admin access",
+      "requirements": [
+        "F-088"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 2016
+    },
+    {
+      "name": "Disabling a temporary account revokes its session and prevents login; reactivation permits a new login",
+      "requirements": [
+        "F-087"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 3202
+    },
+    {
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: {\"ok\":false,\"error\":\"插件已下架，暂不接受新安装\"}\n\n404 !== 400\n\n    at api (file:///www/wwwroot/xuexi/scripts/test-admin-contracts.mjs:39:10)\n    at async file:///www/wwwroot/xuexi/scripts/test-admin-contracts.mjs:305:5\n    at async test (file:///www/wwwroot/xuexi/scripts/test-admin-contracts.mjs:44:3)\n    at async file:///www/wwwroot/xuexi/scripts/test-admin-contracts.mjs:284:3"
+    },
+    {
+      "name": "All temporary accounts, entity configurations and their related rows removed transactionally",
+      "verification": "database-cleanup",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "forbiddenActions": []
+}

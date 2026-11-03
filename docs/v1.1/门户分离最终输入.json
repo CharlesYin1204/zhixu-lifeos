@@ -1,0 +1,41 @@
+{
+  "approvedForPublication": true,
+  "release": ".releases/20261014T145454Z-33605",
+  "backup": "database/backups/xuexi-2026-10-14T14-57-48-280Z.sql.gz",
+  "reports": [
+    "portal-auth-results.json",
+    "portal-separation-results.json",
+    "portal-cookie-results.json",
+    "admin-portal-contract-results.json",
+    "media-settings-results.json"
+  ],
+  "secureHttpsVerified": true,
+  "acceptanceHeading": "v1.1 用户中心与管理员后台独立分离验收",
+  "acceptanceText": "2026-10-14已完成用户中心与管理员后台分离：/user、/login使用个人导航与/api/app，/admin、/admin/login使用独立后台导航与/api/admin，数据库scope和Cookie均分开。原十四个管理模块保留，另设“后台账户”修改名称和密码；双端分别登录退出，同一账户改密码撤销全部旧会话。portal-separation-results.json在UI发布144931上完成17项生产Chromium156检查，包括15个后台section在1440/390/360px的45组导航布局、22个个人入口、旧地址跳转、刷新/前进后退、双端账户及会话边界、后台改密码；零页面异常、零后台个人数据请求。该版本发现HTTPS Cookie未标Secure，修复后最终145454上的portal-cookie-results.json六项实测通过，包含两端真实HTTPS浏览器登录与HTTP API兼容。UI未因Cookie补丁更改；不把此前17项写成最终版本完整重跑。",
+  "runtimeText": "最终Web发布为.releases/20261014T145454Z-33605。portal-auth-results.json17项为实际route与隔离MySQL验证；admin-portal-contract-results.json在最终版本17项通过另1条审计信息，覆盖原后台表单、用户/角色/启停、模型密钥保护、会员与插件、审计和数据库核对，零浏览器异常且原配置逐字保持。media-settings-results.json八项仍为隔离MySQL及mock模型传输；本轮没有真实AI或付款。旧测试把插件上下架与安全停用混淆、并误期望下架安装400而实际正确404的两次harness失败保留，修正后复测通过，临时账号/配置已清理。portal-release-health.json确认四个新入口200、旧入口307、对应权限拒绝及数据库连接，web/worker/voice均active；语音服务在连接数0时重启载入scope校验，worker未改。最新受限备份database/backups/xuexi-2026-10-14T14-57-48-280Z.sql.gz，APK仍1.1.1(4)。真实收款缺商户资料、Android真机/自然采集设备、独立跨网络专项及六项P2边界不变。",
+  "featureStatuses": {
+    "F-002": "独立门户已部署；浏览器与接口验证通过",
+    "F-012": "独立门户已部署；浏览器与接口验证通过",
+    "F-013": "独立门户已部署；浏览器与接口验证通过",
+    "F-021": "独立门户已部署；浏览器与接口验证通过",
+    "F-023": "独立门户已部署；浏览器与接口验证通过",
+    "F-081": "独立门户已部署；浏览器与接口验证通过",
+    "F-082": "独立门户已部署；浏览器与接口验证通过",
+    "F-083": "独立门户已部署；浏览器与接口验证通过",
+    "F-084": "独立门户已部署；浏览器与接口验证通过",
+    "F-117": "独立门户已部署；浏览器与接口验证通过"
+  },
+  "featureEvidence": {
+    "F-002": "portal-separation-results.json验证/login、/user与/admin/login、/admin入口及旧地址跳转；15个后台section可达，22个个人入口保留。",
+    "F-012": "portal-separation-results.json验证普通用户登录进入/user，独立后台登录返回有效section，普通账号后台登录拒绝；portal-cookie-results.json在最终版本验证HTTPS双端Secure/HttpOnly/SameSite Cookie。",
+    "F-013": "portal-separation-results.json真实浏览器验证两个不同账户及同一管理员账户分别登录两端、刷新与独立退出；portal-auth-results.json用隔离MySQL验证user/admin scope。",
+    "F-021": "portal-separation-results.json真实浏览器确认22个个人功能入口，用户中心无后台入口；仅管理员Cookie访问/user须另行登录，后台无个人请求。",
+    "F-023": "portal-separation-results.json：15个后台section在1440/390/360px共45组导航布局检查；后台独立底栏/菜单，个人端360/390px保留五项底栏且无整页横向溢出。",
+    "F-081": "portal-separation-results.json真实浏览器在后台账户修改临时管理员密码，旧个人会话失效、当前后台保留；portal-auth-results.json隔离MySQL验证双scope旧会话撤销与仅admin新会话。",
+    "F-082": "portal-separation-results.json在双端同时登录及同一账户双端登录场景验证分别退出；portal-auth-results.json验证交换Cookie名称也不能撤销另一scope会话。",
+    "F-083": "portal-auth-results.json隔离MySQL与生产portal-separation-results.json验证双向scope限制、Cookie换名拒绝、后台页面无个人数据请求；此前A/B业务数据隔离证据保留。",
+    "F-084": "portal-separation-results.json真实浏览器17项：独立登录与导航、15section、无个人模块/请求、会话/退出/密码隔离；admin-portal-contract-results.json最终版本17项通过，含普通账号拒绝、升降级及禁用。",
+    "F-117": "portal-auth-results.json17项隔离route/MySQL验证角色、scope、Cookie换名、旧管理动作拒绝及来源；portal-separation-results.json与admin-portal-contract-results.json提供生产浏览器及实际API证据。",
+    "F-128": "portal-release-health.json在145454确认四个独立页面200、三个旧入口307、匿名后台数据401、旧个人API管理入口403及DB连接；portal-cookie-results.json验证HTTPS浏览器和HTTP API兼容，跨网络专项仍未执行。"
+  }
+}

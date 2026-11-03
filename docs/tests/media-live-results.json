@@ -1,0 +1,49 @@
+{
+  "testedAt": "2026-10-14T13:18:13.531Z",
+  "base": "https://154.40.47.111:3063",
+  "transport": "cascade",
+  "results": [
+    {
+      "name": "Published HTTPS media configuration exposes available image, voice and recording capabilities",
+      "passed": true,
+      "durationMs": 9
+    },
+    {
+      "name": "Anonymous, foreign-origin and spoofed-file API requests are rejected",
+      "passed": true,
+      "durationMs": 81
+    },
+    {
+      "name": "Real image and audio uploads remain private and foreign users cannot download or delete them",
+      "passed": true,
+      "durationMs": 648
+    },
+    {
+      "name": "Published vision endpoint solves the uploaded equation and preserves its source metadata",
+      "passed": true,
+      "durationMs": 4880
+    },
+    {
+      "name": "Image follow-up without a new upload reuses the owned historical image",
+      "passed": true,
+      "durationMs": 2915
+    },
+    {
+      "passed": false,
+      "error": "Error: HTTP 502, expected 200: {\"ok\":false,\"error\":\"媒体服务暂时繁忙（429），请稍后重试\"}\n    at Object.request (file:///www/wwwroot/xuexi/scripts/test-media-live.mjs:18:572)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async file:///www/wwwroot/xuexi/scripts/test-media-live.mjs:39:152\n    at async test (file:///www/wwwroot/xuexi/scripts/test-media-live.mjs:19:56)\n    at async file:///www/wwwroot/xuexi/scripts/test-media-live.mjs:39:2"
+    }
+  ],
+  "rounds": [],
+  "errors": [
+    "HTTP 502, expected 200: {\"ok\":false,\"error\":\"媒体服务暂时繁忙（429），请稍后重试\"}"
+  ],
+  "vision": {
+    "answer": "方程为：\\( 2x + 5 = 17 \\)。\n\n**一步计算：**\n- 首先，将5移到等式右侧：\n  \\[\n  2x = 17 - 5\n  \\]\n  \\[\n  2x = 12\n  \\]\n\n**答案：**\n- 然后，除以2：\n  \\[\n  x = \\frac{12}{2} = 6\n  \\]\n\n**检查方法：**\n- 将 \\( x = 6 \\) 代回原方程：\n  \\[\n  2(6) + 5 = 12 + 5 = 17\n  \\]\n- 结果正确，因此答案是 \\( x = 6 \\)。",
+    "sourceAssetCount": 1,
+    "followUp": "代回原方程 \\( 2x + 5 = 17 \\)：\n\n**代入 \\( x = 6 \\)**：\n\\[\n2(6) + 5 = 12 + 5 = 17\n\\]\n\n**核对：**\n- 左边 \\( 17 \\) 和右边 \\( 17 \\) 相等，结果正确。"
+  },
+  "cleanup": {
+    "temporaryUsers": 2,
+    "remainingUserRows": 0
+  }
+}

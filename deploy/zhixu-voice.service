@@ -1,0 +1,27 @@
+[Unit]
+Description=Zhixu LifeOS continuous voice interaction
+After=network.target mysqld.service mysql.service
+
+[Service]
+Type=simple
+User=zhixu
+Group=zhixu
+WorkingDirectory=/www/wwwroot/xuexi
+EnvironmentFile=/www/wwwroot/xuexi/.env.local
+Environment=NODE_ENV=production
+Environment=VOICE_PORT=3064
+Environment=PATH=/opt/laosiji-runtime/node-v22.16.0-linux-x64/bin:/usr/bin:/bin
+ExecStart=/opt/laosiji-runtime/node-v22.16.0-linux-x64/bin/node --max-old-space-size=220 scripts/voice-server.mjs
+Restart=always
+RestartSec=4
+KillSignal=SIGTERM
+TimeoutStopSec=25
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/www/wwwroot/xuexi/private
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

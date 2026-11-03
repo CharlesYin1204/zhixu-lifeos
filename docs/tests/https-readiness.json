@@ -1,0 +1,204 @@
+{
+  "checkedAt": "2026-10-14T13:02:25.277Z",
+  "scope": "HTTPS infrastructure readiness only; application media features and live voice backend are not part of these checks.",
+  "origin": "https://154.40.47.111:3063",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Existing certificate covers this IP and is currently valid",
+      "passed": true
+    },
+    {
+      "name": "curl trusts the HTTPS chain without insecure bypass",
+      "passed": true
+    },
+    {
+      "name": "HTTPS page and database health are available",
+      "passed": true
+    },
+    {
+      "name": "Browser reports secure context and same-origin camera/microphone permissions",
+      "passed": true
+    },
+    {
+      "name": "HTTP 3060 remains available without redirect",
+      "passed": true
+    },
+    {
+      "name": "HTTPS static assets are served from the existing archive",
+      "passed": true
+    },
+    {
+      "name": "Project-specific HTTPS configuration permits 18m uploads and routes voice WebSocket to loopback 3064",
+      "passed": true
+    },
+    {
+      "name": "Deployment script switches and restores both optional HTTPS and HTTP configurations",
+      "passed": true
+    },
+    {
+      "name": "HTTPS firewall rule is present",
+      "passed": true
+    },
+    {
+      "name": "Existing certificate renewal timer is enabled and healthy",
+      "passed": true
+    },
+    {
+      "name": "Web and worker were not restarted and APP_URL remains unchanged",
+      "passed": true
+    }
+  ],
+  "certificate": {
+    "path": "/etc/letsencrypt/live/gaoqiu-ip/fullchain.pem",
+    "issuer": "C=US\nO=Let's Encrypt\nCN=YE1",
+    "subjectAltName": "IP Address:154.40.47.111",
+    "validFrom": "Oct 12 15:51:33 2026 GMT",
+    "validTo": "Oct 19 07:51:32 2026 GMT",
+    "fingerprint256": "F0:50:80:73:7E:92:EA:25:CA:DA:BE:BE:C5:F6:A6:84:03:D6:7C:2C:3E:4E:94:1F:AB:88:15:33:57:D3:52:36"
+  },
+  "curlTrust": {
+    "status": 200,
+    "sslVerifyResult": 0
+  },
+  "browser": {
+    "method": "Playwright Chromium using ignoreHTTPSErrors:false; no insecure certificate bypass and no device permission prompt requested",
+    "status": 200,
+    "securityDetails": {
+      "issuer": "YE1",
+      "protocol": "TLS 1.3",
+      "validFrom": 1791820293,
+      "validTo": 1792396292
+    },
+    "state": {
+      "secureContext": true,
+      "origin": "https://154.40.47.111:3063",
+      "mediaDevicesPresent": true,
+      "getUserMediaPresent": true,
+      "cameraAllowed": true,
+      "microphoneAllowed": true
+    },
+    "observationSource": "Successful Playwright tool output recorded immediately before this readiness report"
+  },
+  "permissionsPolicy": "camera=(self), microphone=(self), geolocation=()",
+  "httpEntrance": {
+    "origin": "http://154.40.47.111:3060",
+    "status": 200,
+    "redirect": null
+  },
+  "applicationOriginCheck": {
+    "method": "Anonymous POST auth.logout with Origin=https://154.40.47.111:3063",
+    "status": 200,
+    "response": {
+      "ok": true
+    },
+    "note": "Validated without any existing session or user data mutation"
+  },
+  "assets": [
+    {
+      "asset": "/_next/static/css/b0b4652307b3810b.css",
+      "status": 200,
+      "bytes": 99372,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/webpack-44d8aec3c26a0cdc.js",
+      "status": 200,
+      "bytes": 3253,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200,
+      "bytes": 203721,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200,
+      "bytes": 242379,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200,
+      "bytes": 513,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/834-c99a86cef54cd27a.js",
+      "status": 200,
+      "bytes": 19422,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/app/page-428d10e94b35fe2b.js",
+      "status": 200,
+      "bytes": 122513,
+      "archiveBytesMatch": true
+    },
+    {
+      "asset": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200,
+      "bytes": 112594,
+      "archiveBytesMatch": true
+    }
+  ],
+  "nginx": {
+    "template": "deploy/zhixu-https.conf",
+    "installed": "/www/server/panel/vhost/nginx/zhixu-https.conf",
+    "configSha256": "788017f8c94192ae97ed269f2e81f386eeb0067185187a94a1a0b84edcd1a13d",
+    "uploadLimit": "18m",
+    "webUpstream": "http://127.0.0.1:3061",
+    "voiceUpstream": "http://127.0.0.1:3064",
+    "listenerOutput": "LISTEN 0      511    0.0.0.0:3063 0.0.0.0:*"
+  },
+  "firewall": [
+    "3063/tcp                   ALLOW       Anywhere                   # Zhixu LifeOS HTTPS media",
+    "3063/tcp (v6)              ALLOW       Anywhere (v6)              # Zhixu LifeOS HTTPS media"
+  ],
+  "renewal": {
+    "certbotVersion": "certbot 5.8.0",
+    "timer": {
+      "NextElapseUSecRealtime": "Thu 2026-10-15 03:12:03 CST",
+      "LastTriggerUSec": "Wed 2026-10-14 15:05:08 CST",
+      "ActiveState": "active",
+      "SubState": "waiting",
+      "UnitFileState": "enabled"
+    },
+    "service": {
+      "Result": "success",
+      "ExecMainStatus": "0"
+    },
+    "configuration": [
+      "authenticator = webroot",
+      "webroot_path = /var/lib/gaoqiu-acme,",
+      "server = https://acme-v02.api.letsencrypt.org/directory",
+      "key_type = ecdsa"
+    ],
+    "deployHook": "/www/server/nginx/sbin/nginx -s reload",
+    "schedule": "03:05 and 15:05 daily, randomized delay up to 600 seconds",
+    "dependency": "Reuses the existing gaoqiu-ip certificate and /var/lib/gaoqiu-acme HTTP-01 webroot. No other application or renewal configuration was changed.",
+    "renewalExecuted": false,
+    "existingChallengeVhost": "/www/server/panel/vhost/nginx/product-studio.conf",
+    "existingChallengeLocation": "/.well-known/acme-challenge/ rooted at /var/lib/gaoqiu-acme; inspected only, not modified"
+  },
+  "services": {
+    "web": {
+      "MainPID": "12208",
+      "ActiveState": "active"
+    },
+    "worker": {
+      "MainPID": "8390",
+      "ActiveState": "active"
+    }
+  },
+  "appUrl": "http://154.40.47.111:3060",
+  "limitations": [
+    "A trusted browser secure context and policy availability are verified; actual microphone/camera capture still requires the application feature, user consent and a real device test.",
+    "The future realtime voice upstream on 3064 is configured but was not listening at verification time; no working voice session is claimed.",
+    "Certificate renewal scheduling and prior success are verified read-only; no renewal or dry-run was triggered.",
+    "HTTP 3060, APP_URL and the existing APK remain unchanged as requested.",
+    "HTTP/TLS probes originated from this server; independent external reachability of port 3063 was not separately verified."
+  ]
+}

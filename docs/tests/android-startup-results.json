@@ -1,0 +1,101 @@
+{
+  "testedAt": "2026-10-14T15:38:53.327Z",
+  "scope": "Real MainActivity Java methods and callbacks extracted unchanged, executed on JVM with deterministic test doubles; complete Android source separately compiled against API23. Not Android runtime or device validation.",
+  "sourceSha256": "d955fc80806125c10f376765269648eb256b3fedaa01c67db1d4960d50faebec",
+  "androidJar": "/usr/lib/android-sdk/platforms/android-23/android.jar",
+  "limitations": [
+    "No Android device or emulator was available.",
+    "The doubles do not implement Chromium, Android rendering/lifecycle scheduling, TLS or certificate trust.",
+    "DOM results are controlled callback values; actual page rendering requires browser/device verification."
+  ],
+  "results": [
+    {
+      "name": "Main-document network and HTTP failures display useful diagnostics",
+      "passed": true
+    },
+    {
+      "name": "Network, HTTP and TLS subresource errors do not hide a healthy document",
+      "passed": true
+    },
+    {
+      "name": "Main-document TLS errors are refused and display a certificate diagnostic",
+      "passed": true
+    },
+    {
+      "name": "Rendered DOM readiness cancels the deadline and preserves the page",
+      "passed": true
+    },
+    {
+      "name": "HTTP completion with an empty DOM eventually offers recovery",
+      "passed": true
+    },
+    {
+      "name": "Missing completion hits the bounded loading timeout",
+      "passed": true
+    },
+    {
+      "name": "Retry succeeds and stale timeouts cannot hide its result",
+      "passed": true
+    },
+    {
+      "name": "A stale evaluateJavascript reply cannot change a newer load",
+      "passed": true
+    },
+    {
+      "name": "Late errors from a prior document cannot replace the new page",
+      "passed": true
+    },
+    {
+      "name": "Initialization failure tolerates retry, back, save, pause and destroy",
+      "passed": true
+    },
+    {
+      "name": "Destroy cancels scheduled work and ignores outstanding DOM replies",
+      "passed": true
+    },
+    {
+      "name": "Upgrade rejects saved IP history and restores only the configured origin",
+      "passed": true
+    },
+    {
+      "name": "Retry and system browser buttons use the configured canonical HTTPS origin",
+      "passed": true
+    },
+    {
+      "name": "Diagnostic display omits URL query, fragment and user information",
+      "passed": true
+    },
+    {
+      "name": "A synchronous WebView load failure displays recovery instead of escaping",
+      "passed": true
+    },
+    {
+      "name": "Complete real Android sources compile against API23 with Java8 bytecode target",
+      "passed": true
+    }
+  ],
+  "extractedMethods": [
+    "loadPage",
+    "beginLoading",
+    "cancelLoadTimeout",
+    "inspectPage",
+    "sameDocument",
+    "isMainResource",
+    "networkErrorText",
+    "sslErrorText",
+    "diagnosticHost",
+    "isAppUrl",
+    "effectivePort",
+    "isDownload",
+    "openExternal",
+    "createErrorView",
+    "showError",
+    "onSaveInstanceState",
+    "onPause",
+    "onBackPressed",
+    "onDestroy"
+  ],
+  "passed": 16,
+  "failed": 0,
+  "temporaryWorkspaceRemoved": true
+}

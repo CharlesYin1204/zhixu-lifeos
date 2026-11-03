@@ -1,0 +1,60 @@
+{
+  "testedAt": "2026-10-14T12:28:42.151Z",
+  "providerCalls": 0,
+  "results": [
+    {
+      "name": "Temporary upstream errors recover with one retry",
+      "passed": true,
+      "requests": 2,
+      "ms": 1074
+    },
+    {
+      "name": "Truncated reasoning is retried with increased budget and cumulative usage",
+      "passed": true,
+      "requests": 2,
+      "ms": 1024
+    },
+    {
+      "name": "Empty successful responses are retried once",
+      "passed": true,
+      "requests": 2,
+      "ms": 1033
+    },
+    {
+      "name": "Persistent empty or truncated responses remain real failures",
+      "passed": true,
+      "requests": 2,
+      "ms": 1019
+    },
+    {
+      "name": "Authentication errors do not retry",
+      "passed": true,
+      "requests": 1,
+      "ms": 20
+    },
+    {
+      "name": "Provider refusals do not retry or expose reasoning",
+      "passed": true,
+      "requests": 1,
+      "ms": 34
+    },
+    {
+      "name": "Reasoning blocks are omitted from structured message content",
+      "passed": true,
+      "requests": 1,
+      "ms": 25
+    },
+    {
+      "name": "Missing provider usage stays unknown while a reported zero remains zero",
+      "passed": true,
+      "requests": 2,
+      "ms": 37
+    },
+    {
+      "name": "A retry with partial usage never reports a complete token total",
+      "passed": true,
+      "requests": 2,
+      "ms": 1029
+    }
+  ]
+}

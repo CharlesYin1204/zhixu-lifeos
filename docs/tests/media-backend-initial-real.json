@@ -1,0 +1,74 @@
+{
+  "testedAt": "2026-10-14T13:12:03.621Z",
+  "results": [
+    {
+      "name": "Media config exposes all 13 defined scenes, actual model capabilities and exact upload limits",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 8
+    },
+    {
+      "name": "Image upload decodes and re-encodes a real PNG to an owner-bound private WebP",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 68
+    },
+    {
+      "name": "Invalid magic, corrupt images and files over byte limits are rejected",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 117
+    },
+    {
+      "name": "Audio upload inspects decoded duration and normalizes real MP3 to mono 24 kHz WAV",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 508
+    },
+    {
+      "name": "Cross-user read and delete requests do not expose or remove private media",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 4
+    },
+    {
+      "name": "Concurrent uploads respect the per-user storage quota under a database lock",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 85
+    },
+    {
+      "name": "Reserved media credits refund exactly once across concurrent repeated failures",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 65
+    },
+    {
+      "name": "VAD ignores brief noise, detects a voiced segment followed by 700 ms of silence and bounds long speech",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 15
+    },
+    {
+      "name": "Interrupting before a valid reply cancels upstream work and refunds a reserved credit",
+      "scope": "isolated-service-state-machine",
+      "passed": true,
+      "durationMs": 42
+    },
+    {
+      "name": "A real image request reads the owned upload, returns the correct solution and persists only the owning conversation",
+      "scope": "real-provider-call-and-database",
+      "passed": true,
+      "durationMs": 3439
+    },
+    {
+      "passed": false,
+      "error": "Error: 媒体模型服务返回 429，请稍后重试或联系管理员检查配置\n    at safeProviderError (file:///www/wwwroot/xuexi/lib/media.mjs:84:43)\n    at transcribeAudio (file:///www/wwwroot/xuexi/lib/media.mjs:98:430)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runMediaTranscription (file:///www/wwwroot/xuexi/lib/media.mjs:112:19)\n    at async file:///www/wwwroot/xuexi/scripts/test-media-backend.mjs:33:180\n    at async test (file:///www/wwwroot/xuexi/scripts/test-media-backend.mjs:13:81)\n    at async file:///www/wwwroot/xuexi/scripts/test-media-backend.mjs:33:2"
+    }
+  ],
+  "realVoiceEvidence": {
+    "visionReplyCharacters": 167
+  },
+  "scope": "Backend functions and ephemeral loopback WebSocket server; Next public routes and browser UI require separate deployment acceptance",
+  "cleanup": "Temporary users, assets, conversations, notes, usage and billing rows removed; production service not started"
+}

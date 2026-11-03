@@ -1,0 +1,205 @@
+{
+  "testedAt": "2026-10-14T13:18:06.253Z",
+  "passed": 14,
+  "failed": 0,
+  "realProviderCalls": 0,
+  "productionSettingsUntouched": true,
+  "fixturesCleaned": true,
+  "phases": {
+    "lib": {
+      "testedAt": "2026-10-14T13:06:55.525Z",
+      "base": "http://127.0.0.1:3061",
+      "passed": 4,
+      "failed": 0,
+      "realProviderCalls": 0,
+      "fixturesCleaned": true,
+      "results": [
+        {
+          "name": "Explicit model temperature and maxTokens reach the provider without reasoning-floor inflation",
+          "scope": "Actual library calls, real database fixtures, mocked AI transport",
+          "passed": true,
+          "ms": 71,
+          "evidence": {
+            "temperature": 0.35,
+            "maxTokens": 256,
+            "mockCalls": 1
+          }
+        },
+        {
+          "name": "Explicit output caps reject truncation without silently increasing the configured budget",
+          "scope": "Actual library calls, real database fixtures, mocked AI transport",
+          "passed": true,
+          "ms": 25,
+          "evidence": {
+            "configuredCap": 256,
+            "calls": 1,
+            "noHiddenBudgetIncrease": true
+          }
+        },
+        {
+          "name": "Temporary errors and empty replies retry within an explicit cap; unspecified budgets retain reasoning floors",
+          "scope": "Actual library calls, real database fixtures, mocked AI transport",
+          "passed": true,
+          "ms": 2161,
+          "evidence": {
+            "explicitRetryBudget": 512,
+            "gptDefaultFloor": 4096,
+            "thinkingDefaultFloor": 8192
+          }
+        },
+        {
+          "name": "Personal context sources and text include only the requesting user’s record IDs",
+          "scope": "Actual library calls, real database fixtures, mocked AI transport",
+          "passed": true,
+          "ms": 61,
+          "evidence": {
+            "ownSourcePresent": true,
+            "otherAccountExcluded": true,
+            "sourceCount": 1
+          }
+        }
+      ]
+    },
+    "api": {
+      "testedAt": "2026-10-14T13:18:06.253Z",
+      "base": "http://127.0.0.1:3061",
+      "passed": 10,
+      "failed": 0,
+      "realProviderCalls": 0,
+      "fixturesCleaned": true,
+      "results": [
+        {
+          "name": "Administrator model parameter save, readback, clearing and invalid-value rejection",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 400,
+          "evidence": {
+            "invalidValuesRejected": 7,
+            "validBoundaryValues": [
+              0,
+              2,
+              128,
+              32768
+            ],
+            "clearedToDefaults": true
+          }
+        },
+        {
+          "name": "Plugin sortOrder is saved into the SQL column and controls the catalog order",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 249,
+          "evidence": {
+            "sqlOrderMatchesCatalog": true,
+            "sortOrders": [
+              -90,
+              10,
+              50
+            ],
+            "invalidValuesRejected": 3
+          }
+        },
+        {
+          "name": "Purchased delisted plugins remain visible to their owner and can be reinstalled; new purchases/installations are blocked",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 259,
+          "evidence": {
+            "ownerCanReinstall": true,
+            "delistedHiddenFromNewUsers": true,
+            "newOrdersRejected": true,
+            "noExternalPayment": true
+          }
+        },
+        {
+          "name": "Delisted purchased plugin runs persist a note and sources; safety disabling blocks run and install",
+          "scope": "Unmodified route logic imported with ESM paths resolved, real auth/database, mocked AI transport",
+          "passed": true,
+          "ms": 273,
+          "evidence": {
+            "delistedPluginRuns": true,
+            "noteSourcesPersisted": true,
+            "disabledRunBlockedBeforeModel": true,
+            "mockProviderCalls": 1
+          }
+        },
+        {
+          "name": "An existing free installation keeps working after the plugin becomes paid",
+          "scope": "Unmodified route logic imported with ESM paths resolved, real auth/database, mocked AI transport",
+          "passed": true,
+          "ms": 189,
+          "evidence": {
+            "existingInstallationRetained": true,
+            "newInstallationRequiresPurchase": true,
+            "mockProviderCalls": 1
+          }
+        },
+        {
+          "name": "Ownership is not lost when the paid plugin order falls beyond the latest 100 orders",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 53,
+          "evidence": {
+            "ordersShown": 100,
+            "paidOrderOutsideWindow": true,
+            "ownershipRetained": true
+          }
+        },
+        {
+          "name": "1505 records paginate without duplicate/missing IDs and statistics aggregate every record",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 260,
+          "evidence": {
+            "total": 1505,
+            "pages": [
+              500,
+              500,
+              500,
+              5
+            ],
+            "uniqueIds": 1505,
+            "focusMinutes": 2010,
+            "tasks": 500,
+            "completed": 250,
+            "cursorOwnerIsolation": true
+          }
+        },
+        {
+          "name": "Legacy malformed record metadata reads safely and new invalid metadata is rejected",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 260,
+          "evidence": {
+            "legacyRowsSafe": 6,
+            "invalidInputsRejected": 8,
+            "validDatesDeduplicated": true
+          }
+        },
+        {
+          "name": "Chat source IDs remain user-owned and persist through the deployed conversation-history API",
+          "scope": "Unmodified route logic imported with ESM paths resolved, real auth/database, mocked AI transport",
+          "passed": true,
+          "ms": 136,
+          "evidence": {
+            "mockProviderCalls": 1,
+            "ownedSourcesOnly": true,
+            "historySourcesPersisted": true,
+            "crossUserHistoryDenied": true
+          }
+        },
+        {
+          "name": "Saving a completed workflow preserves its source references in the generated note",
+          "scope": "Deployed HTTP API and real database fixtures",
+          "passed": true,
+          "ms": 87,
+          "evidence": {
+            "sourceIdsPersisted": true,
+            "crossUserSaveRejected": true,
+            "noWorkflowProviderCalls": true
+          }
+        }
+      ]
+    }
+  }
+}

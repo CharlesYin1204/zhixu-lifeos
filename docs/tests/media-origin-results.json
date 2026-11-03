@@ -1,0 +1,38 @@
+{
+  "testedAt": "2026-10-14T15:23:45.124Z",
+  "scope": "Isolated actual media origin and secure-entry functions; no database, browser, services or provider calls",
+  "results": [
+    {
+      "name": "Configured HTTPS domain and both existing IP origins remain accepted",
+      "passed": true
+    },
+    {
+      "name": "Voice requires an Origin while existing optional-Origin HTTP behavior remains unchanged",
+      "passed": true
+    },
+    {
+      "name": "Unconfigured domains, deceptive suffixes, wrong schemes and non-configured ports are denied",
+      "passed": true
+    },
+    {
+      "name": "Server configured comma-separated values trim blanks and normalize duplicate origins",
+      "passed": true
+    },
+    {
+      "name": "Invalid configured origins fail closed instead of accepting wildcard, path or credential patterns",
+      "passed": true
+    },
+    {
+      "name": "Unset optional configuration preserves legacy IP access and returns the canonical secure media URL",
+      "passed": true
+    },
+    {
+      "name": "Test-only origins remain unavailable in production and only activate in the test environment",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "environmentRestored": true,
+  "databaseCalls": 0,
+  "providerCalls": 0
+}

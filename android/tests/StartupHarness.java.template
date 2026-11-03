@@ -1,0 +1,215 @@
+import java.util.*;
+
+/** Test doubles represent only the API surfaces called by extracted startup logic. */
+public final class StartupHarness {
+    static final String HOME = "https://xuexi.yinchao1204.vip/";
+    static void expect(boolean value, String reason) { if (!value) throw new AssertionError(reason); }
+    static void test(String name, Runnable body) { body.run(); System.out.println("PASS\t" + name); }
+    static MainActivity app() { return new MainActivity(); }
+    static void start(MainActivity app, String url) { app.webView.url = url; app.client.onPageStarted(app.webView, url, null); }
+    static void finish(MainActivity app) { app.client.onPageFinished(app.webView, app.loadingUrl); }
+    static void visible(MainActivity app) { expect(!app.loadFailed && app.webView.visibility == View.VISIBLE && app.errorView.visibility == View.GONE, "healthy page must remain visible"); }
+    static void failed(MainActivity app) { expect(app.loadFailed && app.webView.visibility == View.GONE && app.errorView.visibility == View.VISIBLE, "failure must be visible with WebView hidden"); }
+
+    public static void main(String[] args) {
+        test("Main-document network and HTTP failures display useful diagnostics", () -> {
+            MainActivity a = app(); start(a, HOME);
+            a.client.onReceivedError(a.webView, new WebResourceRequest(HOME, true), new WebResourceError(-2));
+            failed(a); expect(a.errorBody.text.contains("无法解析"), "DNS error category");
+            a.loadPage(HOME); a.client.onReceivedHttpError(a.webView, new WebResourceRequest(HOME, true), new WebResourceResponse(503));
+            failed(a); expect(a.errorBody.text.contains("503"), "HTTP status must be visible");
+        });
+        test("Network, HTTP and TLS subresource errors do not hide a healthy document", () -> {
+            MainActivity a = app(); start(a, HOME);
+            a.client.onReceivedError(a.webView, new WebResourceRequest(HOME + "asset.js", false), new WebResourceError(-2));
+            a.client.onReceivedError(a.webView, -2, "failed", HOME + "image.png");
+            a.client.onReceivedHttpError(a.webView, new WebResourceRequest(HOME + "image.png", false), new WebResourceResponse(500));
+            SslErrorHandler tls = new SslErrorHandler();
+            a.client.onReceivedSslError(a.webView, tls, new SslError("https://third-party.invalid/image.png", 3));
+            expect(tls.cancelled && !tls.proceeded, "subresource TLS must be refused"); visible(a);
+        });
+        test("Main-document TLS errors are refused and display a certificate diagnostic", () -> {
+            MainActivity a = app(); start(a, HOME); SslErrorHandler tls = new SslErrorHandler();
+            a.client.onReceivedSslError(a.webView, tls, new SslError(HOME, SslError.SSL_IDMISMATCH));
+            expect(tls.cancelled && !tls.proceeded, "TLS must never proceed"); failed(a);
+            expect(a.errorBody.text.contains("不匹配"), "certificate mismatch is readable");
+        });
+        test("Rendered DOM readiness cancels the deadline and preserves the page", () -> {
+            MainActivity a = app(); start(a, HOME); finish(a); a.loadHandler.advance(600);
+            expect(a.pageReady, "DOM content must become ready");
+            a.loadHandler.advance(31000); visible(a);
+        });
+        test("HTTP completion with an empty DOM eventually offers recovery", () -> {
+            MainActivity a = app(); a.webView.result = "\"empty\""; start(a, HOME); finish(a);
+            a.loadHandler.advance(8200); failed(a);
+            expect(a.errorBody.text.contains("仍没有显示内容"), "blank page diagnostic");
+        });
+        test("Missing completion hits the bounded loading timeout", () -> {
+            MainActivity a = app(); start(a, HOME); a.loadHandler.advance(29999); visible(a);
+            a.loadHandler.advance(1); failed(a); expect(a.errorBody.text.contains("30 秒"), "timeout text");
+        });
+        test("Retry succeeds and stale timeouts cannot hide its result", () -> {
+            MainActivity a = app(); start(a, HOME); Runnable oldDeadline = a.loadTimeout;
+            a.loadHandler.advance(30000); failed(a);
+            a.loadPage(HOME + "?view=ai"); finish(a); a.loadHandler.advance(600);
+            oldDeadline.run(); visible(a); expect(a.pageReady, "retry renders");
+        });
+        test("A stale evaluateJavascript reply cannot change a newer load", () -> {
+            MainActivity a = app(); a.webView.holdEvaluation = true; start(a, HOME); finish(a); a.loadHandler.advance(600);
+            ValueCallback<String> oldReply = a.webView.pending.get(0);
+            a.webView.holdEvaluation = false; a.loadPage(HOME + "?view=tasks"); finish(a); a.loadHandler.advance(600);
+            oldReply.onReceiveValue("\"empty\""); a.loadHandler.advance(31000); visible(a); expect(a.pageReady, "new page remains ready");
+        });
+        test("Late errors from a prior document cannot replace the new page", () -> {
+            MainActivity a = app(); String oldUrl = HOME + "?view=old", newUrl = HOME + "?view=ai";
+            start(a, oldUrl); a.beginLoading(newUrl); // WebView.getUrl may still report its old document during navigation.
+            a.client.onReceivedError(a.webView, new WebResourceRequest(oldUrl, true), new WebResourceError(-2));
+            a.client.onReceivedHttpError(a.webView, new WebResourceRequest(oldUrl, true), new WebResourceResponse(500));
+            SslErrorHandler tls = new SslErrorHandler(); a.client.onReceivedSslError(a.webView, tls, new SslError(oldUrl, 3));
+            visible(a); expect(tls.cancelled, "late TLS still cancelled");
+        });
+        test("Initialization failure tolerates retry, back, save, pause and destroy", () -> {
+            MainActivity a = app(); a.webView = null; a.downloads = null; a.initializationFailed = true;
+            a.showError("初始化失败", "组件不可用", "组件初始化");
+            a.loadPage(HOME); expect(a.recreates == 1, "retry recreates initialization");
+            a.onBackPressed(); a.onSaveInstanceState(new Bundle()); a.onPause(); a.onDestroy();
+            expect(a.parentBacks == 1 && a.parentSaves == 1 && a.parentPauses == 1 && a.parentDestroys == 1, "lifecycle delegates safely");
+        });
+        test("Destroy cancels scheduled work and ignores outstanding DOM replies", () -> {
+            MainActivity a = app(); a.webView.holdEvaluation = true; start(a, HOME); finish(a); a.loadHandler.advance(600);
+            ValueCallback<String> reply = a.webView.pending.get(0); a.onDestroy(); reply.onReceiveValue("\"empty\""); a.loadHandler.advance(40000);
+            expect(a.destroyed && a.webView == null && !a.loadFailed, "destroyed activity cannot receive new UI failure");
+        });
+        test("Upgrade rejects saved IP history and restores only the configured origin", () -> {
+            MainActivity old = app(); Bundle previous = new Bundle(); previous.putString("current_url", "https://154.40.47.111:3063/?view=ai"); previous.putBundle("web_state", new Bundle());
+            old.restore(previous); expect(old.webView.restores == 0 && HOME.equals(old.webView.url), "old origin must be discarded");
+            MainActivity current = app(); Bundle state = new Bundle(); state.putString("current_url", HOME + "?view=tasks"); state.putBundle("web_state", new Bundle());
+            current.webView.restorationWorks = true; current.restore(state); expect(current.webView.restores == 1 && current.webView.loads == 0, "current origin history restores");
+            MainActivity missing = app(); missing.restore(new Bundle()); expect(HOME.equals(missing.webView.url), "missing state loads canonical origin");
+        });
+        test("Retry and system browser buttons use the configured canonical HTTPS origin", () -> {
+            MainActivity a = app(); LinearLayout errors = a.createErrorView();
+            Button retry = (Button) errors.children.get(2), browser = (Button) errors.children.get(3);
+            retry.click(); expect(HOME.equals(a.webView.url), "retry canonical URL");
+            browser.click(); expect(a.launched != null && HOME.equals(a.launched.uri.toString()), "browser canonical URL");
+        });
+        test("Diagnostic display omits URL query, fragment and user information", () -> {
+            MainActivity a = app(); start(a, "https://user:password@xuexi.yinchao1204.vip/path?secret=private#token");
+            a.showError("连接失败", "无法连接", "测试");
+            expect(a.errorBody.text.contains("https://xuexi.yinchao1204.vip"), "diagnostic origin");
+            for (String secret : new String[]{"password", "private", "token", "/path", "user:"}) expect(!a.errorBody.text.contains(secret), "diagnostics must omit " + secret);
+        });
+        test("A synchronous WebView load failure displays recovery instead of escaping", () -> {
+            MainActivity a = app(); a.webView.failLoad = true; a.loadPage(HOME); failed(a);
+            expect(a.errorBody.text.contains("未能开始加载"), "load exception diagnostic");
+        });
+    }
+
+    static final class MainActivity extends BaseActivity {
+        WebView webView = new WebView();
+        LinearLayout errorView = new LinearLayout(this);
+        ProgressBar progress = new ProgressBar();
+        TextView errorTitle = new TextView(this), errorBody = new TextView(this);
+        Handler loadHandler = new Handler(); Runnable loadTimeout;
+        int loadGeneration; boolean loadFailed, destroyed, initializationFailed, scriptError, pageReady;
+        String loadingUrl = HOME, webViewVersion = "138.0.fixture";
+        NativeDownloads downloads = new NativeDownloads();
+        Uri captureUri; PermissionRequest mediaPermission; ValueCallback<Uri[]> fileCallback;
+        WebViewClient client = /* PRODUCTION_CLIENT */;
+        void restore(Bundle state) { /* PRODUCTION_RESTORE */ }
+        int dp(int value) { return value; }
+        void releaseCapture(boolean remove) { captureUri = null; }
+        /* PRODUCTION_METHODS */
+    }
+
+    static class BaseActivity {
+        int recreates, parentBacks, parentSaves, parentPauses, parentDestroys; Intent launched;
+        void recreate() { recreates++; } boolean isFinishing() { return false; }
+        void startActivity(Intent intent) { launched = intent; }
+        public void onBackPressed() { parentBacks++; }
+        protected void onSaveInstanceState(Bundle state) { parentSaves++; }
+        protected void onPause() { parentPauses++; }
+        protected void onDestroy() { parentDestroys++; }
+    }
+    static class View {
+        static final int VISIBLE = 0, GONE = 8; int visibility = VISIBLE;
+        void setVisibility(int value) { visibility = value; }
+        interface OnClickListener { void onClick(View view); }
+    }
+    static class ViewGroup extends View { void removeView(View child) {} }
+    static class LinearLayout extends ViewGroup {
+        static final int VERTICAL = 1; List<View> children = new ArrayList<>();
+        LinearLayout(Object context) {} void setOrientation(int value) {} void setGravity(int value) {} void setPadding(int a,int b,int c,int d) {} void setBackgroundColor(int value) {}
+        void addView(View view, LayoutParams params) { children.add(view); }
+        static class LayoutParams { LayoutParams(int width, int height) {} }
+    }
+    static class TextView extends View {
+        String text = ""; TextView(Object context) {}
+        void setText(String value) { text = value; } void setTextSize(int value) {} void setTextColor(int value) {} void setGravity(int value) {} void setTextIsSelectable(boolean value) {} void setPadding(int a,int b,int c,int d) {}
+    }
+    static class Button extends TextView {
+        View.OnClickListener listener; Button(Object context) { super(context); }
+        void setOnClickListener(View.OnClickListener value) { listener = value; } void click() { listener.onClick(this); }
+    }
+    static class ProgressBar extends View { int progress; void setProgress(int value) { progress = value; } }
+    static class Color { static int rgb(int r,int g,int b) { return 0; } }
+    static class Gravity { static final int CENTER = 17; }
+    static class BuildConfig { static final String SERVER_URL = HOME, VERSION_NAME = "1.1.2"; }
+    static class Build { static class VERSION { static final String RELEASE = "16-fixture"; } }
+    static class Handler {
+        long now, order; List<Job> jobs = new ArrayList<>();
+        static class Job { Runnable action; long due, sequence; Job(Runnable r,long d,long s) { action=r; due=d; sequence=s; } }
+        boolean postDelayed(Runnable r,long delay) { jobs.add(new Job(r, now+delay, ++order)); return true; }
+        void removeCallbacks(Runnable r) { jobs.removeIf(j -> j.action == r); }
+        void removeCallbacksAndMessages(Object token) { jobs.clear(); }
+        void advance(long millis) {
+            long until=now+millis; int guard=0;
+            while(true) { Job next=jobs.stream().filter(j -> j.due<=until).min(Comparator.comparingLong((Job j)->j.due).thenComparingLong(j->j.sequence)).orElse(null); if(next==null)break; if(++guard>1000)throw new AssertionError("runaway scheduled work"); jobs.remove(next); now=next.due; next.action.run(); }
+            now=until;
+        }
+    }
+    interface ValueCallback<T> { void onReceiveValue(T value); }
+    static class WebView extends View {
+        String url = HOME, result = "\"content\""; boolean holdEvaluation, failLoad, restorationWorks; int loads, restores;
+        List<ValueCallback<String>> pending = new ArrayList<>();
+        String getUrl() { return url; }
+        void loadUrl(String value) { loads++; if(failLoad)throw new RuntimeException("fixture failure"); url=value; }
+        void evaluateJavascript(String script,ValueCallback<String> callback) { if(holdEvaluation)pending.add(callback);else callback.onReceiveValue(result); }
+        void stopLoading() {} boolean canGoBack() { return false; } void goBack() {} void saveState(Bundle state) {} Object restoreState(Bundle state) { restores++; return restorationWorks ? state : null; }
+        Object getParent() { return null; } void destroy() {}
+    }
+    static class WebViewClient {
+        static final int ERROR_HOST_LOOKUP=-2, ERROR_CONNECT=-6, ERROR_TIMEOUT=-8, ERROR_FAILED_SSL_HANDSHAKE=-11;
+        public boolean shouldOverrideUrlLoading(WebView view,String url) { return false; }
+        public void onPageStarted(WebView view,String url,android.graphics.Bitmap icon) {}
+        public void onPageFinished(WebView view,String url) {}
+        public void onReceivedError(WebView view,WebResourceRequest request,WebResourceError error) {}
+        public void onReceivedError(WebView view,int code,String description,String failingUrl) {}
+        public void onReceivedHttpError(WebView view,WebResourceRequest request,WebResourceResponse response) {}
+        public void onReceivedSslError(WebView view,SslErrorHandler handler,SslError error) {}
+    }
+    static class WebResourceRequest { String url; boolean main; WebResourceRequest(String u,boolean m){url=u;main=m;} boolean isForMainFrame(){return main;} Uri getUrl(){return Uri.parse(url);} }
+    static class WebResourceError { int code; WebResourceError(int c){code=c;} int getErrorCode(){return code;} }
+    static class WebResourceResponse { int code; WebResourceResponse(int c){code=c;} int getStatusCode(){return code;} }
+    static class SslErrorHandler { boolean cancelled,proceeded; void cancel(){cancelled=true;} void proceed(){proceeded=true;} }
+    static class SslError {
+        static final int SSL_NOTYETVALID=0,SSL_EXPIRED=1,SSL_IDMISMATCH=2,SSL_UNTRUSTED=3,SSL_DATE_INVALID=4;
+        String url; int error; SslError(String u,int e){url=u;error=e;} String getUrl(){return url;} int getPrimaryError(){return error;}
+    }
+    static class Uri {
+        java.net.URI value; Uri(String raw) { value=java.net.URI.create(raw); }
+        static Uri parse(String value) { return new Uri(value); }
+        String getScheme(){return value.getScheme();} String getHost(){return value.getHost();} int getPort(){return value.getPort();} String getPath(){return value.getPath();}
+        String getQueryParameter(String name) { String query=value.getQuery(); if(query==null)return null; for(String pair:query.split("&")){String[] kv=pair.split("=",2);if(kv[0].equals(name))return kv.length==2?kv[1]:"";} return null; }
+        Builder buildUpon(){return new Builder(value.toString());} public String toString(){return value.toString();}
+        static class Builder { String value; Builder(String raw){value=raw;} Builder fragment(String fragment){int hash=value.indexOf('#');if(hash>=0)value=value.substring(0,hash);if(fragment!=null)value+="#"+fragment;return this;} Uri build(){return new Uri(value);} }
+    }
+    static class CookieManager { static final CookieManager INSTANCE=new CookieManager(); static CookieManager getInstance(){return INSTANCE;} void flush(){} }
+    static class Bundle { Map<String,Object> values=new HashMap<>(); String getString(String key){return (String)values.get(key);} Bundle getBundle(String key){return (Bundle)values.get(key);} void putString(String key,String value){values.put(key,value);} void putBundle(String key,Bundle value){values.put(key,value);} }
+    static class Parcel { static Parcel obtain(){return new Parcel();} void writeBundle(Bundle value){} int dataSize(){return 0;} void recycle(){} }
+    static class NativeDownloads { void saveState(Bundle value){} void destroy(boolean finishing){} }
+    static class PermissionRequest { void deny(){} }
+    static class Intent { static final String ACTION_VIEW="android.intent.action.VIEW"; Uri uri; Intent(String action,Uri value){uri=value;} }
+    static class ActivityNotFoundException extends RuntimeException {}
+    static class Toast { static final int LENGTH_SHORT=0; static Toast makeText(Object context,String text,int length){return new Toast();} void show(){} }
+}

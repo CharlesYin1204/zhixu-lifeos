@@ -1,0 +1,33 @@
+{
+  "testedAt": "2026-10-14T12:35:07.411Z",
+  "results": [
+    {
+      "name": "Mobile login form accepts keyboard submission and authenticates the administrator",
+      "passed": true
+    },
+    {
+      "name": "All 13 administrator tabs fit a 390px viewport with bottom navigation",
+      "passed": true,
+      "tabs": [
+        "概览",
+        "用户管理",
+        "AI 模型",
+        "Agent 管理",
+        "协作监控",
+        "AI 调用记录",
+        "插件管理",
+        "会员方案",
+        "订单管理",
+        "支付设置",
+        "安卓应用",
+        "站点设置",
+        "审计日志"
+      ]
+    },
+    {
+      "name": "No browser runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

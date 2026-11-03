@@ -1,0 +1,128 @@
+{
+  "testedAt": "2026-10-14T12:22:49.407Z",
+  "base": "http://127.0.0.1:3060",
+  "results": [
+    {
+      "name": "Anonymous bootstrap excludes secrets and private records",
+      "passed": true,
+      "ms": 76
+    },
+    {
+      "name": "Authentication and administrator access control",
+      "passed": true,
+      "ms": 2206
+    },
+    {
+      "name": "Persistent record CRUD and cross-user isolation",
+      "passed": true,
+      "ms": 299
+    },
+    {
+      "name": "All learning and lifestyle record types persist",
+      "passed": true,
+      "ms": 526
+    },
+    {
+      "name": "Free plugin install and paid plugin entitlement enforcement",
+      "passed": true,
+      "ms": 220
+    },
+    {
+      "name": "Manual orders grant paid plugin once, administrator only",
+      "passed": true,
+      "ms": 248
+    },
+    {
+      "name": "Membership fulfillment is idempotent",
+      "passed": true,
+      "ms": 191
+    },
+    {
+      "name": "Invalid payment callback and CSRF rejected",
+      "passed": true,
+      "ms": 20
+    },
+    {
+      "name": "Epay signed callback verifies amount and fulfills only once",
+      "passed": true,
+      "ms": 226
+    },
+    {
+      "model": "model-1",
+      "reply": "我可以通过提供知识讲解、学习规划、问题解答、写作辅导以及生活建议，帮助用户更高效地学习并从容应对日常生活。",
+      "latency": 3957
+    },
+    {
+      "model": "model-2",
+      "reply": "我可以帮你解决编程问题、分析代码、自动化任务、研究信息、撰写文档，以及处理各种专业工作，让你专注于真正重要的决策和创造。",
+      "latency": 5336
+    },
+    {
+      "name": "Both configured AI models produce real replies",
+      "passed": true,
+      "ms": 9757
+    },
+    {
+      "name": "AI chat persists conversation and isolates users",
+      "passed": true,
+      "ms": 3513
+    },
+    {
+      "name": "Installed plugin executes real AI and saves note",
+      "passed": true,
+      "ms": 25360
+    },
+    {
+      "runId": "dc8bd5fb-46f8-4069-9f6e-38c48e763080",
+      "status": "completed",
+      "steps": [
+        {
+          "name": "知序管家",
+          "model": "gpt-5.6-luna",
+          "latency": 10445
+        },
+        {
+          "name": "学习教练",
+          "model": "gpt-5.6-luna",
+          "latency": 14075
+        },
+        {
+          "name": "生活管家",
+          "model": "gpt-5.6-luna",
+          "latency": 44036
+        },
+        {
+          "name": "健康伙伴",
+          "model": "gpt-5.6-luna",
+          "latency": 6345
+        },
+        {
+          "name": "复盘顾问",
+          "model": "gpt-5.6-luna",
+          "latency": 12071
+        }
+      ],
+      "resultPreview": "## 审阅结论\n\n- **总体可行**：每天60分钟，英语与轻度运动均能覆盖。\n- **已统一的冲突**：\n  1. 英语时长有“40分钟、45分钟、至少30分钟”三种说法：统一为**英语40分钟＋运动15分钟＋准备5分钟**。\n  2. 听力材料有“1–3分钟”和“5–10分钟”：统一为**1段1–3分钟、带文本的基础材料**，可循环听。\n  3. 第2天既复习旧材料又加入新材料，可能超载：以*"
+    },
+    {
+      "name": "Multi-agent planner, parallel experts, reviewer complete with persisted steps",
+      "passed": true,
+      "ms": 68865
+    },
+    {
+      "name": "Own record edit and delete succeed",
+      "passed": true,
+      "ms": 122
+    },
+    {
+      "name": "Administrator model keys stay masked",
+      "passed": true,
+      "ms": 13
+    },
+    {
+      "name": "Profile update and session revocation",
+      "passed": true,
+      "ms": 2655
+    }
+  ]
+}

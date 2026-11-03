@@ -1,0 +1,144 @@
+{
+  "testedAt": "2026-10-14T12:58:01.639Z",
+  "passed": 14,
+  "failed": 0,
+  "isolatedTables": true,
+  "productionSettingsUntouched": true,
+  "realPaymentRequests": 0,
+  "fixturesCleaned": true,
+  "results": [
+    {
+      "name": "Sequential retries return the same order, snapshot and instructions",
+      "passed": true,
+      "ms": 72,
+      "evidence": {
+        "sameOrder": true,
+        "amount": 12.34,
+        "ordersCreated": 1
+      }
+    },
+    {
+      "name": "16 concurrent submissions create exactly one order across six database connections",
+      "passed": true,
+      "ms": 90,
+      "evidence": {
+        "requests": 16,
+        "uniqueOrders": 1
+      }
+    },
+    {
+      "name": "Request keys are scoped to the authenticated user and preserve case",
+      "passed": true,
+      "ms": 74,
+      "evidence": {
+        "sameKeyAcrossUsers": "separate orders",
+        "caseSensitive": true
+      }
+    },
+    {
+      "name": "A reused key rejects changed product, payment method or Alipay/WeChat channel",
+      "passed": true,
+      "ms": 90,
+      "evidence": {
+        "rejectedConflicts": 4,
+        "status": 409
+      }
+    },
+    {
+      "name": "Retries retain original price/title after repricing, delisting and channel disablement",
+      "passed": true,
+      "ms": 136,
+      "evidence": {
+        "originalAmount": 12.34,
+        "retriesIgnoreCatalogChanges": true,
+        "newDelistedPurchaseRejected": true
+      }
+    },
+    {
+      "name": "Listed and enabled are independent new-plugin purchase gates",
+      "passed": true,
+      "ms": 83,
+      "evidence": {
+        "existingRetryPreserved": true,
+        "newUnlistedRejected": true,
+        "newDisabledRejected": true
+      }
+    },
+    {
+      "name": "Old callers without requestId still create independent orders",
+      "passed": true,
+      "ms": 52,
+      "evidence": {
+        "legacyCompatible": true
+      }
+    },
+    {
+      "name": "Invalid request identifiers and unsupported channels write no orders",
+      "passed": true,
+      "ms": 3,
+      "evidence": {
+        "invalidInputsRejected": 7
+      }
+    },
+    {
+      "name": "Paid and cancelled retries return original state without granting benefits again",
+      "passed": true,
+      "ms": 111,
+      "evidence": {
+        "paidStatePreserved": true,
+        "cancelledStatePreserved": true,
+        "creditIncrease": 17
+      }
+    },
+    {
+      "name": "Epay retries preserve the exact signed jump despite merchant configuration changes",
+      "passed": true,
+      "ms": 54,
+      "evidence": {
+        "exactUrlPreserved": true,
+        "signatureValid": true,
+        "secretsAbsent": true
+      }
+    },
+    {
+      "name": "Concurrent Stripe requests call the mocked gateway once and share one session",
+      "passed": true,
+      "ms": 110,
+      "evidence": {
+        "requests": 12,
+        "gatewayCalls": 1,
+        "uniqueCheckoutUrls": 1,
+        "mocked": true
+      }
+    },
+    {
+      "name": "Failed gateway initialization retries the same order and immutable provider parameters",
+      "passed": true,
+      "ms": 123,
+      "evidence": {
+        "ordersCreated": 1,
+        "originalAmount": 12.34,
+        "sameProviderIdempotencyKey": true,
+        "identicalProviderParameters": true,
+        "mocked": true
+      }
+    },
+    {
+      "name": "Pre-reservation validation failures do not poison a request key",
+      "passed": true,
+      "ms": 93,
+      "evidence": {
+        "failedReservationRolledBack": true,
+        "sameRequestCanRetry": true
+      }
+    },
+    {
+      "name": "Deleting fixture orders cascades their idempotency mapping",
+      "passed": true,
+      "ms": 38,
+      "evidence": {
+        "foreignKeyCascadeVerified": true
+      }
+    }
+  ]
+}

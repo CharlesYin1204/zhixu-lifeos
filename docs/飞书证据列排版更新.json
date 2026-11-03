@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "failed": 0,
+    "results": [
+      {
+        "data": {
+          "updated_cells_count": 36
+        },
+        "index": 0,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 18
+        },
+        "index": 1,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 130
+        },
+        "index": 2,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 65
+        },
+        "index": 3,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 64
+        },
+        "index": 4,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 32
+        },
+        "index": 5,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 32
+        },
+        "index": 6,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 16
+        },
+        "index": 7,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 12
+        },
+        "index": 8,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 6
+        },
+        "index": 9,
+        "success": true,
+        "tool_name": "resize_range"
+      }
+    ],
+    "revision": 49,
+    "succeeded": 10,
+    "total": 10
+  }
+}

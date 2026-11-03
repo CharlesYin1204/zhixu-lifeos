@@ -1,0 +1,189 @@
+{
+  "status": "published_and_full_readback_verified",
+  "paragraphs": {
+    "17": "访客：从/访问公开产品落地页，阅读学习生活能力、多Agent分工、13种媒体场景、当前启用会员方案价格及安卓下载。访问个人功能、插件目录/筛选/搜索或购买时先登录。普通用户：登录后在/user及其子视图管理本人业务、助手、安装、订单和资料。会员：购买套餐增加AI余额并获得期限身份；到期恢复免费身份，剩余额度及历史保留；收费插件单独购买。",
+    "22": "公开首页/始终为产品落地页，含产品价值、学习生活场景、多Agent协作介绍、语音/图片/录音场景、会员价格和APK下载；已登录用户仍可访问落地页，并通过“进入用户中心”跳转。/login为独立公开登录注册页，不加载个人侧栏、搜索、通知、会员卡或底部功能菜单。登录后/user默认进入全部功能中心；/user?view=overview为个人概览，其余个人功能使用/user?view=...。后台/admin及/admin/login继续独立，保留原十四个管理模块与后台账户；旧/?view=...重定向至对应新入口。",
+    "23": "公开落地页使用产品导航、登录/进入中心按钮与独立移动菜单，不展示个人工作台或私有记录。桌面用户中心登录后才显示个人功能导航、搜索与内容区，个人概览位于/user?view=overview。后台采用自己的分组运营导航、标题栏及内容区，不显示个人学习生活模块、个人搜索、通知、会员卡或用户底栏。三端保持深色品牌文本、暖中性色背景、克制强调色与留白。",
+    "24": "公开首页与/login的移动端只提供公开产品/账户入口，不显示用户功能底栏。有效用户登录后，个人移动端才显示首页、学习、AI、应用、我的五项固定底栏，全部功能可在/user中分类检索进入。后台保留自己的快捷底栏与全部管理菜单抽屉。内容预留safe-area与导航高度，360px以上手机宽度无整页横向溢出，后台表格可局部水平滚动。",
+    "27": "访客从独立/login提交姓名、邮箱、密码后，由服务端校验并创建唯一普通用户账号；注册或登录默认进入/user全部功能中心。已有有效用户会话访问/login直接进入/user。/user及所有/user?view=...同时实施服务端和客户端登录检查，无用户会话时转到/login，不先展示个人菜单或加载私人功能；仅管理员会话不能通过用户端检查。重复账号与错误密码按既有规则处理。管理员继续从/admin/login登录，验证active与admin角色后进入/admin或有效section。",
+    "28": "用户中心默认/user展示全部个人功能入口，个人概览使用/user?view=overview，展示本人未完成任务、活跃目标、今日专注、习惯完成、安装插件和会员等真实统计。公开首页不展示这些私人统计。数据为空时显示引导，不用示例数值冒充真实使用记录。",
+    "95": "界面与部署：检查公开首页、公开登录页、登录后的用户中心和独立后台，验证未登录时无个人侧栏/搜索/通知/底栏，登录与注册默认进入/user，个人概览位于/user?view=overview，退出后回公开页面。桌面及360/390px手机布局不溢出，已登录个人底栏不遮挡操作；旧地址跳转正确，无构建错误与关键浏览器报错。",
+    "142": "当前产品落地页https://154.40.47.111:3063/，用户登录/login，登录后默认用户中心/user，个人概览/user?view=overview，媒体工作区/user?view=media；其他个人功能统一为/user?view=...。管理后台/admin及/admin/login继续独立。旧/?view=...重定向到新地址，已登录访问/仍显示落地页。原HTTP3060保留，麦克风与相机使用HTTPS。最终Web发布为{release}。五张功能表仍172项：前台21、用户中心88、管理员后台35、验收与依赖22、后续规划6；按本次要求调整入口和可见性，不新增范围。"
+  },
+  "features": {
+    "F-001": {
+      "5": "/始终展示公开产品落地页，介绍学习生活、多Agent与媒体能力",
+      "6": "访客及已登录用户均可访问落地页；个人工作台仅登录后在/user显示"
+    },
+    "F-002": {
+      "5": "公开产品导航与登录/进入中心入口；个人功能统一在/user?view=...",
+      "6": "/login独立公开表单，/user默认功能中心，/user?view=overview为个人概览，旧功能URL正确跳转"
+    },
+    "F-003": {
+      "5": "产品落地页与公开登录页适配桌面和手机，使用公开菜单",
+      "6": "360/390px无整页横向溢出，访客不显示个人侧栏或用户功能底栏"
+    },
+    "F-004": {
+      "5": "公开首页介绍规划、专家并行与审阅职责及13种媒体场景",
+      "6": "介绍与既有实际协作、语音/图片/录音能力一致，不伪造调用或统计"
+    },
+    "F-005": {
+      "3": "插件目录入口",
+      "5": "登录后从用户中心进入已上架插件目录；首页仅介绍能力",
+      "6": "未登录转/login；下架插件不出现在可安装列表，公开首页不提供安装或搜索操作"
+    },
+    "F-006": {
+      "5": "登录后在插件目录按学习/生活/效率分类筛选",
+      "6": "未登录不能进入个人插件功能，登录后筛选结果与分类匹配"
+    },
+    "F-007": {
+      "5": "登录后在插件目录按名称或描述查找",
+      "6": "搜索受用户端登录保护，空结果有说明；公开首页不提供个人插件搜索"
+    },
+    "F-009": {
+      "5": "公开落地页展示后台当前启用的免费/付费会员方案",
+      "6": "显示真实当前价格、周期和权益，购买入口进入登录或用户中心，不自动付款"
+    },
+    "F-011": {
+      "5": "独立/login注册表单收集姓名邮箱密码，成功进入/user",
+      "6": "账号唯一、密码不明文保存；注册前不显示个人导航或功能底栏"
+    },
+    "F-012": {
+      "5": "独立/login建立用户会话，默认进入/user；忘记密码显示帮助",
+      "6": "已登录访问/login进入/user；无个人侧栏和底栏；后台继续单独从/admin/login登录"
+    },
+    "F-013": {
+      "5": "/始终展示公开首页，按用户会话显示登录或进入用户中心入口",
+      "6": "登录不把首页变成工作台；只有有效user scope可以加载个人菜单，后台会话不代替用户会话"
+    },
+    "F-021": {
+      "5": "登录后/user默认展示学习、生活、效率、AI与账户全部功能入口",
+      "6": "个人功能均有/user?view=...路径，未登录不显示模块，后台入口保持独立"
+    },
+    "F-023": {
+      "5": "登录后个人手机端显示五项底栏；公开页和后台各用自己的导航",
+      "6": "/与/login无个人功能底栏，/user保留；安全区正确，360/390px无整页横向溢出"
+    },
+    "F-083": {
+      "5": "/user服务端和客户端双重检查user scope，API按本人范围取数据",
+      "6": "未登录访问任何个人view转/login且不先展示个人菜单；仅admin scope不能通过；A/B数据隔离保持"
+    },
+    "F-128": {
+      "5": "访问公开首页、公开登录页、受保护用户中心和独立后台",
+      "6": "/始终落地页，匿名个人页跳登录，旧功能地址跳/user?view=...；登录后个人页与后台均可访问"
+    }
+  },
+  "affectedFeatureIds": [
+    "F-001",
+    "F-002",
+    "F-003",
+    "F-004",
+    "F-005",
+    "F-006",
+    "F-007",
+    "F-009",
+    "F-011",
+    "F-012",
+    "F-013",
+    "F-021",
+    "F-023",
+    "F-083",
+    "F-128"
+  ],
+  "verification": {
+    "verifiedAt": "2026-10-14T15:13:55.588490+00:00",
+    "features": 172,
+    "newFeatures": 0,
+    "versionAddedFeatures": 35,
+    "sheets": {
+      "前台": 21,
+      "用户中心": 88,
+      "管理员后台": 35,
+      "验收与依赖": 22,
+      "后续规划": 6
+    },
+    "fullSheetCellsMatch": true,
+    "docFullTextMatchesXml": true,
+    "docSections": 30,
+    "docTopLevelParagraphs": 130,
+    "docTables": 1,
+    "documentRevision": 88,
+    "xlsxZipAndXmlValid": true,
+    "statusEvidenceCellsChecked": 344,
+    "clippedCells": 0,
+    "p2Unchanged": true,
+    "changedSheetCells": 60,
+    "csvAll172RowsMatch": true,
+    "xlsxAll172RowsMatch": true,
+    "coverageNoteCorrectionVerified": true,
+    "followupCorrectedCells": 1,
+    "totalSheetCellsWritten": 467,
+    "currentRelease": ".releases/20261014T150944Z-36035",
+    "loginHelp": {
+      "report": "docs/tests/login-help-inspection.json",
+      "productionChecks": 3,
+      "browserResponseFixtureChecks": 1,
+      "changedSheetCells": 3,
+      "documentParagraphsPatched": 4,
+      "all172RowsMatch": true,
+      "changedRowNoClipping": true
+    },
+    "previousSyncSheetCellsWritten": 407,
+    "changedRowLayoutCellsChecked": 75,
+    "portalSeparation": {
+      "reports": [
+        "portal-auth-results.json",
+        "portal-separation-results.json",
+        "portal-cookie-results.json",
+        "admin-portal-contract-results.json",
+        "media-settings-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-002",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-081",
+        "F-082",
+        "F-083",
+        "F-084",
+        "F-117",
+        "F-128"
+      ],
+      "changedSheetCells": 43,
+      "docPatchOperations": 19,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "secureHttpsVerified": true,
+      "legacyHistoryPreserved": true
+    },
+    "publicLanding": {
+      "reports": [
+        "public-landing-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-001",
+        "F-002",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-009",
+        "F-011",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-083",
+        "F-128"
+      ],
+      "changedSheetCells": 60,
+      "docPatchOperations": 12,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    }
+  }
+}

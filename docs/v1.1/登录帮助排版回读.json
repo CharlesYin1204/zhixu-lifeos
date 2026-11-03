@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "approx_char_count": 797,
+    "has_more": false,
+    "ranges": [
+      {
+        "actual_range": "F13:J13",
+        "cells": [
+          [
+            {
+              "cell_styles": {
+                "font_size": 11,
+                "number_format": "@",
+                "vertical_alignment": "top"
+              },
+              "value": "验证账号密码并建立会话；忘记密码时查看邮件未开通说明及管理员联系帮助"
+            },
+            {
+              "cell_styles": {
+                "font_size": 11,
+                "number_format": "@",
+                "vertical_alignment": "top"
+              },
+              "value": "错误密码拒绝且成功进入用户中心；未开通邮件时不假称已发送，联系信息未配置则说明现状和联系管理员的渠道"
+            },
+            {
+              "cell_styles": {
+                "font_size": 11,
+                "number_format": "@",
+                "vertical_alignment": "top"
+              },
+              "value": "无外部依赖"
+            },
+            {
+              "cell_styles": {
+                "background_color": "#FFF7E8",
+                "font_size": 11,
+                "number_format": "@",
+                "vertical_alignment": "top"
+              },
+              "value": "已实现并验证"
+            },
+            {
+              "cell_styles": {
+                "background_color": "#FFF7E8",
+                "font_size": 11,
+                "number_format": "@",
+                "vertical_alignment": "top"
+              },
+              "value": "mobile-admin-results.json 3/3：390px真实公网地址浏览器通过键盘Enter提交登录表单并成功进入后台；regression-results.json覆盖错误密码和密码边界。 login-help-inspection.json：生产匿名登录可展开“忘记密码”并进入联系帮助，邮件自助未开通/联系信息未配置的说明及390px布局通过；已配置supportContact显示仅用浏览器响应fixture验证，未修改生产设置。未发送邮件、重置密码或新增重置API。"
+            }
+          ]
+        ],
+        "col_indices": [
+          "F",
+          "G",
+          "H",
+          "I",
+          "J"
+        ],
+        "range": "F13:J13",
+        "row_indices": [
+          13
+        ],
+        "truncated": false
+      }
+    ],
+    "returned_cell_count": 5,
+    "revision": 60,
+    "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+  }
+}

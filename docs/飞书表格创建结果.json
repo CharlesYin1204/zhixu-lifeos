@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "sheets": [
+      {
+        "columns": 10,
+        "data_rows": 18,
+        "mode": "overwrite",
+        "name": "前台",
+        "range": "A1:J19",
+        "sheet_id": "88caf0",
+        "writes": 1
+      },
+      {
+        "columns": 10,
+        "data_rows": 65,
+        "mode": "overwrite",
+        "name": "用户中心",
+        "range": "A1:J66",
+        "sheet_id": "JWD2Qz",
+        "writes": 1
+      },
+      {
+        "columns": 10,
+        "data_rows": 32,
+        "mode": "overwrite",
+        "name": "管理员后台",
+        "range": "A1:J33",
+        "sheet_id": "ukpp0i",
+        "writes": 1
+      },
+      {
+        "columns": 10,
+        "data_rows": 16,
+        "mode": "overwrite",
+        "name": "验收与依赖",
+        "range": "A1:J17",
+        "sheet_id": "ZNyxxD",
+        "writes": 1
+      },
+      {
+        "columns": 10,
+        "data_rows": 6,
+        "mode": "overwrite",
+        "name": "后续规划",
+        "range": "A1:J7",
+        "sheet_id": "2DHsdt",
+        "writes": 1
+      }
+    ],
+    "spreadsheet": {
+      "folder_token": "",
+      "spreadsheet_token": "[REDACTED_LARK_RESOURCE_TOKEN]",
+      "title": "知序 LifeOS｜产品功能表与验收清单 v1.0",
+      "url": "https://rjppwe2dlq09.jp.larksuite.com/sheets/[REDACTED_LARK_RESOURCE_TOKEN]"
+    }
+  }
+}

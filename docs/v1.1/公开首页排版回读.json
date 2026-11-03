@@ -1,0 +1,1112 @@
+{
+  "前台:2": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 740,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F2:J2",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/始终展示公开产品落地页，介绍学习生活、多Agent与媒体能力"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "访客及已登录用户均可访问落地页；个人工作台仅登录后在/user显示"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 本轮公开首页：public-landing-results.json实际Chromium156验证匿名与登录后访问/都为产品落地页，个人工作台仅在/user；无页面异常。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F2:J2",
+          "row_indices": [
+            2
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:3": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 1015,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F3:J3",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开产品导航与登录/进入中心入口；个人功能统一在/user?view=..."
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/login独立公开表单，/user默认功能中心，/user?view=overview为个人概览，旧功能URL正确跳转"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。 本轮门户分离：portal-separation-results.json验证/login、/user与/admin/login、/admin入口及旧地址跳转；15个后台section可达，22个个人入口保留。 本轮公开首页：public-landing-results.json验证公开导航可访问、有效锚点、/login独立、登录后/user含22入口、所有个人导航保持/user路径和旧地址跳转。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F3:J3",
+          "row_indices": [
+            3
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:4": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 727,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F4:J4",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "产品落地页与公开登录页适配桌面和手机，使用公开菜单"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "360/390px无整页横向溢出，访客不显示个人侧栏或用户功能底栏"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 本轮公开首页：public-landing-results.json验证公开首页与登录页桌面及390/360px布局，无个人侧栏或功能底栏；对应截图已保存。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F4:J4",
+          "row_indices": [
+            4
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:5": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 769,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F5:J5",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页介绍规划、专家并行与审阅职责及13种媒体场景"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "介绍与既有实际协作、语音/图片/录音能力一致，不伪造调用或统计"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开介绍已上线；真实能力沿用原专项证据"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：静态确认 components/LifeOS.jsx 的 Dashboard / LifeOS 与 app/api/app/route.js 对应实现已包含「多 Agent 说明」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：本轮落地页展示多Agent分工和13种媒体能力介绍，public-landing-results.json验证公开页面渲染与导航；真实模型和13场景能力仍以原专项证据为准，本轮没有AI调用。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F5:J5",
+          "row_indices": [
+            5
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:6": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 785,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F6:J6",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录后从用户中心进入已上架插件目录；首页仅介绍能力"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "未登录转/login；下架插件不出现在可安装列表，公开首页不提供安装或搜索操作"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录保护与目录入口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「公开目录」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：按本次用户要求将目录入口改为登录后。public-landing-results.json验证匿名目录地址跳/login，登录后可从/user进入原插件页面；本轮未重测所有上下架商品组合。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F6:J6",
+          "row_indices": [
+            6
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:7": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 752,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F7:J7",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录后在插件目录按学习/生活/效率分类筛选"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "未登录不能进入个人插件功能，登录后筛选结果与分类匹配"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录保护已验证；分类筛选未另测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「分类筛选」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：按本次用户要求改为登录后筛选。public-landing-results.json覆盖目录的登录保护与进入路径，筛选逻辑沿用原功能，未另做分类专项。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F7:J7",
+          "row_indices": [
+            7
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:8": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 755,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F8:J8",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录后在插件目录按名称或描述查找"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "搜索受用户端登录保护，空结果有说明；公开首页不提供个人插件搜索"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录保护已验证；搜索逻辑未另测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「插件搜索」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：按本次用户要求改为登录后搜索。public-landing-results.json覆盖目录登录保护与进入路径，搜索和空结果逻辑沿用原功能，未另做搜索专项。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F8:J8",
+          "row_indices": [
+            8
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:10": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 784,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F10:J10",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开落地页展示后台当前启用的免费/付费会员方案"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "显示真实当前价格、周期和权益，购买入口进入登录或用户中心，不自动付款"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "真实方案展示已上线；购买入口验证，无付款"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「套餐展示」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：落地页读取后台当前启用套餐并展示真实价格/周期/权益；public-landing-results.json检查页面与购买入口可到登录/用户中心；本轮无订单创建或付款，未修改价格配置。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F10:J10",
+          "row_indices": [
+            10
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:12": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 719,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F12:J12",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立/login注册表单收集姓名邮箱密码，成功进入/user"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "账号唯一、密码不明文保存；注册前不显示个人导航或功能底栏"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。 本轮公开首页：public-landing-results.json以临时真实注册表单创建用户并直接进入/user；未登录表单在桌面/390/360px均无个人导航。临时数据清理。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F12:J12",
+          "row_indices": [
+            12
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:13": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 1062,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F13:J13",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立/login建立用户会话，默认进入/user；忘记密码显示帮助"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已登录访问/login进入/user；无个人侧栏和底栏；后台继续单独从/admin/login登录"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：mobile-admin-results.json 3/3：390px真实公网地址浏览器通过键盘Enter提交登录表单并成功进入后台；regression-results.json覆盖错误密码和密码边界。 login-help-inspection.json：生产匿名登录可展开“忘记密码”并进入联系帮助，邮件自助未开通/联系信息未配置的说明及390px布局通过；已配置supportContact显示仅用浏览器响应fixture验证，未修改生产设置。未发送邮件、重置密码或新增重置API。 本轮门户分离：portal-separation-results.json验证普通用户登录进入/user，独立后台登录返回有效section，普通账号后台登录拒绝；portal-cookie-results.json在最终版本验证HTTPS双端Secure/HttpOnly/SameSite Cookie。 本轮公开首页：public-landing-results.json真实表单登录后默认/user；桌面/390/360px独立登录页无个人框架。忘记密码帮助沿用现有说明，不新增邮件或重置系统。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F13:J13",
+          "row_indices": [
+            13
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:14": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 864,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F14:J14",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/始终展示公开首页，按用户会话显示登录或进入用户中心入口"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录不把首页变成工作台；只有有效user scope可以加载个人菜单，后台会话不代替用户会话"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。 本轮门户分离：portal-separation-results.json真实浏览器验证两个不同账户及同一管理员账户分别登录两端、刷新与独立退出；portal-auth-results.json用隔离MySQL验证user/admin scope。 本轮公开首页：public-landing-results.json验证登录后/仍为落地页，进入用户中心链接有效；同浏览器另一标签退出后焦点恢复会清除个人工作台，管理员会话不代替个人会话。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F14:J14",
+          "row_indices": [
+            14
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:4": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 827,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F4:J4",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录后/user默认展示学习、生活、效率、AI与账户全部功能入口"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "个人功能均有/user?view=...路径，未登录不显示模块，后台入口保持独立"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：ui-flow-results.json：用户中心学习成长、生活管理、AI与效率、账户与应用四组入口显示；browser-results.json覆盖全部主要用户页面。 本轮门户分离：portal-separation-results.json真实浏览器确认22个个人功能入口，用户中心无后台入口；仅管理员Cookie访问/user须另行登录，后台无个人请求。 本轮公开首页：public-landing-results.json确认登录与注册都落到/user并显示22个功能入口；逐个个人导航使用/user?view=...且渲染原功能页面。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F4:J4",
+          "row_indices": [
+            4
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:6": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 884,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F6:J6",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录后个人手机端显示五项底栏；公开页和后台各用自己的导航"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/与/login无个人功能底栏，/user保留；安全区正确，360/390px无整页横向溢出"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json与mobile-admin-results.json：390px主要用户页面及全部13个后台tab无整页横向溢出、底栏可见；mobile-user.png / mobile-admin.png 经目视核验。 本轮门户分离：portal-separation-results.json：15个后台section在1440/390/360px共45组导航布局检查；后台独立底栏/菜单，个人端360/390px保留五项底栏且无整页横向溢出。 本轮公开首页：public-landing-results.json确认公开首页/login在390/360px无个人底栏，登录后/user保留22个功能入口与5个个人底栏按钮。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F6:J6",
+          "row_indices": [
+            6
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:66": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 895,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F66:J66",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/user服务端和客户端双重检查user scope，API按本人范围取数据"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "未登录访问任何个人view转/login且不先展示个人菜单；仅admin scope不能通过；A/B数据隔离保持"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "公开首页与登录后入口已部署并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-auth-results.json隔离MySQL与生产portal-separation-results.json验证双向scope限制、Cookie换名拒绝、后台页面无个人数据请求；此前A/B业务数据隔离证据保留。 本轮公开首页：public-landing-results.json逐个匿名个人view验证先转/login，管理员专用会话也不能进入；服务端页面门禁与客户端焦点/退出检查生效；原A/B和双scope API隔离证据保留。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F66:J66",
+          "row_indices": [
+            66
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "验收与依赖:14": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 959,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F14:J14",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "访问公开首页、公开登录页、受保护用户中心和独立后台"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/始终落地页，匿名个人页跳登录，旧功能地址跳/user?view=...；登录后个人页与后台均可访问"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "对应模块实现"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "HTTP/HTTPS地址已验证；跨网络专项未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：HTTP3060保留，HTTPS3063可信证书及生产媒体浏览器/WSS通过；早期HTTP外部日志36次成功记录。独立受控跨网络浏览器与物理移动网络验收未执行。 本轮门户分离：portal-release-health.json在145454确认四个独立页面200、三个旧入口307、匿名后台数据401、旧个人API管理入口403及DB连接；portal-cookie-results.json验证HTTPS浏览器和HTTP API兼容，跨网络专项仍未执行。 本轮公开首页：portal-release-health.json在150944完成HTTP/HTTPS共30项状态检查：/200、匿名/user307到/login、旧功能地址307到/user?view=...、后台保持独立；public-landing-results.json验证实际登录后的页面。跨网络专项仍未执行。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F14:J14",
+          "row_indices": [
+            14
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 64,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  }
+}

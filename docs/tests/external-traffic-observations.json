@@ -1,0 +1,11 @@
+{
+  "observedAt": "2026-10-14",
+  "source": "Nginx access log; client IP addresses are omitted",
+  "scope": "Observed successful requests from non-loopback client addresses other than the server public IP; this is traffic evidence, not a controlled external browser acceptance test",
+  "successfulExternalRequests": 36,
+  "routes": {
+    "GET / 200": 5,
+    "GET /api/app 200": 29,
+    "POST /api/app 200": 2
+  }
+}

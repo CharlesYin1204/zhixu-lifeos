@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-10-14T15:43:07Z",
+  "source": "User reply in this conversation; not an agent-operated device test",
+  "artifact": {
+    "versionName": "1.1.2",
+    "versionCode": 5,
+    "filename": "zhixu-lifeos-1.1.2-5.apk",
+    "sha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+    "serverUrl": "https://xuexi.yinchao1204.vip/"
+  },
+  "previousObservation": "User confirmed that the same phone's system browser could open the canonical HTTPS domain.",
+  "question": "请用刚发布的 1.1.2 安装包覆盖安装后打开，现在显示什么？若出现错误页，可以直接回复上面的错误文字和‘阶段’。",
+  "userAnswer": "首页正常显示",
+  "homepageStartupAccepted": true,
+  "limitations": [
+    "This confirms homepage startup only; microphone, camera, login and payment were not included in this device feedback.",
+    "The precise cause of the previous APK failure is not established.",
+    "The automated release and JVM reports accurately retain their separate no-device-test limitation."
+  ]
+}

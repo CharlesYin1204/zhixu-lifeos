@@ -1,0 +1,24 @@
+{
+  "testedAt": "2026-10-14T13:43:03.878Z",
+  "scope": "Published authenticated HTTPS routes",
+  "realProviderCalls": 0,
+  "results": [
+    {
+      "name": "Published media conversation removes deleted attachment/source URLs and preserves text",
+      "passed": true
+    },
+    {
+      "name": "bootstrap returns deleted recording references without URL",
+      "passed": true
+    },
+    {
+      "name": "records returns deleted recording references without URL",
+      "passed": true
+    },
+    {
+      "name": "export returns deleted recording references without URL",
+      "passed": true
+    }
+  ],
+  "cleanup": "Complete"
+}

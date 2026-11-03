@@ -1,0 +1,162 @@
+{
+  "testedAt": "2026-10-14T14:52:42.607Z",
+  "scope": "Actual Next route handlers and isolated MySQL tables; no production data mutations, paid calls or browser interactions",
+  "passed": 17,
+  "results": [
+    {
+      "name": "Additive session migration preserves legacy personal login and is idempotent",
+      "passed": true,
+      "ms": 353,
+      "evidence": {
+        "legacyPreserved": true,
+        "migrationRuns": 2
+      }
+    },
+    {
+      "name": "Anonymous admin bootstrap exposes identity branding only and protected data returns 401",
+      "passed": true,
+      "ms": 8,
+      "evidence": {
+        "noPersonalCollections": true,
+        "protectedStatus": 401
+      }
+    },
+    {
+      "name": "Cookie transport helper follows actual HTTPS and nginx proxy protocol without using APP_URL",
+      "passed": true,
+      "ms": 2,
+      "evidence": {
+        "cases": 6,
+        "trustedProxyHeader": "X-Forwarded-Proto overwritten by deployed nginx",
+        "ambiguousHeaderRejected": true
+      }
+    },
+    {
+      "name": "Both login and logout handlers issue Secure cookies for HTTPS while preserving HTTP compatibility",
+      "passed": true,
+      "ms": 4650,
+      "evidence": {
+        "loginAndLogoutPairs": 8,
+        "portals": 2,
+        "transportModes": 4,
+        "appUrlUnchanged": true
+      }
+    },
+    {
+      "name": "Ordinary credentials cannot create an admin session or register via the admin endpoint",
+      "passed": true,
+      "ms": 539,
+      "evidence": {
+        "deniedStatus": 403,
+        "noSessionCreated": true,
+        "registrationStatus": 404
+      }
+    },
+    {
+      "name": "Administrator login creates a dedicated server-side admin scope and cookie",
+      "passed": true,
+      "ms": 546,
+      "evidence": {
+        "scope": "admin",
+        "cookie": "zhixu_admin_session",
+        "httpOnly": true
+      }
+    },
+    {
+      "name": "Same account personal login remains a separate personal session",
+      "passed": true,
+      "ms": 417,
+      "evidence": {
+        "scope": "user",
+        "separateSessions": 2
+      }
+    },
+    {
+      "name": "Copying tokens between cookie names cannot cross either portal scope",
+      "passed": true,
+      "ms": 9,
+      "evidence": {
+        "bidirectionalScopeEnforced": true
+      }
+    },
+    {
+      "name": "Personal API refuses every administrative route even with valid admin sessions",
+      "passed": true,
+      "ms": 3,
+      "evidence": {
+        "deniedRoutes": 4,
+        "settingsUnchanged": true
+      }
+    },
+    {
+      "name": "Admin API refuses personal records, chat, order and media activity",
+      "passed": true,
+      "ms": 44,
+      "evidence": {
+        "personalActionsDenied": 11,
+        "noPersonalMutation": true
+      }
+    },
+    {
+      "name": "Valid admin read/save uses admin cookie, masks secrets and preserves personal bootstrap",
+      "passed": true,
+      "ms": 136,
+      "evidence": {
+        "adminWriteReadback": true,
+        "privateSecretsMasked": true,
+        "personalRecordPreserved": true
+      }
+    },
+    {
+      "name": "Admin logout revokes only the admin token and does not affect the personal session",
+      "passed": true,
+      "ms": 69,
+      "evidence": {
+        "personalLoginPreserved": true
+      }
+    },
+    {
+      "name": "Personal logout revokes only the personal token and does not affect admin login",
+      "passed": true,
+      "ms": 53,
+      "evidence": {
+        "adminLoginPreserved": true
+      }
+    },
+    {
+      "name": "Swapped-cookie logout cannot revoke a token belonging to the opposite scope",
+      "passed": true,
+      "ms": 33,
+      "evidence": {
+        "sessionsPreserved": 2
+      }
+    },
+    {
+      "name": "Disabled, demoted and expired admin sessions are rechecked on every request",
+      "passed": true,
+      "ms": 503,
+      "evidence": {
+        "demotedStatus": 403,
+        "disabledOrExpiredStatus": 401
+      }
+    },
+    {
+      "name": "Admin password update revokes both portal sessions and renews only admin scope",
+      "passed": true,
+      "ms": 1723,
+      "evidence": {
+        "bothOldSessionsRevoked": true,
+        "replacementScope": "admin"
+      }
+    },
+    {
+      "name": "Admin mutating operations enforce origin checks before authentication or database writes",
+      "passed": true,
+      "ms": 3,
+      "evidence": {
+        "crossOriginStatus": 403
+      }
+    }
+  ],
+  "cleanup": "All prefixed fixture tables removed"
+}

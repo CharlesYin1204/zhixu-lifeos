@@ -1,0 +1,64 @@
+{
+  "startedAt": "2026-10-14T13:24:14.191Z",
+  "scope": "Real deployed browser voice chain with synthetic English WAV as Chromium microphone input; no physical audio device or human listening verification",
+  "errors": [],
+  "playback": {
+    "audioStarts": 32,
+    "samples": 172800,
+    "nonzeroSamples": 137627,
+    "events": [
+      {
+        "type": "ready"
+      },
+      {
+        "type": "status",
+        "status": "listening"
+      },
+      {
+        "type": "status",
+        "status": "thinking"
+      },
+      {
+        "type": "user.transcript",
+        "text": "I study English for 20 minutes every day."
+      },
+      {
+        "type": "status",
+        "status": "speaking"
+      },
+      {
+        "type": "turn.completed"
+      },
+      {
+        "type": "status",
+        "status": "listening"
+      }
+    ],
+    "completed": {
+      "type": "turn.completed",
+      "conversationId": "4f21c2cb-0012-4e97-a44f-8b142a02d46b",
+      "audioAvailable": true,
+      "audioBytes": 345600,
+      "metrics": {
+        "asrMs": 975,
+        "chatMs": 842,
+        "firstAudioMs": 3435,
+        "ttsMs": 1665,
+        "totalMs": 3556
+      }
+    }
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "I study English for 20 minutes every day."
+    },
+    {
+      "role": "assistant",
+      "content": "That's great! Consistency is very important for learning. Do you practice speaking or writing during that time?"
+    }
+  ],
+  "creditsAfter": 19,
+  "passed": true,
+  "completedAt": "2026-10-14T13:24:29.003Z"
+}

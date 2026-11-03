@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-14",
+  "document": {
+    "status": "created_and_readback_verified",
+    "url": "https://rjppwe2dlq09.jp.larksuite.com/docx/[REDACTED_LARK_RESOURCE_TOKEN]",
+    "token": "[REDACTED_LARK_RESOURCE_TOKEN]",
+    "sections": 19,
+    "paragraphs": 91
+  },
+  "spreadsheet": {
+    "status": "created_and_all_cells_verified",
+    "url": "https://rjppwe2dlq09.jp.larksuite.com/sheets/[REDACTED_LARK_RESOURCE_TOKEN]",
+    "token": "[REDACTED_LARK_RESOURCE_TOKEN]",
+    "sheets": {
+      "前台": 18,
+      "用户中心": 65,
+      "管理员后台": 32,
+      "验收与依赖": 16,
+      "后续规划": 6
+    },
+    "features": 137,
+    "frozen_rows": 1,
+    "frozen_columns": 2
+  },
+  "local": {
+    "prd": "产品需求文档.md",
+    "features_csv": "产品功能表.csv",
+    "features_xlsx": "产品功能表.xlsx"
+  },
+  "implementation_note": "137项实现/测试证据已同步。真实收款待商户资料，Android真机和独立受控跨网络浏览器未验收；公网外部日志已有36次成功记录。用户报告的页面加载故障已复现修复，生产Chromium145/156导航回归通过。",
+  "scope_revision": {
+    "paragraphs_changed": 23,
+    "feature_rows_changed": 11,
+    "cells_changed": 27,
+    "verified": true,
+    "status_columns_unchanged": true
+  },
+  "delivery_appendix": {
+    "title": "2026-10-14 交付验证记录",
+    "paragraphs": 8,
+    "verified": true,
+    "revision": 33
+  },
+  "status_sync": {
+    "verifiedAt": "2026-10-14T12:50:41.286770+00:00",
+    "features": 137,
+    "changedRanges": 4,
+    "changedCells": 10,
+    "columns": "I:J",
+    "fullReadbackMatches": true,
+    "requirementsAndRoadmapUnchanged": true,
+    "evidenceCellsClippingChecked": 274,
+    "evidenceCellsClipped": 0
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "startedAt": "2026-10-14T14:51:43.607Z",
+  "base": "https://154.40.47.111:3063",
+  "results": [
+    {
+      "name": "Anonymous admin deep link opens its independent login without any personal navigation",
+      "passed": true,
+      "durationMs": 764
+    },
+    {
+      "name": "Personal login and canonical user center preserve every existing feature group",
+      "passed": true,
+      "durationMs": 1496
+    },
+    {
+      "name": "An ordinary personal login cannot enter the admin portal or authenticate as an administrator",
+      "passed": true,
+      "durationMs": 890
+    },
+    {
+      "name": "Independent administrator login preserves the requested section and the existing personal account",
+      "passed": true,
+      "durationMs": 1016
+    },
+    {
+      "name": "Administrative API and personal API reject crossed resources, actions, and swapped cookie tokens",
+      "passed": true,
+      "durationMs": 66
+    },
+    {
+      "name": "An administrator-only cookie does not sign in to the personal center or expose personal data",
+      "passed": true,
+      "durationMs": 412
+    },
+    {
+      "name": "Every administrative section opens from its desktop navigation without personal shell leakage",
+      "passed": true,
+      "durationMs": 1890
+    },
+    {
+      "name": "Administrative deep link, refresh, back and forward keep section selection synchronized",
+      "passed": true,
+      "durationMs": 969
+    },
+    {
+      "name": "All fifteen administrative sections fit 390px and use only administrative mobile navigation",
+      "passed": true,
+      "durationMs": 2523
+    },
+    {
+      "name": "All fifteen administrative sections fit 360px and use only administrative mobile navigation",
+      "passed": true,
+      "durationMs": 2392
+    },
+    {
+      "name": "The personal center retains its personal bottom menu and all features at 390px and 360px",
+      "passed": true,
+      "durationMs": 560
+    },
+    {
+      "name": "Old admin, personal-center, and login URLs resolve to their independent canonical routes",
+      "passed": true,
+      "durationMs": 502
+    },
+    {
+      "name": "Logging out of the backend leaves the personal session signed in",
+      "passed": true,
+      "durationMs": 961
+    },
+    {
+      "name": "Logging out of the personal center leaves the backend session signed in",
+      "passed": true,
+      "durationMs": 1535
+    },
+    {
+      "name": "The same administrator identity can sign in separately to both portals and log out independently",
+      "passed": true,
+      "durationMs": 1824
+    },
+    {
+      "name": "Administrator account security updates its temporary password inside the backend and revokes the old personal session",
+      "passed": true,
+      "durationMs": 2789
+    },
+    {
+      "name": "No browser exception, personal data request from admin pages, AI charge, or production configuration mutation occurred",
+      "passed": true,
+      "durationMs": 14
+    }
+  ],
+  "errors": [],
+  "adminPagePersonalRequests": [],
+  "forbiddenActions": [],
+  "screenshots": [
+    "docs/screenshots/portal-admin-login.png",
+    "docs/screenshots/portal-admin-login-mobile.png",
+    "docs/screenshots/portal-user-center.png",
+    "docs/screenshots/portal-admin-desktop.png",
+    "docs/screenshots/portal-admin-mobile.png",
+    "docs/screenshots/portal-user-mobile.png"
+  ],
+  "verification": "Production Chromium browser, real forms/API/database sessions; isolated temporary users; no provider mocks or AI/payment calls.",
+  "browserVersion": "156.0.8078.4",
+  "adminCookieFlags": {
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  "passed": true,
+  "fixturesRemoved": true,
+  "configurationUnchanged": true,
+  "completedAt": "2026-10-14T14:52:05.106Z",
+  "release": ".releases/20261014T144931Z-32223",
+  "knownFindings": [
+    {
+      "issue": "HTTPS admin cookie lacks Secure because issuance used HTTP APP_URL",
+      "status": "resolved-in-followup-release",
+      "scope": "Secure-only assertion was explicitly bypassed with TEST_REQUIRE_SECURE_COOKIE=0; all 17 portal behavior checks passed.",
+      "resolvedRelease": ".releases/20261014T145454Z-33605",
+      "verificationReport": "docs/tests/portal-cookie-results.json",
+      "verification": "Six focused checks passed against actual HTTPS browser login and HTTP API login/logout for both portals. Original UI test release and cookie observations above remain unchanged."
+    }
+  ]
+}

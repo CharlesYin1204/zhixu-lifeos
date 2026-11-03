@@ -1,0 +1,80 @@
+{
+  "testedAt": "2026-10-14T13:24:00.896Z",
+  "realCalls": false,
+  "results": [
+    {
+      "name": "Media config exposes all 13 defined scenes, actual model capabilities and exact upload limits",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 10
+    },
+    {
+      "name": "Image upload decodes and re-encodes a real PNG to an owner-bound private WebP",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 82
+    },
+    {
+      "name": "Invalid magic, corrupt images and files over byte limits are rejected",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 547
+    },
+    {
+      "name": "Audio upload inspects decoded duration and normalizes real MP3 to mono 24 kHz WAV",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 444
+    },
+    {
+      "name": "Cross-user read and delete requests do not expose or remove private media",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 5
+    },
+    {
+      "name": "Concurrent uploads respect the per-user storage quota under a database lock",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 86
+    },
+    {
+      "name": "Reserved media credits refund exactly once across concurrent repeated failures",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 62
+    },
+    {
+      "name": "VAD ignores brief noise, detects a voiced segment followed by 700 ms of silence and bounds long speech",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 11
+    },
+    {
+      "name": "Interrupting before a valid reply cancels upstream work and refunds a reserved credit",
+      "scope": "isolated-service-state-machine",
+      "passed": true,
+      "durationMs": 22
+    },
+    {
+      "name": "A synthesis failure after valid text preserves the conversation and does not refund a completed turn",
+      "scope": "isolated-service-state-machine",
+      "passed": true,
+      "durationMs": 11
+    },
+    {
+      "name": "WebSocket upgrade requires an active session and an explicit allowed origin",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 10
+    },
+    {
+      "name": "Deleting an owned attachment removes its private file and makes historical links return missing",
+      "scope": "backend-contract",
+      "passed": true,
+      "durationMs": 13
+    }
+  ],
+  "scope": "Backend functions and ephemeral loopback WebSocket server; Next public routes and browser UI require separate deployment acceptance",
+  "cleanup": "Temporary users, assets, conversations, notes, usage and billing rows removed; production service not started"
+}

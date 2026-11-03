@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "approx_char_count": 225,
+    "has_more": false,
+    "ranges": [
+      {
+        "actual_range": "J21:J21",
+        "cells": [
+          [
+            {
+              "cell_styles": {
+                "background_color": "#FFF7E8",
+                "font_size": 11,
+                "vertical_alignment": "top"
+              },
+              "value": "media-browser-results.json10/10：13场景及用户中心三类入口、360/390px布局和底栏正常、无页面异常；原3场景加media-scenes-results.json10/10后，13场景均有真实样例内容证据，合成素材不等于物理设备验收。"
+            }
+          ]
+        ],
+        "col_indices": [
+          "J"
+        ],
+        "range": "J21:J21",
+        "row_indices": [
+          21
+        ],
+        "truncated": false
+      }
+    ],
+    "returned_cell_count": 1,
+    "revision": 58,
+    "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+  }
+}

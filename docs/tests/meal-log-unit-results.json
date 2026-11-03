@@ -1,0 +1,92 @@
+{
+  "testedAt": "2026-10-14T13:52:34.318Z",
+  "scope": "Isolated meal facts parser and deterministic Markdown renderer; no database or provider calls",
+  "results": [
+    {
+      "name": "Visible foods and cautious advice are parsed without adding personal facts",
+      "passed": true,
+      "durationMs": 2,
+      "evidence": {
+        "emptyFoodListAccepted": true,
+        "stringsTrimmed": true
+      }
+    },
+    {
+      "name": "Malformed JSON, prose, code fences and non-object roots are rejected without echoing the payload",
+      "passed": true,
+      "durationMs": 1
+    },
+    {
+      "name": "Only the three required arrays are accepted; extra diary/time/feeling fields cannot enter the template",
+      "passed": true,
+      "durationMs": 1,
+      "evidence": {
+        "extraFieldsRejected": 7
+      }
+    },
+    {
+      "name": "Array counts and item length limits accept the boundary and reject the next value",
+      "passed": true,
+      "durationMs": 2,
+      "evidence": {
+        "inputCharacters": 12000,
+        "foodItems": 12,
+        "foodLength": 60,
+        "uncertaintyItems": 6,
+        "uncertaintyLength": 180,
+        "suggestionItems": 4,
+        "suggestionLength": 240
+      }
+    },
+    {
+      "name": "Nested values and multiline or control-character strings cannot inject additional record fields",
+      "passed": true,
+      "durationMs": 1
+    },
+    {
+      "name": "Food names cannot carry obvious first-person, meal-time or feeling narratives in Chinese or English",
+      "passed": true,
+      "durationMs": 0
+    },
+    {
+      "name": "Uncertainty and suggestion fields reject personal-experience claims but accept general advice",
+      "passed": true,
+      "durationMs": 0
+    },
+    {
+      "name": "Renderer creates deterministic Markdown with fixed unknown personal fields and no raw model JSON",
+      "passed": true,
+      "durationMs": 1,
+      "evidence": {
+        "unknownFields": "date/time, actual intake, personal feelings",
+        "rawJSONDisplayed": false
+      }
+    },
+    {
+      "name": "Renderer keeps advice separate from facts and escapes Markdown supplied in every model field",
+      "passed": true,
+      "durationMs": 0
+    },
+    {
+      "name": "Renderer validates again instead of trusting caller-created facts objects",
+      "passed": true,
+      "durationMs": 0
+    },
+    {
+      "name": "The isolated contract run makes no network requests",
+      "passed": true,
+      "durationMs": 0,
+      "evidence": {
+        "providerCalls": 0,
+        "temporaryUsers": 0,
+        "productionChanges": 0
+      }
+    }
+  ],
+  "renderedExample": "## 可见食物\n\n- 米饭\n- 西兰花\n- 番茄\n\n## 饮食记录草稿\n\n- 食物：米饭、西兰花、番茄\n- 用餐日期与时间：待补充\n- 实际食用量：待补充\n- 个人感受：待补充\n\n请确认食物名称，并按实际情况补充记录。照片不能确认实际食用量或个人感受。\n\n## 需要确认\n\n- 无法仅凭图片确定实际食用量。\n\n## 一般搭配建议\n\n- 可以搭配适量蛋白质来源。",
+  "completedAt": "2026-10-14T13:52:34.419Z",
+  "summary": {
+    "passed": 11,
+    "failed": 0
+  }
+}

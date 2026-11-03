@@ -1,0 +1,39 @@
+{
+  "testedAt": "2026-10-14T13:18:56.899Z",
+  "results": [
+    {
+      "modelId": "media-whisper",
+      "model": "whisper-1",
+      "baseUrl": "https://api.apilio.ai/v1",
+      "file": "speech-gpt-4o-mini-tts.mp3",
+      "language": "en",
+      "status": 429,
+      "latencyMs": 560,
+      "response": {
+        "error": {
+          "message": "当前分组上游负载已饱和，请稍后再试",
+          "type": "new_api_error",
+          "param": "",
+          "code": "unknown_error"
+        }
+      }
+    },
+    {
+      "modelId": "media-whisper",
+      "model": "whisper-1",
+      "baseUrl": "https://api.apilio.ai/v1",
+      "file": "english-comparison.wav",
+      "language": "en",
+      "status": 429,
+      "latencyMs": 372,
+      "response": {
+        "error": {
+          "message": "当前分组上游负载已饱和，请稍后再试",
+          "type": "new_api_error",
+          "param": "",
+          "code": "unknown_error"
+        }
+      }
+    }
+  ]
+}

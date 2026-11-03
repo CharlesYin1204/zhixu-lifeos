@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "document": {
+      "content": "<fragment mode=\"outline\"><outline><h1 id=\"doxjpfWdncEtu52ojp2S3hQyncV\" seq-marker=\"1.\">文档定位与事实依据</h1><h1 id=\"doxjpqPBKEq2VavgMXoohtqSWDe\" seq-marker=\"2.\">用户问题、产品目标与成功口径</h1><h1 id=\"doxjpgCztCOgXOcLrlhqrG5LcMJ\" seq-marker=\"3.\">一期范围、优先级与外部依赖</h1><h1 id=\"doxjptuwGxcEwj7YOWpvVfQiaTb\" seq-marker=\"4.\">角色与数据权限</h1><h1 id=\"doxjpOY3NW4Nyj9hTNQP127XdDh\" seq-marker=\"5.\">信息架构与界面规范</h1><h1 id=\"doxjpbGWq7ApmYLarIkGQR5gALe\" seq-marker=\"6.\">注册登录与用户中心</h1><h1 id=\"doxjp0rsgcX2gP9v33Xb4zIQIFf\" seq-marker=\"7.\">学习与知识管理</h1><h1 id=\"doxjpt7k0lcmfKH0aXLDnvhLQwb\" seq-marker=\"8.\">生活与效率管理</h1><h1 id=\"doxjpHMrSZHKP7APBtQcMIeKvgf\" seq-marker=\"9.\">真实多 Agent 协作与 AI 助手</h1><h1 id=\"doxjp6jxfXVwU09c02OvAEodtxA\" seq-marker=\"10.\">插件市场、安装与付费权益</h1><h1 id=\"doxjpJnAtlj0fYkLcagVCI4T8Hf\" seq-marker=\"11.\">会员、订单与支付</h1><h1 id=\"doxjpHoxt51OdtIuCc7IswXmEVh\" seq-marker=\"12.\">管理后台</h1><h1 id=\"doxjpbComDbIMkUgMlzugA4lvUd\" seq-marker=\"13.\">Android APK 与移动交付</h1><h1 id=\"doxjp5SpznqOWTE4x1s5EGsi7jf\" seq-marker=\"14.\">核心数据与状态契约</h1><h1 id=\"doxjp4kdFTsn5dh4qtOQnbQqH1c\" seq-marker=\"15.\">API 概要与错误约定</h1><h1 id=\"doxjpt36Ubd3oKArv88Vi2h6pVg\" seq-marker=\"16.\">安全、可靠性与运维要求</h1><h1 id=\"doxjpfRWHxX0N3L9N6wfJd3QKDd\" seq-marker=\"17.\">验收方法与发布门槛</h1><h1 id=\"doxjpgDv8H2Vaue12o7m5izTKQb\" seq-marker=\"18.\">开放项与后续路线</h1></outline></fragment>",
+      "document_id": "[REDACTED_LARK_RESOURCE_TOKEN]",
+      "revision_id": 28
+    }
+  },
+  "_notice": {
+    "update": {
+      "command": "lark-cli update",
+      "current": "1.0.97",
+      "latest": "1.0.98",
+      "message": "lark-cli 1.0.98 available, current 1.0.97, run: lark-cli update"
+    }
+  }
+}

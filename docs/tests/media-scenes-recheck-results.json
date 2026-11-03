@@ -1,0 +1,198 @@
+{
+  "testedAt": "2026-10-14T13:46:35.429Z",
+  "base": "https://154.40.47.111:3063",
+  "transport": "HTTPS and WSS; cascade ASR → chat → TTS",
+  "results": [
+    {
+      "scene": "speech-practice",
+      "mode": "voice",
+      "startedAt": "2026-10-14T13:46:36.401Z",
+      "rounds": [
+        {
+          "round": 1,
+          "inputText": "Please give feedback on my short speech. Reading every day helps me learn new words. I read for ten minutes after breakfast. I encourage everyone to try it.",
+          "userTranscript": "Please give feedback on my short speech. Reading every day helps me learn new words. I read for ten minutes after breakfast. I encourage everyone to try it.",
+          "assistantTranscript": "你用简洁的句子表达了阅读的好处，结构清晰，非常好！可以考虑增加一些例子，比如你最近学到的一个新词。练习时可以尝试在下次分享中鼓励听众参与互动，问他们有何阅读习惯。你平时读什么书呢？",
+          "audioBytes": 1003200,
+          "audioNonzero": true,
+          "metrics": {
+            "asrMs": 1407,
+            "chatMs": 1766,
+            "firstAudioMs": 7134,
+            "ttsMs": 4232,
+            "totalMs": 7468
+          },
+          "savedMessageCount": 2,
+          "creditBefore": 30,
+          "creditAfter": 29
+        }
+      ],
+      "historySaved": true,
+      "passed": true,
+      "durationMs": 8017
+    },
+    {
+      "scene": "essay-review",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:46:44.419Z",
+      "reply": "Here are the corrections for the grammar mistakes in the essay:\n\n1. **Mistake:** \"Yesterday I go to the library.\"  \n   **Correction:** \"Yesterday I went to the library.\"\n\n2. **Mistake:** \"Reading books make me happy.\"  \n   **Correction:** \"Reading books makes me happy.\"\n\n### Structure Suggestion:\nConsider organizing your essay into three distinct sections: **1) Introduction—Your reading habit; 2) Personal experiences—Specific books and feelings; 3) Goals—Future reading plans.** This will create a clearer flow and enhance the overall readability of your essay.",
+      "sourceCount": 1,
+      "historySaved": true,
+      "sourceAvailable": true,
+      "creditBefore": 29,
+      "creditAfter": 28,
+      "passed": true,
+      "durationMs": 4222
+    },
+    {
+      "scene": "notes-organize",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:46:48.641Z",
+      "reply": "### Photosynthesis - Revision Notes\n\n**1. Definition**  \n- Plants use sunlight to make glucose.\n\n**2. Chlorophyll**  \n- Absorbs light in chloroplasts.\n\n**3. Inputs**  \n- Carbon dioxide  \n- Water  \n- Light\n\n**4. Outputs**  \n- Glucose  \n- Oxygen  \n\n**5. Equation**  \n\\[ 6 \\, CO_2 + 6 \\, H_2O \\rightarrow C_6H_{12}O_6 + 6 \\, O_2 \\]\n\n**6. Additional Information**  \n- Oxygen is released into the air.\n\n---\n\n**Revision Question:**  \nWhat are the three main inputs required for photosynthesis?",
+      "sourceCount": 1,
+      "historySaved": true,
+      "sourceAvailable": true,
+      "creditBefore": 28,
+      "creditAfter": 27,
+      "passed": true,
+      "durationMs": 3306
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Short synthetic English speech; no microphone, camera, mobile device or human listening evaluation in this script.",
+    "Essay, notes and chart are clean generated images, not handwriting or difficult real-world capture.",
+    "Object and meal images are AI-generated photographic samples visually inspected before use; they do not establish accuracy across real-life photographs.",
+    "Semantic checks cover specified visible facts and representative replies, not exhaustive model quality."
+  ],
+  "fixtures": [
+    {
+      "file": "docs/tests/media-scene-fixtures/essay.png",
+      "description": "My Reading Habit",
+      "provenance": "Original synthetic text rendered with sharp from SVG.",
+      "bytes": 46074,
+      "sha256": "fdddab31cd8fd9719e45ada0948eb92a07113324c29153ff2a968f9a4ec65726"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/notes.png",
+      "description": "Photosynthesis - revision notes",
+      "provenance": "Original synthetic text rendered with sharp from SVG.",
+      "bytes": 65048,
+      "sha256": "ec216179e8846bd8426d7dc2c37b1bf81900f0cf863d7c371c929197bfca151f"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/chart.png",
+      "description": "Weekly daily reading minutes: 20, 35, 30, 45; Week 3 decreases.",
+      "provenance": "Original SVG chart rendered with sharp; all values predetermined.",
+      "bytes": 48717,
+      "sha256": "551b4fc01ec813f641683bfcab101d436ebc3f50cbfbc10e2e387abacd51b458"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/object-scissors.png",
+      "description": "One open pair of scissors, blue plastic handles and steel blades.",
+      "provenance": "Generated with built-in imagegen for this test; visually inspected by operator.",
+      "bytes": 2040140,
+      "sha256": "a911614fdd8d95f1937166ef3a9ad78f42a87c7711ebf652b1d7fb045a8c9ae0"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/meal-rice-broccoli-tomato.png",
+      "description": "White plate with white rice, broccoli and tomato wedges.",
+      "provenance": "Generated with built-in imagegen for this test; visually inspected by operator.",
+      "bytes": 2285582,
+      "sha256": "21a10dce90b11f4f3618f56272542bf092b87b62703981092902ce769552412f"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/speech-practice-1.wav",
+      "description": "Please give feedback on my short speech. Reading every day helps me learn new words. I read for ten minutes after breakfast. I encourage everyone to try it.",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 553080,
+      "sha256": "027af19df098eb200d1cc5123ad23dd59a8a043a91031b0bd2176caa8fddbc80"
+    }
+  ],
+  "initialCredits": 30,
+  "availableScenes": [
+    "english-free",
+    "travel-talk",
+    "interview",
+    "study-qa",
+    "speech-practice",
+    "homework",
+    "essay-review",
+    "notes-organize",
+    "chart-explain",
+    "object-identify",
+    "meal-log",
+    "class-notes",
+    "spoken-review"
+  ],
+  "finalCredits": 27,
+  "operations": [
+    {
+      "kind": "image",
+      "status": "completed",
+      "count": 2
+    },
+    {
+      "kind": "voice",
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "usage": [
+    {
+      "kind": "media_speech",
+      "status": "success",
+      "calls": 1,
+      "reportedTokens": null
+    },
+    {
+      "kind": "media_vision",
+      "status": "success",
+      "calls": 2,
+      "reportedTokens": "74163"
+    },
+    {
+      "kind": "media_voice_asr",
+      "status": "success",
+      "calls": 1,
+      "reportedTokens": "151"
+    },
+    {
+      "kind": "media_voice_chat",
+      "status": "success",
+      "calls": 1,
+      "reportedTokens": "228"
+    }
+  ],
+  "billing": {
+    "successfulOperations": 3,
+    "creditsDeducted": 3,
+    "balanced": true
+  },
+  "cleanup": {
+    "temporaryUsers": 1,
+    "uploadedAssets": 2,
+    "remaining": {
+      "media_assets": 0,
+      "media_operations": 0,
+      "sessions": 0,
+      "records": 0,
+      "conversations": 0,
+      "runs": 0,
+      "orders": 0,
+      "installs": 0,
+      "usage_logs": 0,
+      "audit": 0,
+      "users": 0,
+      "rateLimits": 0,
+      "assetFiles": 0
+    },
+    "passed": true
+  },
+  "completedAt": "2026-10-14T13:46:52.113Z",
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "expectedScenes": 3
+  }
+}

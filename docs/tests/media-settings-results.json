@@ -1,0 +1,114 @@
+{
+  "testedAt": "2026-10-14T14:47:18.232Z",
+  "scope": "Actual Next route handler and database/service logic using isolated MySQL tables; provider transport captured, no browser or real AI inference",
+  "results": [
+    {
+      "name": "Ordinary users cannot change media settings and rejected writes preserve configuration",
+      "requirements": [
+        "F-084",
+        "F-161"
+      ],
+      "passed": true,
+      "ms": 15,
+      "evidence": {
+        "httpStatus": 401,
+        "unchanged": true
+      }
+    },
+    {
+      "name": "Invalid switches, voices, missing/disabled models and mismatched capabilities are rejected atomically",
+      "requirements": [
+        "F-161",
+        "F-162",
+        "F-163"
+      ],
+      "passed": true,
+      "ms": 200,
+      "evidence": {
+        "invalidWrites": 6,
+        "unchanged": true
+      }
+    },
+    {
+      "name": "Each capability can be disabled and enabled independently through the actual settings handler",
+      "requirements": [
+        "F-162"
+      ],
+      "passed": true,
+      "ms": 418,
+      "evidence": {
+        "independentToggles": 3,
+        "readback": true
+      }
+    },
+    {
+      "name": "Disabled image, recording and already connected voice turns stop before provider requests or charging",
+      "requirements": [
+        "F-162"
+      ],
+      "passed": true,
+      "ms": 97,
+      "evidence": {
+        "providerCalls": 0,
+        "reservations": 0,
+        "creditsUnchanged": true
+      }
+    },
+    {
+      "name": "Changing all model bindings and voice affects the next actual service invocation without a process restart",
+      "requirements": [
+        "F-161",
+        "F-163"
+      ],
+      "passed": true,
+      "ms": 296,
+      "evidence": {
+        "modelBindingChanges": 4,
+        "voices": [
+          "alloy",
+          "nova"
+        ],
+        "capturedProviderCalls": 8,
+        "transport": "mocked; no paid AI calls"
+      }
+    },
+    {
+      "name": "Disabled bound model makes the corresponding public capabilities unavailable",
+      "requirements": [
+        "F-104",
+        "F-161"
+      ],
+      "passed": true,
+      "ms": 79,
+      "evidence": {
+        "providerCallsWhileDisabled": 0
+      }
+    },
+    {
+      "name": "Replacing the default model clears the previous default and the next ordinary chat uses the replacement",
+      "requirements": [
+        "F-105"
+      ],
+      "passed": true,
+      "ms": 130,
+      "evidence": {
+        "uniqueDefault": true,
+        "transport": "mocked provider"
+      }
+    },
+    {
+      "name": "Site settings persist and appear in the public bootstrap without replacing media or payment configuration",
+      "requirements": [
+        "F-114"
+      ],
+      "passed": true,
+      "ms": 64,
+      "evidence": {
+        "fieldsSaved": 4,
+        "unrelatedSettingsPreserved": true
+      }
+    }
+  ],
+  "passed": 8,
+  "cleanup": "All isolated tables removed; production configuration and accounts unchanged"
+}

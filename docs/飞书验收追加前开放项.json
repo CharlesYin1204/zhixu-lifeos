@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "document": {
+      "content": "<fragment mode=\"section\" requested-start=\"doxjpgDv8H2Vaue12o7m5izTKQb\"><h1 id=\"doxjpgDv8H2Vaue12o7m5izTKQb\" seq=\"auto\" seq-marker=\"18.\">开放项与后续路线</h1><p id=\"doxjpGuzTNLHgVCGNpbtOBTYQ3c\">支付商户与结算渠道尚需商户资料；未提供前仅能完成渠道接口与配置入口，不能宣称真实收款已验收。最终套餐与插件价格由管理员决定，预设价格是可编辑产品数据。</p><p id=\"doxjpozMa70UwTH4Laj4kejaiOe\">移动端发布渠道、正式签名保管方式、域名与 TLS、用户协议和数据保留规则需要在正式商业运营前确认。当前 APK 属可下载安装的 WebView 容器交付，应用商店上架另行实施。</p><p id=\"doxjpYWzQEEDkaOMaEm24DIxrqf\">后续优先级按真实反馈排序：附件与向量知识检索、可执行AI工具、通知与日历同步、协作共享、插件开发者SDK、退款对账、离线原生移动体验、后台温度/输出上限参数、自动续费。功能清单中P2项不计入一期已完成率。</p><p id=\"doxjpdZaFOYSXYO9NCs4uXR9lXe\">实现状态以配套《产品功能表》和最终部署验收报告为准。本文记录目标行为；运行证据与已知限制应在交付时同步更新。</p></fragment>",
+      "document_id": "[REDACTED_LARK_RESOURCE_TOKEN]",
+      "revision_id": 28
+    }
+  },
+  "_notice": {
+    "update": {
+      "command": "lark-cli update",
+      "current": "1.0.97",
+      "latest": "1.0.98",
+      "message": "lark-cli 1.0.98 available, current 1.0.97, run: lark-cli update"
+    }
+  }
+}

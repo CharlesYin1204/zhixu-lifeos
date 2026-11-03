@@ -1,0 +1,24 @@
+{
+  "appName": "知序 LifeOS",
+  "versionName": "1.1.2",
+  "versionCode": 5,
+  "serverUrl": "https://xuexi.yinchao1204.vip/",
+  "packageId": "com.zhixu.lifeos",
+  "buildStatus": "ready",
+  "status": "ready",
+  "builtAt": "2026-10-14T15:39:38.706Z",
+  "downloadUrl": "/api/download?file=zhixu-lifeos-1.1.2-5.apk",
+  "latestDownloadUrl": "/api/download?file=zhixu-lifeos.apk",
+  "filename": "zhixu-lifeos-1.1.2-5.apk",
+  "size": 33245,
+  "sha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+  "certificateSha256": "fa8b1161063c978964b42700a09e8371905b84b28557fbfb4efef7fce2db0420",
+  "minSdkVersion": 23,
+  "targetSdkVersion": 28,
+  "signed": true,
+  "signatureSchemes": [
+    "v1",
+    "v2",
+    "v3"
+  ]
+}

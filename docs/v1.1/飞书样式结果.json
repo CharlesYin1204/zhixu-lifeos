@@ -1,0 +1,217 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "failed": 0,
+    "results": [
+      {
+        "data": {
+          "updated_cells_count": 220
+        },
+        "index": 0,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 10
+        },
+        "index": 1,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 105
+        },
+        "index": 2,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 42
+        },
+        "index": 3,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 21
+        },
+        "index": 4,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 890
+        },
+        "index": 5,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 10
+        },
+        "index": 6,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 440
+        },
+        "index": 7,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 176
+        },
+        "index": 8,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 88
+        },
+        "index": 9,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 360
+        },
+        "index": 10,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 10
+        },
+        "index": 11,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 175
+        },
+        "index": 12,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 70
+        },
+        "index": 13,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 35
+        },
+        "index": 14,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 230
+        },
+        "index": 15,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 10
+        },
+        "index": 16,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 110
+        },
+        "index": 17,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 44
+        },
+        "index": 18,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 22
+        },
+        "index": 19,
+        "success": true,
+        "tool_name": "resize_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 70
+        },
+        "index": 20,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 10
+        },
+        "index": 21,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 30
+        },
+        "index": 22,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 12
+        },
+        "index": 23,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_columns_count": 0,
+          "updated_rows_count": 6
+        },
+        "index": 24,
+        "success": true,
+        "tool_name": "resize_range"
+      }
+    ],
+    "revision": 57,
+    "succeeded": 25,
+    "total": 25
+  }
+}

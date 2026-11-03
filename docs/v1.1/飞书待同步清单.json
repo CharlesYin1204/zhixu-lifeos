@@ -1,0 +1,717 @@
+{
+  "status": "published_and_full_readback_verified",
+  "previousFeatureCount": 137,
+  "draftFeatureCount": 172,
+  "newRows": [
+    [
+      "F-138",
+      "前台",
+      "安全入口",
+      "HTTPS媒体入口",
+      "P0",
+      "提供HTTPS3063并保留HTTP3060",
+      "证书可信、安全上下文；HTTP页引导进入HTTPS",
+      "证书与Nginx",
+      "HTTPS及媒体浏览器已验证",
+      "https-readiness.json11/11可信同IP证书/安全上下文，media-browser-results.json10/10及media-voice-browser-results.json生产HTTPS采集与WSS真实语音轮次通过；输入为合成WAV，非物理设备。"
+    ],
+    [
+      "F-139",
+      "前台",
+      "多模态入口",
+      "十三场景导航",
+      "P1",
+      "用户中心完整目录可找到语音/图片/录音",
+      "13场景可选，桌面手机有完整入口和状态",
+      "媒体模型、HTTPS与当前用户权限",
+      "已实现并验证目录与导航",
+      "media-browser-results.json10/10：13场景及用户中心三类入口、360/390px布局和底栏正常、无页面异常；原3场景加media-scenes-results.json10/10后，13场景均有真实样例内容证据，合成素材不等于物理设备验收。"
+    ],
+    [
+      "F-167",
+      "前台",
+      "Android",
+      "APK1.1.0 HTTPS发布",
+      "P0",
+      "发布versionName1.1.0/versionCode3，使用HTTPS3063",
+      "同包名签名、后台构建真实完成、新包元数据与下载哈希一致",
+      "Android工具链",
+      "APK1.1.1构建发布已验证；真机未测",
+      "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    ],
+    [
+      "F-140",
+      "用户中心",
+      "多模态场景",
+      "英语自由对话",
+      "P1",
+      "短轮次英语对话、适度纠正并追问",
+      "english-free场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实英语语音链路已验证；物理设备未测",
+      "media-live-voice-results.json11项通过含英语两轮转写/PCM；media-voice-browser-results.json真实浏览器合成WAV→ASR→LLM→TTS实际非零PCM播放，历史2条，额度20→19，首音频3435ms/总3556ms；非真实声学设备。"
+    ],
+    [
+      "F-141",
+      "用户中心",
+      "多模态场景",
+      "旅行情景口语",
+      "P1",
+      "机场酒店点餐问路的角色对话",
+      "travel-talk场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，travel-talk真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-142",
+      "用户中心",
+      "多模态场景",
+      "面试模拟",
+      "P1",
+      "按岗位语言逐题提问和具体反馈",
+      "interview场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，interview真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-143",
+      "用户中心",
+      "多模态场景",
+      "学习问答",
+      "P1",
+      "口述疑问获得解释、例子和理解问题",
+      "study-qa场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，study-qa真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-144",
+      "用户中心",
+      "多模态场景",
+      "表达与演讲",
+      "P1",
+      "按转写反馈结构措辞，不冒称发音评测",
+      "speech-practice场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，speech-practice真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。 英文输入得到相关中文反馈，未承诺同语种回复，也未将转写作为发音/语调评测。"
+    ],
+    [
+      "F-145",
+      "用户中心",
+      "多模态场景",
+      "拍题讲解",
+      "P1",
+      "识别题意、分步解题并标记看不清处",
+      "homework场景真实处理并保存本人结果；无法处理时明确错误；题解Markdown与KaTeX公式可读显示",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实拍题/追问与公式界面已验证",
+      "media-live-results.json前5项通过含自制2x+5=17图片真实解答x=6与历史图片追问/来源；该旧报告后段ASR429失败保留。media-browser-results.json验证保存的实际数学回答Markdown/KaTeX可读显示、360/390px不溢出。"
+    ],
+    [
+      "F-146",
+      "用户中心",
+      "多模态场景",
+      "作文与写作批改",
+      "P1",
+      "引用可读原文给建议，不编造原句",
+      "essay-review场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，essay-review真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-147",
+      "用户中心",
+      "多模态场景",
+      "笔记整理",
+      "P1",
+      "纸质笔记或板书整理为提纲",
+      "notes-organize场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，notes-organize真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-148",
+      "用户中心",
+      "多模态场景",
+      "图表解读",
+      "P1",
+      "准确解释轴图例数据与推断边界",
+      "chart-explain场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，chart-explain真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-149",
+      "用户中心",
+      "多模态场景",
+      "生活识物",
+      "P1",
+      "描述可见特征用途和不确定性",
+      "object-identify场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，object-identify真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-150",
+      "用户中心",
+      "多模态场景",
+      "饮食记录助手",
+      "P1",
+      "只按可见食物及用户明确提供信息辅助记录，未知营养标估计",
+      "仅将可见/用户明确提供的事实写入记录；结构化抽取后由固定模板组织，未知时段/数量/感受标待补充；不将建议或推断写作真实经历",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "meal-log真实最终样例1/1：只列broccoli/tomatoes/rice，时段/实际食用量/感受均待补充，不展示raw JSON，历史和原图来源保留，30→29；unit11/11、contract4/4受控验证结构化校验/模板/无效输出退款。初次与prompt-only失败保留，不能保证所有输入永不出错。"
+    ],
+    [
+      "F-151",
+      "用户中心",
+      "多模态场景",
+      "课堂录音转写",
+      "P1",
+      "确认音频后忠实转写保存知识笔记",
+      "class-notes场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实录音转写及笔记接口已验证",
+      "media-live-voice-results.json通过公网真实上传音频→gpt-4o-transcribe转写→知识笔记及私有音频来源；media-browser-results.json录制暂停/继续/试听为测试WAV输入，未测物理课堂录音。"
+    ],
+    [
+      "F-152",
+      "用户中心",
+      "多模态场景",
+      "口语录音转写",
+      "P1",
+      "保留原语言和原话便于复盘",
+      "spoken-review场景真实处理并保存本人结果；无法处理时明确错误",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实场景样例已验证；物理设备未测",
+      "media-scenes-results.json最终10/10，spoken-review真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    ],
+    [
+      "F-153",
+      "用户中心",
+      "连续语音",
+      "自动停顿与会话控制",
+      "P0",
+      "同源WSS、VAD自动停顿→ASR→LLM→TTS，静音/打断/结束",
+      "连续多轮真实回复；打断不再播旧音频；结束释放资源",
+      "媒体模型、HTTPS与当前用户权限",
+      "连续语音与浏览器控制已验证",
+      "公网WSS真实两轮非零PCM、第三轮打断退款、结束持久化通过；完整浏览器单轮通过实际AudioWorklet采集及音频播放。10项UI含静音/打断/离开释放采集；使用合成音频，无硬件验收。"
+    ],
+    [
+      "F-154",
+      "用户中心",
+      "连续语音",
+      "会话与单句上限",
+      "P0",
+      "会话20分钟、单句20秒，显示状态与上限原因",
+      "服务端和前端限制有效，不能无限占用",
+      "媒体模型、HTTPS与当前用户权限",
+      "已实现；单句限制隔离验证，完整会话待专项",
+      "media-backend-results.json12/12含VAD短噪声忽略、700ms静音断句和长语音边界；20分钟会话上限未提供独立生产计时报告。"
+    ],
+    [
+      "F-155",
+      "用户中心",
+      "录音",
+      "录制暂停试听确认",
+      "P0",
+      "MediaRecorder开始/暂停/继续/停止/试听，确认后上传",
+      "180秒/15MB内；取消不上传；转写成功有本人知识笔记",
+      "媒体模型、HTTPS与当前用户权限",
+      "录音浏览器与真实转写接口已验证",
+      "media-browser-results.json10/10包含MediaRecorder暂停/继续、试听、上传前删除；公网真实转写入知识笔记由media-live-voice-results.json确认。录音输入为合成/静音测试样本，不是真实麦克风。"
+    ],
+    [
+      "F-156",
+      "用户中心",
+      "媒体资产",
+      "私有附件列表与删除",
+      "P0",
+      "可折叠我的附件库，分页查看本人资产、容量及删除",
+      "100MB总额；删除释放容量且历史附件不可重看；文件须鉴权",
+      "媒体模型、HTTPS与当前用户权限",
+      "附件删除历史状态已全面验证；资产分页UI未专项",
+      "media-attachments后台4/API4/浏览器5项：本人预览/链接有效，删除当前图片即时切为已删除、来源不可点击，手机重载不请求旧图片；录音删除移除笔记下载URL但保留正文。100MB配额隔离证据保留，完整附件库分页UI未独立覆盖。"
+    ],
+    [
+      "F-157",
+      "用户中心",
+      "图片",
+      "上传拍照预览与限制",
+      "P0",
+      "相机或选文件、预览/移除/补充问题",
+      "1–4图、每8MB/1600万像素、真实JPEG/PNG/WebP；伪格式拒绝",
+      "媒体模型、HTTPS与当前用户权限",
+      "已部署；图片选取上传预览与限制已验证",
+      "浏览器测试真实图片文件选择、预览和删除；backend12项覆盖解码重编码、魔数/损坏/字节超限拒绝。拍摄真实硬件与每个像素/多图边界未逐项实测。"
+    ],
+    [
+      "F-158",
+      "用户中心",
+      "媒体历史",
+      "文字历史与图像追问",
+      "P1",
+      "回看本人语音/图片会话并继续同场景图像追问",
+      "重载保持、不同场景不混用、跨用户不可读",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实媒体历史及删除占位已验证",
+      "既有真实语音历史和图片追问通过；media-attachments-browser5项验证删除当前/历史图片后预览和来源显示已删除且正文不丢失，手机刷新无旧图请求。新增删除测试零provider调用。"
+    ],
+    [
+      "F-159",
+      "用户中心",
+      "媒体额度",
+      "扣费失败退款",
+      "P0",
+      "语音成功轮/图片分析/录音转写各1点",
+      "不足拒绝；失败或取消退款幂等；成功状态与持久化事务一致",
+      "媒体模型、HTTPS与当前用户权限",
+      "真实扣费及取消退款已验证",
+      "公网voice报告3次成功操作扣3点、打断一次退款且历史保持；浏览器完整成功轮20→19。backend验证退款幂等，以及文字已完成后TTS失败保留结果不退款。"
+    ],
+    [
+      "F-160",
+      "用户中心",
+      "AI来源",
+      "资料与附件来源展示",
+      "P1",
+      "显示本次提供给AI的本人记录及图片/音频附件",
+      "区分输入资料与逐句引用；删除资产不展示可读伪链接",
+      "媒体模型、HTTPS与当前用户权限",
+      "本人来源定位与删除状态已浏览器/API验证",
+      "restored-ui5项来源链接定位准确本人记录、已删除来源保留标题无可点击链接；media-attachments后台4/API4/浏览器5项涵盖图片和音频、bootstrap/records/export去除失效URL且保留转写正文。输入资料展示不冒称逐句引用。"
+    ],
+    [
+      "F-164",
+      "用户中心",
+      "订单",
+      "requestId创建幂等",
+      "P0",
+      "同一提交重试返回原订单与支付信息",
+      "并发只一单；改商品/渠道409；保留价格快照与已付/取消状态",
+      "数据库与支付配置",
+      "订单重试幂等库层与生产UI已验证",
+      "order-idempotency14项隔离表并发/快照/409通过；restored-ui5项真实浏览器在服务器已创建订单后丢弃响应，再次点击复用同requestId，两提交仅1笔pending/manual订单，paidOrders=0，无实际收款。"
+    ],
+    [
+      "F-165",
+      "用户中心",
+      "记录完整性",
+      "500条游标完整加载",
+      "P0",
+      "自动按页读取所有本人记录，全库聚合统计",
+      "超过1500条不截断、不重复遗漏；统计不依赖已载页",
+      "数据库",
+      "1505条完整自动分页已API/浏览器验证",
+      "restored-contract API及restored-ui生产浏览器共同验证500/500/500/5四页完整加载1505条、不重复漏失，最旧记录可搜索和编辑；全库统计与cursor归属隔离仍有原API证据。"
+    ],
+    [
+      "F-161",
+      "管理员后台",
+      "媒体设置",
+      "四类媒体模型选择",
+      "P0",
+      "配置chat/vision/transcription/speech模型",
+      "启用及用途匹配；真实测试反馈；Key脱敏",
+      "媒体模型、HTTPS与当前用户权限",
+      "模型绑定/权限受控验证；原显示UI已验",
+      "media-settings8项：隔离MySQL+实际route/service，普通用户403、无效模型/用途拒绝，4模型绑定改变后下一次服务请求使用新值。8个上游请求被mock捕获，无浏览器或实际provider推理；原媒体后台绑定显示已浏览器验收。"
+    ],
+    [
+      "F-162",
+      "管理员后台",
+      "媒体设置",
+      "语音图片录音开关",
+      "P0",
+      "分别开关三种能力",
+      "前台提示与服务端拒绝一致，普通用户不能修改",
+      "媒体模型、HTTPS与当前用户权限",
+      "三种开关保存/执行拦截受控验证",
+      "media-settings8项：三个能力独立开关保存回读；关闭图像/录音/已连接语音时，在模型请求和额度预留前阻止，providerCalls=0且余额不变。隔离表及actual handler/service验证，不是实际浏览器点击或真实模型调用。"
+    ],
+    [
+      "F-163",
+      "管理员后台",
+      "媒体设置",
+      "合成音色选择",
+      "P1",
+      "选择支持的TTS音色",
+      "有效枚举校验，下一轮按配置生成真实音频",
+      "媒体模型、HTTPS与当前用户权限",
+      "音色配置与下一请求受控验证",
+      "media-settings8项验证无效音色原子拒绝，alloy→nova保存后下一次实际合成服务调用携带新voice；provider传输mock捕获，不宣称真人听感或两音色真实生成对比。"
+    ],
+    [
+      "F-166",
+      "验收与依赖",
+      "记录安全",
+      "meta校验与旧值保底",
+      "P0",
+      "checkedDates/tags/文本字段类型校验，旧异常值安全读取",
+      "非法新输入拒绝；旧异常值不导致整页崩溃",
+      "数据库",
+      "已部署；异常meta读写API已验证",
+      "restored-contract-results.json：6条旧异常meta安全读取，8类新非法输入拒绝，合法checkedDates去重。"
+    ],
+    [
+      "F-168",
+      "验收与依赖",
+      "Android",
+      "麦克风相机与恢复",
+      "P0",
+      "用户触发运行时权限、同源授权、高清捕获FileProvider和状态恢复",
+      "拒绝/取消可恢复；外站无权限；真实设备录音拍照回传",
+      "Android真机",
+      "权限/下载边界与编译已验证；真机待验收",
+      "1.1.1(4)清单/DEX检查权限/私有provider/恢复；android-download-boundaries.json4项通过嵌入blob脚本和源码检查，含2MB分块、撤销错误、同源Cookie下载/不跟随跳转、SAF。非Android设备执行。"
+    ],
+    [
+      "F-169",
+      "验收与依赖",
+      "语音架构",
+      "原生Realtime边界",
+      "P0",
+      "明确串联连续语音实现及供应商原生状态",
+      "原生握手后失败不标成功；ASR/LLM/TTS链路独立验收",
+      "供应商能力",
+      "自有串联语音已验证；原生Realtime不可用",
+      "原生Realtime探测握手后account_deactivated，无可用转写/音频。当前ASR=gpt-4o-transcribe，chat/vision=gpt-4o-mini，TTS=gpt-4o-mini-tts；真实公网WSS和完整浏览器串联语音通过，不能宣称原生Realtime成功。"
+    ],
+    [
+      "F-170",
+      "验收与依赖",
+      "媒体安全",
+      "资产隔离配额与请求来源",
+      "P0",
+      "owner校验、私有目录、真实格式/容量限制、WS来源会话验证",
+      "跨用户/伪格式/超限/非授权Origin拒绝，不泄露Key",
+      "媒体服务与数据库",
+      "后端与生产媒体边界已验证",
+      "backend12项隔离验证格式/配额/退款/VAD/WS会话；公网voice11项补充匿名/Origin/伪文件拒绝、跨用户私有资产隔离、同用户第二连接拒绝、删除与退款。未作全站渗透测试。"
+    ],
+    [
+      "F-171",
+      "验收与依赖",
+      "媒体界面",
+      "浏览器采集和异常",
+      "P0",
+      "桌面手机权限允许/拒绝，录音和拍照，网络/模型错误恢复",
+      "无全局页面错误；设备测试与合成fixture分别记录",
+      "浏览器和真实设备",
+      "浏览器媒体10项及真实合成音频轮已验证",
+      "Chromium156实际getUserMedia/MediaRecorder/AudioWorklet/WSS，10项UI无异常，360/390px正常；完整语音轮已播放非零PCM。输入是虚拟麦克风合成WAV，不是物理硬件或人工听感验收。"
+    ],
+    [
+      "F-172",
+      "验收与依赖",
+      "媒体集成",
+      "真实媒体端到端",
+      "P0",
+      "真实语音多轮、图片问题、转写入知识库及后台配置",
+      "平台接口与UI获得真实供应商内容/音频并持久化，额度正确",
+      "HTTPS与模型",
+      "13场景均有真实样例证据；设备未测",
+      "原英语/拍题/课堂录音3场景，加media-scenes-results.json最终10/10，共13场景真实样例覆盖。补充测试累计6语音轮、9图像调用、1录音转写，16成功操作扣16点；初始harness和餐食质量失败保留。合成/生成输入不等于自然设备、全量准确率或人工听感。"
+    ]
+  ],
+  "changedExistingRows": [
+    {
+      "id": "F-061",
+      "before": [
+        "F-061",
+        "用户中心",
+        "AI 助手",
+        "发送问题",
+        "P0",
+        "调用已启用模型回复",
+        "真实模型调用成功",
+        "模型服务配置",
+        "已实现并验证",
+        "api-results.json真实助手返回并保留本人历史且跨用户不可见；ui-flow-results.json实际浏览器获得135字模型回复，刷新后历史恢复，截图desktop-ai-real.png。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+      ],
+      "after": [
+        "F-061",
+        "用户中心",
+        "AI 助手",
+        "发送问题",
+        "P0",
+        "真实助手回复并展示本次提供给AI的本人资料列表",
+        "真实调用；资料仅含本人记录；不冒称逐条实际引用",
+        "模型服务配置",
+        "真实助手及来源导航已验证",
+        "既有真实模型/会话与隔离证据保留；restored-contract14项验证本人来源及持久化，涉及模型传输受控；restored-ui5项生产浏览器点击来源打开准确本人记录，已删除来源保留标题且不可点击。该来源导航测试不产生AI调用。"
+      ]
+    },
+    {
+      "id": "F-102",
+      "before": [
+        "F-102",
+        "管理员后台",
+        "模型管理",
+        "模型新增",
+        "P0",
+        "配置供应商地址名称模型 ID",
+        "保存后列表可见",
+        "模型服务配置",
+        "已实现，未单独专项实测",
+        "静态确认 components/LifeOS.jsx 的 Admin / AdminEditModal / AdminPayment / AdminAPK / AdminSiteSettings 与 app/api/app/route.js 对应实现已包含「模型新增」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+      ],
+      "after": [
+        "F-102",
+        "管理员后台",
+        "模型管理",
+        "模型新增",
+        "P0",
+        "配置地址名称模型ID及temperature/maxTokens",
+        "温度0–2；显式输出128–32768；下一次调用生效且不暗增预算",
+        "模型服务配置",
+        "模型表单及参数库/API已验证",
+        "admin-contract17项：真实UI拒绝空Key、创建临时模型并加密存储、重开不泄密；restored-contract14项验证temperature/maxTokens边界/清空与受控参数透传。没有新增真实模型连通调用或参数表单逐值专项。"
+      ]
+    },
+    {
+      "id": "F-093",
+      "before": [
+        "F-093",
+        "管理员后台",
+        "插件管理",
+        "资料编辑",
+        "P0",
+        "维护名称简介分类版本",
+        "前台更新一致",
+        "无外部依赖",
+        "已实现并验证",
+        "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+      ],
+      "after": [
+        "F-093",
+        "管理员后台",
+        "插件管理",
+        "资料编辑",
+        "P0",
+        "维护名称简介分类版本及sortOrder",
+        "排序整数-100000至100000；前台升序一致",
+        "无外部依赖",
+        "已部署；插件排序API已验证",
+        "restored-contract-results.json：sortOrder写入SQL且目录排序一致，-90/10/50顺序正确，3个非法值拒绝；原版本/价格UI验收保留。"
+      ]
+    },
+    {
+      "id": "F-095",
+      "before": [
+        "F-095",
+        "管理员后台",
+        "插件管理",
+        "上下架",
+        "P0",
+        "控制新安装与购买可见性",
+        "下架不产生新的购买订单",
+        "无外部依赖",
+        "已实现，未单独专项实测",
+        "静态确认 components/LifeOS.jsx 的 Admin / AdminEditModal / AdminPayment / AdminAPK / AdminSiteSettings 与 app/api/app/route.js 对应实现已包含「上下架」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+      ],
+      "after": [
+        "F-095",
+        "管理员后台",
+        "插件管理",
+        "上下架",
+        "P0",
+        "listed控制上架销售；enabled独立控制安全停用",
+        "下架阻止新购但已安装可用/已购可重装；安全停用阻止全部用户安装运行",
+        "无外部依赖",
+        "已部署；下架/停用接口与handler已验证",
+        "restored-contract-results.json：下架已购仍可重装，未购不可新购/安装；下架运行保存笔记与来源，安全停用阻止运行安装。运行部分使用真实鉴权/DB与受控AI传输，不宣称本轮真实模型调用。"
+      ]
+    },
+    {
+      "id": "F-073",
+      "before": [
+        "F-073",
+        "用户中心",
+        "插件",
+        "卸载与重装",
+        "P0",
+        "卸载移除安装关系但保留业务记录",
+        "有购买记录可重装；无购买记录按现价",
+        "无外部依赖",
+        "已实现并验证",
+        "ui-flow-results.json：用户在管理员确认付费订单后卸载并重新安装已购插件，未产生第二笔订单。"
+      ],
+      "after": [
+        "F-073",
+        "用户中心",
+        "插件",
+        "卸载与重装",
+        "P0",
+        "卸载移除安装关系但保留业务记录",
+        "卸载保留记录；下架已购仍可重装；安全停用不可重装",
+        "无外部依赖",
+        "已部署；下架/停用接口与handler已验证",
+        "restored-contract-results.json：下架已购仍可重装，未购不可新购/安装；下架运行保存笔记与来源，安全停用阻止运行安装。运行部分使用真实鉴权/DB与受控AI传输，不宣称本轮真实模型调用。"
+      ]
+    }
+  ],
+  "p2Unchanged": true,
+  "sheets": {
+    "前台": 21,
+    "用户中心": 88,
+    "管理员后台": 35,
+    "验收与依赖": 22,
+    "后续规划": 6
+  },
+  "mustAwait": [],
+  "onlinePrd": "https://rjppwe2dlq09.jp.larksuite.com/docx/[REDACTED_LARK_RESOURCE_TOKEN]",
+  "onlineSheet": "https://rjppwe2dlq09.jp.larksuite.com/sheets/[REDACTED_LARK_RESOURCE_TOKEN]",
+  "validation": {
+    "featureIdsUnique": true,
+    "xlsxZipXmlValid": true,
+    "historicalRevisionUnchanged": true
+  },
+  "verification": {
+    "verifiedAt": "2026-10-14T15:44:23.099021+00:00",
+    "features": 172,
+    "newFeatures": 0,
+    "versionAddedFeatures": 35,
+    "sheets": {
+      "前台": 21,
+      "用户中心": 88,
+      "管理员后台": 35,
+      "验收与依赖": 22,
+      "后续规划": 6
+    },
+    "fullSheetCellsMatch": true,
+    "docFullTextMatchesXml": true,
+    "docSections": 32,
+    "docTopLevelParagraphs": 134,
+    "docTables": 1,
+    "documentRevision": 108,
+    "xlsxZipAndXmlValid": true,
+    "statusEvidenceCellsChecked": 344,
+    "clippedCells": 0,
+    "p2Unchanged": true,
+    "changedSheetCells": 13,
+    "csvAll172RowsMatch": true,
+    "xlsxAll172RowsMatch": true,
+    "coverageNoteCorrectionVerified": true,
+    "followupCorrectedCells": 1,
+    "totalSheetCellsWritten": 488,
+    "currentRelease": ".releases/20261014T152414Z-38684",
+    "loginHelp": {
+      "report": "docs/tests/login-help-inspection.json",
+      "productionChecks": 3,
+      "browserResponseFixtureChecks": 1,
+      "changedSheetCells": 3,
+      "documentParagraphsPatched": 4,
+      "all172RowsMatch": true,
+      "changedRowNoClipping": true
+    },
+    "previousSyncSheetCellsWritten": 475,
+    "changedRowLayoutCellsChecked": 15,
+    "portalSeparation": {
+      "reports": [
+        "portal-auth-results.json",
+        "portal-separation-results.json",
+        "portal-cookie-results.json",
+        "admin-portal-contract-results.json",
+        "media-settings-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-002",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-081",
+        "F-082",
+        "F-083",
+        "F-084",
+        "F-117",
+        "F-128"
+      ],
+      "changedSheetCells": 43,
+      "docPatchOperations": 19,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "secureHttpsVerified": true,
+      "legacyHistoryPreserved": true
+    },
+    "publicLanding": {
+      "reports": [
+        "public-landing-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-001",
+        "F-002",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-009",
+        "F-011",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-083",
+        "F-128"
+      ],
+      "changedSheetCells": 60,
+      "docPatchOperations": 12,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "preferredDomain": {
+      "reports": [
+        "domain-results.json",
+        "media-origin-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-128",
+        "F-138"
+      ],
+      "changedSheetCells": 8,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "android112": {
+      "artifact": {
+        "versionName": "1.1.2",
+        "versionCode": 5,
+        "sha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+        "bytes": 33245,
+        "downloadUrl": "https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk"
+      },
+      "reports": [
+        "apk-startup-release-results.json",
+        "android-startup-results.json",
+        "apk-domain-browser-results.json"
+      ],
+      "userAcceptanceReport": "apk-user-device-acceptance.json",
+      "userHomepageStartupAccepted": true,
+      "affectedFeatureIds": [
+        "F-014",
+        "F-015",
+        "F-167"
+      ],
+      "changedSheetCells": 13,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    }
+  }
+}

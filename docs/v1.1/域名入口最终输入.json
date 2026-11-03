@@ -1,0 +1,22 @@
+{
+  "approvedForPublication": true,
+  "release": ".releases/20261014T152414Z-38684",
+  "backup": "database/backups/xuexi-2026-10-14T15-26-02-208Z.sql.gz",
+  "primaryReport": "domain-results.json",
+  "healthReport": "domain-release-health.json",
+  "reports": [
+    "domain-results.json",
+    "media-origin-results.json"
+  ],
+  "acceptanceHeading": "v1.1 首选域名访问与媒体连接修复",
+  "acceptanceText": "首选地址现为https://xuexi.yinchao1204.vip，无需端口，/为公开落地页，/login与/user为用户入口，/admin/login与/admin为独立后台。此次无法打开的原因是域名代理把明文HTTP发到IP的TLS3063端口，导致上游400；现已改为本机HTTP应用端口127.0.0.1:3061并保留原Host。域名及IP代理一并纳入发布切换/配置恢复；媒体受控来源增加首选域名并兼容既有IP。域名与IP按主机分别建立会话，账号和数据库不变。APP_URL及易支付通知URL保留原HTTP IP，现有APK1.1.1(4)仍加载IP HTTPS，本轮未重建APK。",
+  "runtimeText": "最终Web发布.releases/20261014T152414Z-38684。domain-results.json在可信域名HTTPS完成10项生产Chromium156测试：公开页与静态资源、匿名门禁、用户及管理员真实表单登录和各自Secure/HttpOnly/SameSite Cookie、PNG上传后转为私有WebP并读取/删除、同源WSS收到ready后正常保存结束（close1000）、匿名/外部Origin拒绝、原IP HTTPS/HTTP兼容和独立退出。零页面异常/静态失败，发送音频帧0、实际AI调用0、扣费0，无付款或配置修改，临时账号/资产已清理；该WSS结果只验证连接与权限，不冒称域名上完成真实语音回答。media-origin-results.json7项为隔离的实际来源/安全入口函数测试，不涉及DB或网络；domain-release-health.json另有14项状态检查、Google/Cloudflare DNS均指向目标IP、域名证书与三个服务active。域名HTTP301转HTTPS，原IP入口仍可用；本轮未执行证书续期或自动回退演练。最新受限数据库备份database/backups/xuexi-2026-10-14T15-26-02-208Z.sql.gz。此前真实AI/媒体/后台/首页报告保留实际测试版本，真实商户资料、Android真机/自然采集设备、独立受控跨网络专项及六项P2边界不变。",
+  "featureStatuses": {
+    "F-128": "域名/IP入口与登录已验证；跨网络专项未测",
+    "F-138": "域名上传及WSS就绪已验证；真实语音沿用原证据"
+  },
+  "featureEvidence": {
+    "F-128": "domain-results.json10项验证可信域名页面/静态资源、双端真实登录与独立会话、原IP兼容；domain-release-health.json14项及双公共DNS解析核对通过。发布152414，域名HTTP301到HTTPS，APP_URL/支付通知仍原IP，跨网络专项未执行。",
+    "F-138": "domain-results.json验证域名真实PNG上传、私有WebP读取与删除；WSS ready→保存→close1000，未发送音频、未调用AI或扣费；匿名/外部Origin拒绝。media-origin-results.json7项隔离函数验证受控域名与IP兼容，不能当作域名真实语音轮次证据。"
+  }
+}

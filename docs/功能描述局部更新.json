@@ -1,0 +1,299 @@
+[
+  {
+    "sheet_name": "前台",
+    "range": "F17",
+    "cells": [
+      [
+        {
+          "value": "说明WebView联网形态及Android6+要求"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "前台",
+    "range": "G17",
+    "cells": [
+      [
+        {
+          "value": "下载页不冒充离线原生App"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "D12",
+    "cells": [
+      [
+        {
+          "value": "创建目标式计划"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F12",
+    "cells": [
+      [
+        {
+          "value": "以goal记录学习周期和每天分钟数"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G12",
+    "cells": [
+      [
+        {
+          "value": "目标周期与时间预算持久化"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "D13",
+    "cells": [
+      [
+        {
+          "value": "目标进度与关联任务"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F13",
+    "cells": [
+      [
+        {
+          "value": "更新goal进度并通过task.goalId关联任务"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G13",
+    "cells": [
+      [
+        {
+          "value": "进度0–100且任务属于本人目标"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "D14",
+    "cells": [
+      [
+        {
+          "value": "编辑删除目标式计划"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F14",
+    "cells": [
+      [
+        {
+          "value": "维护goal与本人关联task记录"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G14",
+    "cells": [
+      [
+        {
+          "value": "不冒充独立plan实体且不能越权"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F54",
+    "cells": [
+      [
+        {
+          "value": "新安装收费插件校验已支付购买记录"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G54",
+    "cells": [
+      [
+        {
+          "value": "改客户端状态不能绕过；既有免费安装保留"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "D56",
+    "cells": [
+      [
+        {
+          "value": "卸载与重装"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F56",
+    "cells": [
+      [
+        {
+          "value": "卸载移除安装关系但保留业务记录"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G56",
+    "cells": [
+      [
+        {
+          "value": "有购买记录可重装；无购买记录按现价"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "D58",
+    "cells": [
+      [
+        {
+          "value": "会员状态与AI余额"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F58",
+    "cells": [
+      [
+        {
+          "value": "分别展示身份有效期与剩余额度"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G58",
+    "cells": [
+      [
+        {
+          "value": "身份到期降为免费，已购额度保留"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F59",
+    "cells": [
+      [
+        {
+          "value": "按次购买增加额度并延长身份有效期"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G59",
+    "cells": [
+      [
+        {
+          "value": "服务端取价且不自动续费或重置余额"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "D60",
+    "cells": [
+      [
+        {
+          "value": "身份到期"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "F60",
+    "cells": [
+      [
+        {
+          "value": "会员到期恢复免费身份"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "用户中心",
+    "range": "G60",
+    "cells": [
+      [
+        {
+          "value": "历史数据及已购AI余额不因到期删除"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "管理员后台",
+    "range": "G12",
+    "cells": [
+      [
+        {
+          "value": "旧订单不变；免费转付费保留既有安装"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "管理员后台",
+    "range": "F23",
+    "cells": [
+      [
+        {
+          "value": "设置未显式绑定模型的Agent所用默认值"
+        }
+      ]
+    ]
+  },
+  {
+    "sheet_name": "管理员后台",
+    "range": "G23",
+    "cells": [
+      [
+        {
+          "value": "跟随默认的Agent下次调用使用新配置"
+        }
+      ]
+    ]
+  }
+]

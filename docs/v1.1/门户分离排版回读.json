@@ -1,0 +1,816 @@
+{
+  "前台:3": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 900,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F3:J3",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "首页核心功能与用户登录有效；后台使用独立/admin入口"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "用户/login、/user与后台/admin、/admin/login各自可达，旧入口正确跳转"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。 本轮门户分离：portal-separation-results.json验证/login、/user与/admin/login、/admin入口及旧地址跳转；15个后台section可达，22个个人入口保留。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F3:J3",
+          "row_indices": [
+            3
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:13": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 975,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F13:J13",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "从/login验证账号密码并建立用户会话；忘记密码查看邮件未开通说明及管理员联系帮助"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "成功进入/user；后台单独从/admin/login登录；错误密码拒绝；未开通邮件不假称已发送"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：mobile-admin-results.json 3/3：390px真实公网地址浏览器通过键盘Enter提交登录表单并成功进入后台；regression-results.json覆盖错误密码和密码边界。 login-help-inspection.json：生产匿名登录可展开“忘记密码”并进入联系帮助，邮件自助未开通/联系信息未配置的说明及390px布局通过；已配置supportContact显示仅用浏览器响应fixture验证，未修改生产设置。未发送邮件、重置密码或新增重置API。 本轮门户分离：portal-separation-results.json验证普通用户登录进入/user，独立后台登录返回有效section，普通账号后台登录拒绝；portal-cookie-results.json在最终版本验证HTTPS双端Secure/HttpOnly/SameSite Cookie。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F13:J13",
+          "row_indices": [
+            13
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:14": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 750,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F14:J14",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "个人导航呈现用户会话，后台导航仅呈现管理员会话"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "双端登录态独立，刷新有效期内保持；普通登录不直接取得后台权限"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。 本轮门户分离：portal-separation-results.json真实浏览器验证两个不同账户及同一管理员账户分别登录两端、刷新与独立退出；portal-auth-results.json用隔离MySQL验证user/admin scope。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F14:J14",
+          "row_indices": [
+            14
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:4": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 722,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F4:J4",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/user展示学习、生活、效率、AI与个人账户全部入口"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "个人全部功能可达且不混入后台管理模块；后台使用自己的管理导航"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：ui-flow-results.json：用户中心学习成长、生活管理、AI与效率、账户与应用四组入口显示；browser-results.json覆盖全部主要用户页面。 本轮门户分离：portal-separation-results.json真实浏览器确认22个个人功能入口，用户中心无后台入口；仅管理员Cookie访问/user须另行登录，后台无个人请求。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F4:J4",
+          "row_indices": [
+            4
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:6": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 785,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F6:J6",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "个人手机端固定五项底栏；后台使用自己的快捷底栏与全部菜单"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "两端底栏不混用，安全区与内容留白正确，360/390px无整页横向溢出"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：browser-results.json与mobile-admin-results.json：390px主要用户页面及全部13个后台tab无整页横向溢出、底栏可见；mobile-user.png / mobile-admin.png 经目视核验。 本轮门户分离：portal-separation-results.json：15个后台section在1440/390/360px共45组导航布局检查；后台独立底栏/菜单，个人端360/390px保留五项底栏且无整页横向溢出。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F6:J6",
+          "row_indices": [
+            6
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:64": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 758,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F64:J64",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "用户端修改本人名称与密码；管理员在后台账户修改自身资料"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "不能自行修改角色或权益；改密码撤销该账户全部旧会话，只保留当前端新会话"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-separation-results.json真实浏览器在后台账户修改临时管理员密码，旧个人会话失效、当前后台保留；portal-auth-results.json隔离MySQL验证双scope旧会话撤销与仅admin新会话。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F64:J64",
+          "row_indices": [
+            64
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:65": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 738,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F65:J65",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "退出时仅撤销当前端会话与Cookie"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "退出个人端不退出后台，退出后台不退出个人端；已撤销会话不能再访问对应私有接口"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-separation-results.json在双端同时登录及同一账户双端登录场景验证分别退出；portal-auth-results.json验证交换Cookie名称也不能撤销另一scope会话。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F65:J65",
+          "row_indices": [
+            65
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心:66": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 779,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F66:J66",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "user scope只访问本人业务与AI记录；后台会话不提供个人数据权限"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "A/B跨用户访问失败，admin scope无法读取用户端私有数据，重命名Cookie不可绕过scope"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-auth-results.json隔离MySQL与生产portal-separation-results.json验证双向scope限制、Cookie换名拒绝、后台页面无个人数据请求；此前A/B业务数据隔离证据保留。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F66:J66",
+          "row_indices": [
+            66
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "管理员后台:2": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 876,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F2:J2",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/admin/login独立登录，/admin独立导航与15个section；/api/admin逐请求校验scope与角色"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无后台会话返回401，普通账号后台登录返回403；后台不出现个人模块，原14个管理模块及后台账户完整"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：api-results.json普通用户管理接口403；record-contract-results.json停用用户及停用管理员已有会话不可继续访问；browser-results.json与mobile-admin-results.json管理员真实登录后台成功。 本轮门户分离：portal-separation-results.json真实浏览器17项：独立登录与导航、15section、无个人模块/请求、会话/退出/密码隔离；admin-portal-contract-results.json最终版本17项通过，含普通账号拒绝、升降级及禁用。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F2:J2",
+          "row_indices": [
+            2
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "验收与依赖:3": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 865,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F3:J3",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "测试普通用户登录后台、跨端令牌、旧API管理动作及管理员角色变更"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无admin scope不能访问后台，普通角色不能后台登录，旧/api/app管理动作拒绝，受限数据不变"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "对应模块实现"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "独立门户已部署；浏览器与接口验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：api-results.json普通用户管理接口403；record-contract-results.json停用用户及停用管理员已有会话不可继续访问；browser-results.json与mobile-admin-results.json管理员真实登录后台成功。 本轮门户分离：portal-auth-results.json17项隔离route/MySQL验证角色、scope、Cookie换名、旧管理动作拒绝及来源；portal-separation-results.json与admin-portal-contract-results.json提供生产浏览器及实际API证据。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F3:J3",
+          "row_indices": [
+            3
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "验收与依赖:14": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 809,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F14:J14",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "访问公开IP/端口的独立用户和后台入口与旧地址跳转"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "/login、/user、/admin/login、/admin页面和对应API可达；旧入口重定向正确，后台section可刷新"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "对应模块实现"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "HTTP/HTTPS地址已验证；跨网络专项未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：HTTP3060保留，HTTPS3063可信证书及生产媒体浏览器/WSS通过；早期HTTP外部日志36次成功记录。独立受控跨网络浏览器与物理移动网络验收未执行。 本轮门户分离：portal-release-health.json在145454确认四个独立页面200、三个旧入口307、匿名后台数据401、旧个人API管理入口403及DB连接；portal-cookie-results.json验证HTTPS浏览器和HTTP API兼容，跨网络专项仍未执行。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F14:J14",
+          "row_indices": [
+            14
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 62,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  }
+}

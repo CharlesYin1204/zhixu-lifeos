@@ -1,0 +1,168 @@
+{
+  "status": "published_and_full_readback_verified",
+  "paragraphs": {
+    "67": "Android为联网WebView客户端，最低Android6.0/API23，使用同一平台及账号权限体系。当前发布1.1.2（versionCode5），默认加载https://xuexi.yinchao1204.vip/，继续使用com.zhixu.lifeos包名及既有签名。下载页展示真实版本与文件信息；不是离线原生客户端。原IP站点与旧1.1.1文件继续保留，修改后的原生行为需安装新APK才生效。",
+    "70": "当前APK1.1.2(5)改用首选域名HTTPS默认端口，原IP HTTPS入口继续可访问。对主页面加载失败提供原生原因/站点提示、重试及系统浏览器打开入口，并处理加载超时及加载完成后仍为空页面的情况；TLS错误仍取消连接，不提供绕过证书按钮。用户报告的旧包空白/网页不可用根因尚未确定；访问日志中的首页与静态资源200不能证明设备页面已正确渲染。用户另行确认同机覆盖安装1.1.2后首页正常显示；录音、拍照、支付与错误页操作仍需分别验收。",
+    "134": "Android已发布1.1.2（versionCode5），继续使用com.zhixu.lifeos及长期签名，默认站点改为https://xuexi.yinchao1204.vip/。麦克风/相机仍仅在用户触发录音或拍照时申请，拒绝后可重试或上传文件；WebView权限仍限配置同源。高清相机使用私有FileProvider及受控URI，取消/恢复/回传保持原有流程。本次增加主页面加载错误提示、重试和系统浏览器入口；用户同机覆盖安装后已确认首页正常显示，媒体权限和错误页操作等原生设备行为仍待分别验证。",
+    "135": "旧1.1.1 APK保留android-release-results.json12项构建/签名/下载/权限结构证据及android-download-boundaries.json4项嵌入脚本/源码/编译证据；这些不自动视为1.1.2全部功能重新验收。1.1.2新包的构建、同签名升级、域名配置、下载哈希及原生错误处理验证以本次报告为准。用户已确认同机覆盖安装1.1.2后首页正常显示；加载错误页操作、麦克风/相机、状态恢复、文件保存及支付仍需分别在真机验收，不以清单/DEX或源码检查代替。",
+    "142": "首选产品落地页https://xuexi.yinchao1204.vip/，用户登录/login、用户中心/user、个人概览/user?view=overview、媒体工作区/user?view=media，后台/admin及/admin/login；均无需端口。个人功能仍需有效user会话，旧/?view=...兼容跳转。原IP HTTPS3063/HTTP3060、APP_URL与现有易支付通知配置保持。当前APK1.1.2(5)默认加载首选域名；Web发布仍为{release}。功能表172项、六项P2不变。",
+    "148": "当前Android下载：https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk。版本1.1.2(5)，包名com.zhixu.lifeos，SHA-256为{apkSha256}，文件{apkBytes}字节；同包名及长期签名与1.1.1一致。Web、worker、voice仍按既有systemd部署运行，原媒体私有目录及环境/签名资料需分别备份。本轮不更改支付渠道配置；用户已确认新版覆盖安装后首页正常显示，其他真机功能未在本轮确认，旧故障根因仍未证实。"
+  },
+  "features": {
+    "F-014": {
+      "5": "展示当前已发布APK1.1.2(5)及真实文件信息",
+      "6": "前台显示版本与后台发布产物一致，默认站点为首选域名，用户已确认新版覆盖安装后首页正常"
+    },
+    "F-015": {
+      "5": "下载域名版Android1.1.2(5)安装包",
+      "6": "返回有效APK与正确MIME/附件名，下载哈希和签名与发布记录一致"
+    },
+    "F-167": {
+      "3": "APK1.1.2域名发布",
+      "5": "发布versionName1.1.2/versionCode5，默认域名HTTPS，主页面错误显示原因、重试和浏览器打开",
+      "6": "同包名同签名、后台实际构建、新包元数据及下载哈希一致；用户确认覆盖安装后首页正常，其他设备功能另行验收"
+    }
+  },
+  "affectedFeatureIds": [
+    "F-014",
+    "F-015",
+    "F-167"
+  ],
+  "verification": {
+    "verifiedAt": "2026-10-14T15:44:23.099021+00:00",
+    "features": 172,
+    "newFeatures": 0,
+    "versionAddedFeatures": 35,
+    "sheets": {
+      "前台": 21,
+      "用户中心": 88,
+      "管理员后台": 35,
+      "验收与依赖": 22,
+      "后续规划": 6
+    },
+    "fullSheetCellsMatch": true,
+    "docFullTextMatchesXml": true,
+    "docSections": 32,
+    "docTopLevelParagraphs": 134,
+    "docTables": 1,
+    "documentRevision": 108,
+    "xlsxZipAndXmlValid": true,
+    "statusEvidenceCellsChecked": 344,
+    "clippedCells": 0,
+    "p2Unchanged": true,
+    "changedSheetCells": 13,
+    "csvAll172RowsMatch": true,
+    "xlsxAll172RowsMatch": true,
+    "coverageNoteCorrectionVerified": true,
+    "followupCorrectedCells": 1,
+    "totalSheetCellsWritten": 488,
+    "currentRelease": ".releases/20261014T152414Z-38684",
+    "loginHelp": {
+      "report": "docs/tests/login-help-inspection.json",
+      "productionChecks": 3,
+      "browserResponseFixtureChecks": 1,
+      "changedSheetCells": 3,
+      "documentParagraphsPatched": 4,
+      "all172RowsMatch": true,
+      "changedRowNoClipping": true
+    },
+    "previousSyncSheetCellsWritten": 475,
+    "changedRowLayoutCellsChecked": 15,
+    "portalSeparation": {
+      "reports": [
+        "portal-auth-results.json",
+        "portal-separation-results.json",
+        "portal-cookie-results.json",
+        "admin-portal-contract-results.json",
+        "media-settings-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-002",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-081",
+        "F-082",
+        "F-083",
+        "F-084",
+        "F-117",
+        "F-128"
+      ],
+      "changedSheetCells": 43,
+      "docPatchOperations": 19,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "secureHttpsVerified": true,
+      "legacyHistoryPreserved": true
+    },
+    "publicLanding": {
+      "reports": [
+        "public-landing-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-001",
+        "F-002",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-009",
+        "F-011",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-083",
+        "F-128"
+      ],
+      "changedSheetCells": 60,
+      "docPatchOperations": 12,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "preferredDomain": {
+      "reports": [
+        "domain-results.json",
+        "media-origin-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-128",
+        "F-138"
+      ],
+      "changedSheetCells": 8,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "android112": {
+      "artifact": {
+        "versionName": "1.1.2",
+        "versionCode": 5,
+        "sha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+        "bytes": 33245,
+        "downloadUrl": "https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk"
+      },
+      "reports": [
+        "apk-startup-release-results.json",
+        "android-startup-results.json",
+        "apk-domain-browser-results.json"
+      ],
+      "userAcceptanceReport": "apk-user-device-acceptance.json",
+      "userHomepageStartupAccepted": true,
+      "affectedFeatureIds": [
+        "F-014",
+        "F-015",
+        "F-167"
+      ],
+      "changedSheetCells": 13,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    }
+  }
+}

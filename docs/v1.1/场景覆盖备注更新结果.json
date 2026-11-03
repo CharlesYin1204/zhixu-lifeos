@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "failed": 0,
+    "results": [
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 0,
+        "success": true,
+        "tool_name": "set_cell_range"
+      }
+    ],
+    "revision": 58,
+    "succeeded": 1,
+    "total": 1
+  }
+}

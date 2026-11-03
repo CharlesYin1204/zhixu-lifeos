@@ -1,0 +1,157 @@
+{
+  "startedAt": "2026-10-14T12:31:44.957Z",
+  "base": "http://127.0.0.1:3060",
+  "scope": "Live HTTP record contracts, isolated fixture users, zero AI calls",
+  "results": [
+    {
+      "name": "Goal links accept only an owned goal, for both creation and update",
+      "passed": true,
+      "ms": 308,
+      "evidence": {
+        "crossUserCreateRejected": true,
+        "crossUserUpdateRejected": true,
+        "validLinkPersisted": true
+      }
+    },
+    {
+      "name": "Events reject reversed or equal times and invalid calendar dates",
+      "passed": true,
+      "ms": 313,
+      "evidence": {
+        "invalidCases": 9,
+        "validLeapDayAccepted": true,
+        "overnightEventAccepted": true
+      }
+    },
+    {
+      "name": "Goal end dates cannot precede their start dates",
+      "passed": true,
+      "ms": 100
+    },
+    {
+      "name": "goal completion status and 100% progress stay synchronized",
+      "passed": true,
+      "ms": 249,
+      "evidence": {
+        "createByStatus": true,
+        "createByProgress": true,
+        "updateByStatus": true,
+        "updateByProgress": true
+      }
+    },
+    {
+      "name": "course completion status and 100% progress stay synchronized",
+      "passed": true,
+      "ms": 286,
+      "evidence": {
+        "createByStatus": true,
+        "createByProgress": true,
+        "updateByStatus": true,
+        "updateByProgress": true
+      }
+    },
+    {
+      "name": "Expense amounts reject zero and sub-cent values while preserving one cent",
+      "passed": true,
+      "ms": 169,
+      "evidence": {
+        "rejected": [
+          0,
+          0.001
+        ],
+        "acceptedAmount": 0.01,
+        "storedCents": 1
+      }
+    },
+    {
+      "name": "Habit frequency accepts the 1–7 day boundaries and rejects invalid counts",
+      "passed": true,
+      "ms": 232,
+      "evidence": {
+        "accepted": [
+          1,
+          7
+        ],
+        "rejected": [
+          0,
+          8,
+          -1,
+          1.5,
+          "invalid"
+        ]
+      }
+    },
+    {
+      "name": "Concurrent focus retries persist one record and one duration per user",
+      "passed": true,
+      "ms": 267,
+      "evidence": {
+        "parallelRequestsPerUser": 3,
+        "recordsAddedPerUser": 1,
+        "minutesAddedPerUser": 25,
+        "replayedRequestAddedMinutes": 0,
+        "usersHaveDistinctRecordIds": true
+      }
+    },
+    {
+      "name": "Administrator account disabling blocks existing sessions and restoring access works",
+      "passed": true,
+      "ms": 950,
+      "evidence": {
+        "disabledExistingSessionDenied": true,
+        "disabledLoginDenied": true,
+        "oldSessionRevoked": true,
+        "restoredLoginWorks": true
+      }
+    },
+    {
+      "name": "A disabled administrator session cannot read administration or update users",
+      "passed": true,
+      "ms": 60,
+      "evidence": {
+        "disabledAdminReadDenied": true,
+        "disabledAdminWriteDenied": true,
+        "restoredAdminWorks": true
+      }
+    },
+    {
+      "name": "Credits can be edited on an expired membership when its existing expiry is unchanged",
+      "passed": true,
+      "ms": 66,
+      "evidence": {
+        "creditsChanged": true,
+        "expiredDatePreserved": true,
+        "noExtraMembershipCredits": true
+      }
+    }
+  ],
+  "aiProviderCalls": 0,
+  "cleanup": [
+    {
+      "id": "ca752b19-250e-4781-b3bb-3c04fd73e95a",
+      "removed": true
+    },
+    {
+      "id": "279edb14-2d77-4931-b65b-6eb1d61bfe50",
+      "removed": true
+    },
+    {
+      "id": "e0a64761-edfc-4186-a845-29b319256776",
+      "removed": true
+    }
+  ],
+  "passed": true,
+  "finishedAt": "2026-10-14T12:31:49.338Z",
+  "cleanupVerifiedAt": "2026-10-14T12:32:07.355Z",
+  "remainingFixtureRows": {
+    "users": 0,
+    "sessions": 0,
+    "records": 0,
+    "conversations": 0,
+    "runs": 0,
+    "orders": 0,
+    "installs": 0,
+    "usage_logs": 0,
+    "audit": 0
+  }
+}

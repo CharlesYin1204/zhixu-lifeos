@@ -1,0 +1,545 @@
+{
+  "startedAt": "2026-10-14T15:25:37.523Z",
+  "base": "https://xuexi.yinchao1204.vip",
+  "results": [
+    {
+      "name": "Trusted domain HTTPS serves the public homepage and its JavaScript/CSS without 400 or static failures",
+      "passed": true,
+      "durationMs": 840
+    },
+    {
+      "name": "Anonymous domain access to personal pages is gated by the independent login",
+      "passed": true,
+      "durationMs": 373
+    },
+    {
+      "name": "Domain browser login accepts the real domain Origin and issues a secure personal cookie",
+      "passed": true,
+      "durationMs": 1254
+    },
+    {
+      "name": "Domain backend login has its own secure session and does not replace personal identity",
+      "passed": true,
+      "durationMs": 964
+    },
+    {
+      "name": "A real image upload and private download work through the domain and deletion removes the asset",
+      "passed": true,
+      "durationMs": 819
+    },
+    {
+      "name": "Native domain WSS receives ready and ends cleanly without any audio frame or provider operation",
+      "passed": true,
+      "durationMs": 145
+    },
+    {
+      "name": "The domain rejects anonymous and foreign-origin media/WebSocket requests",
+      "passed": true,
+      "durationMs": 100,
+      "followupEvidence": {
+        "testedAt": "2026-10-14T15:26:17.555Z",
+        "origin": "https://154.40.47.111:3063",
+        "anonymousHandshakeStatus": 401,
+        "retainedAllowedOrigin": true,
+        "audioFramesSent": 0,
+        "fixturesCreated": 0
+      }
+    },
+    {
+      "name": "The original HTTPS IP and HTTP IP remain readable and domain sessions stay host-scoped",
+      "passed": true,
+      "durationMs": 123
+    },
+    {
+      "name": "Domain backend logout leaves its separate personal session intact",
+      "passed": true,
+      "durationMs": 455
+    },
+    {
+      "name": "No page errors, static failures, cross-origin browser posts, AI debit, or production configuration mutation occurred",
+      "passed": true,
+      "durationMs": 22
+    }
+  ],
+  "pageErrors": [],
+  "staticResponses": [
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/735c18213c6f9742.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/7ef9b677a9987ff6.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/login/page-dcdb470523dc38ca.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/7ef9b677a9987ff6.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/login/page-dcdb470523dc38ca.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/497-df1737327e8674df.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/user/page-4f100798105ba3ee.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/628fdacb-edd5dcebd458c478.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/3b19508d1a00a949.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/515-056572b5424b6e1f.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/admin/login/page-9f2b1bea1fe90b42.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/3b19508d1a00a949.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/admin/page-f65e75bcbfd0590e.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/515-056572b5424b6e1f.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/628fdacb-edd5dcebd458c478.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/497-df1737327e8674df.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/user/page-4f100798105ba3ee.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/3b19508d1a00a949.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/admin/page-f65e75bcbfd0590e.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/515-056572b5424b6e1f.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/405d4ec2c562d2ef.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/101758f6796c8bb2.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/d24d55c420fb613b.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/css/3b19508d1a00a949.css",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5b6181f52386ed69.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/611-d3db201b9cd2bd27.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/app/admin/login/page-9f2b1bea1fe90b42.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/515-056572b5424b6e1f.js",
+      "status": 200
+    },
+    {
+      "path": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+      "status": 200
+    }
+  ],
+  "staticFailures": [],
+  "origins": [
+    {
+      "endpoint": "/api/app",
+      "action": "auth.login",
+      "origin": "https://xuexi.yinchao1204.vip"
+    },
+    {
+      "endpoint": "/api/admin",
+      "action": "auth.login",
+      "origin": "https://xuexi.yinchao1204.vip"
+    },
+    {
+      "endpoint": "/api/media",
+      "action": "upload",
+      "origin": "https://xuexi.yinchao1204.vip"
+    },
+    {
+      "endpoint": "/api/media",
+      "action": "asset.delete",
+      "origin": "https://xuexi.yinchao1204.vip"
+    },
+    {
+      "endpoint": "/api/admin",
+      "action": "auth.logout",
+      "origin": "https://xuexi.yinchao1204.vip"
+    }
+  ],
+  "forbiddenActions": [],
+  "screenshots": [
+    "docs/screenshots/domain-landing.png",
+    "docs/screenshots/domain-user-center.png"
+  ],
+  "verification": "Actual trusted domain HTTPS, real browser login forms/upload and native WebSocket handshake; temporary accounts; no audio frames, AI requests, payments, or settings/catalog writes.",
+  "release": ".releases/20261014T152414Z-38684",
+  "browserVersion": "156.0.8078.4",
+  "tls": {
+    "issuer": "YR2",
+    "protocol": "TLS 1.3",
+    "subjectName": "xuexi.yinchao1204.vip",
+    "validFrom": 1791985205,
+    "validTo": 1799761204
+  },
+  "cookieFlags": [
+    {
+      "portal": "app",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "Lax",
+      "domain": "xuexi.yinchao1204.vip"
+    },
+    {
+      "portal": "admin",
+      "secure": true,
+      "httpOnly": true,
+      "sameSite": "Lax",
+      "domain": "xuexi.yinchao1204.vip"
+    }
+  ],
+  "upload": {
+    "inputBytes": 95,
+    "storedBytes": 58,
+    "mime": "image/webp",
+    "private": true
+  },
+  "voice": {
+    "ready": true,
+    "saved": true,
+    "closeCode": 1000,
+    "events": [
+      "ready",
+      "status",
+      "session.saved"
+    ],
+    "audioFramesSent": 0
+  },
+  "ipCompatibility": [
+    {
+      "base": "https://154.40.47.111:3063",
+      "homepage": 200,
+      "database": "connected",
+      "domainCookieSent": false
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "homepage": 200,
+      "database": "connected",
+      "domainCookieSent": false
+    }
+  ],
+  "passed": true,
+  "fixturesRemoved": true,
+  "configurationUnchanged": true,
+  "completedAt": "2026-10-14T15:25:43.853Z",
+  "ipVoiceCompatibility": {
+    "testedAt": "2026-10-14T15:26:17.555Z",
+    "origin": "https://154.40.47.111:3063",
+    "anonymousHandshakeStatus": 401,
+    "retainedAllowedOrigin": true,
+    "audioFramesSent": 0,
+    "fixturesCreated": 0
+  }
+}

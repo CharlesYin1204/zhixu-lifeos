@@ -1,0 +1,219 @@
+{
+  "前台:15": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 1029,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F15:J15",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "展示当前已发布APK1.1.2(5)及真实文件信息"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "前台显示版本与后台发布产物一致，默认站点为首选域名，用户已确认新版覆盖安装后首页正常"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。 本轮APK1.1.2：apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F15:J15",
+          "row_indices": [
+            15
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 68,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:16": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 1018,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F16:J16",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "下载域名版Android1.1.2(5)安装包"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "返回有效APK与正确MIME/附件名，下载哈希和签名与发布记录一致"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "无外部依赖"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。 本轮APK1.1.2：apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F16:J16",
+          "row_indices": [
+            16
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 68,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "前台:22": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 993,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F22:J22",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "发布versionName1.1.2/versionCode5，默认域名HTTPS，主页面错误显示原因、重试和浏览器打开"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "同包名同签名、后台实际构建、新包元数据及下载哈希一致；用户确认覆盖安装后首页正常，其他设备功能另行验收"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "Android工具链"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。 本轮APK1.1.2：apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F22:J22",
+          "row_indices": [
+            22
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 68,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  }
+}

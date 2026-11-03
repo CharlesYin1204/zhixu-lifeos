@@ -1,0 +1,29 @@
+[Unit]
+Description=Zhixu LifeOS web application
+After=network.target mysqld.service mysql.service
+
+[Service]
+Type=simple
+User=zhixu
+Group=zhixu
+WorkingDirectory=/www/wwwroot/xuexi
+EnvironmentFile=/www/wwwroot/xuexi/.env.local
+EnvironmentFile=-/www/wwwroot/xuexi/private/web-runtime.env
+Environment=NODE_ENV=production
+Environment=NEXT_TELEMETRY_DISABLED=1
+Environment=PATH=/opt/laosiji-runtime/node-v22.16.0-linux-x64/bin:/usr/bin:/bin
+ExecStart=/opt/laosiji-runtime/node-v22.16.0-linux-x64/bin/node --max-old-space-size=450 node_modules/next/dist/bin/next start -H 127.0.0.1 -p 3061
+Restart=always
+RestartSec=4
+KillSignal=SIGTERM
+SuccessExitStatus=143
+TimeoutStopSec=20
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/.releases /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target

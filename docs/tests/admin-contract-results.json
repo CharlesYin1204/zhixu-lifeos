@@ -1,0 +1,168 @@
+{
+  "testedAt": "2026-10-14T12:57:03.525Z",
+  "base": "http://154.40.47.111:3060",
+  "browserMajor": 156,
+  "fixturePolicy": "Two temporary accounts; new temporary catalog entries only; original entities and settings byte-identical; transactional cleanup",
+  "limits": [
+    "No model connectivity call",
+    "No actual money collected",
+    "Default model replacement not tested",
+    "Site settings saving not tested"
+  ],
+  "results": [
+    {
+      "name": "Ordinary account sees the administrative access denial and cannot read administrator API",
+      "requirements": [
+        "F-084"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 262
+    },
+    {
+      "name": "Administrator overview counters match persisted users, orders, paid revenue and workflow count",
+      "requirements": [
+        "F-085"
+      ],
+      "verification": "read-only-browser-ui-and-database-reconciliation",
+      "passed": true,
+      "durationMs": 29
+    },
+    {
+      "name": "New model form rejects a missing key before creating a catalog entry",
+      "requirements": [
+        "F-102",
+        "F-103"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 514
+    },
+    {
+      "name": "Model creation stores a test-only key encrypted and reopening never discloses it",
+      "requirements": [
+        "F-102",
+        "F-103"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 594
+    },
+    {
+      "name": "Temporary model can be enabled and disabled without changing the production default",
+      "requirements": [
+        "F-104"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 424
+    },
+    {
+      "name": "Agent form persists role, prompt, default-model binding, icon and color across edit and reload",
+      "requirements": [],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 1264
+    },
+    {
+      "name": "Stopping a temporary Agent removes it from user assistant choices; enabling restores it",
+      "requirements": [],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 833
+    },
+    {
+      "name": "Member plan creation and editing persist price, duration, credits and separate benefit lines",
+      "requirements": [
+        "F-089",
+        "F-090"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 683
+    },
+    {
+      "name": "Stopping a temporary plan removes its user-facing purchase card and enabling restores it",
+      "requirements": [
+        "F-091"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 696
+    },
+    {
+      "name": "User search and profile edit apply name, custom membership expiry and an exact AI balance",
+      "requirements": [
+        "F-086",
+        "F-088"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 610
+    },
+    {
+      "name": "Temporary user role promotion and demotion immediately change access to the real admin UI",
+      "requirements": [
+        "F-088"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 1105
+    },
+    {
+      "name": "Disabling a temporary account revokes its session and prevents login; reactivation permits a new login",
+      "requirements": [
+        "F-087"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 3062
+    },
+    {
+      "name": "Plugin publish and unpublish actions control the actual user catalog",
+      "requirements": [
+        "F-095"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 1516
+    },
+    {
+      "evidence": "temporary administrative actions",
+      "auditedActions": 22,
+      "keysDisclosed": false
+    },
+    {
+      "name": "Audit UI shows the temporary actor and target identifiers without including key material",
+      "requirements": [
+        "F-115"
+      ],
+      "verification": "real-browser-ui-with-persistence-assertions",
+      "passed": true,
+      "durationMs": 66
+    },
+    {
+      "name": "Site settings fields display the existing stored values without altering live configuration",
+      "requirements": [
+        "F-114"
+      ],
+      "verification": "read-only-browser-form-values; saving intentionally not tested against shared live settings",
+      "passed": true,
+      "durationMs": 72
+    },
+    {
+      "name": "Existing catalog configurations remain byte-identical and no AI or payment action occurred",
+      "requirements": [],
+      "verification": "database-and-network-invariant",
+      "passed": true,
+      "durationMs": 4
+    },
+    {
+      "name": "All temporary accounts, entity configurations and their related rows removed transactionally",
+      "verification": "database-cleanup",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "forbiddenActions": []
+}

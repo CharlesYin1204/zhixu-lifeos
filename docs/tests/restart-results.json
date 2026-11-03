@@ -1,0 +1,33 @@
+{
+  "testedAt": "2026-10-14T12:31:00.404Z",
+  "preparedAt": "2026-10-14T12:30:47.952Z",
+  "results": [
+    {
+      "name": "Production deployment restarted web and worker processes",
+      "passed": true,
+      "before": {
+        "webPid": 8240,
+        "workerPid": 8232
+      },
+      "after": {
+        "webPid": 8393,
+        "workerPid": 8390
+      }
+    },
+    {
+      "name": "Database record and authenticated session survive service restart",
+      "passed": true
+    },
+    {
+      "name": "systemd automatically recovers an unexpectedly terminated web process",
+      "passed": true,
+      "beforePid": 8393,
+      "afterPid": 8463
+    },
+    {
+      "name": "Advertised IP and port serve healthy database-connected API after recovery",
+      "passed": true,
+      "requestOrigin": "deployment server"
+    }
+  ]
+}

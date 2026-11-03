@@ -1,0 +1,148 @@
+{
+  "status": "published_and_full_readback_verified",
+  "affectedFeatureIds": [
+    "F-002",
+    "F-012",
+    "F-013",
+    "F-021",
+    "F-023",
+    "F-081",
+    "F-082",
+    "F-083",
+    "F-084",
+    "F-117",
+    "F-128"
+  ],
+  "paragraphs": {
+    "18": "管理员：从独立/admin/login登录后进入/admin，管理用户状态、会员、插件定价与上下架、订单、AI模型、站点与APK。后台使用独立页面框架、/api/admin及管理员会话；后台API逐请求校验管理员scope与角色，用户登录态不能直接进入后台。管理员如需使用个人功能，另从/login建立用户端会话；账号和密码沿用同一账户资料。",
+    "19": "所有私有数据在服务端根据有效scope与会话userId查询。客户端提交的userId、ownerId、role、price、paid状态不可信；未建立对应端会话访问私有API返回401，普通账号尝试后台登录或旧用户端管理动作返回403，跨用户资源返回404或403。仅有管理员会话不能读取个人业务、媒体及用户中心数据；仅有用户会话不能读取或写入管理数据，修改Cookie名称也不能绕过数据库scope校验。",
+    "20": "账号禁用即时阻止新敏感请求；用户端与管理端分别使用HttpOnly/SameSite Cookie和带scope的数据库会话。退出仅撤销当前端会话；修改同一账户密码时撤销该账户全部旧会话，仅重新建立当前操作端会话。密码不可明文保存或返回；最低密码规则、唯一邮箱/账号、错误提示和频率限制统一。现有账户、密码和用户端业务数据保留。",
+    "22": "前台：品牌首页、能力介绍、多Agent介绍、插件市场、会员价格、安卓下载和/login用户登录注册。用户中心/user：概览、全部功能、AI助手/协作、学习、计划、知识、习惯、专注、日程、生活财务、健康、目标复盘、插件、会员、订单和设置。后台/admin与/admin/login独立：平台概览、用户、AI模型、语音与图片、Agent管理、协作监控、AI调用记录、插件、会员方案、订单、支付、安卓应用、站点和审计十四个原有模块，并设“后台账户”管理自身名称和密码。旧/?view=admin、user、login跳转至对应独立入口。",
+    "23": "桌面用户中心采用个人功能导航和内容区，突出今日计划、目标、最近AI协作和快捷记录。后台采用独立的分组运营导航、标题栏及内容区，不显示个人学习生活模块、个人搜索、通知、会员卡或用户端底栏；后台账户直接在后台修改密码。后台强调表格、筛选、价格编辑与结果状态，保持深色品牌文本、暖中性色背景、克制强调色和足够留白。",
+    "24": "用户移动端保留首页、学习、AI、应用、我的五项固定底栏，并在“全部功能”中提供个人功能分类检索和入口。管理员移动端使用后台自己的快捷底栏与全部管理菜单抽屉，保持十四个原有模块及后台账户可达。两端内容预留safe-area与导航高度，360px以上手机宽度不出现整页横向溢出，后台表格允许局部水平滚动。",
+    "27": "访客从/login提交姓名、账号/邮箱、密码后，由服务端校验并创建唯一普通用户账号；用户注册或登录后进入/user。重复账号不生成重复用户，错误密码不泄露敏感详情，用户会话仅呈现本人数据。管理员从/admin/login提交现有账号密码，服务端确认active与admin角色后建立独立后台会话；后台不提供普通用户注册，登录后进入/admin或有效的后台section。",
+    "62": "总览展示真实用户数、订单数、安装数、AI运行数和配置状态。用户管理支持列表、角色、会员信息和启停；涉及角色与价格的操作由/api/admin校验有效管理员会话。“后台账户”允许管理员修改自身名称与密码，无需进入用户中心；修改密码撤销该账户全部旧会话。管理端退出只退出后台，用户端退出只退出个人空间。",
+    "72": "用户与会话：users保存账号、password_hash、role、status、plan_id、plan_expires、credits和创建时间；sessions保存token_hash、user_id、scope和expires_at，scope为user或admin。旧会话迁移为user，不直接授予后台权限；新增管理员会话仅由后台登录产生。所有私有记录有user_id。会员有效期与AI余额分别管理，会员过期不清空余额。实体配置采用entities(type,id,data)，普通业务采用records(kind,meta)，输入按类型校验。",
+    "78": "接口形态：个人业务采用/api/app RPC，后台采用/api/admin RPC。GET /api/app?resource=bootstrap返回公开配置及当前用户端数据，health检查服务和数据库，run/conversation/export提供本人数据；不再从/api/app返回管理数据或执行admin.*。GET /api/admin?resource=bootstrap返回后台登录身份与必要站点配置，resource=admin仅允许有效管理员会话读取后台数据。各POST请求以JSON action分发，通过各自HttpOnly Cookie认证。",
+    "79": "用户身份与记录动作：POST /api/app action=auth.register、auth.login、auth.logout、profile.update；record.save使用kind、id（更新时）、title、content、status、meta，record.delete使用id。所有集合和单条操作由user scope会话限定本人；客户端不能自设角色、owner或支付状态。用户端登录不产生后台Cookie；退出不影响单独建立的后台会话，密码变更则撤销账户的全部旧会话。",
+    "82": "后台身份与动作：POST /api/admin action=auth.login、auth.logout、profile.update分别处理独立后台登录、退出与本人账户。GET /api/admin?resource=admin获取管理数据；POST action=admin.save（entity=model/agent/plugin/plan/settings/user，data为配置）、admin.model.test（id）、admin.order.approve（id，仅线下收款订单）、admin.apk.build（config）。APK下载仍使用GET /api/download?file=合法文件名。后台接口逐请求校验admin scope及管理员角色，旧/api/app管理请求拒绝。",
+    "85": "数据库真实持久化，应用重启后数据仍在。密码使用成熟哈希算法；两端会话Cookie设置HttpOnly与SameSite，敏感操作校验来源或CSRF。后台令牌除Cookie名称外还校验数据库admin scope，个人API和媒体端校验user scope，防止相互混用。所有SQL参数化，输出按上下文转义，禁止危险HTML任意执行。",
+    "87": "必要检查包括错误密码、跨用户访问、管理员登录/API鉴权、双端同时登录与分别退出、后台令牌不能访问个人API、用户令牌不能访问后台、改密码撤销旧会话、角色降级/禁用和支付金额篡改。APK构建参数不能拼接成不受控shell命令；外部URL校验协议与目标，上传限制类型、大小和存储目录。",
+    "142": "当前入口https://154.40.47.111:3063，媒体工作区/?view=media，用户中心/user、用户登录/login，管理后台/admin、后台登录/admin/login。旧/?view=admin|user|login重定向到对应入口；后台section可直接访问和刷新。原HTTP3060保留，麦克风和相机使用HTTPS安全上下文。最终web release为{release}。五张功能表仍共172项：前台21、用户中心88、管理后台35、验收与依赖22、后续规划6；本次仅修订已有入口、身份及验收契约，不新增范围。"
+  },
+  "features": {
+    "F-002": {
+      "5": "首页核心功能与用户登录有效；后台使用独立/admin入口",
+      "6": "用户/login、/user与后台/admin、/admin/login各自可达，旧入口正确跳转"
+    },
+    "F-012": {
+      "5": "从/login验证账号密码并建立用户会话；忘记密码查看邮件未开通说明及管理员联系帮助",
+      "6": "成功进入/user；后台单独从/admin/login登录；错误密码拒绝；未开通邮件不假称已发送"
+    },
+    "F-013": {
+      "5": "个人导航呈现用户会话，后台导航仅呈现管理员会话",
+      "6": "双端登录态独立，刷新有效期内保持；普通登录不直接取得后台权限"
+    },
+    "F-021": {
+      "5": "/user展示学习、生活、效率、AI与个人账户全部入口",
+      "6": "个人全部功能可达且不混入后台管理模块；后台使用自己的管理导航"
+    },
+    "F-023": {
+      "5": "个人手机端固定五项底栏；后台使用自己的快捷底栏与全部菜单",
+      "6": "两端底栏不混用，安全区与内容留白正确，360/390px无整页横向溢出"
+    },
+    "F-081": {
+      "5": "用户端修改本人名称与密码；管理员在后台账户修改自身资料",
+      "6": "不能自行修改角色或权益；改密码撤销该账户全部旧会话，只保留当前端新会话"
+    },
+    "F-082": {
+      "5": "退出时仅撤销当前端会话与Cookie",
+      "6": "退出个人端不退出后台，退出后台不退出个人端；已撤销会话不能再访问对应私有接口"
+    },
+    "F-083": {
+      "5": "user scope只访问本人业务与AI记录；后台会话不提供个人数据权限",
+      "6": "A/B跨用户访问失败，admin scope无法读取用户端私有数据，重命名Cookie不可绕过scope"
+    },
+    "F-084": {
+      "5": "/admin/login独立登录，/admin独立导航与15个section；/api/admin逐请求校验scope与角色",
+      "6": "无后台会话返回401，普通账号后台登录返回403；后台不出现个人模块，原14个管理模块及后台账户完整"
+    },
+    "F-117": {
+      "5": "测试普通用户登录后台、跨端令牌、旧API管理动作及管理员角色变更",
+      "6": "无admin scope不能访问后台，普通角色不能后台登录，旧/api/app管理动作拒绝，受限数据不变"
+    },
+    "F-128": {
+      "5": "访问公开IP/端口的独立用户和后台入口与旧地址跳转",
+      "6": "/login、/user、/admin/login、/admin页面和对应API可达；旧入口重定向正确，后台section可刷新"
+    }
+  },
+  "verification": {
+    "verifiedAt": "2026-10-14T14:59:35.113581+00:00",
+    "features": 172,
+    "newFeatures": 0,
+    "versionAddedFeatures": 35,
+    "sheets": {
+      "前台": 21,
+      "用户中心": 88,
+      "管理员后台": 35,
+      "验收与依赖": 22,
+      "后续规划": 6
+    },
+    "fullSheetCellsMatch": true,
+    "docFullTextMatchesXml": true,
+    "docSections": 29,
+    "docTopLevelParagraphs": 128,
+    "docTables": 1,
+    "documentRevision": 76,
+    "xlsxZipAndXmlValid": true,
+    "statusEvidenceCellsChecked": 344,
+    "clippedCells": 0,
+    "p2Unchanged": true,
+    "changedSheetCells": 43,
+    "csvAll172RowsMatch": true,
+    "xlsxAll172RowsMatch": true,
+    "coverageNoteCorrectionVerified": true,
+    "followupCorrectedCells": 1,
+    "totalSheetCellsWritten": 407,
+    "currentRelease": ".releases/20261014T145454Z-33605",
+    "loginHelp": {
+      "report": "docs/tests/login-help-inspection.json",
+      "productionChecks": 3,
+      "browserResponseFixtureChecks": 1,
+      "changedSheetCells": 3,
+      "documentParagraphsPatched": 4,
+      "all172RowsMatch": true,
+      "changedRowNoClipping": true
+    },
+    "previousSyncSheetCellsWritten": 364,
+    "changedRowLayoutCellsChecked": 55,
+    "portalSeparation": {
+      "reports": [
+        "portal-auth-results.json",
+        "portal-separation-results.json",
+        "portal-cookie-results.json",
+        "admin-portal-contract-results.json",
+        "media-settings-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-002",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-081",
+        "F-082",
+        "F-083",
+        "F-084",
+        "F-117",
+        "F-128"
+      ],
+      "changedSheetCells": 43,
+      "docPatchOperations": 19,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "secureHttpsVerified": true,
+      "legacyHistoryPreserved": true
+    }
+  }
+}

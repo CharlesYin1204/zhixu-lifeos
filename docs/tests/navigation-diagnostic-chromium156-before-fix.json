@@ -1,0 +1,59 @@
+{
+  "startedAt": "2026-10-14T12:40:10.427Z",
+  "pageerrors": [
+    {
+      "url": "http://154.40.47.111:3060/?view=ai",
+      "message": "i is not a function",
+      "stack": "TypeError: i is not a function\n    at iz (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:94201)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122724)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122770)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122770)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122770)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122770)"
+    },
+    {
+      "url": "http://154.40.47.111:3060/?view=ai",
+      "message": "i is not a function",
+      "stack": "TypeError: i is not a function\n    at iz (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:94201)\n    at uO (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:123309)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122572)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122770)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122704)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122704)\n    at u_ (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122634)\n    at uL (http://154.40.47.111:3060/_next/static/chunks/4bd1b696-c7408084347438ae.js:1:122770)"
+    }
+  ],
+  "console": [],
+  "failed": [],
+  "responses": [],
+  "steps": [
+    {
+      "label": "direct AI",
+      "url": "http://154.40.47.111:3060/?view=ai",
+      "title": "知序 LifeOS · 让学习与生活有序生长",
+      "h1": "一个好问题，是改变的开始。",
+      "historyKeys": [
+        "__NA",
+        "__PRIVATE_NEXTJS_INTERNALS_TREE"
+      ],
+      "error": false,
+      "body": "知序 LifeOS\n我的个人空间\n学习与生活，从容有序\n工作空间\n我的工作台\nAI 助手\nAgent 工作室\nNEW\n学习计划\n生活管理\n知识库\n插件市场\n会员中心\n给成长，多一点可能\n\n解锁更多 AI 能力与专属插件\n\n探索知序会员\n用户中心\n导\n导航诊断账户\n自由探索\n个人空间\nAI 助手\n⌕\n导\n导航诊断账户\n一个好问题，是改变的开始。\n\n和你的专属 AI 助手聊聊，把想法变成清晰的下一步。\n\n让多位 Agent 协作\n选择你的助手\n8 位\n知序管家\n目标规划\n学习教练\n学习成长\n生活管家\n生活管理\n健康伙伴\n运动健康\n财务助手\n收支预算\n复盘顾问\n复盘审阅\n语言陪练\n语言学习\n成长顾问\n职业成长\n历史对话\n1\n\n你的对话只在个人账户内保存。AI 回答可能存在偏差，请结合实际情况判断。\n\n知序管家\n准备好，陪你一起向前\n新对话\n你好，我是知序管家\n\n将复杂目标拆解为可执行步骤，协调你"
+    },
+    {
+      "label": "home",
+      "url": "http://154.40.47.111:3060/",
+      "title": "知序 LifeOS · 让学习与生活有序生长",
+      "h1": "导航诊断账户，今天也在向前。",
+      "historyKeys": [
+        "__NA",
+        "__PRIVATE_NEXTJS_INTERNALS_TREE"
+      ],
+      "error": false,
+      "body": "知序 LifeOS\n我的个人空间\n学习与生活，从容有序\n工作空间\n我的工作台\nAI 助手\nAgent 工作室\nNEW\n学习计划\n生活管理\n知识库\n插件市场\n会员中心\n给成长，多一点可能\n\n解锁更多 AI 能力与专属插件\n\n探索知序会员\n用户中心\n导\n导航诊断账户\n自由探索\n个人空间\n我的工作台\n⌕\n导\n导航诊断账户\n导航诊断账户，今天也在向前。\n\n把想做的事，变成正在发生的改变。\n\n10月14日星期三\n你的个人 AI 成长空间\n学习有方向，\n生活有自己的节奏。\n\n让成长有方向，让生活有秩序。\n\n开启 AI 协作\n制定我的计划\n你的成长\n学习规划\n健康生活\n灵感整理\n\n进行中的学习\n\n0项\n\n累计专注时长\n\n0分钟\n\n我的知识笔记\n\n0篇\n\n正在养成的习惯\n\n0个\n你的 AI 助手团队\n\n各有所长，为同一个你。\n\n查看全部\n知序管家\n\n将复杂目标拆解为可执行步骤，协调你的学习与生活。\n\n开始"
+    },
+    {
+      "label": "sidebar 0 ai",
+      "url": "http://154.40.47.111:3060/?view=ai",
+      "title": "知序 LifeOS · 让学习与生活有序生长",
+      "h1": "一个好问题，是改变的开始。",
+      "historyKeys": [
+        "__NA",
+        "__PRIVATE_NEXTJS_INTERNALS_TREE"
+      ],
+      "error": false,
+      "body": "知序 LifeOS\n我的个人空间\n学习与生活，从容有序\n工作空间\n我的工作台\nAI 助手\nAgent 工作室\nNEW\n学习计划\n生活管理\n知识库\n插件市场\n会员中心\n给成长，多一点可能\n\n解锁更多 AI 能力与专属插件\n\n探索知序会员\n用户中心\n导\n导航诊断账户\n自由探索\n个人空间\nAI 助手\n⌕\n导\n导航诊断账户\n一个好问题，是改变的开始。\n\n和你的专属 AI 助手聊聊，把想法变成清晰的下一步。\n\n让多位 Agent 协作\n选择你的助手\n8 位\n知序管家\n目标规划\n学习教练\n学习成长\n生活管家\n生活管理\n健康伙伴\n运动健康\n财务助手\n收支预算\n复盘顾问\n复盘审阅\n语言陪练\n语言学习\n成长顾问\n职业成长\n历史对话\n1\n\n你的对话只在个人账户内保存。AI 回答可能存在偏差，请结合实际情况判断。\n\n知序管家\n准备好，陪你一起向前\n新对话\n你好，我是知序管家\n\n将复杂目标拆解为可执行步骤，协调你"
+    }
+  ],
+  "passed": false,
+  "error": "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('.message.assistant')\nExpected substring: \"这是临时账户\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toContainText\" locator('.message.assistant') with timeout 5000ms\n  - waiting for locator('.message.assistant')\n\n    at captureRawStack (/www/wwwroot/xuexi/node_modules/playwright-core/lib/coreBundle.js:9282:17)\n    at callMatcherAsStep (/www/wwwroot/xuexi/node_modules/playwright/lib/matchers/expect.js:13316:57)\n    at Object.toContainText (/www/wwwroot/xuexi/node_modules/playwright/lib/matchers/expect.js:13308:23)\n    at /tmp/diagnose-navigation-156.mjs:20:403",
+  "completedAt": "2026-10-14T12:40:19.382Z"
+}

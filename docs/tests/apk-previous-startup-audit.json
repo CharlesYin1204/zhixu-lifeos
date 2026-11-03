@@ -1,0 +1,106 @@
+{
+  "auditedAt": "2026-10-14T15:35:20.557577+00:00",
+  "scope": "Read-only previous released APK packaging and API23 symbolic linkage audit; no build, release, installation or Android runtime execution.",
+  "artifact": {
+    "filename": "zhixu-lifeos-1.1.1-4.apk",
+    "size": 29149,
+    "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601",
+    "versionName": "1.1.1",
+    "versionCode": 4,
+    "packageId": "com.zhixu.lifeos",
+    "embeddedServerUrl": "https://154.40.47.111:3063/",
+    "canonicalDomainEmbedded": false
+  },
+  "dexLinkage": {
+    "dexVersion": "035",
+    "classDefinitions": 23,
+    "methodReferences": 368,
+    "fieldReferences": 67,
+    "unresolvedMethods": [],
+    "unresolvedFields": [],
+    "method": "Parsed actual classes.dex string/type/prototype/method/field/class definitions; resolved symbolic references against APK class declarations plus Android API23 android.jar classfile descriptors and inheritance/interface hierarchy.",
+    "androidJar": "/usr/lib/android-sdk/platforms/android-23/android.jar",
+    "launchActivityPresent": true,
+    "captureProviderPresent": true
+  },
+  "manifest": {
+    "minSdk": 23,
+    "targetSdk": 28,
+    "launcher": "com.zhixu.lifeos.shell.MainActivity",
+    "mainLauncherIntent": true,
+    "activityExported": true,
+    "usesCleartextTraffic": false,
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.CAMERA"
+    ],
+    "optionalFeatures": [
+      "android.hardware.microphone",
+      "android.hardware.camera",
+      "android.hardware.camera.any",
+      "android.hardware.camera.autofocus"
+    ],
+    "implicitRequiredFeatures": [
+      "android.hardware.faketouch"
+    ],
+    "captureProvider": {
+      "class": "com.zhixu.lifeos.shell.MainActivity$CaptureProvider",
+      "authority": "com.zhixu.lifeos.capture",
+      "exported": false,
+      "grantUriPermissions": true
+    }
+  },
+  "signatures": {
+    "verified": true,
+    "schemes": [
+      "v1",
+      "v2",
+      "v3"
+    ],
+    "certificateSha256": "fa8b1161063c978964b42700a09e8371905b84b28557fbfb4efef7fce2db0420",
+    "retainedCertificate": true
+  },
+  "availableRuntimeInfrastructure": {
+    "adb": false,
+    "emulator": false,
+    "avd": false,
+    "kvm": false,
+    "androidUsbDevice": false,
+    "usbDevicesObserved": [
+      "QEMU USB Tablet",
+      "USB root hub"
+    ],
+    "boundedSearchPaths": [
+      "/opt",
+      "/usr/lib/android-sdk",
+      "/usr/local",
+      "/root/.cache"
+    ]
+  },
+  "context": {
+    "reportedDevice": {
+      "androidMajor": 16,
+      "webViewChromeMajor": 138,
+      "model": "HONOR ELI-AN00"
+    },
+    "serverAccessEvidence": "Root agent observed ZhixuLifeOS/1.1.1 main page, CSS, JavaScript and icon responses HTTP 200. Client IP omitted.",
+    "serverLocalTlsProbe": {
+      "ipHttps3063": {
+        "httpStatus": 200,
+        "sslVerifyResult": 0
+      },
+      "canonicalDomainHttps443": {
+        "httpStatus": 200,
+        "sslVerifyResult": 0
+      }
+    }
+  },
+  "conclusion": "No packaging, launcher, signature or API23 missing-symbol defect was identified. The previous APK still embeds the IP origin. These checks do not establish the cause of the reported blank WebView.",
+  "limitations": [
+    "No physical Android device or Android emulator executed the APK.",
+    "Successful symbolic linkage does not prove Android16 lifecycle, WebView initialization, JavaScript hydration or rendered UI behavior.",
+    "Server-local TLS probes do not establish client network or client certificate trust.",
+    "Observed device and HTTP 200 resources do not support old-WebView or unreachable-IP explanations for that particular session."
+  ]
+}

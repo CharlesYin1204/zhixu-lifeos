@@ -1,0 +1,43 @@
+{
+  "status": "restored_and_published_verified",
+  "historicalRevisionFile": "../范围修订段落.json",
+  "historicalRevisionSha256": "b4de99f97b73e2f7f6e99f592c33d2cdba0457cf5f913d43a29f04b167c8a1a5",
+  "retainedUnchanged": true,
+  "restoredPromises": [
+    {
+      "key": "AI来源展示",
+      "previousRevisionIndices": [
+        1
+      ],
+      "restored": "知识库：用户创建文本笔记、标题与分类/标签，查看、编辑、删除和搜索本人条目。AI上下文仅使用本人有权访问的记录，按近期记录和关键词相关性选择并裁剪；回答区展示“本次提供给AI的资料”及可定位的记录名称，不能把候选上下文冒称为逐句引用或证明模型实际引用每条资料。输入资料与系统指令隔离，缺乏依据时明确说明。附件视觉识别和资料列表不等同于向量RAG。"
+    },
+    {
+      "key": "模型温度和输出上限",
+      "previousRevisionIndices": [
+        2
+      ],
+      "restored": "模型配置包括名称、供应商API Base URL、模型ID、API Key、启用状态、默认模型、temperature和maxTokens。温度允许0–2，显式输出上限为128–32768整数；空值使用服务端默认预算，明确配置上限时不得因重试或推理预算自动抬高。Agent可显式绑定模型或跟随默认值；修改后按绑定规则作用于下一次请求。密钥只在服务端加密保存、读取脱敏；URL校验协议与公网目标。"
+    },
+    {
+      "key": "插件排序",
+      "previousRevisionIndices": [
+        6
+      ],
+      "restored": "管理员可创建/编辑插件名称、简介、分类、版本、价格、免费/付费类型和sortOrder，并分别设置listed上架销售与enabled允许运行。sortOrder为-100000至100000整数，前台按升序展示。授权分为安装关系与购买记录；免费安装、既有安装和已购重装按权益规则处理，客户端不能自行生成授权。"
+    },
+    {
+      "key": "下架与安全停用独立",
+      "previousRevisionIndices": [
+        5
+      ],
+      "restored": "付费插件新安装由服务端验证有效购买记录；会员不自动包含单独销售的付费插件。listed=false为下架：阻止新购买及无授权的新安装，已安装用户仍可使用，已购用户仍可重装和使用。enabled=false为安全停用：所有用户都不能安装或运行，已有订单和记录保留；必须给出明确停用提示。免费改收费保留既有安装；管理员改价只影响新订单，历史订单快照不变。"
+    },
+    {
+      "key": "创建订单requestId幂等",
+      "previousRevisionIndices": [
+        20
+      ],
+      "restored": "错误约定：400输入无效，401未登录，402余额或购买权益不足，403无权限/来源不允许，404资源不存在，409幂等键与请求参数冲突，429频率限制，502/503上游失败或未配置。模型超时明确报错并允许重试。order.create携带用户范围内的requestId，同键同商品/支付方式/渠道返回原订单及支付信息；同键改参数返回409；并发请求只创建一单。重试保留原价格与状态，不重复授予权益。未传requestId的旧调用保持兼容并可创建独立订单；正式前端提交必须携带requestId。支付回调与人工发放仍需事务幂等。"
+    }
+  ]
+}

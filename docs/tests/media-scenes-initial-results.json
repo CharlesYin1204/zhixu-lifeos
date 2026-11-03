@@ -1,0 +1,402 @@
+{
+  "testedAt": "2026-10-14T13:44:02.751Z",
+  "base": "https://154.40.47.111:3063",
+  "transport": "HTTPS and WSS; cascade ASR → chat → TTS",
+  "results": [
+    {
+      "scene": "travel-talk",
+      "mode": "voice",
+      "startedAt": "2026-10-14T13:44:04.332Z",
+      "rounds": [
+        {
+          "round": 1,
+          "inputText": "Let's practice a hotel check in. I have a reservation for two nights under the name Taylor. You are the receptionist.",
+          "userTranscript": "Let's practice a hotel check-in. I have a reservation for two nights under the name Taylor. You are the receptionist.",
+          "assistantTranscript": "Welcome to our hotel, Mr. Taylor! I see your reservation here. Could you please provide a valid ID and a credit card for any incidentals?",
+          "audioBytes": 444000,
+          "audioNonzero": true,
+          "metrics": {
+            "asrMs": 2503,
+            "chatMs": 1376,
+            "firstAudioMs": 6757,
+            "ttsMs": 2981,
+            "totalMs": 6909
+          },
+          "savedMessageCount": 2,
+          "creditBefore": 30,
+          "creditAfter": 29
+        },
+        {
+          "round": 2,
+          "inputText": "Could I have a quiet room, please? What time is breakfast?",
+          "userTranscript": "Could I have a quiet room, please? What time is breakfast?",
+          "assistantTranscript": "Absolutely, I can arrange a quiet room for you. Breakfast is served from 7 to 10 a.m. Would you like help with anything else, like a wake-up call?",
+          "audioBytes": 458400,
+          "audioNonzero": true,
+          "metrics": {
+            "asrMs": 958,
+            "chatMs": 1170,
+            "firstAudioMs": 4469,
+            "ttsMs": 2454,
+            "totalMs": 4626
+          },
+          "savedMessageCount": 4,
+          "creditBefore": 29,
+          "creditAfter": 28
+        }
+      ],
+      "historySaved": true,
+      "passed": true,
+      "durationMs": 12283
+    },
+    {
+      "scene": "interview",
+      "mode": "voice",
+      "startedAt": "2026-10-14T13:44:16.616Z",
+      "rounds": [
+        {
+          "round": 1,
+          "inputText": "I want to practice a junior front end developer interview in English. I built a small React task list for class. Ask me one question.",
+          "userTranscript": "I want to practice a junior front-end developer interview in English. I built a small React task list for class. Ask me one question.",
+          "assistantTranscript": "Great! Can you explain how you manage the state in your React task list application?",
+          "audioBytes": 264000,
+          "audioNonzero": true,
+          "metrics": {
+            "asrMs": 1480,
+            "chatMs": 930,
+            "firstAudioMs": 4143,
+            "ttsMs": 1784,
+            "totalMs": 4233
+          },
+          "savedMessageCount": 2,
+          "creditBefore": 28,
+          "creditAfter": 27
+        }
+      ],
+      "historySaved": true,
+      "passed": true,
+      "durationMs": 4691
+    },
+    {
+      "scene": "study-qa",
+      "mode": "voice",
+      "startedAt": "2026-10-14T13:44:21.308Z",
+      "rounds": [
+        {
+          "round": 1,
+          "inputText": "Please explain why one half plus one quarter equals three quarters. Give a short example.",
+          "userTranscript": "Please explain why 1/2 + 1/4 equals 3/4. Give a short example.",
+          "assistantTranscript": "Sure! To add fractions, you need a common denominator. For 1/2 and 1/4, the common denominator is 4. \n\n1/2 becomes 2/4 (because 1 * 2 = 2 and 2 * 2 = 4). So, 2/4 + 1/4 equals 3/4. \n\nFor example, if you have half a pizza and a quarter of a pizza, together you have three-quarters of a pizza. \n\nCan you think of another pair of fractions to add?",
+          "audioBytes": 1166400,
+          "audioNonzero": true,
+          "metrics": {
+            "asrMs": 1462,
+            "chatMs": 2579,
+            "firstAudioMs": 8451,
+            "ttsMs": 4729,
+            "totalMs": 8835
+          },
+          "savedMessageCount": 2,
+          "creditBefore": 27,
+          "creditAfter": 26
+        }
+      ],
+      "historySaved": true,
+      "passed": true,
+      "durationMs": 9294
+    },
+    {
+      "scene": "speech-practice",
+      "mode": "voice",
+      "startedAt": "2026-10-14T13:44:30.603Z",
+      "rounds": [
+        {
+          "round": 1,
+          "inputText": "Please give feedback on my short speech. Reading every day helps me learn new words. I read for ten minutes after breakfast. I encourage everyone to try it.",
+          "userTranscript": "Please give feedback on my short speech. Reading every day helps me learn new words. I read for ten minutes after breakfast. I encourage everyone to try it.",
+          "assistantTranscript": "你的表达很清晰，尤其是鼓励大家尝试的部分非常积极！可以考虑加一点具体的例子，比如你读了哪些书，学到了哪些新词，这样会更有说服力。练习时可以尝试添加一些具体细节，使内容更丰富。你通常读哪些类型的书呢？",
+          "audioBytes": 1238400,
+          "audioNonzero": true,
+          "metrics": {
+            "asrMs": 801,
+            "chatMs": 2037,
+            "firstAudioMs": 6757,
+            "ttsMs": 4275,
+            "totalMs": 7165
+          }
+        }
+      ],
+      "passed": false,
+      "error": "Feedback ignored the speech content",
+      "durationMs": 7347
+    },
+    {
+      "scene": "essay-review",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:44:38.202Z",
+      "reply": "**Grammar Corrections:**\n\n1. **Original:** \"Yesterday I go to the library.\"\n   **Correction:** \"Yesterday I **went** to the library.\"\n\n2. **Original:** \"Reading books make me happy.\"\n   **Correction:** \"Reading books **makes** me happy.\"\n\n**Structure Suggestion:**\nConsider adding a concluding sentence to summarize your thoughts or express your overall feelings about reading. For example, you could say, \"Reading not only expands my knowledge but also brings me joy.\" This will provide a more complete and cohesive picture of your reading habit.",
+      "sourceCount": 1,
+      "passed": false,
+      "error": "Missing subject-verb correction",
+      "durationMs": 5380
+    },
+    {
+      "scene": "notes-organize",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:44:43.583Z",
+      "reply": "### Photosynthesis - Revision Notes\n\n**I. Definition**  \n- Process by which plants use sunlight to make glucose.\n\n**II. Role of Chlorophyll**  \n- Absorbs light in chloroplasts.\n\n**III. Inputs**  \n- Carbon dioxide  \n- Water  \n- Light\n\n**IV. Outputs**  \n- Glucose  \n- Oxygen\n\n**V. Chemical Equation**  \n\\[ \n6 \\, \\text{CO}_2 + 6 \\, \\text{H}_2\\text{O} \\rightarrow \\text{C}_6\\text{H}_{12}\\text{O}_6 + 6 \\, \\text{O}_2 \n\\]\n\n**VI. Additional Information**  \n- Oxygen is released into the air.\n\n### Revision Question  \nWhat are the main inputs and outputs of photosynthesis?",
+      "sourceCount": 1,
+      "passed": false,
+      "error": "Equation not preserved",
+      "durationMs": 4004
+    },
+    {
+      "scene": "chart-explain",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:44:47.588Z",
+      "reply": "The title of the graph is \"Daily Reading Minutes by Week,\" with units measured in minutes per day. The values for each week are as follows:\n\n- Week 1: 20 minutes\n- Week 2: 35 minutes\n- Week 3: 30 minutes\n- Week 4: 45 minutes\n\nThe highest reading minutes per day occurred in Week 4 at 45 minutes. There was a decrease in daily reading minutes from Week 2 (35 minutes) to Week 3 (30 minutes).",
+      "sourceCount": 1,
+      "historySaved": true,
+      "sourceAvailable": true,
+      "creditBefore": 23,
+      "creditAfter": 22,
+      "passed": true,
+      "durationMs": 2633
+    },
+    {
+      "scene": "object-identify",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:44:50.222Z",
+      "reply": "The visible everyday item is a pair of scissors. They are made of metal for the blades and plastic for the handles, which are blue in color. One ordinary use of scissors is to cut paper.",
+      "sourceCount": 1,
+      "historySaved": true,
+      "sourceAvailable": true,
+      "creditBefore": 22,
+      "creditAfter": 21,
+      "passed": true,
+      "durationMs": 4301
+    },
+    {
+      "scene": "meal-log",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:44:54.525Z",
+      "reply": "Visible foods: broccoli, rice, tomatoes.\n\nMeal diary entry: Today’s lunch included a nourishing combination of steamed broccoli, fluffy rice, and ripe tomatoes. The bright colors and fresh flavors made for a satisfying meal. I felt energized and ready to tackle the afternoon.\n\nGeneral balance suggestion: Aim to include a variety of protein sources in your meals, such as legumes, fish, or lean meats, to complement the vegetables and grains for a well-rounded diet.",
+      "sourceCount": 1,
+      "historySaved": true,
+      "sourceAvailable": true,
+      "creditBefore": 21,
+      "creditAfter": 20,
+      "passed": true,
+      "durationMs": 3989
+    },
+    {
+      "scene": "spoken-review",
+      "mode": "recording",
+      "startedAt": "2026-10-14T13:44:58.515Z",
+      "transcript": "Today, I practiced introducing myself in English. Tomorrow I will record a one-minute speech about my weekend.",
+      "noteSaved": true,
+      "sourceAvailable": true,
+      "creditBefore": 20,
+      "creditAfter": 19,
+      "durationSeconds": 7.623,
+      "passed": true,
+      "durationMs": 1151
+    }
+  ],
+  "errors": [
+    {
+      "scene": "speech-practice",
+      "error": "Feedback ignored the speech content"
+    },
+    {
+      "scene": "essay-review",
+      "error": "Missing subject-verb correction"
+    },
+    {
+      "scene": "notes-organize",
+      "error": "Equation not preserved"
+    }
+  ],
+  "limitations": [
+    "Short synthetic English speech; no microphone, camera, mobile device or human listening evaluation in this script.",
+    "Essay, notes and chart are clean generated images, not handwriting or difficult real-world capture.",
+    "Object and meal images are AI-generated photographic samples visually inspected before use; they do not establish accuracy across real-life photographs.",
+    "Semantic checks cover specified visible facts and representative replies, not exhaustive model quality."
+  ],
+  "fixtures": [
+    {
+      "file": "docs/tests/media-scene-fixtures/essay.png",
+      "description": "My Reading Habit",
+      "provenance": "Original synthetic text rendered with sharp from SVG.",
+      "bytes": 46074,
+      "sha256": "fdddab31cd8fd9719e45ada0948eb92a07113324c29153ff2a968f9a4ec65726"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/notes.png",
+      "description": "Photosynthesis - revision notes",
+      "provenance": "Original synthetic text rendered with sharp from SVG.",
+      "bytes": 65048,
+      "sha256": "ec216179e8846bd8426d7dc2c37b1bf81900f0cf863d7c371c929197bfca151f"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/chart.png",
+      "description": "Weekly daily reading minutes: 20, 35, 30, 45; Week 3 decreases.",
+      "provenance": "Original SVG chart rendered with sharp; all values predetermined.",
+      "bytes": 48717,
+      "sha256": "551b4fc01ec813f641683bfcab101d436ebc3f50cbfbc10e2e387abacd51b458"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/object-scissors.png",
+      "description": "One open pair of scissors, blue plastic handles and steel blades.",
+      "provenance": "Generated with built-in imagegen for this test; visually inspected by operator.",
+      "bytes": 2040140,
+      "sha256": "a911614fdd8d95f1937166ef3a9ad78f42a87c7711ebf652b1d7fb045a8c9ae0"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/meal-rice-broccoli-tomato.png",
+      "description": "White plate with white rice, broccoli and tomato wedges.",
+      "provenance": "Generated with built-in imagegen for this test; visually inspected by operator.",
+      "bytes": 2285582,
+      "sha256": "21a10dce90b11f4f3618f56272542bf092b87b62703981092902ce769552412f"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/travel-talk-1.wav",
+      "description": "Let's practice a hotel check in. I have a reservation for two nights under the name Taylor. You are the receptionist.",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 398186,
+      "sha256": "9872a637612cc26170b44d05ad330ea44fa26db6b477cad43d2485a04e15b319"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/travel-talk-2.wav",
+      "description": "Could I have a quiet room, please? What time is breakfast?",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 222884,
+      "sha256": "e5c74f6054d244d5dea763e2eb681015d492c7bee12681464723b800d28a0c6f"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/interview-1.wav",
+      "description": "I want to practice a junior front end developer interview in English. I built a small React task list for class. Ask me one question.",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 490984,
+      "sha256": "75f335c333778601b24f8c4bd2948336d469b3cb78486d2dd8558a6389ac1ffc"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/study-qa-1.wav",
+      "description": "Please explain why one half plus one quarter equals three quarters. Give a short example.",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 327224,
+      "sha256": "24a3659a78cc0f0b51b1dd49efda87011c0bcddf7a6689812975e65ac0a6e7b7"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/speech-practice-1.wav",
+      "description": "Please give feedback on my short speech. Reading every day helps me learn new words. I read for ten minutes after breakfast. I encourage everyone to try it.",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 553080,
+      "sha256": "027af19df098eb200d1cc5123ad23dd59a8a043a91031b0bd2176caa8fddbc80"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/spoken-review.wav",
+      "description": "Today I practiced introducing myself in English. Tomorrow I will record a one minute speech about my weekend.",
+      "provenance": "Original scripted speech synthesized locally using espeak; 24 kHz mono PCM16 WAV.",
+      "bytes": 365956,
+      "sha256": "9815f94038fdc5208a9b4cc88552bc5afdc390bc9d32b9f280dbcc6c67c98177"
+    }
+  ],
+  "initialCredits": 30,
+  "availableScenes": [
+    "english-free",
+    "travel-talk",
+    "interview",
+    "study-qa",
+    "speech-practice",
+    "homework",
+    "essay-review",
+    "notes-organize",
+    "chart-explain",
+    "object-identify",
+    "meal-log",
+    "class-notes",
+    "spoken-review"
+  ],
+  "finalCredits": 19,
+  "operations": [
+    {
+      "kind": "image",
+      "status": "completed",
+      "count": 5
+    },
+    {
+      "kind": "transcribe",
+      "status": "completed",
+      "count": 1
+    },
+    {
+      "kind": "voice",
+      "status": "completed",
+      "count": 5
+    }
+  ],
+  "usage": [
+    {
+      "kind": "media_speech",
+      "status": "success",
+      "calls": 5,
+      "reportedTokens": null
+    },
+    {
+      "kind": "media_transcribe",
+      "status": "success",
+      "calls": 1,
+      "reportedTokens": "99"
+    },
+    {
+      "kind": "media_vision",
+      "status": "success",
+      "calls": 5,
+      "reportedTokens": "162606"
+    },
+    {
+      "kind": "media_voice_asr",
+      "status": "success",
+      "calls": 5,
+      "reportedTokens": "559"
+    },
+    {
+      "kind": "media_voice_chat",
+      "status": "success",
+      "calls": 5,
+      "reportedTokens": "1029"
+    }
+  ],
+  "billing": {
+    "successfulOperations": 11,
+    "creditsDeducted": 11,
+    "balanced": true
+  },
+  "cleanup": {
+    "temporaryUsers": 1,
+    "uploadedAssets": 6,
+    "remaining": {
+      "media_assets": 0,
+      "media_operations": 0,
+      "sessions": 0,
+      "records": 0,
+      "conversations": 0,
+      "runs": 0,
+      "orders": 0,
+      "installs": 0,
+      "usage_logs": 0,
+      "audit": 0,
+      "users": 0,
+      "rateLimits": 0,
+      "assetFiles": 0
+    },
+    "passed": true
+  },
+  "completedAt": "2026-10-14T13:44:59.890Z",
+  "summary": {
+    "passed": 7,
+    "failed": 3,
+    "expectedScenes": 10
+  }
+}

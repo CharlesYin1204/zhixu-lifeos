@@ -1,0 +1,193 @@
+{
+  "testedAt": "2026-10-14T13:24:00.035Z",
+  "base": "http://127.0.0.1:3061",
+  "command": "TEST_BASE_URL=http://127.0.0.1:3061 node --env-file=.env.local scripts/test-apk.mjs",
+  "passed": 12,
+  "failed": 0,
+  "fixturesCleaned": true,
+  "artifact": {
+    "appName": "知序 LifeOS",
+    "versionName": "1.1.1",
+    "versionCode": 4,
+    "serverUrl": "https://154.40.47.111:3063/",
+    "packageId": "com.zhixu.lifeos",
+    "buildStatus": "ready",
+    "status": "ready",
+    "builtAt": "2026-10-14T13:23:58.547Z",
+    "downloadUrl": "/api/download?file=zhixu-lifeos-1.1.1-4.apk",
+    "latestDownloadUrl": "/api/download?file=zhixu-lifeos.apk",
+    "filename": "zhixu-lifeos-1.1.1-4.apk",
+    "size": 29149,
+    "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601",
+    "certificateSha256": "fa8b1161063c978964b42700a09e8371905b84b28557fbfb4efef7fce2db0420",
+    "minSdkVersion": 23,
+    "targetSdkVersion": 28,
+    "signed": true,
+    "signatureSchemes": [
+      "v1",
+      "v2",
+      "v3"
+    ]
+  },
+  "results": [
+    {
+      "name": "Only administrators can trigger Android builds",
+      "passed": true,
+      "ms": 1331,
+      "evidence": {
+        "anonymousStatus": 401,
+        "userStatus": 403,
+        "administratorLogin": true
+      }
+    },
+    {
+      "name": "Invalid APK configuration is rejected before saving or starting a build",
+      "passed": true,
+      "ms": 43,
+      "evidence": {
+        "invalidConfigurationStatus": 400
+      }
+    },
+    {
+      "name": "A failed build reports its error and retains the true published release metadata",
+      "passed": true,
+      "ms": 627,
+      "evidence": {
+        "buildStatus": "failed",
+        "errorReported": true,
+        "publishedVersion": "1.1.0",
+        "releaseUnchanged": true
+      }
+    },
+    {
+      "name": "Administrator build completes asynchronously under production service account",
+      "passed": true,
+      "ms": 10456,
+      "evidence": {
+        "buildStates": [
+          {
+            "status": "building",
+            "source": "build-response",
+            "at": "2026-10-14T13:23:48.857Z"
+          },
+          {
+            "status": "ready",
+            "source": "admin-resource",
+            "at": "2026-10-14T13:23:59.251Z"
+          }
+        ],
+        "uid": 994,
+        "versionName": "1.1.1",
+        "versionCode": 4
+      }
+    },
+    {
+      "name": "Actual APK hashes match manifest and latest version",
+      "passed": true,
+      "ms": 10,
+      "evidence": {
+        "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601",
+        "size": 29149
+      }
+    },
+    {
+      "name": "APK v1 v2 v3 signatures verify with the retained certificate",
+      "passed": true,
+      "ms": 400,
+      "evidence": {
+        "certificateSha256": "fa8b1161063c978964b42700a09e8371905b84b28557fbfb4efef7fce2db0420",
+        "signatureSchemes": [
+          "v1",
+          "v2",
+          "v3"
+        ],
+        "verifierOutput": "Verifies\nVerified using v1 scheme (JAR signing): true\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=Zhixu LifeOS, OU=Application, O=Zhixu, C=CN\nSigner #1 certificate SHA-256 digest: fa8b1161063c978964b42700a09e8371905b84b28557fbfb4efef7fce2db0420\nSigner #1 certificate SHA-1 digest: c93d19cf056ad8cab84e0e1bc6e665ae778e1c4f\nSigner #1 certificate MD5 digest: e97ea5af4e58d2edbd58507597b317a5\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 2048\nSigner #1 public key SHA-256 digest: 739e370b313a38b1b5378adf05b63ff2b620adfc6a9b73cb30f072d2a0fbc546\nSigner #1 public key SHA-1 digest: 73aa8b90ef361eb49cfa78223973c6385e2f3d39\nSigner #1 public key MD5 digest: eac13521e7166f35a5e8e5931b459a20"
+      }
+    },
+    {
+      "name": "APK alignment and Android package metadata match configured values",
+      "passed": true,
+      "ms": 10,
+      "evidence": {
+        "alignmentBytes": 4,
+        "packageMetadata": "package: name='com.zhixu.lifeos' versionCode='4' versionName='1.1.1' platformBuildVersionName='6.0.1' platformBuildVersionCode='23'\nsdkVersion:'23'\ntargetSdkVersion:'28'\nuses-permission: name='android.permission.INTERNET'\nuses-permission: name='android.permission.RECORD_AUDIO'\nuses-permission: name='android.permission.CAMERA'\napplication-label:'知序 LifeOS'\napplication-icon-160:'res/drawable/ic_launcher.xml'\napplication: label='知序 LifeOS' icon='res/drawable/ic_launcher.xml'\nlaunchable-activity: name='com.zhixu.lifeos.shell.MainActivity'  label='' icon=''\nfeature-group: label=''\n  uses-feature-not-required: name='android.hardware.camera'\n  uses-feature-not-required: name='android.hardware.camera.any'\n  uses-feature-not-required: name='android.hardware.camera.autofocus'\n  uses-feature-not-required: name='android.hardware.microphone'\n  uses-feature: name='android.hardware.faketouch'\n  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'\nmain\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales: '--_--'\ndensities: '160'"
+      }
+    },
+    {
+      "name": "HTTPS manifest and DEX contain scoped media permissions, private capture provider and state restoration",
+      "passed": true,
+      "ms": 23,
+      "evidence": {
+        "serverUrl": "https://154.40.47.111:3063/",
+        "cleartextDisabled": true,
+        "providerExported": false,
+        "scopedUriGrants": true,
+        "mediaPermissionCallbacksPresent": true,
+        "webViewStateRestorationPresent": true,
+        "deviceExecutionTested": false
+      }
+    },
+    {
+      "name": "Signing material stays private and invalid configs do not replace the released APK",
+      "passed": true,
+      "ms": 137,
+      "evidence": {
+        "signingFilesMode": "0600",
+        "rejectedInputs": 3,
+        "releaseUnchanged": true
+      }
+    },
+    {
+      "name": "Public download returns freshly generated version and latest alias with identical hashes",
+      "passed": true,
+      "ms": 25,
+      "evidence": {
+        "downloads": [
+          {
+            "url": "/api/download?file=zhixu-lifeos-1.1.1-4.apk",
+            "status": 200,
+            "size": 29149,
+            "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601"
+          },
+          {
+            "url": "/api/download?file=zhixu-lifeos.apk",
+            "status": 200,
+            "size": 29149,
+            "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601"
+          }
+        ],
+        "manifestMatches": true
+      }
+    },
+    {
+      "name": "Public download rejects directory traversal, arbitrary files and symlink escape",
+      "passed": true,
+      "ms": 33,
+      "evidence": {
+        "deniedNames": [
+          "../private/android-signing.pass",
+          "../../.env.local",
+          "android-signing.jks",
+          "/etc/passwd",
+          "missing.apk"
+        ],
+        "symlinkEscapeStatus": 404
+      }
+    },
+    {
+      "name": "Configured public server serves the released APK through its advertised address",
+      "passed": true,
+      "ms": 49,
+      "evidence": {
+        "url": "https://154.40.47.111:3063/api/download?file=zhixu-lifeos-1.1.1-4.apk",
+        "status": 200,
+        "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601",
+        "size": 29149
+      }
+    }
+  ],
+  "deviceAcceptance": {
+    "tested": false,
+    "reason": "No attached Android device or emulator; installation and native device behavior have not been claimed."
+  }
+}

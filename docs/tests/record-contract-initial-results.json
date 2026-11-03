@@ -1,0 +1,140 @@
+{
+  "startedAt": "2026-10-14T12:31:12.082Z",
+  "base": "http://127.0.0.1:3060",
+  "scope": "Live HTTP record contracts, isolated fixture users, zero AI calls",
+  "results": [
+    {
+      "name": "Goal links accept only an owned goal, for both creation and update",
+      "passed": true,
+      "ms": 697,
+      "evidence": {
+        "crossUserCreateRejected": true,
+        "crossUserUpdateRejected": true,
+        "validLinkPersisted": true
+      }
+    },
+    {
+      "name": "Events reject reversed or equal times and invalid calendar dates",
+      "passed": true,
+      "ms": 539,
+      "evidence": {
+        "invalidCases": 9,
+        "validLeapDayAccepted": true,
+        "overnightEventAccepted": true
+      }
+    },
+    {
+      "name": "Goal end dates cannot precede their start dates",
+      "passed": true,
+      "ms": 190
+    },
+    {
+      "name": "goal completion status and 100% progress stay synchronized",
+      "passed": true,
+      "ms": 443,
+      "evidence": {
+        "createByStatus": true,
+        "createByProgress": true,
+        "updateByStatus": true,
+        "updateByProgress": true
+      }
+    },
+    {
+      "name": "course completion status and 100% progress stay synchronized",
+      "passed": true,
+      "ms": 475,
+      "evidence": {
+        "createByStatus": true,
+        "createByProgress": true,
+        "updateByStatus": true,
+        "updateByProgress": true
+      }
+    },
+    {
+      "name": "Expense amounts reject zero and sub-cent values while preserving one cent",
+      "passed": true,
+      "ms": 315,
+      "evidence": {
+        "rejected": [
+          0,
+          0.001
+        ],
+        "acceptedAmount": 0.01,
+        "storedCents": 1
+      }
+    },
+    {
+      "name": "Habit frequency accepts the 1–7 day boundaries and rejects invalid counts",
+      "passed": true,
+      "ms": 519,
+      "evidence": {
+        "accepted": [
+          1,
+          7
+        ],
+        "rejected": [
+          0,
+          8,
+          -1,
+          1.5,
+          "invalid"
+        ]
+      }
+    },
+    {
+      "name": "Concurrent focus retries persist one record and one duration per user",
+      "passed": true,
+      "ms": 901,
+      "evidence": {
+        "parallelRequestsPerUser": 3,
+        "recordsAddedPerUser": 1,
+        "minutesAddedPerUser": 25,
+        "replayedRequestAddedMinutes": 0,
+        "usersHaveDistinctRecordIds": true
+      }
+    },
+    {
+      "name": "Administrator account disabling blocks existing sessions and restoring access works",
+      "passed": false,
+      "ms": 1021,
+      "error": "Cannot read properties of null (reading 'id')"
+    },
+    {
+      "name": "A disabled administrator session cannot read administration or update users",
+      "passed": true,
+      "ms": 169,
+      "evidence": {
+        "disabledAdminReadDenied": true,
+        "disabledAdminWriteDenied": true,
+        "restoredAdminWorks": true
+      }
+    },
+    {
+      "name": "Credits can be edited on an expired membership when its existing expiry is unchanged",
+      "passed": true,
+      "ms": 300,
+      "evidence": {
+        "creditsChanged": true,
+        "expiredDatePreserved": true,
+        "noExtraMembershipCredits": true
+      }
+    }
+  ],
+  "aiProviderCalls": 0,
+  "cleanup": [
+    {
+      "id": "28edca13-899e-4642-843c-76bd2d77a801",
+      "removed": true
+    },
+    {
+      "id": "a4f67031-b93f-4c15-ad1a-90f05be054f6",
+      "removed": true
+    },
+    {
+      "id": "9e749d0e-6b38-4ee0-95c0-5dbfeb9aa01f",
+      "removed": true
+    }
+  ],
+  "passed": false,
+  "finishedAt": "2026-10-14T12:31:20.137Z"
+}

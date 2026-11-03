@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-10-14T12:45:51.370511+00:00",
+  "origin": "http://154.40.47.111:3060",
+  "oldBuildId": "nGcHO8LBPc_R6aPHHGYPo",
+  "assets": [
+    "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+    "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+    "/_next/static/chunks/834-c99a86cef54cd27a.js",
+    "/_next/static/chunks/app/page-15ddfb265ce82a50.js",
+    "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+    "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+    "/_next/static/chunks/webpack-44d8aec3c26a0cdc.js",
+    "/_next/static/css/b0b4652307b3810b.css"
+  ]
+}

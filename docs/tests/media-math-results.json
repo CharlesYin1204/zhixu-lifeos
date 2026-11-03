@@ -1,0 +1,11 @@
+{
+  "testedAt": "2026-10-14T13:21:29.988Z",
+  "passed": true,
+  "actualProviderAnswerRendered": true,
+  "mathML": true,
+  "markdown": true,
+  "noRawHtml": true,
+  "unsafeLinksBlocked": true,
+  "remoteImageEmbedsBlocked": true,
+  "codePreserved": true
+}

@@ -1,0 +1,35 @@
+{
+  "testedAt": "2026-10-14T13:23:46.670Z",
+  "passed": 4,
+  "failed": 0,
+  "javaCompilation": {
+    "passed": true,
+    "api": 23,
+    "jdk": 17,
+    "classes": 23
+  },
+  "sourceSha256": "a4ec7eacc8947ab5401af0894430b6db71afb53966d1a97d241929b150ca20be",
+  "results": [
+    {
+      "name": "Actual Java-embedded blob scripts preserve a 2 MB binary recording over bounded chunks",
+      "passed": true
+    },
+    {
+      "name": "Revoked blobs and missing page state produce errors instead of hanging or empty successful files",
+      "passed": true
+    },
+    {
+      "name": "Cookie-bearing native downloads require the configured origin and do not follow redirects",
+      "passed": true
+    },
+    {
+      "name": "Storage Access Framework, byte limits, cancellation cleanup and no JavaScript bridge are present",
+      "passed": true
+    }
+  ],
+  "scope": "Java-embedded blob JavaScript executed in a Node VM with Blob/FileReader adapters; native security boundaries inspected in source. Java compiled against Android API 23. This is not an Android device runtime test.",
+  "deviceAcceptance": {
+    "tested": false,
+    "reason": "No attached Android device or emulator."
+  }
+}

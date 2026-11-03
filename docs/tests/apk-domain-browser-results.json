@@ -1,0 +1,400 @@
+{
+  "testedAt": "2026-10-14T15:41:00.304Z",
+  "base": "https://xuexi.yinchao1204.vip",
+  "userAgent": "Mozilla/5.0 (Linux; Android 16; ELI-AN00 Build/HONORELI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/138.0.7204.179 Mobile Safari/537.36 ZhixuLifeOS/1.1.2",
+  "scope": "Read-only desktop Chromium with Android WebView user-agent and mobile viewport emulation; no Android device, no Android runtime, no login or account changes.",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "ignoreHTTPSErrors": false,
+  "pages": [
+    {
+      "path": "/",
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "errorResponses": [],
+      "staticResponses": [
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/405d4ec2c562d2ef.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/101758f6796c8bb2.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/d24d55c420fb613b.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/735c18213c6f9742.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/webpack-5b6181f52386ed69.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "resourceType": "script"
+        }
+      ],
+      "mainDocument": {
+        "url": "https://xuexi.yinchao1204.vip/",
+        "status": 200,
+        "securityDetails": {
+          "issuer": "YR2",
+          "protocol": "TLS 1.3",
+          "subjectName": "xuexi.yinchao1204.vip",
+          "validFrom": 1791985205,
+          "validTo": 1799761204
+        }
+      },
+      "page": {
+        "url": "https://xuexi.yinchao1204.vip/",
+        "title": "知序 LifeOS · 让学习与生活有序生长",
+        "secureContext": true,
+        "readyState": "complete",
+        "bodyText": "跳到主要内容\n知序 LifeOS\n登录\n\n学习与生活的 AI 伙伴\n\n把想学的，\n变成每天的进步。\n\n让不同专长的 AI 助手一起帮你拆解目标、练习表达、整理知识，也照顾好日常生活。\n\n免费开始\n看看能做什么\n多 Agent 协作\n语音与图片\n学习与生活\n你的 AI 成长伙伴\n功能示意\n一起，练习英语\n从熟悉的生活场景开始\n英语口语\n你\n\nI'd like to order a coffee.\n\nAI 语音伙伴\n\nOf course. Would you like it\nhot or iced?\n\n当然。你想要热的还是冰的？\n\n连续对话，自然练习\n\n拍照解题\n试着解一元二次方程\nx² − 5x + 6 = 0\n先因式分解，再一步步求解。\n(x − 2)(x − 3) = 0\n每次练习，都值得留下\n记录、复习，慢慢积累。\n\n一处规划，也一处行动\n\n学习有方向，\n生活有自己的节奏。\n\n从“我想做到”到“今天做什么”，让计划、记录与 AI 建议连在一起。\n\n你的成长，\n值得被认真安排。\n\n把大目标拆成小任务，留出专注时间，把每次练习与每一条灵感积累下来。\n\n设定学习目标\n安排日常计划\n整理与复习\n开始规划我的学习\n学习计划与知识积累\n\n任务、目标、课程、专注记录、复习笔记与知识库，给不同阶段的学习一个清楚的位置。\n\n任务与课程\n专注与复习\n知识笔记\n照顾好日常的小事\n\n记录习惯、日程、收支与健康，让学习安排和生活节奏一起向前。\n\n习惯打卡\n生活账本\n日程与健康\n按需安装自己的工具\n\n从插件市场选择免费或付费工具；会员方案提供对应的 AI 额度与权益，按你的需要选择。\n\n免费与付费插件\n会员权益\n统一账户管理\n\n不止一种提问方式\n\n说一句，拍一张，\n都能开始。\n\n13 种语音、图片与录音场景，把 AI 放进真正用得上的时刻。\n\n实时语音\n开口，把表达练熟\n\n从一句简单的问候开始，在连续对话里练习听力、表达与临场反应。\n\n“陪我练习在咖啡店点单，语速慢一点。”\n英语自由对话\n旅行口语\n面试练习\n学习问答\n演讲练习\n图片学习\n拍下来，把问题看清\n\n遇到看不懂的题目、图表或笔记，上传照片，让 AI 帮你一步步梳理。\n\n“这道题应该从哪里开始？先给我一点提示。”\n拍照解题\n作文批改\n笔记整理\n图表解读\n物品识别\n饮食记录\n录音整理\n录下来，把重点留下\n\n录下课堂片段或一段口语练习，再把声音转成便于回看的文字与建议。\n\n“整理这段课堂录音，列出重点和复习问题。”\n课堂笔记\n口语复盘\n\n录音与相机功能请通过 HTTPS 访问，并允许浏览器使用相应设备。\n\n让不同专长一起思考\n\n一个目标，\n交给一支 AI 团队。\n\n规划者先拆解目标，三位专业助手并行分析，再由复核者汇总成一份方案。每一步的进度和成果，都可以回看。\n\n了解我的 AI 团队\n目标示例\n\n“想提升英语口语，也想把每周的学习和运动安排好。”\n\n规划者\n明确目标，拆解任务\n学习规划\n节奏与方法\n表达练习\n场景与练习\n生活教练\n习惯与行动\n并行分析 · 汇集成果\n复核与总结\n整理成一份可执行的方案\n协作流程示意，具体成员可按任务选择。\n\n从适合自己的开始\n\n按照你的需要，\n选择成长方案。\n\n查看当前会员价格与权益。付款方式以购买时的配置为准。\n\n自由探索\n\n¥\n0\n\n30 次 AI 调用额度\n学习与生活全部基础工具\n免费插件\n多 Agent 协作体验\n免费注册\n成长会员\n\n¥\n29\n/ 30 天\n\n每次开通增加 600 次 AI 额度\n30 天成长会员标识\n学习与生活记录\n所有免费工具\n查看会员方案\n年度伙伴\n\n¥\n249\n/ 365 天\n\n每次开通增加 8,000 次 AI 额度\n365 天会员有效期\n全部基础功能\n多 Agent 任务记录\n查看会员方案\n\n方案内容与价格由平台维护，购买前可在用户中心确认具体权益。AI 回答可能存在误差，请核对重要信息。\n\n知序 Android 客户端\n把成长的空间，\n带在身边。\n\n随时打开你的学习与生活工作台。\n语音、拍照与记录，从手机开始。\n\n下载安卓 APK\n版本 1.1.2 · Android 6.0 及以上\n联网使用\n今天，继续生长\n给自己一点时间\n从一个\n小目标开始。\n练一段英语口语\n开口，就是进步\n拍照整理知识\n把问题看得更清楚\n学习\nAI\n生活\n应用界面示意\n知序 LifeOS\n\n让学习与生活，有序生长。\n\n产品功能\n使用场景\n会员方案\n安卓下载\n登录账户\n联系支持\n\n账户或使用问题，请联系平台管理员。\n\n知序 LifeOS · 学习与生活 AI 平台\n管理员登录",
+        "bodyTextLength": 1909,
+        "headings": [
+          {
+            "text": "把想学的，\n变成每天的进步。",
+            "inViewport": true
+          },
+          {
+            "text": "学习有方向，\n生活有自己的节奏。",
+            "inViewport": false
+          },
+          {
+            "text": "说一句，拍一张，\n都能开始。",
+            "inViewport": false
+          },
+          {
+            "text": "一个目标，\n交给一支 AI 团队。",
+            "inViewport": false
+          },
+          {
+            "text": "按照你的需要，\n选择成长方案。",
+            "inViewport": false
+          },
+          {
+            "text": "把成长的空间，\n带在身边。",
+            "inViewport": false
+          }
+        ],
+        "visibleControls": [
+          {
+            "tag": "A",
+            "label": "跳到主要内容",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "知序 LifeOS",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "登录",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "免费开始",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "看看能做什么",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "开始规划我的学习",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "了解我的 AI 团队",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "免费注册",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "查看会员方案",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "查看会员方案",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "下载安卓 APK",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "知序 LifeOS",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "产品功能",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "使用场景",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "会员方案",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "安卓下载",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "登录账户",
+            "type": null,
+            "inViewport": false
+          },
+          {
+            "tag": "A",
+            "label": "管理员登录",
+            "type": null,
+            "inViewport": false
+          }
+        ],
+        "horizontalOverflow": false
+      },
+      "passed": true
+    },
+    {
+      "path": "/login",
+      "pageErrors": [],
+      "consoleErrors": [],
+      "failedRequests": [],
+      "errorResponses": [],
+      "staticResponses": [
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/405d4ec2c562d2ef.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/101758f6796c8bb2.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/d24d55c420fb613b.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/css/7ef9b677a9987ff6.css",
+          "status": 200,
+          "resourceType": "stylesheet"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/webpack-5b6181f52386ed69.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/611-d3db201b9cd2bd27.js",
+          "status": 200,
+          "resourceType": "script"
+        },
+        {
+          "url": "https://xuexi.yinchao1204.vip/_next/static/chunks/app/login/page-dcdb470523dc38ca.js",
+          "status": 200,
+          "resourceType": "script"
+        }
+      ],
+      "mainDocument": {
+        "url": "https://xuexi.yinchao1204.vip/login",
+        "status": 200,
+        "securityDetails": {
+          "issuer": "YR2",
+          "protocol": "TLS 1.3",
+          "subjectName": "xuexi.yinchao1204.vip",
+          "validFrom": 1791985205,
+          "validTo": 1799761204
+        }
+      },
+      "page": {
+        "url": "https://xuexi.yinchao1204.vip/login",
+        "title": "用户登录 · 知序 LifeOS",
+        "secureContext": true,
+        "readyState": "complete",
+        "bodyText": "知序 LifeOS\n返回首页\n欢迎回来\n\n登录后，进入你的个人用户中心。\n\n登录\n注册账户\n邮箱地址\n密码\n登录用户中心\n忘记密码？\n\n个人记录保存在你的专属账户中\n\n管理员登录\n知序 LifeOS，让学习与生活有序生长。",
+        "bodyTextLength": 111,
+        "headings": [
+          {
+            "text": "欢迎回来",
+            "inViewport": true
+          }
+        ],
+        "visibleControls": [
+          {
+            "tag": "A",
+            "label": "知序 LifeOS",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "返回首页",
+            "type": null,
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "label": "登录",
+            "type": "button",
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "label": "注册账户",
+            "type": "button",
+            "inViewport": true
+          },
+          {
+            "tag": "INPUT",
+            "label": "you@example.com",
+            "type": "email",
+            "inViewport": true
+          },
+          {
+            "tag": "INPUT",
+            "label": "输入你的密码",
+            "type": "password",
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "label": "显示密码",
+            "type": "button",
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "label": "登录用户中心",
+            "type": "submit",
+            "inViewport": true
+          },
+          {
+            "tag": "BUTTON",
+            "label": "",
+            "type": "button",
+            "inViewport": true
+          },
+          {
+            "tag": "A",
+            "label": "管理员登录",
+            "type": null,
+            "inViewport": true
+          }
+        ],
+        "horizontalOverflow": false
+      },
+      "passed": true
+    }
+  ],
+  "actualBrowserVersion": "156.0.8078.4",
+  "passed": 2,
+  "failed": 0
+}

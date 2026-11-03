@@ -1,0 +1,58 @@
+{
+  "testedAt": "2026-10-14T13:23:56.775Z",
+  "base": "https://154.40.47.111:3063",
+  "browser": "156.0.8078.4",
+  "capture": "Chromium fake-device silent WAV through actual getUserMedia/MediaRecorder/AudioWorklet; no physical microphone test",
+  "results": [
+    {
+      "name": "Trusted HTTPS exposes microphone capture and all 13 configured scenarios",
+      "passed": true,
+      "ms": 1499
+    },
+    {
+      "name": "Voice connects through production WSS, mutes, interrupts and ends without leaking microphone tracks",
+      "passed": true,
+      "ms": 516
+    },
+    {
+      "name": "Actual browser MediaRecorder supports pause/resume, local preview and deletion before any upload",
+      "passed": true,
+      "ms": 2559
+    },
+    {
+      "name": "Photo selection uploads a real image, gives preview and removes the private asset",
+      "passed": true,
+      "ms": 1197
+    },
+    {
+      "name": "Actual saved photo answer displays readable equations and Markdown in personal history",
+      "passed": true,
+      "ms": 883
+    },
+    {
+      "name": "User center entries open each media workspace and ordinary AI pages remain healthy",
+      "passed": true,
+      "ms": 3752
+    },
+    {
+      "name": "Administrator media settings show actual model bindings and valid capabilities",
+      "passed": true,
+      "ms": 620
+    },
+    {
+      "name": "All media workspaces fit mobile widths and preserve bottom navigation",
+      "passed": true,
+      "ms": 1976
+    },
+    {
+      "name": "Navigation away from an active microphone session releases capture",
+      "passed": true,
+      "ms": 645
+    },
+    {
+      "name": "No browser exceptions or AI charges during silent media UI verification",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

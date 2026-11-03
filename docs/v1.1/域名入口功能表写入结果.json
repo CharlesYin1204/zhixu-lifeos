@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "failed": 0,
+    "results": [
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 0,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 1,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 2,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 3,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 4,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 5,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 6,
+        "success": true,
+        "tool_name": "set_cell_range"
+      },
+      {
+        "data": {
+          "updated_cells_count": 1
+        },
+        "index": 7,
+        "success": true,
+        "tool_name": "set_cell_range"
+      }
+    ],
+    "revision": 65,
+    "succeeded": 8,
+    "total": 8
+  }
+}

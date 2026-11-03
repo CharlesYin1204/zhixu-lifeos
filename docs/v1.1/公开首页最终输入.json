@@ -1,0 +1,44 @@
+{
+  "approvedForPublication": true,
+  "release": ".releases/20261014T150944Z-36035",
+  "backup": "database/backups/xuexi-2026-10-14T15-12-04-573Z.sql.gz",
+  "reports": [
+    "public-landing-results.json"
+  ],
+  "acceptanceHeading": "v1.1 公开落地页与登录后用户功能验收",
+  "acceptanceText": "2026-10-14已将/改为公开产品落地页；登录后访问/仍显示公开介绍，/login为独立登录注册页。个人侧栏、搜索、通知和五项功能底栏仅在有效用户会话下的/user中展示；/user默认全部功能中心，个人概览为/user?view=overview，媒体为/user?view=media。所有个人功能使用/user?view=...，旧/?view=...兼容跳转；/user具备服务端和客户端双重登录检查，只有管理员会话不能进入。公开首页展示学习生活、多Agent分工、13场景、当前启用会员价格和真实APK；插件目录/分类/搜索按本次要求改为登录后访问。后台/admin与/admin/login保持上一轮独立框架和会话。",
+  "runtimeText": "最终Web发布.releases/20261014T150944Z-36035。public-landing-results.json在该版本完成15项生产Chromium156检查：公开首页与独立登录页的1440/390/360px布局、匿名个人页面门禁、旧链接跳转、登录及真实注册默认进入/user、22个个人功能入口、手机五项底栏、登录后首页仍公开、跨标签退出后的焦点恢复、后台会话不能进入个人页；零浏览器异常、零AI/付款/配置修改，临时账号及关联记录清理。初次测试因“Agent工作室”按钮带NEW标识而精确名称断言超时，原报告保留，修正测试后通过，未为此修改产品。portal-release-health.json另有30项HTTP/HTTPS状态检查及数据库连接，web/worker/voice均active；上一轮健康报告保存为portal-release-health-before-public-landing.json。最新受限备份database/backups/xuexi-2026-10-14T15-12-04-573Z.sql.gz，APK仍1.1.1(4)。既有后台分离/模型/媒体/支付报告保留其实际测试版本；本轮未重新执行真实模型或真实付款，商户资料及设备/跨网络边界、六项P2不变。",
+  "featureStatuses": {
+    "F-001": "公开首页与登录后入口已部署并验证",
+    "F-002": "公开首页与登录后入口已部署并验证",
+    "F-003": "公开首页与登录后入口已部署并验证",
+    "F-004": "公开介绍已上线；真实能力沿用原专项证据",
+    "F-005": "登录保护与目录入口已验证",
+    "F-006": "登录保护已验证；分类筛选未另测",
+    "F-007": "登录保护已验证；搜索逻辑未另测",
+    "F-009": "真实方案展示已上线；购买入口验证，无付款",
+    "F-011": "公开首页与登录后入口已部署并验证",
+    "F-012": "公开首页与登录后入口已部署并验证",
+    "F-013": "公开首页与登录后入口已部署并验证",
+    "F-021": "公开首页与登录后入口已部署并验证",
+    "F-023": "公开首页与登录后入口已部署并验证",
+    "F-083": "公开首页与登录后入口已部署并验证"
+  },
+  "featureEvidence": {
+    "F-001": "public-landing-results.json实际Chromium156验证匿名与登录后访问/都为产品落地页，个人工作台仅在/user；无页面异常。",
+    "F-002": "public-landing-results.json验证公开导航可访问、有效锚点、/login独立、登录后/user含22入口、所有个人导航保持/user路径和旧地址跳转。",
+    "F-003": "public-landing-results.json验证公开首页与登录页桌面及390/360px布局，无个人侧栏或功能底栏；对应截图已保存。",
+    "F-004": "本轮落地页展示多Agent分工和13种媒体能力介绍，public-landing-results.json验证公开页面渲染与导航；真实模型和13场景能力仍以原专项证据为准，本轮没有AI调用。",
+    "F-005": "按本次用户要求将目录入口改为登录后。public-landing-results.json验证匿名目录地址跳/login，登录后可从/user进入原插件页面；本轮未重测所有上下架商品组合。",
+    "F-006": "按本次用户要求改为登录后筛选。public-landing-results.json覆盖目录的登录保护与进入路径，筛选逻辑沿用原功能，未另做分类专项。",
+    "F-007": "按本次用户要求改为登录后搜索。public-landing-results.json覆盖目录登录保护与进入路径，搜索和空结果逻辑沿用原功能，未另做搜索专项。",
+    "F-009": "落地页读取后台当前启用套餐并展示真实价格/周期/权益；public-landing-results.json检查页面与购买入口可到登录/用户中心；本轮无订单创建或付款，未修改价格配置。",
+    "F-011": "public-landing-results.json以临时真实注册表单创建用户并直接进入/user；未登录表单在桌面/390/360px均无个人导航。临时数据清理。",
+    "F-012": "public-landing-results.json真实表单登录后默认/user；桌面/390/360px独立登录页无个人框架。忘记密码帮助沿用现有说明，不新增邮件或重置系统。",
+    "F-013": "public-landing-results.json验证登录后/仍为落地页，进入用户中心链接有效；同浏览器另一标签退出后焦点恢复会清除个人工作台，管理员会话不代替个人会话。",
+    "F-021": "public-landing-results.json确认登录与注册都落到/user并显示22个功能入口；逐个个人导航使用/user?view=...且渲染原功能页面。",
+    "F-023": "public-landing-results.json确认公开首页/login在390/360px无个人底栏，登录后/user保留22个功能入口与5个个人底栏按钮。",
+    "F-083": "public-landing-results.json逐个匿名个人view验证先转/login，管理员专用会话也不能进入；服务端页面门禁与客户端焦点/退出检查生效；原A/B和双scope API隔离证据保留。",
+    "F-128": "portal-release-health.json在150944完成HTTP/HTTPS共30项状态检查：/200、匿名/user307到/login、旧功能地址307到/user?view=...、后台保持独立；public-landing-results.json验证实际登录后的页面。跨网络专项仍未执行。"
+  }
+}

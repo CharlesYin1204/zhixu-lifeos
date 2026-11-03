@@ -1,0 +1,137 @@
+{
+  "verifiedAt": "2026-10-14T15:44:23.099021+00:00",
+  "features": 172,
+  "newFeatures": 0,
+  "versionAddedFeatures": 35,
+  "sheets": {
+    "前台": 21,
+    "用户中心": 88,
+    "管理员后台": 35,
+    "验收与依赖": 22,
+    "后续规划": 6
+  },
+  "fullSheetCellsMatch": true,
+  "docFullTextMatchesXml": true,
+  "docSections": 32,
+  "docTopLevelParagraphs": 134,
+  "docTables": 1,
+  "documentRevision": 108,
+  "xlsxZipAndXmlValid": true,
+  "statusEvidenceCellsChecked": 344,
+  "clippedCells": 0,
+  "p2Unchanged": true,
+  "changedSheetCells": 13,
+  "csvAll172RowsMatch": true,
+  "xlsxAll172RowsMatch": true,
+  "coverageNoteCorrectionVerified": true,
+  "followupCorrectedCells": 1,
+  "totalSheetCellsWritten": 488,
+  "currentRelease": ".releases/20261014T152414Z-38684",
+  "loginHelp": {
+    "report": "docs/tests/login-help-inspection.json",
+    "productionChecks": 3,
+    "browserResponseFixtureChecks": 1,
+    "changedSheetCells": 3,
+    "documentParagraphsPatched": 4,
+    "all172RowsMatch": true,
+    "changedRowNoClipping": true
+  },
+  "previousSyncSheetCellsWritten": 475,
+  "changedRowLayoutCellsChecked": 15,
+  "portalSeparation": {
+    "reports": [
+      "portal-auth-results.json",
+      "portal-separation-results.json",
+      "portal-cookie-results.json",
+      "admin-portal-contract-results.json",
+      "media-settings-results.json"
+    ],
+    "affectedFeatureIds": [
+      "F-002",
+      "F-012",
+      "F-013",
+      "F-021",
+      "F-023",
+      "F-081",
+      "F-082",
+      "F-083",
+      "F-084",
+      "F-117",
+      "F-128"
+    ],
+    "changedSheetCells": 43,
+    "docPatchOperations": 19,
+    "all172RowsMatch": true,
+    "changedRowsNoClipping": true,
+    "secureHttpsVerified": true,
+    "legacyHistoryPreserved": true
+  },
+  "publicLanding": {
+    "reports": [
+      "public-landing-results.json"
+    ],
+    "affectedFeatureIds": [
+      "F-001",
+      "F-002",
+      "F-003",
+      "F-004",
+      "F-005",
+      "F-006",
+      "F-007",
+      "F-009",
+      "F-011",
+      "F-012",
+      "F-013",
+      "F-021",
+      "F-023",
+      "F-083",
+      "F-128"
+    ],
+    "changedSheetCells": 60,
+    "docPatchOperations": 12,
+    "all172RowsMatch": true,
+    "changedRowsNoClipping": true,
+    "legacyHistoryPreserved": true
+  },
+  "preferredDomain": {
+    "reports": [
+      "domain-results.json",
+      "media-origin-results.json"
+    ],
+    "affectedFeatureIds": [
+      "F-128",
+      "F-138"
+    ],
+    "changedSheetCells": 8,
+    "docPatchOperations": 10,
+    "all172RowsMatch": true,
+    "changedRowsNoClipping": true,
+    "legacyHistoryPreserved": true
+  },
+  "android112": {
+    "artifact": {
+      "versionName": "1.1.2",
+      "versionCode": 5,
+      "sha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+      "bytes": 33245,
+      "downloadUrl": "https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk"
+    },
+    "reports": [
+      "apk-startup-release-results.json",
+      "android-startup-results.json",
+      "apk-domain-browser-results.json"
+    ],
+    "userAcceptanceReport": "apk-user-device-acceptance.json",
+    "userHomepageStartupAccepted": true,
+    "affectedFeatureIds": [
+      "F-014",
+      "F-015",
+      "F-167"
+    ],
+    "changedSheetCells": 13,
+    "docPatchOperations": 10,
+    "all172RowsMatch": true,
+    "changedRowsNoClipping": true,
+    "legacyHistoryPreserved": true
+  }
+}

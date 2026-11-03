@@ -1,0 +1,157 @@
+{
+  "startedAt": "2026-10-14T15:11:43.540Z",
+  "base": "https://154.40.47.111:3063",
+  "results": [
+    {
+      "name": "Anonymous root is a public introduction page with no personal workspace or user menus",
+      "passed": true,
+      "durationMs": 832
+    },
+    {
+      "name": "Public links have accessible names, concrete destinations, and existing section anchors",
+      "passed": true,
+      "durationMs": 350
+    },
+    {
+      "name": "Public introduction fits 390px and 360px without exposing personal bottom navigation",
+      "passed": true,
+      "durationMs": 816
+    },
+    {
+      "name": "Public login CTA opens an independent login screen at desktop and both mobile widths",
+      "passed": true,
+      "durationMs": 855
+    },
+    {
+      "name": "Every anonymous canonical personal route requires login before showing workspace content",
+      "passed": true,
+      "durationMs": 2492
+    },
+    {
+      "name": "Legacy personal links redirect through the protected user route; the old admin link remains separate",
+      "passed": true,
+      "durationMs": 2783
+    },
+    {
+      "name": "Successful personal login lands at /user with all 22 feature entries",
+      "passed": true,
+      "durationMs": 1162
+    },
+    {
+      "name": "Authenticated root still shows the public introduction and its enter-user-center link works",
+      "passed": true,
+      "durationMs": 842
+    },
+    {
+      "name": "Every personal navigation item stays below /user and renders its existing functional page",
+      "passed": true,
+      "durationMs": 1599
+    },
+    {
+      "name": "Authenticated mobile center preserves all features and its five personal navigation items",
+      "passed": true,
+      "durationMs": 1319
+    },
+    {
+      "name": "Logout from another tab clears the mounted personal workspace when it regains focus",
+      "passed": true,
+      "durationMs": 1138
+    },
+    {
+      "name": "Personal logout removes access to user pages while leaving the public introduction available",
+      "passed": true,
+      "durationMs": 707
+    },
+    {
+      "name": "New registration also lands directly in the protected user center",
+      "passed": true,
+      "durationMs": 1402
+    },
+    {
+      "name": "An admin-only session still cannot open personal pages, and the independent backend remains intact",
+      "passed": true,
+      "durationMs": 814
+    },
+    {
+      "name": "No browser exception, unexpected mutation, AI debit, or configuration change occurred",
+      "passed": true,
+      "durationMs": 17
+    }
+  ],
+  "errors": [],
+  "forbiddenActions": [],
+  "screenshots": [
+    "docs/screenshots/public-landing-desktop.png",
+    "docs/screenshots/public-landing-mobile.png",
+    "docs/screenshots/public-login-mobile.png",
+    "docs/screenshots/public-authenticated-user.png",
+    "docs/screenshots/public-authenticated-user-mobile.png"
+  ],
+  "links": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/api/download?file=zhixu-lifeos-1.1.1-4.apk",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/admin/login",
+      "status": 200
+    }
+  ],
+  "verification": "Real production browser and login/registration forms; temporary DB fixtures; no provider mocks, AI calls, payments, or configuration writes.",
+  "release": ".releases/20261014T150944Z-36035",
+  "browserVersion": "156.0.8078.4",
+  "passed": true,
+  "fixturesRemoved": true,
+  "configurationUnchanged": true,
+  "completedAt": "2026-10-14T15:12:01.628Z",
+  "priorHarnessReport": "docs/tests/public-landing-initial-harness-results.json",
+  "harnessCorrection": "The original exact accessible-name selector omitted the existing NEW badge in the Agent workspace navigation label; the selector now accepts that label suffix. No application change was required between runs."
+}

@@ -1,0 +1,90 @@
+{
+  "auditedAt": "2026-10-14T12:41:10.628Z",
+  "effects": [
+    {
+      "line": 55,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 75,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 170,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 171,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 187,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 201,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 215,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 216,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 219,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 227,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 270,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    },
+    {
+      "line": 271,
+      "hook": "useEffect",
+      "callbackType": "ArrowFunctionExpression",
+      "async": false,
+      "bodyType": "BlockStatement"
+    }
+  ],
+  "allCallbacksHaveBlockBodies": true
+}

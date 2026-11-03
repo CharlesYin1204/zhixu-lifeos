@@ -1,0 +1,85 @@
+{
+  "testedAt": "2026-10-14T12:48:25.644Z",
+  "base": "http://154.40.47.111:3060",
+  "results": [
+    {
+      "name": "Anonymous visitors can view and download the actual published Android release",
+      "passed": true,
+      "durationMs": 476
+    },
+    {
+      "name": "Goal form saves and reopens startDate, endDate and dailyMinutes",
+      "passed": true,
+      "durationMs": 1074
+    },
+    {
+      "name": "Course form saves and reopens the course URL",
+      "passed": true,
+      "durationMs": 1116
+    },
+    {
+      "name": "Health form saves and reopens sleep, water and exercise measurements",
+      "passed": true,
+      "durationMs": 952
+    },
+    {
+      "name": "Event form saves and reopens a cross-day schedule",
+      "passed": true,
+      "durationMs": 869
+    },
+    {
+      "name": "Habit frequency is editable and displayed with the persisted check-in target",
+      "passed": true,
+      "durationMs": 528
+    },
+    {
+      "name": "User center exposes all feature groups and course resources have a safe direct link",
+      "passed": true,
+      "durationMs": 272
+    },
+    {
+      "name": "Actual 25/5 timer supports pause, closing, reopening and automatic focus persistence",
+      "passed": true,
+      "durationMs": 2091
+    },
+    {
+      "evidence": "docs/screenshots/desktop-ai-real.png",
+      "conversationMessages": 2,
+      "realReplyCharacters": 135
+    },
+    {
+      "name": "A real AI response survives a page reload and can be reopened from history",
+      "passed": true,
+      "durationMs": 9376
+    },
+    {
+      "name": "Administrator creates a temporary plugin and sets its own price through the UI",
+      "passed": true,
+      "durationMs": 1407
+    },
+    {
+      "name": "Ordinary user creates a manual-payment order at the administrator-configured price",
+      "passed": true,
+      "durationMs": 742
+    },
+    {
+      "name": "Administrator UI confirmation grants the temporary paid plugin to that user",
+      "passed": true,
+      "durationMs": 732
+    },
+    {
+      "name": "Purchased plugin can be uninstalled and reinstalled through the UI without another order",
+      "passed": true,
+      "durationMs": 580
+    },
+    {
+      "name": "No browser runtime errors during all UI flows",
+      "passed": true
+    },
+    {
+      "name": "Temporary user, records, conversation, plugin, order and related audit fixtures removed",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

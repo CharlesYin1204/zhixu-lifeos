@@ -1,0 +1,88 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "create_time": "2026-10-14T11:42:00.000Z",
+    "modified_time": "2026-10-14T11:44:05.000Z",
+    "revision": 45,
+    "sheets": [
+      {
+        "chart_count": 0,
+        "column_count": 20,
+        "float_image_count": 0,
+        "frozen_columns": 2,
+        "frozen_rows": 1,
+        "index": 0,
+        "is_hidden": false,
+        "merged_cells_count": 0,
+        "pivot_table_count": 0,
+        "resource_type": "sheet",
+        "row_count": 200,
+        "sheet_id": "88caf0",
+        "sheet_name": "前台"
+      },
+      {
+        "chart_count": 0,
+        "column_count": 20,
+        "float_image_count": 0,
+        "frozen_columns": 2,
+        "frozen_rows": 1,
+        "index": 1,
+        "is_hidden": false,
+        "merged_cells_count": 0,
+        "pivot_table_count": 0,
+        "resource_type": "sheet",
+        "row_count": 200,
+        "sheet_id": "JWD2Qz",
+        "sheet_name": "用户中心"
+      },
+      {
+        "chart_count": 0,
+        "column_count": 20,
+        "float_image_count": 0,
+        "frozen_columns": 2,
+        "frozen_rows": 1,
+        "index": 2,
+        "is_hidden": false,
+        "merged_cells_count": 0,
+        "pivot_table_count": 0,
+        "resource_type": "sheet",
+        "row_count": 200,
+        "sheet_id": "ukpp0i",
+        "sheet_name": "管理员后台"
+      },
+      {
+        "chart_count": 0,
+        "column_count": 20,
+        "float_image_count": 0,
+        "frozen_columns": 2,
+        "frozen_rows": 1,
+        "index": 3,
+        "is_hidden": false,
+        "merged_cells_count": 0,
+        "pivot_table_count": 0,
+        "resource_type": "sheet",
+        "row_count": 200,
+        "sheet_id": "ZNyxxD",
+        "sheet_name": "验收与依赖"
+      },
+      {
+        "chart_count": 0,
+        "column_count": 20,
+        "float_image_count": 0,
+        "frozen_columns": 2,
+        "frozen_rows": 1,
+        "index": 4,
+        "is_hidden": false,
+        "merged_cells_count": 0,
+        "pivot_table_count": 0,
+        "resource_type": "sheet",
+        "row_count": 200,
+        "sheet_id": "2DHsdt",
+        "sheet_name": "后续规划"
+      }
+    ],
+    "title": "知序 LifeOS｜产品功能表与验收清单 v1.0",
+    "token": "[REDACTED_LARK_RESOURCE_TOKEN]"
+  }
+}

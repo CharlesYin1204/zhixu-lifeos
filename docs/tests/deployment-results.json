@@ -1,0 +1,656 @@
+{
+  "checkedAt": "2026-10-14T12:49:07.520Z",
+  "scope": "Final release verification after isolated deployment; all checks read-only. Before checks, SuccessExitStatus=143 was applied to web/candidate units followed only by daemon-reload and candidate reset-failed; no web/worker restart.",
+  "origin": "http://154.40.47.111:3060",
+  "previousCheckedAt": "2026-10-14T12:33:06.167Z",
+  "release": ".releases/20261014T124600Z-11885",
+  "buildId": "vKNS4V9WblnWpuEq7mbsv",
+  "checks": [
+    {
+      "name": "zhixu-web is enabled, active and runs as non-root",
+      "passed": true,
+      "evidence": {
+        "SuccessExitStatus": "143",
+        "MainPID": "12208",
+        "Result": "success",
+        "ExecMainStartTimestamp": "Wed 2026-10-14 20:47:00 CST",
+        "ExecMainStatus": "0",
+        "UMask": "0027",
+        "WorkingDirectory": "/www/wwwroot/xuexi",
+        "User": "zhixu",
+        "Group": "zhixu",
+        "ReadWritePaths": "/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/.releases /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups",
+        "ProtectHome": "read-only",
+        "ProtectSystem": "strict",
+        "NoNewPrivileges": "yes",
+        "Id": "zhixu-web.service",
+        "ActiveState": "active",
+        "SubState": "running",
+        "UnitFileState": "enabled",
+        "processIdentity": "12208 zhixu    zhixu    next-server (v1"
+      }
+    },
+    {
+      "name": "zhixu-web applies sandbox and least-writable-directory settings",
+      "passed": true,
+      "evidence": {
+        "NoNewPrivileges": "yes",
+        "ProtectSystem": "strict",
+        "ProtectHome": "read-only",
+        "UMask": "0027",
+        "ReadWritePaths": "/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/.releases /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups"
+      }
+    },
+    {
+      "name": "zhixu-worker is enabled, active and runs as non-root",
+      "passed": true,
+      "evidence": {
+        "SuccessExitStatus": "",
+        "MainPID": "8390",
+        "Result": "success",
+        "ExecMainStartTimestamp": "Wed 2026-10-14 20:30:48 CST",
+        "ExecMainStatus": "0",
+        "UMask": "0027",
+        "WorkingDirectory": "/www/wwwroot/xuexi",
+        "User": "zhixu",
+        "Group": "zhixu",
+        "ReadWritePaths": "/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups",
+        "ProtectHome": "read-only",
+        "ProtectSystem": "strict",
+        "NoNewPrivileges": "yes",
+        "Id": "zhixu-worker.service",
+        "ActiveState": "active",
+        "SubState": "running",
+        "UnitFileState": "enabled",
+        "processIdentity": "8390 zhixu    zhixu    node"
+      }
+    },
+    {
+      "name": "zhixu-worker applies sandbox and least-writable-directory settings",
+      "passed": true,
+      "evidence": {
+        "NoNewPrivileges": "yes",
+        "ProtectSystem": "strict",
+        "ProtectHome": "read-only",
+        "UMask": "0027",
+        "ReadWritePaths": "/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups"
+      }
+    },
+    {
+      "name": "Nginx exposes port 3060 and Next.js port 3061 only listens on loopback",
+      "passed": true,
+      "evidence": {
+        "listeners": "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                                                             \nLISTEN 0      511          0.0.0.0:3060      0.0.0.0:*    users:((\"nginx\",pid=12254,fd=51),(\"nginx\",pid=12253,fd=51),(\"nginx\",pid=735,fd=51))\nLISTEN 0      511        127.0.0.1:3061      0.0.0.0:*    users:((\"next-server (v1\",pid=12208,fd=21))"
+      }
+    },
+    {
+      "name": "Active nginx site config proxies to loopback Next.js",
+      "passed": true,
+      "evidence": {
+        "path": "/www/server/panel/vhost/nginx/zhixu.conf",
+        "sha256": "84237194248c5ed3ac8f7cb2d52e43b5237f9cfc4e5b97939cf61b914fe21eb8",
+        "listen": 3060,
+        "upstream": "http://127.0.0.1:3061",
+        "staticArchive": ".static-archive"
+      }
+    },
+    {
+      "name": "Nginx is active and enabled via SysV startup links",
+      "passed": true,
+      "evidence": {
+        "state": "active",
+        "startupMechanism": "SysV init, generated systemd unit",
+        "startupLinks": [
+          {
+            "runlevel": 2,
+            "exists": true
+          },
+          {
+            "runlevel": 3,
+            "exists": true
+          },
+          {
+            "runlevel": 4,
+            "exists": true
+          },
+          {
+            "runlevel": 5,
+            "exists": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Credential files and private backup directories are owner-only",
+      "passed": true,
+      "evidence": [
+        {
+          "path": ".env.local",
+          "mode": "600",
+          "uid": 994,
+          "gid": 994,
+          "isDirectory": false
+        },
+        {
+          "path": "AI模型相关文件和数据.txt",
+          "mode": "600",
+          "uid": 1000,
+          "gid": 1000,
+          "isDirectory": false
+        },
+        {
+          "path": "private",
+          "mode": "700",
+          "uid": 994,
+          "gid": 994,
+          "isDirectory": true
+        },
+        {
+          "path": "private/admin-credentials.txt",
+          "mode": "600",
+          "uid": 994,
+          "gid": 994,
+          "isDirectory": false
+        },
+        {
+          "path": "private/android-signing.pass",
+          "mode": "600",
+          "uid": 994,
+          "gid": 994,
+          "isDirectory": false
+        },
+        {
+          "path": "private/android-signing.jks",
+          "mode": "600",
+          "uid": 994,
+          "gid": 994,
+          "isDirectory": false
+        },
+        {
+          "path": "private/web-runtime.env",
+          "mode": "600",
+          "uid": 0,
+          "gid": 0,
+          "isDirectory": false
+        },
+        {
+          "path": "database/backups",
+          "mode": "700",
+          "uid": 994,
+          "gid": 994,
+          "isDirectory": true
+        }
+      ]
+    },
+    {
+      "name": "Health check http://127.0.0.1:3061/api/app?resource=health",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:3061/api/app?resource=health",
+        "status": 200,
+        "elapsedMs": 48,
+        "bytes": 59,
+        "server": null,
+        "contentType": "application/json",
+        "foundKeyAliases": [],
+        "health": {
+          "ok": true,
+          "service": "zhixu-lifeos",
+          "database": "connected"
+        },
+        "vantage": "Request originated on the deployment server"
+      }
+    },
+    {
+      "name": "Health check http://127.0.0.1:3060/api/app?resource=health",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:3060/api/app?resource=health",
+        "status": 200,
+        "elapsedMs": 38,
+        "bytes": 59,
+        "server": "nginx",
+        "contentType": "application/json",
+        "foundKeyAliases": [],
+        "health": {
+          "ok": true,
+          "service": "zhixu-lifeos",
+          "database": "connected"
+        },
+        "vantage": "Request originated on the deployment server"
+      }
+    },
+    {
+      "name": "Health check http://154.40.47.111:3060/api/app?resource=health",
+      "passed": true,
+      "evidence": {
+        "url": "http://154.40.47.111:3060/api/app?resource=health",
+        "status": 200,
+        "elapsedMs": 23,
+        "bytes": 59,
+        "server": "nginx",
+        "contentType": "application/json",
+        "foundKeyAliases": [],
+        "health": {
+          "ok": true,
+          "service": "zhixu-lifeos",
+          "database": "connected"
+        },
+        "vantage": "Request originated on the deployment server"
+      }
+    },
+    {
+      "name": "Sensitive environment, credentials, keys, database and source files are not served over HTTP",
+      "passed": true,
+      "evidence": [
+        {
+          "url": "http://154.40.47.111:3060/.env.local",
+          "status": 404,
+          "elapsedMs": 167,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/.env.local"
+        },
+        {
+          "url": "http://154.40.47.111:3060/.env",
+          "status": 404,
+          "elapsedMs": 166,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/.env"
+        },
+        {
+          "url": "http://154.40.47.111:3060/AI%E6%A8%A1%E5%9E%8B%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE.txt",
+          "status": 404,
+          "elapsedMs": 156,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/AI模型相关文件和数据.txt"
+        },
+        {
+          "url": "http://154.40.47.111:3060/private/admin-credentials.txt",
+          "status": 404,
+          "elapsedMs": 155,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/private/admin-credentials.txt"
+        },
+        {
+          "url": "http://154.40.47.111:3060/private/android-signing.pass",
+          "status": 404,
+          "elapsedMs": 155,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/private/android-signing.pass"
+        },
+        {
+          "url": "http://154.40.47.111:3060/private/android-signing.jks",
+          "status": 404,
+          "elapsedMs": 155,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/private/android-signing.jks"
+        },
+        {
+          "url": "http://154.40.47.111:3060/private/apk-build.log",
+          "status": 404,
+          "elapsedMs": 154,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/private/apk-build.log"
+        },
+        {
+          "url": "http://154.40.47.111:3060/private/web-runtime.env",
+          "status": 404,
+          "elapsedMs": 139,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/private/web-runtime.env"
+        },
+        {
+          "url": "http://154.40.47.111:3060/database/schema.sql",
+          "status": 404,
+          "elapsedMs": 139,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/database/schema.sql"
+        },
+        {
+          "url": "http://154.40.47.111:3060/database/backups/xuexi-2026-10-14T11-49-57-418Z.sql.gz",
+          "status": 404,
+          "elapsedMs": 138,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/database/backups/xuexi-2026-10-14T11-49-57-418Z.sql.gz"
+        },
+        {
+          "url": "http://154.40.47.111:3060/lib/ai.mjs",
+          "status": 404,
+          "elapsedMs": 138,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/lib/ai.mjs"
+        },
+        {
+          "url": "http://154.40.47.111:3060/scripts/init-db.mjs",
+          "status": 404,
+          "elapsedMs": 139,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/scripts/init-db.mjs"
+        },
+        {
+          "url": "http://154.40.47.111:3060/.next/server/app/api/app/route.js",
+          "status": 404,
+          "elapsedMs": 138,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/.next/server/app/api/app/route.js"
+        },
+        {
+          "url": "http://154.40.47.111:3060/.releases/20261014T124600Z-11885/server/app/api/app/route.js",
+          "status": 404,
+          "elapsedMs": 138,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/.releases/20261014T124600Z-11885/server/app/api/app/route.js"
+        },
+        {
+          "url": "http://154.40.47.111:3060/.git/config",
+          "status": 404,
+          "elapsedMs": 138,
+          "bytes": 6673,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": [],
+          "path": "/.git/config"
+        }
+      ]
+    },
+    {
+      "name": "Current production static assets contain no configured plaintext AI API keys",
+      "passed": true,
+      "evidence": {
+        "roots": [
+          ".releases/20261014T124600Z-11885/static",
+          ".static-archive",
+          "public"
+        ],
+        "fileCount": 53,
+        "totalBytes": 2446047,
+        "distinctConfiguredKeys": 1,
+        "secretMatches": [],
+        "comparison": "Exact plaintext match against decrypted active and disabled configured model keys; no key values recorded"
+      }
+    },
+    {
+      "name": "Public landing HTML and bootstrap response do not leak configured AI API keys",
+      "passed": true,
+      "evidence": [
+        {
+          "url": "http://154.40.47.111:3060/",
+          "status": 200,
+          "elapsedMs": 10,
+          "bytes": 19663,
+          "server": "nginx",
+          "contentType": "text/html; charset=utf-8",
+          "foundKeyAliases": []
+        },
+        {
+          "url": "http://154.40.47.111:3060/api/app?resource=bootstrap",
+          "status": 200,
+          "elapsedMs": 10,
+          "bytes": 6421,
+          "server": "nginx",
+          "contentType": "application/json",
+          "foundKeyAliases": []
+        }
+      ]
+    },
+    {
+      "name": "Live web process serves the configured isolated release",
+      "passed": true,
+      "evidence": {
+        "runtimeEnvRelease": ".releases/20261014T124600Z-11885",
+        "processRelease": ".releases/20261014T124600Z-11885",
+        "builtDistDir": ".releases/20261014T124600Z-11885",
+        "buildId": "vKNS4V9WblnWpuEq7mbsv",
+        "webPid": 12208
+      }
+    },
+    {
+      "name": "All pre-deployment assets remain available with their original bytes",
+      "passed": true,
+      "evidence": {
+        "oldBuildId": "nGcHO8LBPc_R6aPHHGYPo",
+        "snapshot": "docs/tests/pre-hotfix-assets.json",
+        "assets": [
+          {
+            "asset": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+            "status": 200,
+            "bytes": 203721,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec"
+          },
+          {
+            "asset": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+            "status": 200,
+            "bytes": 242379,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "0dc21a19d3b557b90c3baaf5199d63b727cea3b1e084db730dfb886905eef732"
+          },
+          {
+            "asset": "/_next/static/chunks/834-c99a86cef54cd27a.js",
+            "status": 200,
+            "bytes": 19422,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "bd4f1f3b728eadb7df7ceee7de19a0a43bb2340699a21181c14750be77941f74"
+          },
+          {
+            "asset": "/_next/static/chunks/app/page-15ddfb265ce82a50.js",
+            "status": 200,
+            "bytes": 122511,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "9c5c363ecd0063380ffe5b1b491759ab3799aea7c76544f57c8926ee51e454ae"
+          },
+          {
+            "asset": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+            "status": 200,
+            "bytes": 513,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "831f336e7e23ddcfb20fe9d10115046fb2e2581ca77043084962e825c6f7f877"
+          },
+          {
+            "asset": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+            "status": 200,
+            "bytes": 112594,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+          },
+          {
+            "asset": "/_next/static/chunks/webpack-44d8aec3c26a0cdc.js",
+            "status": 200,
+            "bytes": 3253,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "d0a82fed8b37553509fe37aa7c8dfa791ba125f47b8a45899e0fd6a03936a339"
+          },
+          {
+            "asset": "/_next/static/css/b0b4652307b3810b.css",
+            "status": 200,
+            "bytes": 99372,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "0aacfac5a6b1489fc0f092fb19818234c578a58bc3aaf5f0373a4cc64a8e6a3e"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Current HTML assets match the newly deployed build",
+      "passed": true,
+      "evidence": {
+        "buildId": "vKNS4V9WblnWpuEq7mbsv",
+        "assets": [
+          {
+            "asset": "/_next/static/css/b0b4652307b3810b.css",
+            "status": 200,
+            "bytes": 99372,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "0aacfac5a6b1489fc0f092fb19818234c578a58bc3aaf5f0373a4cc64a8e6a3e"
+          },
+          {
+            "asset": "/_next/static/chunks/webpack-44d8aec3c26a0cdc.js",
+            "status": 200,
+            "bytes": 3253,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "d0a82fed8b37553509fe37aa7c8dfa791ba125f47b8a45899e0fd6a03936a339"
+          },
+          {
+            "asset": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+            "status": 200,
+            "bytes": 203721,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "7d5ccf185a6f85ab38ce400a7f10aa0a3496eb4e9aee1e500a85e01c4222fcec"
+          },
+          {
+            "asset": "/_next/static/chunks/794-0ac5e2f0e81d2e0d.js",
+            "status": 200,
+            "bytes": 242379,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "0dc21a19d3b557b90c3baaf5199d63b727cea3b1e084db730dfb886905eef732"
+          },
+          {
+            "asset": "/_next/static/chunks/main-app-0344bf19eeb76af4.js",
+            "status": 200,
+            "bytes": 513,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "831f336e7e23ddcfb20fe9d10115046fb2e2581ca77043084962e825c6f7f877"
+          },
+          {
+            "asset": "/_next/static/chunks/834-c99a86cef54cd27a.js",
+            "status": 200,
+            "bytes": 19422,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "bd4f1f3b728eadb7df7ceee7de19a0a43bb2340699a21181c14750be77941f74"
+          },
+          {
+            "asset": "/_next/static/chunks/app/page-428d10e94b35fe2b.js",
+            "status": 200,
+            "bytes": 122513,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "b9548d6b50a1642ba6a01f5d3cab49577b596b4fc5cf9c973219ab8fbb82c15e"
+          },
+          {
+            "asset": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+            "status": 200,
+            "bytes": 112594,
+            "cacheControl": "public, max-age=31536000, immutable",
+            "matchesBuildFile": true,
+            "sha256": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Multi-agent worker stayed running with its original PID",
+      "passed": true,
+      "evidence": {
+        "expectedPid": 8390,
+        "actualPid": 8390,
+        "startedAt": "Wed 2026-10-14 20:30:48 CST"
+      }
+    },
+    {
+      "name": "Candidate is stopped and normal Next.js SIGTERM exit is recognized",
+      "passed": true,
+      "evidence": {
+        "SuccessExitStatus": "143",
+        "MainPID": "0",
+        "Result": "success",
+        "ExecMainStartTimestamp": "n/a",
+        "ExecMainStatus": "0",
+        "UMask": "0027",
+        "WorkingDirectory": "/www/wwwroot/xuexi",
+        "User": "zhixu",
+        "Group": "zhixu",
+        "ReadWritePaths": "/www/wwwroot/xuexi/.next /www/wwwroot/xuexi/.releases /www/wwwroot/xuexi/private /www/wwwroot/xuexi/public/downloads /www/wwwroot/xuexi/database/backups",
+        "ProtectHome": "read-only",
+        "ProtectSystem": "strict",
+        "NoNewPrivileges": "yes",
+        "Id": "zhixu-web-candidate.service",
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "UnitFileState": "static",
+        "noCandidateListener": true,
+        "normalShutdownEvidence": {
+          "timestamp": "2026-10-14 20:47:02 Asia/Shanghai",
+          "observedExitCode": 143,
+          "nextSource": "node_modules/next/dist/server/lib/start-server.js:364",
+          "explanation": "Next.js explicitly exits 143 after SIGTERM. The candidate stopped normally; systemd initially classified this numeric exit as failure. SuccessExitStatus=143 now recognizes it, and reset-failed cleared the stale failed state."
+        },
+        "operations": "Installed matching service templates, daemon-reload, reset-failed candidate. Did not restart web or worker."
+      }
+    }
+  ],
+  "limitations": [
+    {
+      "scope": "Independent external internet reachability",
+      "status": "not_verified",
+      "reason": "The external web tool rejected the public-IP/nonstandard-port URL with an invalid ref_id error. Public-IP HTTP checks here originated on the deployment server and do not prove reachability from a separate network."
+    },
+    {
+      "scope": "Static secret scan",
+      "reason": "Verified exact configured plaintext AI API keys in currently deployed .next/static and public files, plus public landing/bootstrap responses. This is not a general penetration test or proof about arbitrary transformed secrets."
+    }
+  ],
+  "servicePids": {
+    "zhixu-web": 12208,
+    "zhixu-worker": 8390
+  },
+  "baselineChecks": 14,
+  "releaseChecks": 5,
+  "passed": true,
+  "finishedAt": "2026-10-14T12:49:08.089Z"
+}

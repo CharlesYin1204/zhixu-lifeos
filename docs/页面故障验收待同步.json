@@ -1,0 +1,34 @@
+{
+  "status": "deployed_and_regression_verified",
+  "featureEvidenceCandidates": [
+    "F-002",
+    "F-012",
+    "F-018",
+    "F-061",
+    "F-062",
+    "F-063",
+    "F-128",
+    "F-129"
+  ],
+  "mustWaitFor": [],
+  "preserveHistoricalFailure": "tests/navigation-diagnostic-chromium156-before-fix.json",
+  "doNotPromoteUntestedFeatures": true,
+  "externalBoundariesUnchanged": [
+    "real merchant payment not enabled",
+    "Android device not tested",
+    "independent controlled cross-network browser not tested"
+  ],
+  "release": ".releases/20261014T124600Z-11885",
+  "publicHealth": true,
+  "workerRestarted": false,
+  "rollbackPathTested": false,
+  "verifiedReports": {
+    "Chromium156Navigation": "tests/navigation-diagnostic-chromium156.json:52 steps; passed; no pageerrors/console/request failures",
+    "Chromium156BusinessUI": "tests/ui-flow-results.json:15 passed checks; no errors",
+    "Chromium156MainPages": "tests/browser-results.json:9 passed checks; no runtime errors",
+    "Chromium145Navigation": "tests/navigation-diagnostic-chromium145.json:52 steps; passed; no pageerrors/console/request failures",
+    "deployment": "tests/deployment-results.json:19 passed read-only checks"
+  },
+  "verified145At": "2026-10-14T12:49:49.386Z",
+  "verified156At": "2026-10-14T12:47:56.225Z"
+}

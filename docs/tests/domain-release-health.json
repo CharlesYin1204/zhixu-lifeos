@@ -1,0 +1,146 @@
+{
+  "checkedAt": "2026-10-14T15:25:32.886Z",
+  "release": ".releases/20261014T152414Z-38684",
+  "checks": [
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/admin/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/admin",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/user",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/user?view=media",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/api/app?resource=health",
+      "status": 200,
+      "location": null,
+      "health": {
+        "ok": true,
+        "service": "zhixu-lifeos",
+        "database": "connected"
+      }
+    },
+    {
+      "base": "https://xuexi.yinchao1204.vip",
+      "path": "/api/media?resource=config",
+      "status": 200,
+      "location": null,
+      "media": {
+        "ok": true,
+        "secureUrl": "https://xuexi.yinchao1204.vip/user?view=media",
+        "capabilities": {
+          "voice": true,
+          "image": true,
+          "transcribe": true
+        }
+      }
+    },
+    {
+      "base": "http://xuexi.yinchao1204.vip",
+      "path": "/",
+      "status": 301,
+      "location": "https://xuexi.yinchao1204.vip/"
+    },
+    {
+      "base": "http://xuexi.yinchao1204.vip",
+      "path": "/login",
+      "status": 301,
+      "location": "https://xuexi.yinchao1204.vip/login"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/api/app?resource=health",
+      "status": 200,
+      "location": null,
+      "health": {
+        "ok": true,
+        "service": "zhixu-lifeos",
+        "database": "connected"
+      }
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/api/app?resource=health",
+      "status": 200,
+      "location": null,
+      "health": {
+        "ok": true,
+        "service": "zhixu-lifeos",
+        "database": "connected"
+      }
+    }
+  ],
+  "services": {
+    "zhixu-web": "active",
+    "zhixu-worker": "active",
+    "zhixu-voice": "active"
+  },
+  "certificate": "subject=CN = xuexi.yinchao1204.vip\nissuer=C = US, O = Let's Encrypt, CN = YR2\nnotBefore=Oct 14 13:40:05 2026 GMT\nnotAfter=Jan 12 13:40:04 2027 GMT\nX509v3 Subject Alternative Name: \n    DNS:xuexi.yinchao1204.vip",
+  "dns": [
+    {
+      "resolver": "dns.google",
+      "status": 0,
+      "answers": [
+        {
+          "name": "xuexi.yinchao1204.vip.",
+          "type": 1,
+          "TTL": 300,
+          "data": "154.40.47.111"
+        }
+      ]
+    },
+    {
+      "resolver": "cloudflare-dns.com",
+      "status": 0,
+      "answers": [
+        {
+          "name": "xuexi.yinchao1204.vip",
+          "type": 1,
+          "TTL": 300,
+          "data": "154.40.47.111"
+        }
+      ]
+    }
+  ]
+}

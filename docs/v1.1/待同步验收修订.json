@@ -1,0 +1,267 @@
+{
+  "state": "published_and_full_readback_verified",
+  "release": ".releases/20261014T135228Z-25423",
+  "featureUpdates": {
+    "F-043": {
+      "status": "已实现并验证",
+      "evidence": "event-status-results.json8项生产浏览器通过：新建默认进行中并可显式完成；跨天日期保留，完成/恢复后重载一致。原记录合同报告继续证明日期合法性与结束大于开始。"
+    },
+    "F-044": {
+      "status": "日程日期/状态列表已验证",
+      "evidence": "event-status-results.json：桌面与手机全部/进行中/已完成筛选正常，跨天日期详情保持；旧done显示已完成且可恢复，无横向溢出。未把此项扩称所有时区转换专项验证。"
+    },
+    "F-045": {
+      "status": "编辑及完成/恢复已浏览器验证",
+      "evidence": "event-status-results.json8/8：快捷及编辑表单完成/恢复，重载保持状态和日期，兼容旧done；生产桌面/手机通过，零AI/支付调用。删除功能已实现，独立删除点击链未在该报告测试。"
+    },
+    "F-061": {
+      "status": "真实助手及来源导航已验证",
+      "evidence": "既有真实模型/会话与隔离证据保留；restored-contract14项验证本人来源及持久化，涉及模型传输受控；restored-ui5项生产浏览器点击来源打开准确本人记录，已删除来源保留标题且不可点击。该来源导航测试不产生AI调用。"
+    },
+    "F-085": {
+      "status": "统计浏览器与数据库核对通过",
+      "evidence": "admin-contract-results.json共17项通过，其中只读后台总览核对实际用户数、订单数、已付收入与协作运行数一致。此行仅按报告列出的计数证明，不扩称每个统计口径均专项核对。"
+    },
+    "F-086": {
+      "status": "用户管理浏览器与接口已验证",
+      "evidence": "admin-contract-results.json真实管理员UI搜索/编辑姓名、会员到期与精确AI余额并持久化；先前API脱敏和数据权限通过。仅使用临时账号，无真实收费或AI调用。"
+    },
+    "F-087": {
+      "status": "账号启停浏览器与接口已验证",
+      "evidence": "admin-contract-results.json真实UI停用临时账号后原会话失效且不能登录，恢复后可新登录；record-contract报告补充停用管理员敏感接口阻止。"
+    },
+    "F-088": {
+      "status": "角色管理浏览器已验证",
+      "evidence": "admin-contract-results.json临时普通用户提升/降级后实际后台页面访问立即改变；普通账号不能访问管理API。未修改用户既有账号角色。"
+    },
+    "F-089": {
+      "status": "套餐表单与持久化已浏览器验证",
+      "evidence": "admin-contract-results.json：创建/编辑临时套餐，价格、周期、额度和多行权益保存重开一致；前台使用同一配置。该报告不收款，也不将表单保存等同真实支付。"
+    },
+    "F-090": {
+      "status": "套餐表单与持久化已浏览器验证",
+      "evidence": "admin-contract-results.json：创建/编辑临时套餐，价格、周期、额度和多行权益保存重开一致；前台使用同一配置。该报告不收款，也不将表单保存等同真实支付。"
+    },
+    "F-091": {
+      "status": "套餐启停与前台卡片已浏览器验证",
+      "evidence": "admin-contract-results.json：停用临时套餐后用户购买卡片消失，启用后恢复；真实付款未测试，服务端新单启用校验继续按实现及既有接口证据标注。"
+    },
+    "F-102": {
+      "status": "模型表单及参数库/API已验证",
+      "evidence": "admin-contract17项：真实UI拒绝空Key、创建临时模型并加密存储、重开不泄密；restored-contract14项验证temperature/maxTokens边界/清空与受控参数透传。没有新增真实模型连通调用或参数表单逐值专项。"
+    },
+    "F-103": {
+      "status": "密钥表单/存储/脱敏已验证",
+      "evidence": "admin-contract17项验证临时模型Key加密入库、重开不返回原值，22次临时管理操作审计不含Key；原公开产物定向扫描证据保留。不是全站渗透测试。"
+    },
+    "F-104": {
+      "status": "模型启停UI及受控服务验证",
+      "evidence": "admin-contract真实UI启停临时模型；media-settings8项隔离MySQL+实际handler/service验证停用绑定模型后能力不可用且上游调用0次。后者使用mock传输，不是真实供应商调用。"
+    },
+    "F-105": {
+      "status": "默认模型替换受控验证通过",
+      "evidence": "media-settings-results.json8项中：实际配置handler替换默认模型、清除旧默认，下一次普通chat服务调用命中新默认。使用隔离MySQL与mock provider；没有该动作浏览器或真实模型调用证明。"
+    },
+    "F-114": {
+      "status": "站点展示UI与保存handler已验证",
+      "evidence": "admin-contract只读浏览器字段与既存值一致；media-settings8项隔离MySQL实际handler保存4个站点字段并由公开bootstrap读取，媒体/支付配置不被覆盖。未改生产共享站点设置，不冒称真实浏览器保存测试。"
+    },
+    "F-115": {
+      "status": "审计浏览器与凭据脱敏已验证",
+      "evidence": "admin-contract-results.json：22次临时管理动作，审计UI展示操作主体与目标标识，未包含测试Key明文；原账号/配置字节保持且fixture清理。"
+    },
+    "F-156": {
+      "status": "附件删除历史状态已全面验证；资产分页UI未专项",
+      "evidence": "media-attachments后台4/API4/浏览器5项：本人预览/链接有效，删除当前图片即时切为已删除、来源不可点击，手机重载不请求旧图片；录音删除移除笔记下载URL但保留正文。100MB配额隔离证据保留，完整附件库分页UI未独立覆盖。"
+    },
+    "F-158": {
+      "status": "真实媒体历史及删除占位已验证",
+      "evidence": "既有真实语音历史和图片追问通过；media-attachments-browser5项验证删除当前/历史图片后预览和来源显示已删除且正文不丢失，手机刷新无旧图请求。新增删除测试零provider调用。"
+    },
+    "F-160": {
+      "status": "本人来源定位与删除状态已浏览器/API验证",
+      "evidence": "restored-ui5项来源链接定位准确本人记录、已删除来源保留标题无可点击链接；media-attachments后台4/API4/浏览器5项涵盖图片和音频、bootstrap/records/export去除失效URL且保留转写正文。输入资料展示不冒称逐句引用。"
+    },
+    "F-161": {
+      "status": "模型绑定/权限受控验证；原显示UI已验",
+      "evidence": "media-settings8项：隔离MySQL+实际route/service，普通用户403、无效模型/用途拒绝，4模型绑定改变后下一次服务请求使用新值。8个上游请求被mock捕获，无浏览器或实际provider推理；原媒体后台绑定显示已浏览器验收。"
+    },
+    "F-162": {
+      "status": "三种开关保存/执行拦截受控验证",
+      "evidence": "media-settings8项：三个能力独立开关保存回读；关闭图像/录音/已连接语音时，在模型请求和额度预留前阻止，providerCalls=0且余额不变。隔离表及actual handler/service验证，不是实际浏览器点击或真实模型调用。"
+    },
+    "F-163": {
+      "status": "音色配置与下一请求受控验证",
+      "evidence": "media-settings8项验证无效音色原子拒绝，alloy→nova保存后下一次实际合成服务调用携带新voice；provider传输mock捕获，不宣称真人听感或两音色真实生成对比。"
+    },
+    "F-164": {
+      "status": "订单重试幂等库层与生产UI已验证",
+      "evidence": "order-idempotency14项隔离表并发/快照/409通过；restored-ui5项真实浏览器在服务器已创建订单后丢弃响应，再次点击复用同requestId，两提交仅1笔pending/manual订单，paidOrders=0，无实际收款。"
+    },
+    "F-165": {
+      "status": "1505条完整自动分页已API/浏览器验证",
+      "evidence": "restored-contract API及restored-ui生产浏览器共同验证500/500/500/5四页完整加载1505条、不重复漏失，最旧记录可搜索和编辑；全库统计与cursor归属隔离仍有原API证据。"
+    }
+  },
+  "reports": {
+    "event-status-results.json": 8,
+    "media-attachments-backend-results.json": 4,
+    "media-attachments-api-results.json": 4,
+    "media-attachments-browser-results.json": 5,
+    "media-settings-results.json": 8,
+    "admin-contract-results.json": 17,
+    "restored-ui-results.json": 5
+  },
+  "explicitScopeNotes": [
+    "media-settings uses isolated database and actual handler/services with mocked provider; no browser or real inference",
+    "restored-ui uses production browser but zero payment or AI call",
+    "media scene final per-scene output awaits final report; initial harness failures retained",
+    "No physical microphone/camera/Android device acceptance",
+    "Six existing P2 rows unchanged"
+  ],
+  "releaseState": "production_healthy",
+  "featureContractUpdates": {
+    "F-150": {
+      "behavior": "只按可见食物及用户明确提供信息辅助记录，未知营养标估计",
+      "acceptance": "仅将可见/用户明确提供的事实写入记录；结构化抽取后由固定模板组织，未知时段/数量/感受标待补充；不将建议或推断写作真实经历"
+    }
+  },
+  "mealIssueNote": "原始及prompt-only真实失败保留；结构化模板真实样例1/1及11/4项契约已通过，范围仅样例和所测边界。",
+  "verification": {
+    "verifiedAt": "2026-10-14T15:44:23.099021+00:00",
+    "features": 172,
+    "newFeatures": 0,
+    "versionAddedFeatures": 35,
+    "sheets": {
+      "前台": 21,
+      "用户中心": 88,
+      "管理员后台": 35,
+      "验收与依赖": 22,
+      "后续规划": 6
+    },
+    "fullSheetCellsMatch": true,
+    "docFullTextMatchesXml": true,
+    "docSections": 32,
+    "docTopLevelParagraphs": 134,
+    "docTables": 1,
+    "documentRevision": 108,
+    "xlsxZipAndXmlValid": true,
+    "statusEvidenceCellsChecked": 344,
+    "clippedCells": 0,
+    "p2Unchanged": true,
+    "changedSheetCells": 13,
+    "csvAll172RowsMatch": true,
+    "xlsxAll172RowsMatch": true,
+    "coverageNoteCorrectionVerified": true,
+    "followupCorrectedCells": 1,
+    "totalSheetCellsWritten": 488,
+    "currentRelease": ".releases/20261014T152414Z-38684",
+    "loginHelp": {
+      "report": "docs/tests/login-help-inspection.json",
+      "productionChecks": 3,
+      "browserResponseFixtureChecks": 1,
+      "changedSheetCells": 3,
+      "documentParagraphsPatched": 4,
+      "all172RowsMatch": true,
+      "changedRowNoClipping": true
+    },
+    "previousSyncSheetCellsWritten": 475,
+    "changedRowLayoutCellsChecked": 15,
+    "portalSeparation": {
+      "reports": [
+        "portal-auth-results.json",
+        "portal-separation-results.json",
+        "portal-cookie-results.json",
+        "admin-portal-contract-results.json",
+        "media-settings-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-002",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-081",
+        "F-082",
+        "F-083",
+        "F-084",
+        "F-117",
+        "F-128"
+      ],
+      "changedSheetCells": 43,
+      "docPatchOperations": 19,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "secureHttpsVerified": true,
+      "legacyHistoryPreserved": true
+    },
+    "publicLanding": {
+      "reports": [
+        "public-landing-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-001",
+        "F-002",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-009",
+        "F-011",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-083",
+        "F-128"
+      ],
+      "changedSheetCells": 60,
+      "docPatchOperations": 12,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "preferredDomain": {
+      "reports": [
+        "domain-results.json",
+        "media-origin-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-128",
+        "F-138"
+      ],
+      "changedSheetCells": 8,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "android112": {
+      "artifact": {
+        "versionName": "1.1.2",
+        "versionCode": 5,
+        "sha256": "a586925eba35f322a61b0b9724c0b978e0a9f7a29dad2d3b81bf49e0feb59404",
+        "bytes": 33245,
+        "downloadUrl": "https://xuexi.yinchao1204.vip/api/download?file=zhixu-lifeos-1.1.2-5.apk"
+      },
+      "reports": [
+        "apk-startup-release-results.json",
+        "android-startup-results.json",
+        "apk-domain-browser-results.json"
+      ],
+      "userAcceptanceReport": "apk-user-device-acceptance.json",
+      "userHomepageStartupAccepted": true,
+      "affectedFeatureIds": [
+        "F-014",
+        "F-015",
+        "F-167"
+      ],
+      "changedSheetCells": 13,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    }
+  }
+}

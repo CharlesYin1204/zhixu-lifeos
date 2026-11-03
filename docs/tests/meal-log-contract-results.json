@@ -1,0 +1,23 @@
+{
+  "testedAt": "2026-10-14T13:51:46.809Z",
+  "scope": "Actual media service/database fixtures; captured mock provider transport, no real AI call",
+  "results": [
+    {
+      "name": "Unstructured upstream diary is rejected before saving and the reserved credit is refunded exactly once",
+      "passed": true
+    },
+    {
+      "name": "Structured facts produce the fixed draft, persist the same safe text and charge one credit",
+      "passed": true
+    },
+    {
+      "name": "Extra narrative fields from the provider are rejected without a charge or extra history",
+      "passed": true
+    },
+    {
+      "name": "Other image scenes retain their normal free-text answer and do not request JSON mode",
+      "passed": true
+    }
+  ],
+  "cleanup": "Temporary user, assets, histories, charges, usage and rate limits removed"
+}

@@ -1,0 +1,123 @@
+{
+  "startedAt": "2026-10-14T15:10:40.815Z",
+  "base": "https://154.40.47.111:3063",
+  "results": [
+    {
+      "name": "Anonymous root is a public introduction page with no personal workspace or user menus",
+      "passed": true,
+      "durationMs": 1288
+    },
+    {
+      "name": "Public links have accessible names, concrete destinations, and existing section anchors",
+      "passed": true,
+      "durationMs": 445
+    },
+    {
+      "name": "Public introduction fits 390px and 360px without exposing personal bottom navigation",
+      "passed": true,
+      "durationMs": 932
+    },
+    {
+      "name": "Public login CTA opens an independent login screen at desktop and both mobile widths",
+      "passed": true,
+      "durationMs": 845
+    },
+    {
+      "name": "Every anonymous canonical personal route requires login before showing workspace content",
+      "passed": true,
+      "durationMs": 3168
+    },
+    {
+      "name": "Legacy personal links redirect through the protected user route; the old admin link remains separate",
+      "passed": true,
+      "durationMs": 2867
+    },
+    {
+      "name": "Successful personal login lands at /user with all 22 feature entries",
+      "passed": true,
+      "durationMs": 1263
+    },
+    {
+      "name": "Authenticated root still shows the public introduction and its enter-user-center link works",
+      "passed": true,
+      "durationMs": 1095
+    },
+    {
+      "passed": false,
+      "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.sidebar').getByRole('button', { name: 'Agent 工作室', exact: true })\u001b[22m\n\n    at /www/wwwroot/xuexi/scripts/test-public-landing.mjs:140:88\n    at async check (/www/wwwroot/xuexi/scripts/test-public-landing.mjs:22:63)\n    at async file:///www/wwwroot/xuexi/scripts/test-public-landing.mjs:138:3"
+    }
+  ],
+  "errors": [],
+  "forbiddenActions": [],
+  "screenshots": [
+    "docs/screenshots/public-landing-desktop.png",
+    "docs/screenshots/public-landing-mobile.png",
+    "docs/screenshots/public-login-mobile.png",
+    "docs/screenshots/public-authenticated-user.png"
+  ],
+  "links": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login?mode=register",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/api/download?file=zhixu-lifeos-1.1.1-4.apk",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/admin/login",
+      "status": 200
+    }
+  ],
+  "verification": "Real production browser and login/registration forms; temporary DB fixtures; no provider mocks, AI calls, payments, or configuration writes.",
+  "release": ".releases/20261014T150944Z-36035",
+  "browserVersion": "156.0.8078.4",
+  "passed": false,
+  "fixturesRemoved": true,
+  "configurationUnchanged": true,
+  "completedAt": "2026-10-14T15:11:25.158Z"
+}

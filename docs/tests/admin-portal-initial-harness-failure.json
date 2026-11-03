@@ -1,0 +1,12 @@
+{
+  "observedAt": "2026-10-14T14:54:53.986Z",
+  "passedBeforeFailure": 12,
+  "cause": "Historical test confused plugin enabled (runtime) with listed (store visibility); waited for a nonexistent publish button and unhandled response timeout stopped cleanup.",
+  "productFailure": false,
+  "manualCleanup": {
+    "accounts": 2,
+    "catalogFixtures": 4,
+    "matchingStamp": "1791989547539"
+  },
+  "fix": "Uncheck listed instead of enabled; handle pending response rejection so finally cleanup always runs."
+}

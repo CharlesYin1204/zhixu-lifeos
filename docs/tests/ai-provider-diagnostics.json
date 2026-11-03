@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-10-14T12:14:31.964Z",
+  "endpoint": "https://api.apilio.ai/v1/chat/completions",
+  "report": [
+    {
+      "label": "existing-budget",
+      "model": "gpt-5.6-luna",
+      "params": {
+        "max_tokens": 1000
+      },
+      "httpStatus": 200,
+      "latency": 13563,
+      "responseKeys": [
+        "id",
+        "object",
+        "created",
+        "model",
+        "choices",
+        "usage",
+        "system_fingerprint",
+        "routing",
+        "service_tier"
+      ],
+      "messageKeys": [
+        "role",
+        "content",
+        "refusal",
+        "annotations"
+      ],
+      "contentLength": 0,
+      "finishReason": "length",
+      "usage": {
+        "prompt_tokens": 139,
+        "completion_tokens": 1000,
+        "total_tokens": 1139,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1000,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 8,
+          "engine_ttft_ms": 59,
+          "engine_ttlt_ms": 7787,
+          "pre_inference_ms": 231,
+          "service_tbt_ms": 8,
+          "service_ttft_ms": 478,
+          "service_ttlt_ms": 8198,
+          "user_visible_ttft_ms": 247
+        }
+      }
+    },
+    {
+      "label": "reasoning-budget-low",
+      "model": "gpt-5.6-luna",
+      "params": {
+        "max_tokens": 4096,
+        "reasoning_effort": "low"
+      },
+      "httpStatus": 200,
+      "latency": 19861,
+      "responseKeys": [
+        "id",
+        "object",
+        "created",
+        "model",
+        "choices",
+        "usage",
+        "system_fingerprint",
+        "routing",
+        "service_tier"
+      ],
+      "messageKeys": [
+        "role",
+        "content",
+        "refusal",
+        "annotations"
+      ],
+      "contentLength": 3177,
+      "finishReason": "stop",
+      "usage": {
+        "prompt_tokens": 139,
+        "completion_tokens": 2139,
+        "total_tokens": 2278,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0,
+          "cache_write_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 88,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "engine_tbt_ms": 7,
+          "engine_ttft_ms": 62,
+          "engine_ttlt_ms": 14357,
+          "pre_inference_ms": 118,
+          "service_tbt_ms": 7,
+          "service_ttft_ms": 377,
+          "service_ttlt_ms": 14663,
+          "user_visible_ttft_ms": 259
+        }
+      }
+    }
+  ]
+}

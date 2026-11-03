@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-14T14:06:50.857Z",
+  "release": ".releases/20261014T140449Z-27763",
+  "buildId": "O0qGfpsY7fRV05yvRyezq",
+  "pages": [
+    {
+      "url": "http://154.40.47.111:3060/?view=ai",
+      "status": 200,
+      "html": true
+    },
+    {
+      "url": "https://154.40.47.111:3063/?view=media",
+      "status": 200,
+      "html": true
+    },
+    {
+      "url": "https://154.40.47.111:3063/?view=user",
+      "status": 200,
+      "html": true
+    },
+    {
+      "url": "https://154.40.47.111:3063/?view=admin",
+      "status": 200,
+      "html": true
+    }
+  ],
+  "services": "MainPID=28033\nUser=zhixu\nId=zhixu-web.service\nActiveState=active\nSubState=running\nUnitFileState=enabled\n\nMainPID=18217\nUser=zhixu\nId=zhixu-worker.service\nActiveState=active\nSubState=running\nUnitFileState=enabled\n\nMainPID=18192\nUser=zhixu\nId=zhixu-voice.service\nActiveState=active\nSubState=running\nUnitFileState=enabled\n",
+  "voice": {
+    "ok": true,
+    "service": "zhixu-voice",
+    "transport": "cascade",
+    "connections": 0
+  },
+  "media": {
+    "capabilities": {
+      "voice": true,
+      "image": true,
+      "transcribe": true
+    },
+    "sceneCount": 13,
+    "transport": "cascade"
+  },
+  "apk": {
+    "version": "1.1.1",
+    "code": 4,
+    "url": "https://154.40.47.111:3063/api/download?file=zhixu-lifeos-1.1.1-4.apk",
+    "sha256": "1f24d229fd2319628ccf3a7570fd9acc9da48a06f59438edb953cf5c05427601"
+  },
+  "certificate": "notBefore=Oct 12 15:51:33 2026 GMT\nnotAfter=Oct 19 07:51:32 2026 GMT\nX509v3 Subject Alternative Name: critical\n    IP Address:154.40.47.111\n",
+  "renewalTimer": "active",
+  "databaseBackup": "database/backups/xuexi-2026-10-14T13-54-10-210Z.sql.gz",
+  "mealPromptConstrained": true,
+  "mealFactsTemplate": true
+}

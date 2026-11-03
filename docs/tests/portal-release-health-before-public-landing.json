@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-10-14T14:57:40.413Z",
+  "release": ".releases/20261014T145454Z-33605",
+  "checks": [
+    {
+      "path": "/admin",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/admin/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/user",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/?view=admin",
+      "status": 307,
+      "location": "/admin"
+    },
+    {
+      "path": "/?view=user",
+      "status": 307,
+      "location": "/user"
+    },
+    {
+      "path": "/?view=login",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "path": "/api/app?resource=health",
+      "status": 200,
+      "location": null,
+      "health": {
+        "ok": true,
+        "service": "zhixu-lifeos",
+        "database": "connected"
+      }
+    },
+    {
+      "path": "/api/admin?resource=bootstrap",
+      "status": 200,
+      "location": null,
+      "keys": [
+        "ok",
+        "user",
+        "settings"
+      ],
+      "user": null,
+      "settingKeys": [
+        "siteName",
+        "description",
+        "supportContact"
+      ]
+    },
+    {
+      "path": "/api/admin?resource=admin",
+      "status": 401,
+      "location": null
+    },
+    {
+      "path": "/api/app?resource=admin",
+      "status": 403,
+      "location": null
+    }
+  ],
+  "services": {
+    "zhixu-web": "active",
+    "zhixu-worker": "active",
+    "zhixu-voice": "active"
+  },
+  "voice": {
+    "ok": true,
+    "service": "zhixu-voice",
+    "transport": "cascade",
+    "connections": 0
+  }
+}

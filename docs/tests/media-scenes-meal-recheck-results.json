@@ -1,0 +1,129 @@
+{
+  "testedAt": "2026-10-14T13:48:17.254Z",
+  "base": "https://154.40.47.111:3063",
+  "transport": "HTTPS and WSS; cascade ASR → chat → TTS",
+  "results": [
+    {
+      "scene": "meal-log",
+      "mode": "image",
+      "startedAt": "2026-10-14T13:48:18.370Z",
+      "reply": "**Visible Foods:**  \n- Steamed broccoli  \n- Sliced tomatoes  \n- Cooked white rice  \n\n**Meal Diary Entry:**  \nFor lunch, I enjoyed a simple yet nutritious meal consisting of steamed broccoli, fresh tomato slices, and fluffy white rice. The combination provided a satisfying balance of fiber and carbohydrates, making it a light yet fulfilling option.\n\n**General Balance Suggestion:**  \nFor a well-rounded meal, consider adding a source of protein, such as grilled chicken or beans, to complement the vegetables and carbohydrates.",
+      "sourceCount": 1,
+      "passed": false,
+      "error": "Invented meal time, sensory detail or personal feeling",
+      "durationMs": 4262
+    }
+  ],
+  "errors": [
+    {
+      "scene": "meal-log",
+      "error": "Invented meal time, sensory detail or personal feeling"
+    }
+  ],
+  "limitations": [
+    "Short synthetic English speech; no microphone, camera, mobile device or human listening evaluation in this script.",
+    "Essay, notes and chart are clean generated images, not handwriting or difficult real-world capture.",
+    "Object and meal images are AI-generated photographic samples visually inspected before use; they do not establish accuracy across real-life photographs.",
+    "Semantic checks cover specified visible facts and representative replies, not exhaustive model quality."
+  ],
+  "fixtures": [
+    {
+      "file": "docs/tests/media-scene-fixtures/essay.png",
+      "description": "My Reading Habit",
+      "provenance": "Original synthetic text rendered with sharp from SVG.",
+      "bytes": 46074,
+      "sha256": "fdddab31cd8fd9719e45ada0948eb92a07113324c29153ff2a968f9a4ec65726"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/notes.png",
+      "description": "Photosynthesis - revision notes",
+      "provenance": "Original synthetic text rendered with sharp from SVG.",
+      "bytes": 65048,
+      "sha256": "ec216179e8846bd8426d7dc2c37b1bf81900f0cf863d7c371c929197bfca151f"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/chart.png",
+      "description": "Weekly daily reading minutes: 20, 35, 30, 45; Week 3 decreases.",
+      "provenance": "Original SVG chart rendered with sharp; all values predetermined.",
+      "bytes": 48717,
+      "sha256": "551b4fc01ec813f641683bfcab101d436ebc3f50cbfbc10e2e387abacd51b458"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/object-scissors.png",
+      "description": "One open pair of scissors, blue plastic handles and steel blades.",
+      "provenance": "Generated with built-in imagegen for this test; visually inspected by operator.",
+      "bytes": 2040140,
+      "sha256": "a911614fdd8d95f1937166ef3a9ad78f42a87c7711ebf652b1d7fb045a8c9ae0"
+    },
+    {
+      "file": "docs/tests/media-scene-fixtures/meal-rice-broccoli-tomato.png",
+      "description": "White plate with white rice, broccoli and tomato wedges.",
+      "provenance": "Generated with built-in imagegen for this test; visually inspected by operator.",
+      "bytes": 2285582,
+      "sha256": "21a10dce90b11f4f3618f56272542bf092b87b62703981092902ce769552412f"
+    }
+  ],
+  "initialCredits": 30,
+  "availableScenes": [
+    "english-free",
+    "travel-talk",
+    "interview",
+    "study-qa",
+    "speech-practice",
+    "homework",
+    "essay-review",
+    "notes-organize",
+    "chart-explain",
+    "object-identify",
+    "meal-log",
+    "class-notes",
+    "spoken-review"
+  ],
+  "finalCredits": 29,
+  "operations": [
+    {
+      "kind": "image",
+      "status": "completed",
+      "count": 1
+    }
+  ],
+  "usage": [
+    {
+      "kind": "media_vision",
+      "status": "success",
+      "calls": 1,
+      "reportedTokens": "25810"
+    }
+  ],
+  "billing": {
+    "successfulOperations": 1,
+    "creditsDeducted": 1,
+    "balanced": true
+  },
+  "cleanup": {
+    "temporaryUsers": 1,
+    "uploadedAssets": 1,
+    "remaining": {
+      "media_assets": 0,
+      "media_operations": 0,
+      "sessions": 0,
+      "records": 0,
+      "conversations": 0,
+      "runs": 0,
+      "orders": 0,
+      "installs": 0,
+      "usage_logs": 0,
+      "audit": 0,
+      "users": 0,
+      "rateLimits": 0,
+      "assetFiles": 0
+    },
+    "passed": true
+  },
+  "completedAt": "2026-10-14T13:48:22.867Z",
+  "summary": {
+    "passed": 0,
+    "failed": 1,
+    "expectedScenes": 1
+  }
+}

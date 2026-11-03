@@ -1,0 +1,11 @@
+{
+  "testedAt": "2026-10-14T13:01:58.100Z",
+  "model": "gpt-4o-mini-tts",
+  "format": "pcm",
+  "httpStatus": 200,
+  "contentType": "audio/pcm",
+  "bytes": 127200,
+  "latencyMs": 1099,
+  "nonZeroSamples": true,
+  "durationSeconds": 2.65
+}

@@ -1,0 +1,34 @@
+{
+  "testedAt": "2026-10-14T14:55:42.225Z",
+  "release": ".releases/20261014T145454Z-33605",
+  "checks": [
+    {
+      "name": "HTTPS admin browser login issues Secure HttpOnly SameSite=Lax cookie",
+      "passed": true
+    },
+    {
+      "name": "HTTPS user browser login issues Secure HttpOnly SameSite=Lax cookie",
+      "passed": true
+    },
+    {
+      "name": "HTTPS logout expires only its own cookie and retains Secure",
+      "passed": true
+    },
+    {
+      "name": "HTTP admin API login remains compatible with scoped non-Secure cookie",
+      "passed": true
+    },
+    {
+      "name": "HTTP user API login remains compatible with scoped non-Secure cookie",
+      "passed": true
+    },
+    {
+      "name": "HTTP logout remains isolated and clears its own cookie",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "browser": "156.0.8078.4",
+  "passed": true,
+  "cleanup": "Temporary accounts, sessions, audit and rate limits removed; no AI or payments invoked"
+}

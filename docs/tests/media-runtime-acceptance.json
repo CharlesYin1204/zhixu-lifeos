@@ -1,0 +1,47 @@
+{
+  "updatedAt": "2026-10-14T13:26:00Z",
+  "publicUrl": "https://154.40.47.111:3063/?view=media",
+  "transport": "cascade",
+  "description": "Authenticated same-origin WSS with PCM16 mono 24k input, VAD utterance segmentation, speech recognition, contextual streamed text answer, and streamed PCM speech output. Native upstream Realtime is not used.",
+  "models": {
+    "vision": "gpt-4o-mini",
+    "chat": "gpt-4o-mini",
+    "transcription": "gpt-4o-transcribe",
+    "speech": "gpt-4o-mini-tts",
+    "voice": "alloy"
+  },
+  "configuration": {
+    "transcriptionEntityId": "media-transcribe",
+    "boundViaAuthenticatedAdminAPI": true,
+    "ordinaryDefaultChatModelUnchanged": true,
+    "freshInstallSeedUpdated": true
+  },
+  "accepted": {
+    "publicVisionEquation": "2x+5=17 recognized and solved x=6",
+    "imageFollowUp": "assetIds=[] reused owned image from conversation; persistent sources verified",
+    "recording": "Uploaded synthetic MP3 normalized privately to WAV, transcribed actual speech, knowledge note persisted with owner-only reference",
+    "publicWSS": "Two real rounds returned nonempty recognized text, streamed assistant text, and nonzero PCM audio; four history messages preserved",
+    "interrupt": "Third turn aborted at thinking before valid reply, reservation refunded exactly once and no late audio emitted",
+    "billing": "One recording + two voice rounds deducted exactly 3 credits; interrupted turn net 0",
+    "isolation": "Unsigned session, untrusted Origin, second concurrent user connection, foreign-user attachment download/delete denied",
+    "privateStorage": "Files never stored under public; owner deletion released stored bytes and old GET returned404",
+    "cleanup": "All acceptance fixture users, sessions, records, usage rows and private files removed"
+  },
+  "evidence": [
+    "docs/tests/media-live-results.json",
+    "docs/tests/media-live-voice-results.json",
+    "docs/tests/media-backend-results.json",
+    "docs/tests/media-asr-fallback-probe.json",
+    "docs/tests/media-pcm-probe.json"
+  ],
+  "providerLimitations": {
+    "nativeRealtime": "Both tested realtime model WebSockets returned account_deactivated; cascade transport used",
+    "whisper-1": "An initial probe succeeded; subsequent MP3/WAV calls returned HTTP429 unknown_error/upstream saturation, so no longer selected",
+    "gpt-4o-mini-transcribe": "Probe returned HTTP429/account_deactivated; not selected"
+  },
+  "scopeLimits": [
+    "Image tests cover a simple generated equation, not arbitrary handwriting accuracy.",
+    "Synthetic audio and server public WSS accepted; physical Android microphone/speaker hardware is not established by these tests.",
+    "Precise firstAudioMs from the server-only public run was lost because of a test harness cleanup error; provider stage latencies are recorded and the browser acceptance can independently measure first PCM."
+  ]
+}

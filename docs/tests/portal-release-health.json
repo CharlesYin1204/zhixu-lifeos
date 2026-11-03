@@ -1,0 +1,215 @@
+{
+  "checkedAt": "2026-10-14T15:10:54.197Z",
+  "release": ".releases/20261014T150944Z-36035",
+  "checks": [
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/login?mode=register",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/user",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/user?view=ai",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/admin",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/admin/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/?view=ai",
+      "status": 307,
+      "location": "/user?view=ai"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/?view=user",
+      "status": 307,
+      "location": "/user"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/?view=admin",
+      "status": 307,
+      "location": "/admin"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/?view=login",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/api/app?resource=health",
+      "status": 200,
+      "location": null,
+      "data": {
+        "ok": true,
+        "service": "zhixu-lifeos",
+        "database": "connected"
+      }
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/api/app?resource=session",
+      "status": 200,
+      "location": null,
+      "data": {
+        "ok": true,
+        "user": null
+      }
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/api/admin?resource=admin",
+      "status": 401,
+      "location": null
+    },
+    {
+      "base": "https://154.40.47.111:3063",
+      "path": "/api/app?resource=admin",
+      "status": 403,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/login?mode=register",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/user",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/user?view=ai",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/admin",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/admin/login",
+      "status": 200,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/?view=ai",
+      "status": 307,
+      "location": "/user?view=ai"
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/?view=user",
+      "status": 307,
+      "location": "/user"
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/?view=admin",
+      "status": 307,
+      "location": "/admin"
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/?view=login",
+      "status": 307,
+      "location": "/login"
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/api/app?resource=health",
+      "status": 200,
+      "location": null,
+      "data": {
+        "ok": true,
+        "service": "zhixu-lifeos",
+        "database": "connected"
+      }
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/api/app?resource=session",
+      "status": 200,
+      "location": null,
+      "data": {
+        "ok": true,
+        "user": null
+      }
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/api/admin?resource=admin",
+      "status": 401,
+      "location": null
+    },
+    {
+      "base": "http://154.40.47.111:3060",
+      "path": "/api/app?resource=admin",
+      "status": 403,
+      "location": null
+    }
+  ],
+  "services": {
+    "zhixu-web": "active",
+    "zhixu-worker": "active",
+    "zhixu-voice": "active"
+  },
+  "voice": {
+    "ok": true,
+    "service": "zhixu-voice",
+    "transport": "cascade",
+    "connections": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "verifiedAt": "2026-10-14T12:50:25.186400+00:00",
+  "issue": "AI page messages or navigation could trigger This page couldn’t load in newer Chromium.",
+  "rootCause": "scrollIntoView returns a Promise in Chromium 156; implicit useEffect return was incorrectly treated as React cleanup.",
+  "fix": "Use a block-bodied effect with no return value for scrollIntoView. All 12 effects audited.",
+  "source": "components/LifeOS.jsx:219",
+  "release": ".releases/20261014T124600Z-11885",
+  "buildId": "vKNS4V9WblnWpuEq7mbsv",
+  "navigation": [
+    {
+      "report": "navigation-diagnostic-chromium156.json",
+      "browserVersion": "156.0.8078.4",
+      "passed": true,
+      "steps": 52,
+      "pageErrors": 0,
+      "consoleErrorsOrWarnings": 0,
+      "failedRequests": 0
+    },
+    {
+      "report": "navigation-diagnostic-chromium145.json",
+      "browserVersion": "145.0.7632.6",
+      "passed": true,
+      "steps": 52,
+      "pageErrors": 0,
+      "consoleErrorsOrWarnings": 0,
+      "failedRequests": 0
+    }
+  ],
+  "flows": [
+    {
+      "report": "ui-flow-results.json",
+      "passed": true,
+      "checks": 15,
+      "errors": 0,
+      "testedAt": "2026-10-14T12:48:25.644Z"
+    },
+    {
+      "report": "browser-results.json",
+      "passed": true,
+      "checks": 9,
+      "errors": 0,
+      "testedAt": "2026-10-14T12:48:58.650Z"
+    }
+  ],
+  "deployment": {
+    "report": "deployment-results.json",
+    "passed": true,
+    "checks": 19
+  },
+  "passed": true,
+  "browserReloadRequiredForExistingTabs": true,
+  "beforeEvidence": [
+    "navigation-diagnostic-chromium156-before-fix.json",
+    "scroll-into-view-browser-compatibility.json",
+    "../screenshots/navigation-error-chromium156-before-fix.png"
+  ]
+}

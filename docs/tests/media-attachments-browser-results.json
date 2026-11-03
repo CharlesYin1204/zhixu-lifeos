@@ -1,0 +1,50 @@
+{
+  "testedAt": "2026-10-14T13:44:41.878Z",
+  "base": "https://154.40.47.111:3063",
+  "realProviderCalls": 0,
+  "results": [
+    {
+      "name": "Available historical image renders a working owner-only preview and source link",
+      "passed": true
+    },
+    {
+      "name": "Deleting the currently displayed photo immediately replaces its preview and source without losing text",
+      "passed": true
+    },
+    {
+      "name": "Reloaded mobile history shows the deleted placeholder and makes no request to the removed image",
+      "passed": true
+    },
+    {
+      "name": "Deleting a recording updates note metadata returned by bootstrap and removes clickable sources in the note UI",
+      "passed": true
+    },
+    {
+      "name": "Production record pagination and account export also remove deleted recording URLs",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "recordResponses": [
+    {
+      "resource": "bootstrap",
+      "deleted": true,
+      "url": null,
+      "transcriptPreserved": true
+    },
+    {
+      "resource": "records",
+      "deleted": true,
+      "url": null,
+      "transcriptPreserved": true
+    },
+    {
+      "resource": "export",
+      "deleted": true,
+      "url": null,
+      "transcriptPreserved": true
+    }
+  ],
+  "browser": "156.0.8078.4",
+  "cleanup": "All isolated users, sessions, notes, conversations and private files removed"
+}

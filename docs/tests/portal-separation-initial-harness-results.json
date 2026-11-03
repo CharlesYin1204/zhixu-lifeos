@@ -1,0 +1,39 @@
+{
+  "startedAt": "2026-10-14T14:50:36.007Z",
+  "base": "https://154.40.47.111:3063",
+  "results": [
+    {
+      "name": "Anonymous admin deep link opens its independent login without any personal navigation",
+      "passed": true,
+      "durationMs": 1221
+    },
+    {
+      "name": "Personal login and canonical user center preserve every existing feature group",
+      "passed": true,
+      "durationMs": 1679
+    },
+    {
+      "name": "An ordinary personal login cannot enter the admin portal or authenticate as an administrator",
+      "passed": true,
+      "durationMs": 835
+    },
+    {
+      "passed": false,
+      "error": "response.text: Protocol error (Network.getResponseBody): No resource with given identifier found\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.\n    at loginAdmin (/www/wwwroot/xuexi/scripts/test-portal-separation.mjs:121:64)\n    at async file:///www/wwwroot/xuexi/scripts/test-portal-separation.mjs:212:5\n    at async check (/www/wwwroot/xuexi/scripts/test-portal-separation.mjs:43:3)\n    at async file:///www/wwwroot/xuexi/scripts/test-portal-separation.mjs:211:3"
+    }
+  ],
+  "errors": [],
+  "adminPagePersonalRequests": [],
+  "forbiddenActions": [],
+  "screenshots": [
+    "docs/screenshots/portal-admin-login.png",
+    "docs/screenshots/portal-admin-login-mobile.png",
+    "docs/screenshots/portal-user-center.png"
+  ],
+  "verification": "Production Chromium browser, real forms/API/database sessions; isolated temporary users; no provider mocks or AI/payment calls.",
+  "browserVersion": "156.0.8078.4",
+  "passed": false,
+  "fixturesRemoved": true,
+  "configurationUnchanged": true,
+  "completedAt": "2026-10-14T14:50:42.972Z"
+}

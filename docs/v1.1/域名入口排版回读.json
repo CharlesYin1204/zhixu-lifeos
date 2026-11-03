@@ -1,0 +1,145 @@
+{
+  "前台:20": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 810,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F20:J20",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "首选域名HTTPS提供录音、图片上传与同源WSS；保留IP HTTPS3063及HTTP3060"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "域名证书可信、安全上下文有效；受控域名来源允许媒体请求与语音握手，未知来源继续拒绝；HTTP引导HTTPS"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "证书与Nginx"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "域名上传及WSS就绪已验证；真实语音沿用原证据"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：https-readiness.json11/11可信同IP证书/安全上下文，media-browser-results.json10/10及media-voice-browser-results.json生产HTTPS采集与WSS真实语音轮次通过；输入为合成WAV，非物理设备。 本轮首选域名：domain-results.json验证域名真实PNG上传、私有WebP读取与删除；WSS ready→保存→close1000，未发送音频、未调用AI或扣费；匿名/外部Origin拒绝。media-origin-results.json7项隔离函数验证受控域名与IP兼容，不能当作域名真实语音轮次证据。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F20:J20",
+          "row_indices": [
+            20
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 66,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "验收与依赖:14": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 1153,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "F14:J14",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "通过首选域名HTTPS访问公开首页、用户中心及后台，原IP端口继续兼容"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "https://xuexi.yinchao1204.vip无需端口可打开，用户与管理员登录各自有效；IP3063/3060入口保持，个人页面鉴权及旧链接跳转正确"
+              },
+              {
+                "cell_styles": {
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "对应模块实现"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "域名/IP入口与登录已验证；跨网络专项未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "历史证据：HTTP3060保留，HTTPS3063可信证书及生产媒体浏览器/WSS通过；早期HTTP外部日志36次成功记录。独立受控跨网络浏览器与物理移动网络验收未执行。 本轮门户分离：portal-release-health.json在145454确认四个独立页面200、三个旧入口307、匿名后台数据401、旧个人API管理入口403及DB连接；portal-cookie-results.json验证HTTPS浏览器和HTTP API兼容，跨网络专项仍未执行。 本轮公开首页：portal-release-health.json在150944完成HTTP/HTTPS共30项状态检查：/200、匿名/user307到/login、旧功能地址307到/user?view=...、后台保持独立；public-landing-results.json验证实际登录后的页面。跨网络专项仍未执行。 本轮首选域名：domain-results.json10项验证可信域名页面/静态资源、双端真实登录与独立会话、原IP兼容；domain-release-health.json14项及双公共DNS解析核对通过。发布152414，域名HTTP301到HTTPS，APP_URL/支付通知仍原IP，跨网络专项未执行。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+          ],
+          "range": "F14:J14",
+          "row_indices": [
+            14
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 5,
+      "revision": 66,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  }
+}

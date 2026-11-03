@@ -1,0 +1,117 @@
+{
+  "testedAt": "2026-10-14T12:59:51.502Z",
+  "baseUrl": "https://api.apilio.ai/v1",
+  "scope": "Controlled real provider calls using self-created math image and synthetic English speech; no account/settings/service mutations",
+  "documentation": [
+    "https://gpt-best.apifox.cn/doc-5287337",
+    "https://1km97fp1cj.apifox.cn/websocket-3566853",
+    "https://1km97fp1cj.apifox.cn/websocket-3566860"
+  ],
+  "attempts": [
+    {
+      "capability": "realtime",
+      "model": "gpt-4o-mini-realtime-preview",
+      "protocol": "OpenAI-Beta: realtime=v1",
+      "endpoint": "/v1/realtime",
+      "opened": true,
+      "sessionUpdated": false,
+      "audioBytes": 0,
+      "transcript": "",
+      "eventTypes": [
+        "error"
+      ],
+      "error": "The OpenAI account associated with this API key has been deactivated. If you are the developer for this OpenAI app, please check your email for more information. If you are seeing this error while using another app or site, please reach out to them for more help.",
+      "errorCode": "account_deactivated",
+      "durationMs": 879,
+      "success": false
+    },
+    {
+      "capability": "realtime",
+      "model": "gpt-4o-realtime-preview",
+      "protocol": "OpenAI-Beta: realtime=v1",
+      "endpoint": "/v1/realtime",
+      "opened": true,
+      "sessionUpdated": false,
+      "audioBytes": 0,
+      "transcript": "",
+      "eventTypes": [
+        "error"
+      ],
+      "error": "The OpenAI account associated with this API key has been deactivated. If you are the developer for this OpenAI app, please check your email for more information. If you are seeing this error while using another app or site, please reach out to them for more help.",
+      "errorCode": "account_deactivated",
+      "durationMs": 698,
+      "success": false
+    },
+    {
+      "capability": "speech",
+      "model": "gpt-4o-mini-tts",
+      "endpoint": "/v1/audio/speech",
+      "httpStatus": 200,
+      "contentType": "audio/mpeg",
+      "bytes": 82560,
+      "success": true,
+      "fixture": "docs/tests/media-fixtures/speech-gpt-4o-mini-tts.mp3",
+      "sha256": "9a77a95d1330d68296ac6f6021486fe3b9b96a22732464f9330ee175e80044db",
+      "durationMs": 1204
+    },
+    {
+      "capability": "transcription",
+      "model": "gpt-4o-mini-transcribe",
+      "endpoint": "/v1/audio/transcriptions",
+      "input": "Previously generated synthetic English speech",
+      "httpStatus": 429,
+      "error": "{\"error\":{\"message\":\"当前分组上游负载已饱和，请稍后再试\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"account_deactivated\"}}",
+      "durationMs": 3020
+    },
+    {
+      "capability": "transcription",
+      "model": "whisper-1",
+      "endpoint": "/v1/audio/transcriptions",
+      "input": "Previously generated synthetic English speech",
+      "httpStatus": 200,
+      "transcript": "I study English for 20 minutes every day.",
+      "success": true,
+      "durationMs": 1464
+    },
+    {
+      "capability": "vision",
+      "model": "gpt-4o-mini",
+      "endpoint": "/v1/chat/completions",
+      "fixture": "docs/tests/media-fixtures/linear-equation.png",
+      "httpStatus": 200,
+      "answer": "The equation is:\n\n\\[ 2x + 5 = 17 \\]\n\nTo solve for \\( x \\), we can first subtract 5 from both sides:\n\n\\[ 2x = 17 - 5 \\]\n\n\\[ 2x = 12 \\]\n\nNow, divide by 2:\n\n\\[ x = \\frac{12}{2} = 6 \\]\n\nSo, the solution is \\( x = 6 \\).",
+      "usage": {
+        "prompt_tokens": 2860,
+        "completion_tokens": 88,
+        "total_tokens": 2948,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "latency_checkpoint": {
+          "service_ttft_ms": 802,
+          "user_visible_ttft_ms": 693,
+          "pre_inference_ms": 109,
+          "service_tbt_ms": 9,
+          "service_ttlt_ms": 1562,
+          "engine_ttft_ms": 85,
+          "engine_ttlt_ms": 859,
+          "engine_tbt_ms": 9
+        }
+      },
+      "success": true,
+      "durationMs": 1849
+    }
+  ],
+  "capabilities": {
+    "speech": "gpt-4o-mini-tts",
+    "transcription": "whisper-1",
+    "vision": "gpt-4o-mini"
+  }
+}

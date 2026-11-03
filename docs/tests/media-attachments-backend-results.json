@@ -1,0 +1,23 @@
+{
+  "testedAt": "2026-10-14T13:43:33.435Z",
+  "realProviderCalls": 0,
+  "results": [
+    {
+      "name": "Owned history references use canonical download URLs; foreign, absent and wrong-kind references expose no URL",
+      "passed": true
+    },
+    {
+      "name": "Repeated references across many conversations and note metadata use one ownership query",
+      "passed": true
+    },
+    {
+      "name": "Deleting a photo replaces both historical preview and source with deleted state while preserving stored messages",
+      "passed": true
+    },
+    {
+      "name": "Deleted recording references in note metadata lose download URLs without changing transcript text",
+      "passed": true
+    }
+  ],
+  "cleanup": "All isolated users, references, sessions and private files removed"
+}

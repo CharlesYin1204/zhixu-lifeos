@@ -1,0 +1,43 @@
+{
+  "testedAt": "2026-10-14T12:48:58.650Z",
+  "base": "http://154.40.47.111:3060",
+  "results": [
+    {
+      "name": "Desktop public dashboard renders real catalog and clear guest state",
+      "passed": true
+    },
+    {
+      "name": "Browser registration, task creation, completion and persistence",
+      "passed": true
+    },
+    {
+      "name": "Knowledge note creation through actual forms",
+      "passed": true
+    },
+    {
+      "name": "Free plugin installation changes interface state",
+      "passed": true
+    },
+    {
+      "name": "All major user views render without runtime exceptions",
+      "passed": true
+    },
+    {
+      "name": "Mobile bottom navigation and user center fit 390px",
+      "passed": true
+    },
+    {
+      "name": "Administrator dashboard and configuration tabs render",
+      "passed": true
+    },
+    {
+      "name": "APK download is a signed package, private files cannot be downloaded",
+      "passed": true
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

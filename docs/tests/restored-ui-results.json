@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-10-14T13:45:16.258Z",
+  "base": "https://154.40.47.111:3063",
+  "scope": "Production browser checkout lost-response retry, 1505-record auto-pagination and owned source navigation; no actual payment or AI call",
+  "results": [
+    {
+      "name": "Lost checkout response retries the same requestId and leaves exactly one pending manual order",
+      "passed": true,
+      "durationMs": 1298,
+      "evidence": {
+        "browserSubmissions": 2,
+        "sameRequestId": true,
+        "databaseOrders": 1,
+        "paidOrders": 0,
+        "paymentMethod": "manual"
+      }
+    },
+    {
+      "name": "The production UI loads every record through all four pages beyond the previous 1500-record boundary",
+      "passed": true,
+      "durationMs": 1522,
+      "evidence": {
+        "pages": [
+          500,
+          500,
+          500,
+          5
+        ],
+        "uniqueOwnedRecords": 1505,
+        "oldestRecordSearchAndEdit": true
+      }
+    },
+    {
+      "name": "Reference links open the exact owned record and deleted attachments remain readable without a clickable link",
+      "passed": true,
+      "durationMs": 886,
+      "evidence": {
+        "exactOwnedSourceRecordOpened": true,
+        "deletedSourceTitlePreserved": true,
+        "deletedSourceClickable": false
+      }
+    },
+    {
+      "name": "No browser exception, disallowed action, actual payment or AI credit change occurred",
+      "passed": true,
+      "durationMs": 10
+    },
+    {
+      "name": "Temporary ordinary user, unpaid order, request key, session and all owned records removed",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "forbiddenActions": [],
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-14T13:45:20.415Z",
+  "passed": true
+}

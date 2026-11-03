@@ -1,0 +1,21 @@
+{
+  "testedAt": "2026-10-14T13:19:48.267Z",
+  "model": "gpt-4o-transcribe",
+  "sample": "synthetic English MP3",
+  "status": 200,
+  "latencyMs": 951,
+  "response": {
+    "text": "I study English for 20 minutes every day.",
+    "usage": {
+      "type": "tokens",
+      "total_tokens": 63,
+      "input_tokens": 51,
+      "input_token_details": {
+        "text_tokens": 0,
+        "audio_tokens": 51
+      },
+      "output_tokens": 12
+    }
+  },
+  "success": true
+}

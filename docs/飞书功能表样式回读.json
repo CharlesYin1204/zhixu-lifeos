@@ -1,0 +1,311 @@
+{
+  "approx_char_count": 3425,
+  "has_more": false,
+  "ranges": [
+    {
+      "actual_range": "A1:J3",
+      "cells": [
+        [
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "需求编号"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "产品端"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "模块"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "功能名称"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "优先级"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "用户行为与结果"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "验收标准"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "外部依赖"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "实现状态"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#243B35",
+              "font_color": "#FFFFFF",
+              "font_size": 11,
+              "font_weight": "bold",
+              "vertical_alignment": "middle"
+            },
+            "value": "验证证据/备注"
+          }
+        ],
+        [
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "F-019"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "用户中心"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "总览"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "真实统计"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "P1"
+          },
+          {
+            "cell_styles": {
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "汇总本人任务目标和专注"
+          },
+          {
+            "cell_styles": {
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "与本人原始记录匹配"
+          },
+          {
+            "cell_styles": {
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "无外部依赖"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#FFF7E8",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "需求已定义，待实现验收"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#FFF7E8",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            }
+          }
+        ],
+        [
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "F-020"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "用户中心"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "总览"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "快捷新增"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#F2F5F2",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "P1"
+          },
+          {
+            "cell_styles": {
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "从概览创建常用记录"
+          },
+          {
+            "cell_styles": {
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "保存后显示且刷新保留"
+          },
+          {
+            "cell_styles": {
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "无外部依赖"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#FFF7E8",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            },
+            "value": "需求已定义，待实现验收"
+          },
+          {
+            "cell_styles": {
+              "background_color": "#FFF7E8",
+              "font_size": 11,
+              "number_format": "@",
+              "vertical_alignment": "top"
+            }
+          }
+        ]
+      ],
+      "col_indices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "range": "A1:J3",
+      "row_indices": [
+        1,
+        2,
+        3
+      ],
+      "truncated": false
+    }
+  ],
+  "returned_cell_count": 30,
+  "revision": 45,
+  "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+}

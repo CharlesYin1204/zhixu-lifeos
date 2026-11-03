@@ -1,0 +1,96 @@
+{
+  "status": "Historical initial provider-probe design; superseded by docs/tests/media-runtime-acceptance.json after implementation and public acceptance",
+  "evidence": "docs/tests/media-provider-probe.json",
+  "verifiedModels": {
+    "imageUnderstanding": "gpt-4o-mini",
+    "speechToText": "whisper-1",
+    "textToSpeech": "gpt-4o-mini-tts"
+  },
+  "unavailableModelsAtProbeTime": {
+    "gpt-4o-mini-realtime-preview": "WebSocket handshake succeeds, then server emits account_deactivated before session.updated",
+    "gpt-4o-realtime-preview": "WebSocket handshake succeeds, then server emits account_deactivated before session.updated",
+    "gpt-4o-mini-transcribe": "HTTP 429; provider reports upstream saturation with account_deactivated code"
+  },
+  "verifiedContracts": {
+    "vision": {
+      "path": "/v1/chat/completions",
+      "method": "POST",
+      "body": "model=gpt-4o-mini; messages[].content includes text and image_url; image_url.url accepts data:image/png;base64,...; image_url.detail=low; max_tokens=200",
+      "response": "choices[0].message.content contains the recognized equation and correct answer",
+      "demonstratedInput": "640×320 locally rendered image: 2x + 5 = 17",
+      "demonstratedOutput": "x = 6 with the equation and calculation",
+      "scopeLimit": "One simple educational image; this does not establish accuracy for arbitrary handwriting, documents or medical imagery"
+    },
+    "speech": {
+      "path": "/v1/audio/speech",
+      "method": "POST JSON",
+      "body": "model=gpt-4o-mini-tts; voice=alloy; response_format=mp3; input is English text",
+      "response": "audio/mpeg binary",
+      "fixture": "docs/tests/media-fixtures/speech-gpt-4o-mini-tts.mp3",
+      "fixtureDurationSeconds": 5.16,
+      "fixtureSampleRate": 24000,
+      "fixtureChannels": 1
+    },
+    "transcription": {
+      "path": "/v1/audio/transcriptions",
+      "method": "POST multipart/form-data",
+      "fields": "model=whisper-1; file=<audio/mpeg Blob>; language=en; response_format=json",
+      "response": "JSON text field",
+      "demonstratedOutput": "I study English for 20 minutes every day."
+    },
+    "realtime": {
+      "path": "wss://api.apilio.ai/v1/realtime?model=<model>",
+      "headers": [
+        "Authorization: Bearer <server-only key>",
+        "OpenAI-Beta: realtime=v1"
+      ],
+      "plannedClientEvents": [
+        "session.update",
+        "conversation.item.create",
+        "response.create",
+        "input_audio_buffer.append",
+        "input_audio_buffer.commit",
+        "response.cancel"
+      ],
+      "plannedServerEvents": [
+        "session.updated",
+        "response.audio.delta",
+        "response.audio_transcript.delta",
+        "response.audio_transcript.done",
+        "response.done",
+        "error"
+      ],
+      "audioContract": "PCM16 mono, 24 kHz; never verified against a successful output in this probe",
+      "currentGate": "Do not label the realtime service available until it completes a response with nonempty PCM and transcript"
+    }
+  },
+  "implementationProposal": {
+    "imageFlow": [
+      "Authenticated user selects or captures an image",
+      "Server validates file signature, size and ownership, then stores a private asset",
+      "Server invokes configured vision model with a scenario-specific prompt",
+      "Store answer and asset references in the owning user's conversation or note"
+    ],
+    "voicePracticeFlow": [
+      "Record or upload a short spoken turn",
+      "Transcribe with whisper-1",
+      "User can review recognized text",
+      "English coach returns a concise contextual answer and optional corrections",
+      "Speak the actual answer through gpt-4o-mini-tts",
+      "Persist user transcript, assistant text and private audio references"
+    ],
+    "voiceModeLabel": "逐轮语音练习; it is a usable fallback, not evidence that realtime WebSocket audio works",
+    "browserMicrophoneRequirement": "getUserMedia requires a secure context. The existing public HTTP IP origin cannot directly capture a microphone in ordinary browsers. Provide a trusted HTTPS entry point or a separately implemented native recorder; uploading an existing audio file remains possible over HTTP.",
+    "serverBoundary": "Provider credentials stay in the server; browser uses the same application session. Every upload/download/transcription/synthesis request checks user ownership and origin. Realtime proxy must authenticate before connecting upstream and close upstream when the user disconnects.",
+    "stateAndCosts": "Persist explicit failure state, reserve and settle credits atomically, avoid repeated paid requests on a retry using a request identifier, and record unknown provider usage as null. Do not infer token usage for audio endpoints that do not report it.",
+    "mediaLifecycle": "Bound upload byte size and recording duration, inspect actual MIME/signature, use opaque private asset IDs, prevent path-based downloads, and remove abandoned files with a defined retention policy.",
+    "nativeRecording": "APK native capture requires Android microphone permission and user-triggered recording; only expose the bridge to the configured trusted application origin. No recording has been implemented or device-tested by this probe."
+  },
+  "references": [
+    "https://gpt-best.apifox.cn/doc-5287337",
+    "https://1km97fp1cj.apifox.cn/websocket-3566853",
+    "https://1km97fp1cj.apifox.cn/websocket-3566860",
+    "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia"
+  ],
+  "currentRuntimeEvidence": "docs/tests/media-runtime-acceptance.json"
+}

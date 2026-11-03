@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-14T14:06:20.909Z",
+  "release": ".releases/20261014T140449Z-27763",
+  "checks": [
+    {
+      "name": "Anonymous login exposes unavailable email recovery and administrator help",
+      "passed": true,
+      "scope": "production"
+    },
+    {
+      "name": "Missing contact details are explained without inventing an address or email delivery",
+      "passed": true,
+      "scope": "production"
+    },
+    {
+      "name": "390px login and help do not overflow",
+      "passed": true,
+      "scope": "production"
+    },
+    {
+      "name": "Configured support content appears in the existing help dialog",
+      "passed": true,
+      "scope": "browser-only response fixture; production settings unchanged"
+    }
+  ],
+  "errors": [],
+  "mutations": "No accounts, settings, email, password reset or AI/payment requests changed or submitted"
+}

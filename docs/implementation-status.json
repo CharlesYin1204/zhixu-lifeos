@@ -1,0 +1,926 @@
+{
+  "date": "2026-10-14",
+  "phase": "v1.1最终补充验收；13场景真实样例、状态/附件修复、受控后台契约均按证据区分",
+  "source": "最新生产/隔离/真实样例报告及保留的历史失败证据",
+  "features": [
+    {
+      "id": "F-001",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 本轮公开首页：public-landing-results.json实际Chromium156验证匿名与登录后访问/都为产品落地页，个人工作台仅在/user；无页面异常。"
+    },
+    {
+      "id": "F-002",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。 本轮门户分离：portal-separation-results.json验证/login、/user与/admin/login、/admin入口及旧地址跳转；15个后台section可达，22个个人入口保留。 本轮公开首页：public-landing-results.json验证公开导航可访问、有效锚点、/login独立、登录后/user含22入口、所有个人导航保持/user路径和旧地址跳转。"
+    },
+    {
+      "id": "F-003",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 本轮公开首页：public-landing-results.json验证公开首页与登录页桌面及390/360px布局，无个人侧栏或功能底栏；对应截图已保存。"
+    },
+    {
+      "id": "F-004",
+      "status": "公开介绍已上线；真实能力沿用原专项证据",
+      "evidence": "历史证据：静态确认 components/LifeOS.jsx 的 Dashboard / LifeOS 与 app/api/app/route.js 对应实现已包含「多 Agent 说明」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：本轮落地页展示多Agent分工和13种媒体能力介绍，public-landing-results.json验证公开页面渲染与导航；真实模型和13场景能力仍以原专项证据为准，本轮没有AI调用。"
+    },
+    {
+      "id": "F-005",
+      "status": "登录保护与目录入口已验证",
+      "evidence": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「公开目录」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：按本次用户要求将目录入口改为登录后。public-landing-results.json验证匿名目录地址跳/login，登录后可从/user进入原插件页面；本轮未重测所有上下架商品组合。"
+    },
+    {
+      "id": "F-006",
+      "status": "登录保护已验证；分类筛选未另测",
+      "evidence": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「分类筛选」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：按本次用户要求改为登录后筛选。public-landing-results.json覆盖目录的登录保护与进入路径，筛选逻辑沿用原功能，未另做分类专项。"
+    },
+    {
+      "id": "F-007",
+      "status": "登录保护已验证；搜索逻辑未另测",
+      "evidence": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「插件搜索」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：按本次用户要求改为登录后搜索。public-landing-results.json覆盖目录登录保护与进入路径，搜索和空结果逻辑沿用原功能，未另做搜索专项。"
+    },
+    {
+      "id": "F-008",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+    },
+    {
+      "id": "F-009",
+      "status": "真实方案展示已上线；购买入口验证，无付款",
+      "evidence": "历史证据：静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「套餐展示」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。 本轮公开首页：落地页读取后台当前启用套餐并展示真实价格/周期/权益；public-landing-results.json检查页面与购买入口可到登录/用户中心；本轮无订单创建或付款，未修改价格配置。"
+    },
+    {
+      "id": "F-010",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「购买入口」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-011",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。 本轮公开首页：public-landing-results.json以临时真实注册表单创建用户并直接进入/user；未登录表单在桌面/390/360px均无个人导航。临时数据清理。"
+    },
+    {
+      "id": "F-012",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：mobile-admin-results.json 3/3：390px真实公网地址浏览器通过键盘Enter提交登录表单并成功进入后台；regression-results.json覆盖错误密码和密码边界。 login-help-inspection.json：生产匿名登录可展开“忘记密码”并进入联系帮助，邮件自助未开通/联系信息未配置的说明及390px布局通过；已配置supportContact显示仅用浏览器响应fixture验证，未修改生产设置。未发送邮件、重置密码或新增重置API。 本轮门户分离：portal-separation-results.json验证普通用户登录进入/user，独立后台登录返回有效section，普通账号后台登录拒绝；portal-cookie-results.json在最终版本验证HTTPS双端Secure/HttpOnly/SameSite Cookie。 本轮公开首页：public-landing-results.json真实表单登录后默认/user；桌面/390/360px独立登录页无个人框架。忘记密码帮助沿用现有说明，不新增邮件或重置系统。"
+    },
+    {
+      "id": "F-013",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。 本轮门户分离：portal-separation-results.json真实浏览器验证两个不同账户及同一管理员账户分别登录两端、刷新与独立退出；portal-auth-results.json用隔离MySQL验证user/admin scope。 本轮公开首页：public-landing-results.json验证登录后/仍为落地页，进入用户中心链接有效；同浏览器另一标签退出后焦点恢复会清除个人工作台，管理员会话不代替个人会话。"
+    },
+    {
+      "id": "F-014",
+      "status": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常",
+      "evidence": "历史证据：android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。 本轮APK1.1.2：apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+    },
+    {
+      "id": "F-015",
+      "status": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常",
+      "evidence": "历史证据：android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。 本轮APK1.1.2：apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+    },
+    {
+      "id": "F-016",
+      "status": "APK1.1.1构建发布已验证；真机未测",
+      "evidence": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    },
+    {
+      "id": "F-017",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 Dashboard / LifeOS 与 app/api/app/route.js 对应实现已包含「加载和错误」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-018",
+      "status": "登录键盘操作已验证；其余未单独专项实测",
+      "evidence": "mobile-admin-results.json验证登录表单可用键盘Enter提交；components/LifeOS.jsx包含表单label、按钮aria-label及原生键盘可操作控件。未完成全站无障碍审计。"
+    },
+    {
+      "id": "F-138",
+      "status": "域名上传及WSS就绪已验证；真实语音沿用原证据",
+      "evidence": "历史证据：https-readiness.json11/11可信同IP证书/安全上下文，media-browser-results.json10/10及media-voice-browser-results.json生产HTTPS采集与WSS真实语音轮次通过；输入为合成WAV，非物理设备。 本轮首选域名：domain-results.json验证域名真实PNG上传、私有WebP读取与删除；WSS ready→保存→close1000，未发送音频、未调用AI或扣费；匿名/外部Origin拒绝。media-origin-results.json7项隔离函数验证受控域名与IP兼容，不能当作域名真实语音轮次证据。"
+    },
+    {
+      "id": "F-139",
+      "status": "已实现并验证目录与导航",
+      "evidence": "media-browser-results.json10/10：13场景及用户中心三类入口、360/390px布局和底栏正常、无页面异常；原3场景加media-scenes-results.json10/10后，13场景均有真实样例内容证据，合成素材不等于物理设备验收。"
+    },
+    {
+      "id": "F-167",
+      "status": "APK1.1.2已发布验证；用户确认覆盖安装后首页正常",
+      "evidence": "历史证据：android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。 本轮APK1.1.2：apk-startup-release-results.json五组：真实管理员构建1.1.2(5)、同com.zhixu.lifeos及长期证书、默认域名、v1/v2/v3签名、33245字节及版本下载/latest/manifest哈希一致，前台更新，旧包保留。android-startup-results.json16项是JVM受控回调与API23完整编译，非Android运行时；apk-user-device-acceptance.json记录用户同机覆盖安装后确认首页正常显示；登录/录音/拍照/支付等不在本次真机确认范围，旧空白原因仍未确认。"
+    },
+    {
+      "id": "F-019",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「真实统计」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-020",
+      "status": "已实现并验证",
+      "evidence": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+    },
+    {
+      "id": "F-021",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：ui-flow-results.json：用户中心学习成长、生活管理、AI与效率、账户与应用四组入口显示；browser-results.json覆盖全部主要用户页面。 本轮门户分离：portal-separation-results.json真实浏览器确认22个个人功能入口，用户中心无后台入口；仅管理员Cookie访问/user须另行登录，后台无个人请求。 本轮公开首页：public-landing-results.json确认登录与注册都落到/user并显示22个功能入口；逐个个人导航使用/user?view=...且渲染原功能页面。"
+    },
+    {
+      "id": "F-022",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json：用户中心学习成长、生活管理、AI与效率、账户与应用四组入口显示；browser-results.json覆盖全部主要用户页面。"
+    },
+    {
+      "id": "F-023",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：browser-results.json与mobile-admin-results.json：390px主要用户页面及全部13个后台tab无整页横向溢出、底栏可见；mobile-user.png / mobile-admin.png 经目视核验。 本轮门户分离：portal-separation-results.json：15个后台section在1440/390/360px共45组导航布局检查；后台独立底栏/菜单，个人端360/390px保留五项底栏且无整页横向溢出。 本轮公开首页：public-landing-results.json确认公开首页/login在390/360px无个人底栏，登录后/user保留22个功能入口与5个个人底栏按钮。"
+    },
+    {
+      "id": "F-024",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「选中状态」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-025",
+      "status": "已实现并验证",
+      "evidence": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+    },
+    {
+      "id": "F-026",
+      "status": "已实现并验证",
+      "evidence": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+    },
+    {
+      "id": "F-027",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「删除任务」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-028",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「筛选任务」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-029",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json真实表单保存并重新打开计划起止日期、每日学习分钟；record-contract-results.json拒绝结束早于开始，11/11通过。"
+    },
+    {
+      "id": "F-030",
+      "status": "已实现并验证",
+      "evidence": "record-contract-results.json验证关联目标只能是本人且类型正确；目标完成状态与100%进度双向联动，创建/更新均验证。"
+    },
+    {
+      "id": "F-031",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「编辑删除目标式计划」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-032",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json课程URL保存后重新打开保持，列表提供可点击外链且安全rel正确；api-results.json覆盖course记录持久化。"
+    },
+    {
+      "id": "F-033",
+      "status": "已实现并验证",
+      "evidence": "record-contract-results.json：课程/目标完成=100%，100%自动完成；创建和修改均通过，后端数据持久化正确。"
+    },
+    {
+      "id": "F-034",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json课程URL保存后重新打开保持，列表提供可点击外链且安全rel正确；api-results.json覆盖course记录持久化。"
+    },
+    {
+      "id": "F-035",
+      "status": "已实现并验证",
+      "evidence": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+    },
+    {
+      "id": "F-036",
+      "status": "已实现，接口已验证",
+      "evidence": "api-results.json：本人知识笔记可修改并删除，数据隔离通过；browser-results.json已覆盖笔记新增。笔记编辑/删除的浏览器点击链未单独测试。"
+    },
+    {
+      "id": "F-037",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「搜索笔记」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-038",
+      "status": "已实现，接口已验证",
+      "evidence": "api-results.json：本人知识笔记可修改并删除，数据隔离通过；browser-results.json已覆盖笔记新增。笔记编辑/删除的浏览器点击链未单独测试。"
+    },
+    {
+      "id": "F-039",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json：习惯每周5天频率保存、重新打开及列表展示保持；record-contract-results.json拒绝非整数与1–7范围外频率。"
+    },
+    {
+      "id": "F-040",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「每日打卡」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-041",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「打卡回看」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-042",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「删除习惯」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-043",
+      "status": "已实现并验证",
+      "evidence": "event-status-results.json8项生产浏览器通过：新建默认进行中并可显式完成；跨天日期保留，完成/恢复后重载一致。原记录合同报告继续证明日期合法性与结束大于开始。"
+    },
+    {
+      "id": "F-044",
+      "status": "日程日期/状态列表已验证",
+      "evidence": "event-status-results.json：桌面与手机全部/进行中/已完成筛选正常，跨天日期详情保持；旧done显示已完成且可恢复，无横向溢出。未把此项扩称所有时区转换专项验证。"
+    },
+    {
+      "id": "F-045",
+      "status": "编辑及完成/恢复已浏览器验证",
+      "evidence": "event-status-results.json8/8：快捷及编辑表单完成/恢复，重载保持状态和日期，兼容旧done；生产桌面/手机通过，零AI/支付调用。删除功能已实现，独立删除点击链未在该报告测试。"
+    },
+    {
+      "id": "F-046",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json使用受控浏览器时间验证真实25/5计时器开始/暂停/关闭重开、自动25分钟保存、5分钟休息不重复、手动1分钟保存；record-contract-results.json验证并发保存同一会话仅一条记录。"
+    },
+    {
+      "id": "F-047",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json使用受控浏览器时间验证真实25/5计时器开始/暂停/关闭重开、自动25分钟保存、5分钟休息不重复、手动1分钟保存；record-contract-results.json验证并发保存同一会话仅一条记录。"
+    },
+    {
+      "id": "F-048",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json使用受控浏览器时间验证真实25/5计时器开始/暂停/关闭重开、自动25分钟保存、5分钟休息不重复、手动1分钟保存；record-contract-results.json验证并发保存同一会话仅一条记录。"
+    },
+    {
+      "id": "F-049",
+      "status": "已实现，接口已验证",
+      "evidence": "api-results.json收入/支出记录持久化；record-contract-results.json拒绝0与不足1分金额，1分存储为整数1。表单界面已实现，收支表单未单独浏览器实测。"
+    },
+    {
+      "id": "F-050",
+      "status": "已实现，接口已验证",
+      "evidence": "api-results.json收入/支出记录持久化；record-contract-results.json拒绝0与不足1分金额，1分存储为整数1。表单界面已实现，收支表单未单独浏览器实测。"
+    },
+    {
+      "id": "F-051",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「收支汇总」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-052",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「记录删除」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-053",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json健康表单睡眠7.5小时、饮水1800ml、运动30分钟保存并重新打开保持；api-results.json覆盖健康记录持久化。"
+    },
+    {
+      "id": "F-054",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json健康表单睡眠7.5小时、饮水1800ml、运动30分钟保存并重新打开保持；api-results.json覆盖健康记录持久化。"
+    },
+    {
+      "id": "F-055",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json健康表单睡眠7.5小时、饮水1800ml、运动30分钟保存并重新打开保持；api-results.json覆盖健康记录持久化。"
+    },
+    {
+      "id": "F-056",
+      "status": "已实现并验证",
+      "evidence": "browser-results.json健康页面渲染与390px布局通过，ui-flow-results.json真实健康数据保存重开通过；健康界面仅提供记录/趋势，不给出诊断。"
+    },
+    {
+      "id": "F-057",
+      "status": "已实现，接口已验证",
+      "evidence": "api-results.json真实创建goal记录持久化；record-contract-results.json验证目标状态进度与关联归属。目标表单UI单独创建链未专项覆盖。"
+    },
+    {
+      "id": "F-058",
+      "status": "已实现并验证",
+      "evidence": "record-contract-results.json：课程/目标完成=100%，100%自动完成；创建和修改均通过，后端数据持久化正确。"
+    },
+    {
+      "id": "F-059",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「手动复盘」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-060",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 AIChat / RecordsPage 与 app/api/app/route.js 对应实现已包含「AI 复盘」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-061",
+      "status": "真实助手及来源导航已验证",
+      "evidence": "既有真实模型/会话与隔离证据保留；restored-contract14项验证本人来源及持久化，涉及模型传输受控；restored-ui5项生产浏览器点击来源打开准确本人记录，已删除来源保留标题且不可点击。该来源导航测试不产生AI调用。"
+    },
+    {
+      "id": "F-062",
+      "status": "已实现并验证",
+      "evidence": "api-results.json真实助手返回并保留本人历史且跨用户不可见；ui-flow-results.json实际浏览器获得135字模型回复，刷新后历史恢复，截图desktop-ai-real.png。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+    },
+    {
+      "id": "F-063",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 AIChat / RecordsPage 与 app/api/app/route.js 对应实现已包含「错误反馈」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-064",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 AgentStudio 与 app/api/app/route.js 对应实现已包含「目标输入」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-065",
+      "status": "已实现并验证",
+      "evidence": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+    },
+    {
+      "id": "F-066",
+      "status": "已实现并验证",
+      "evidence": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+    },
+    {
+      "id": "F-067",
+      "status": "已实现并验证",
+      "evidence": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+    },
+    {
+      "id": "F-068",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 AgentStudio 与 app/api/app/route.js 对应实现已包含「过程显示」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-069",
+      "status": "已实现，接口已验证",
+      "evidence": "api-results.json与ai-workflow-results.json：本人五阶段运行/结果持久化，跨用户隔离与再次读取通过；browser-results.json协作页及后台监控tab显示。单条历史展开链未专项覆盖。"
+    },
+    {
+      "id": "F-070",
+      "status": "已实现，安装已验证",
+      "evidence": "browser-results.json真实免费插件安装通过；api-results.json权限校验通过；lib/payments.mjs与路由对用户/插件唯一安装处理，重复安装专项链未单独覆盖。"
+    },
+    {
+      "id": "F-071",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+    },
+    {
+      "id": "F-072",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「我的插件」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-073",
+      "status": "已部署；下架/停用接口与handler已验证",
+      "evidence": "restored-contract-results.json：下架已购仍可重装，未购不可新购/安装；下架运行保存笔记与来源，安全停用阻止运行安装。运行部分使用真实鉴权/DB与受控AI传输，不宣称本轮真实模型调用。"
+    },
+    {
+      "id": "F-074",
+      "status": "已实现，真实AI接口已验证",
+      "evidence": "api-results.json真实执行已安装插件AI并将输出保存知识笔记；regression-results.json验证缺失Agent时拒绝执行。插件执行按钮点击链未单独浏览器覆盖。"
+    },
+    {
+      "id": "F-075",
+      "status": "已实现，权益接口已验证",
+      "evidence": "api-results.json会员订单与人工支付权益发放通过；regression-results.json会员到期保留既有额度、管理员改会员行为通过；record-contract-results.json到期会员调额度不追加权益。会员购买UI未单独专项实测。"
+    },
+    {
+      "id": "F-076",
+      "status": "已实现，权益接口已验证",
+      "evidence": "api-results.json会员订单与人工支付权益发放通过；regression-results.json会员到期保留既有额度、管理员改会员行为通过；record-contract-results.json到期会员调额度不追加权益。会员购买UI未单独专项实测。"
+    },
+    {
+      "id": "F-077",
+      "status": "已实现，权益接口已验证",
+      "evidence": "api-results.json会员订单与人工支付权益发放通过；regression-results.json会员到期保留既有额度、管理员改会员行为通过；record-contract-results.json到期会员调额度不追加权益。会员购买UI未单独专项实测。"
+    },
+    {
+      "id": "F-078",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「个人订单」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-079",
+      "status": "已实现，真实收款待商户配置",
+      "evidence": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+    },
+    {
+      "id": "F-080",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「结果查询」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-081",
+      "status": "独立门户已部署；浏览器与接口验证通过",
+      "evidence": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-separation-results.json真实浏览器在后台账户修改临时管理员密码，旧个人会话失效、当前后台保留；portal-auth-results.json隔离MySQL验证双scope旧会话撤销与仅admin新会话。"
+    },
+    {
+      "id": "F-082",
+      "status": "独立门户已部署；浏览器与接口验证通过",
+      "evidence": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-separation-results.json在双端同时登录及同一账户双端登录场景验证分别退出；portal-auth-results.json验证交换Cookie名称也不能撤销另一scope会话。"
+    },
+    {
+      "id": "F-083",
+      "status": "公开首页与登录后入口已部署并验证",
+      "evidence": "历史证据：api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。 本轮门户分离：portal-auth-results.json隔离MySQL与生产portal-separation-results.json验证双向scope限制、Cookie换名拒绝、后台页面无个人数据请求；此前A/B业务数据隔离证据保留。 本轮公开首页：public-landing-results.json逐个匿名个人view验证先转/login，管理员专用会话也不能进入；服务端页面门禁与客户端焦点/退出检查生效；原A/B和双scope API隔离证据保留。"
+    },
+    {
+      "id": "F-140",
+      "status": "真实英语语音链路已验证；物理设备未测",
+      "evidence": "media-live-voice-results.json11项通过含英语两轮转写/PCM；media-voice-browser-results.json真实浏览器合成WAV→ASR→LLM→TTS实际非零PCM播放，历史2条，额度20→19，首音频3435ms/总3556ms；非真实声学设备。"
+    },
+    {
+      "id": "F-141",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，travel-talk真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-142",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，interview真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-143",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，study-qa真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-144",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，speech-practice真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。 英文输入得到相关中文反馈，未承诺同语种回复，也未将转写作为发音/语调评测。"
+    },
+    {
+      "id": "F-145",
+      "status": "真实拍题/追问与公式界面已验证",
+      "evidence": "media-live-results.json前5项通过含自制2x+5=17图片真实解答x=6与历史图片追问/来源；该旧报告后段ASR429失败保留。media-browser-results.json验证保存的实际数学回答Markdown/KaTeX可读显示、360/390px不溢出。"
+    },
+    {
+      "id": "F-146",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，essay-review真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-147",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，notes-organize真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-148",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，chart-explain真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-149",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，object-identify真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-150",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "meal-log真实最终样例1/1：只列broccoli/tomatoes/rice，时段/实际食用量/感受均待补充，不展示raw JSON，历史和原图来源保留，30→29；unit11/11、contract4/4受控验证结构化校验/模板/无效输出退款。初次与prompt-only失败保留，不能保证所有输入永不出错。"
+    },
+    {
+      "id": "F-151",
+      "status": "真实录音转写及笔记接口已验证",
+      "evidence": "media-live-voice-results.json通过公网真实上传音频→gpt-4o-transcribe转写→知识笔记及私有音频来源；media-browser-results.json录制暂停/继续/试听为测试WAV输入，未测物理课堂录音。"
+    },
+    {
+      "id": "F-152",
+      "status": "真实场景样例已验证；物理设备未测",
+      "evidence": "media-scenes-results.json最终10/10，spoken-review真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+    },
+    {
+      "id": "F-153",
+      "status": "连续语音与浏览器控制已验证",
+      "evidence": "公网WSS真实两轮非零PCM、第三轮打断退款、结束持久化通过；完整浏览器单轮通过实际AudioWorklet采集及音频播放。10项UI含静音/打断/离开释放采集；使用合成音频，无硬件验收。"
+    },
+    {
+      "id": "F-154",
+      "status": "已实现；单句限制隔离验证，完整会话待专项",
+      "evidence": "media-backend-results.json12/12含VAD短噪声忽略、700ms静音断句和长语音边界；20分钟会话上限未提供独立生产计时报告。"
+    },
+    {
+      "id": "F-155",
+      "status": "录音浏览器与真实转写接口已验证",
+      "evidence": "media-browser-results.json10/10包含MediaRecorder暂停/继续、试听、上传前删除；公网真实转写入知识笔记由media-live-voice-results.json确认。录音输入为合成/静音测试样本，不是真实麦克风。"
+    },
+    {
+      "id": "F-156",
+      "status": "附件删除历史状态已全面验证；资产分页UI未专项",
+      "evidence": "media-attachments后台4/API4/浏览器5项：本人预览/链接有效，删除当前图片即时切为已删除、来源不可点击，手机重载不请求旧图片；录音删除移除笔记下载URL但保留正文。100MB配额隔离证据保留，完整附件库分页UI未独立覆盖。"
+    },
+    {
+      "id": "F-157",
+      "status": "已部署；图片选取上传预览与限制已验证",
+      "evidence": "浏览器测试真实图片文件选择、预览和删除；backend12项覆盖解码重编码、魔数/损坏/字节超限拒绝。拍摄真实硬件与每个像素/多图边界未逐项实测。"
+    },
+    {
+      "id": "F-158",
+      "status": "真实媒体历史及删除占位已验证",
+      "evidence": "既有真实语音历史和图片追问通过；media-attachments-browser5项验证删除当前/历史图片后预览和来源显示已删除且正文不丢失，手机刷新无旧图请求。新增删除测试零provider调用。"
+    },
+    {
+      "id": "F-159",
+      "status": "真实扣费及取消退款已验证",
+      "evidence": "公网voice报告3次成功操作扣3点、打断一次退款且历史保持；浏览器完整成功轮20→19。backend验证退款幂等，以及文字已完成后TTS失败保留结果不退款。"
+    },
+    {
+      "id": "F-160",
+      "status": "本人来源定位与删除状态已浏览器/API验证",
+      "evidence": "restored-ui5项来源链接定位准确本人记录、已删除来源保留标题无可点击链接；media-attachments后台4/API4/浏览器5项涵盖图片和音频、bootstrap/records/export去除失效URL且保留转写正文。输入资料展示不冒称逐句引用。"
+    },
+    {
+      "id": "F-164",
+      "status": "订单重试幂等库层与生产UI已验证",
+      "evidence": "order-idempotency14项隔离表并发/快照/409通过；restored-ui5项真实浏览器在服务器已创建订单后丢弃响应，再次点击复用同requestId，两提交仅1笔pending/manual订单，paidOrders=0，无实际收款。"
+    },
+    {
+      "id": "F-165",
+      "status": "1505条完整自动分页已API/浏览器验证",
+      "evidence": "restored-contract API及restored-ui生产浏览器共同验证500/500/500/5四页完整加载1505条、不重复漏失，最旧记录可搜索和编辑；全库统计与cursor归属隔离仍有原API证据。"
+    },
+    {
+      "id": "F-084",
+      "status": "独立门户已部署；浏览器与接口验证通过",
+      "evidence": "历史证据：api-results.json普通用户管理接口403；record-contract-results.json停用用户及停用管理员已有会话不可继续访问；browser-results.json与mobile-admin-results.json管理员真实登录后台成功。 本轮门户分离：portal-separation-results.json真实浏览器17项：独立登录与导航、15section、无个人模块/请求、会话/退出/密码隔离；admin-portal-contract-results.json最终版本17项通过，含普通账号拒绝、升降级及禁用。"
+    },
+    {
+      "id": "F-085",
+      "status": "统计浏览器与数据库核对通过",
+      "evidence": "admin-contract-results.json共17项通过，其中只读后台总览核对实际用户数、订单数、已付收入与协作运行数一致。此行仅按报告列出的计数证明，不扩称每个统计口径均专项核对。"
+    },
+    {
+      "id": "F-086",
+      "status": "用户管理浏览器与接口已验证",
+      "evidence": "admin-contract-results.json真实管理员UI搜索/编辑姓名、会员到期与精确AI余额并持久化；先前API脱敏和数据权限通过。仅使用临时账号，无真实收费或AI调用。"
+    },
+    {
+      "id": "F-087",
+      "status": "账号启停浏览器与接口已验证",
+      "evidence": "admin-contract-results.json真实UI停用临时账号后原会话失效且不能登录，恢复后可新登录；record-contract报告补充停用管理员敏感接口阻止。"
+    },
+    {
+      "id": "F-088",
+      "status": "角色管理浏览器已验证",
+      "evidence": "admin-contract-results.json临时普通用户提升/降级后实际后台页面访问立即改变；普通账号不能访问管理API。未修改用户既有账号角色。"
+    },
+    {
+      "id": "F-089",
+      "status": "套餐表单与持久化已浏览器验证",
+      "evidence": "admin-contract-results.json：创建/编辑临时套餐，价格、周期、额度和多行权益保存重开一致；前台使用同一配置。该报告不收款，也不将表单保存等同真实支付。"
+    },
+    {
+      "id": "F-090",
+      "status": "套餐表单与持久化已浏览器验证",
+      "evidence": "admin-contract-results.json：创建/编辑临时套餐，价格、周期、额度和多行权益保存重开一致；前台使用同一配置。该报告不收款，也不将表单保存等同真实支付。"
+    },
+    {
+      "id": "F-091",
+      "status": "套餐启停与前台卡片已浏览器验证",
+      "evidence": "admin-contract-results.json：停用临时套餐后用户购买卡片消失，启用后恢复；真实付款未测试，服务端新单启用校验继续按实现及既有接口证据标注。"
+    },
+    {
+      "id": "F-092",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json真实管理员插件列表/编辑及订单列表/确认/详情流程通过；mobile-admin-results.json全部13个管理tab在390px正常呈现。"
+    },
+    {
+      "id": "F-093",
+      "status": "已部署；插件排序API已验证",
+      "evidence": "restored-contract-results.json：sortOrder写入SQL且目录排序一致，-90/10/50顺序正确，3个非法值拒绝；原版本/价格UI验收保留。"
+    },
+    {
+      "id": "F-094",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+    },
+    {
+      "id": "F-095",
+      "status": "已部署；下架/停用接口与handler已验证",
+      "evidence": "restored-contract-results.json：下架已购仍可重装，未购不可新购/安装；下架运行保存笔记与来源，安全停用阻止运行安装。运行部分使用真实鉴权/DB与受控AI传输，不宣称本轮真实模型调用。"
+    },
+    {
+      "id": "F-096",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json真实管理员插件列表/编辑及订单列表/确认/详情流程通过；mobile-admin-results.json全部13个管理tab在390px正常呈现。"
+    },
+    {
+      "id": "F-097",
+      "status": "已实现并验证",
+      "evidence": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+    },
+    {
+      "id": "F-098",
+      "status": "已实现，真实收款待商户配置",
+      "evidence": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+    },
+    {
+      "id": "F-099",
+      "status": "签名与幂等已验证；真实收款待配置",
+      "evidence": "api-results.json与regression-results.json：模拟有效签名通知、错误签名/金额、重复通知幂等、取消后晚到有效回调规则通过；未进行真实商户扣款。"
+    },
+    {
+      "id": "F-100",
+      "status": "签名与幂等已验证；真实收款待配置",
+      "evidence": "api-results.json与regression-results.json：模拟有效签名通知、错误签名/金额、重复通知幂等、取消后晚到有效回调规则通过；未进行真实商户扣款。"
+    },
+    {
+      "id": "F-101",
+      "status": "已实现，真实收款待商户配置",
+      "evidence": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+    },
+    {
+      "id": "F-102",
+      "status": "模型表单及参数库/API已验证",
+      "evidence": "admin-contract17项：真实UI拒绝空Key、创建临时模型并加密存储、重开不泄密；restored-contract14项验证temperature/maxTokens边界/清空与受控参数透传。没有新增真实模型连通调用或参数表单逐值专项。"
+    },
+    {
+      "id": "F-103",
+      "status": "密钥表单/存储/脱敏已验证",
+      "evidence": "admin-contract17项验证临时模型Key加密入库、重开不返回原值，22次临时管理操作审计不含Key；原公开产物定向扫描证据保留。不是全站渗透测试。"
+    },
+    {
+      "id": "F-104",
+      "status": "模型启停UI及受控服务验证",
+      "evidence": "admin-contract真实UI启停临时模型；media-settings8项隔离MySQL+实际handler/service验证停用绑定模型后能力不可用且上游调用0次。后者使用mock传输，不是真实供应商调用。"
+    },
+    {
+      "id": "F-105",
+      "status": "默认模型替换受控验证通过",
+      "evidence": "media-settings-results.json8项中：实际配置handler替换默认模型、清除旧默认，下一次普通chat服务调用命中新默认。使用隔离MySQL与mock provider；没有该动作浏览器或真实模型调用证明。"
+    },
+    {
+      "id": "F-106",
+      "status": "已实现，真实模型接口已验证",
+      "evidence": "api-results.json管理员分别测试两个已配置真实模型，均返回有效文本与耗时；browser-results.json模型配置页面渲染。管理员测试按钮点击未单独专项覆盖。"
+    },
+    {
+      "id": "F-107",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 Admin / AdminEditModal / AdminPayment / AdminAPK / AdminSiteSettings 与 app/api/app/route.js 对应实现已包含「错误诊断」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-108",
+      "status": "已实现，未单独专项实测",
+      "evidence": "静态确认 components/LifeOS.jsx 的 Admin / AdminEditModal / AdminPayment / AdminAPK / AdminSiteSettings 与 app/api/app/route.js 对应实现已包含「运行列表」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+    },
+    {
+      "id": "F-109",
+      "status": "已实现并验证",
+      "evidence": "API真实调用记录含模型/状态/用量；ai-client-results.json 9/9受控响应验证未知usage保留null、明确0保留0；生产schema默认NULL；browser-results.json AI调用记录tab渲染。"
+    },
+    {
+      "id": "F-110",
+      "status": "APK1.1.1构建发布已验证；真机未测",
+      "evidence": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    },
+    {
+      "id": "F-111",
+      "status": "APK1.1.1构建发布已验证；真机未测",
+      "evidence": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    },
+    {
+      "id": "F-112",
+      "status": "APK1.1.1构建发布已验证；真机未测",
+      "evidence": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    },
+    {
+      "id": "F-113",
+      "status": "APK1.1.1构建发布已验证；真机未测",
+      "evidence": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    },
+    {
+      "id": "F-114",
+      "status": "站点展示UI与保存handler已验证",
+      "evidence": "admin-contract只读浏览器字段与既存值一致；media-settings8项隔离MySQL实际handler保存4个站点字段并由公开bootstrap读取，媒体/支付配置不被覆盖。未改生产共享站点设置，不冒称真实浏览器保存测试。"
+    },
+    {
+      "id": "F-115",
+      "status": "审计浏览器与凭据脱敏已验证",
+      "evidence": "admin-contract-results.json：22次临时管理动作，审计UI展示操作主体与目标标识，未包含测试Key明文；原账号/配置字节保持且fixture清理。"
+    },
+    {
+      "id": "F-161",
+      "status": "模型绑定/权限受控验证；原显示UI已验",
+      "evidence": "media-settings8项：隔离MySQL+实际route/service，普通用户403、无效模型/用途拒绝，4模型绑定改变后下一次服务请求使用新值。8个上游请求被mock捕获，无浏览器或实际provider推理；原媒体后台绑定显示已浏览器验收。"
+    },
+    {
+      "id": "F-162",
+      "status": "三种开关保存/执行拦截受控验证",
+      "evidence": "media-settings8项：三个能力独立开关保存回读；关闭图像/录音/已连接语音时，在模型请求和额度预留前阻止，providerCalls=0且余额不变。隔离表及actual handler/service验证，不是实际浏览器点击或真实模型调用。"
+    },
+    {
+      "id": "F-163",
+      "status": "音色配置与下一请求受控验证",
+      "evidence": "media-settings8项验证无效音色原子拒绝，alloy→nova保存后下一次实际合成服务调用携带新voice；provider传输mock捕获，不宣称真人听感或两音色真实生成对比。"
+    },
+    {
+      "id": "F-116",
+      "status": "已实现并验证",
+      "evidence": "api-results.json：不同用户记录、会话、协作运行隔离；付费插件必须获得权益，订单金额由服务端读取；ui-flow-results.json后台改价9.37后用户订单亦为9.37。"
+    },
+    {
+      "id": "F-117",
+      "status": "独立门户已部署；浏览器与接口验证通过",
+      "evidence": "历史证据：api-results.json普通用户管理接口403；record-contract-results.json停用用户及停用管理员已有会话不可继续访问；browser-results.json与mobile-admin-results.json管理员真实登录后台成功。 本轮门户分离：portal-auth-results.json17项隔离route/MySQL验证角色、scope、Cookie换名、旧管理动作拒绝及来源；portal-separation-results.json与admin-portal-contract-results.json提供生产浏览器及实际API证据。"
+    },
+    {
+      "id": "F-118",
+      "status": "已实现并验证",
+      "evidence": "api-results.json：不同用户记录、会话、协作运行隔离；付费插件必须获得权益，订单金额由服务端读取；ui-flow-results.json后台改价9.37后用户订单亦为9.37。"
+    },
+    {
+      "id": "F-119",
+      "status": "已实现并验证",
+      "evidence": "api-results.json后台模型Key脱敏；deployment-results.json 19项中对53个公开/归档文件扫描无已配置密钥明文、公开页面与bootstrap不泄露；受限文件0600、目录0700。此为定向检查，不是全站渗透测试。"
+    },
+    {
+      "id": "F-120",
+      "status": "已实现并验证",
+      "evidence": "restart-results.json 4/4：部署重启web/worker PID变化，之前保存记录和session保持；SIGKILL网页进程后systemd自动拉起，原记录/会话仍可读取，公开IP健康200。"
+    },
+    {
+      "id": "F-121",
+      "status": "已实现并验证",
+      "evidence": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+    },
+    {
+      "id": "F-122",
+      "status": "已实现并验证",
+      "evidence": "ai-client-results.json 9/9通过受控上游验证超时/重试/拒绝/空内容/截断/未知用量；regression-results.json验证协作预检、排队失败退款和幂等。故障注入为受控测试，非真实供应商事故。"
+    },
+    {
+      "id": "F-123",
+      "status": "签名与幂等已验证；真实收款待配置",
+      "evidence": "api-results.json与regression-results.json：模拟有效签名通知、错误签名/金额、重复通知幂等、取消后晚到有效回调规则通过；未进行真实商户扣款。"
+    },
+    {
+      "id": "F-124",
+      "status": "已实现，真实收款待商户配置",
+      "evidence": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+    },
+    {
+      "id": "F-125",
+      "status": "已实现并验证",
+      "evidence": "browser-results.json与mobile-admin-results.json：390px主要用户页面及全部13个后台tab无整页横向溢出、底栏可见；mobile-user.png / mobile-admin.png 经目视核验。"
+    },
+    {
+      "id": "F-126",
+      "status": "APK1.1.1构建发布已验证；真机未测",
+      "evidence": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+    },
+    {
+      "id": "F-127",
+      "status": "待Android设备验收",
+      "evidence": "APK真实构建、签名与下载已验证；当前没有连接Android真机或模拟器，设备安装/登录/返回/文件选择尚未验收。"
+    },
+    {
+      "id": "F-128",
+      "status": "域名/IP入口与登录已验证；跨网络专项未测",
+      "evidence": "历史证据：HTTP3060保留，HTTPS3063可信证书及生产媒体浏览器/WSS通过；早期HTTP外部日志36次成功记录。独立受控跨网络浏览器与物理移动网络验收未执行。 本轮门户分离：portal-release-health.json在145454确认四个独立页面200、三个旧入口307、匿名后台数据401、旧个人API管理入口403及DB连接；portal-cookie-results.json验证HTTPS浏览器和HTTP API兼容，跨网络专项仍未执行。 本轮公开首页：portal-release-health.json在150944完成HTTP/HTTPS共30项状态检查：/200、匿名/user307到/login、旧功能地址307到/user?view=...、后台保持独立；public-landing-results.json验证实际登录后的页面。跨网络专项仍未执行。 本轮首选域名：domain-results.json10项验证可信域名页面/静态资源、双端真实登录与独立会话、原IP兼容；domain-release-health.json14项及双公共DNS解析核对通过。发布152414，域名HTTP301到HTTPS，APP_URL/支付通知仍原IP，跨网络专项未执行。"
+    },
+    {
+      "id": "F-129",
+      "status": "已实现并验证",
+      "evidence": "restart-results.json 4/4：部署重启web/worker PID变化，之前保存记录和session保持；SIGKILL网页进程后systemd自动拉起，原记录/会话仍可读取，公开IP健康200。"
+    },
+    {
+      "id": "F-130",
+      "status": "飞书需求与172项功能表已同步验证",
+      "evidence": "同一飞书PRD与5张工作表扩展为172项；5条旧功能契约恢复，新增35行；完成后全文与全部A:J逐格回读、CSV/XLSX一致性检查，六条原P2保留。"
+    },
+    {
+      "id": "F-131",
+      "status": "飞书需求与172项功能表已同步验证",
+      "evidence": "同一飞书PRD与5张工作表扩展为172项；5条旧功能契约恢复，新增35行；完成后全文与全部A:J逐格回读、CSV/XLSX一致性检查，六条原P2保留。"
+    },
+    {
+      "id": "F-166",
+      "status": "已部署；异常meta读写API已验证",
+      "evidence": "restored-contract-results.json：6条旧异常meta安全读取，8类新非法输入拒绝，合法checkedDates去重。"
+    },
+    {
+      "id": "F-168",
+      "status": "权限/下载边界与编译已验证；真机待验收",
+      "evidence": "1.1.1(4)清单/DEX检查权限/私有provider/恢复；android-download-boundaries.json4项通过嵌入blob脚本和源码检查，含2MB分块、撤销错误、同源Cookie下载/不跟随跳转、SAF。非Android设备执行。"
+    },
+    {
+      "id": "F-169",
+      "status": "自有串联语音已验证；原生Realtime不可用",
+      "evidence": "原生Realtime探测握手后account_deactivated，无可用转写/音频。当前ASR=gpt-4o-transcribe，chat/vision=gpt-4o-mini，TTS=gpt-4o-mini-tts；真实公网WSS和完整浏览器串联语音通过，不能宣称原生Realtime成功。"
+    },
+    {
+      "id": "F-170",
+      "status": "后端与生产媒体边界已验证",
+      "evidence": "backend12项隔离验证格式/配额/退款/VAD/WS会话；公网voice11项补充匿名/Origin/伪文件拒绝、跨用户私有资产隔离、同用户第二连接拒绝、删除与退款。未作全站渗透测试。"
+    },
+    {
+      "id": "F-171",
+      "status": "浏览器媒体10项及真实合成音频轮已验证",
+      "evidence": "Chromium156实际getUserMedia/MediaRecorder/AudioWorklet/WSS，10项UI无异常，360/390px正常；完整语音轮已播放非零PCM。输入是虚拟麦克风合成WAV，不是物理硬件或人工听感验收。"
+    },
+    {
+      "id": "F-172",
+      "status": "13场景均有真实样例证据；设备未测",
+      "evidence": "原英语/拍题/课堂录音3场景，加media-scenes-results.json最终10/10，共13场景真实样例覆盖。补充测试累计6语音轮、9图像调用、1录音转写，16成功操作扣16点；初始harness和餐食质量失败保留。合成/生成输入不等于自然设备、全量准确率或人工听感。"
+    },
+    {
+      "id": "F-132",
+      "status": "后续规划，未列入一期完成",
+      "evidence": "保留既有P2定义，未以未来能力计入当前交付。"
+    },
+    {
+      "id": "F-133",
+      "status": "后续规划，未列入一期完成",
+      "evidence": "保留既有P2定义，未以未来能力计入当前交付。"
+    },
+    {
+      "id": "F-134",
+      "status": "后续规划，未列入一期完成",
+      "evidence": "保留既有P2定义，未以未来能力计入当前交付。"
+    },
+    {
+      "id": "F-135",
+      "status": "后续规划，未列入一期完成",
+      "evidence": "保留既有P2定义，未以未来能力计入当前交付。"
+    },
+    {
+      "id": "F-136",
+      "status": "后续规划，未列入一期完成",
+      "evidence": "保留既有P2定义，未以未来能力计入当前交付。"
+    },
+    {
+      "id": "F-137",
+      "status": "后续规划，未列入一期完成",
+      "evidence": "保留既有P2定义，未以未来能力计入当前交付。"
+    }
+  ],
+  "statusCounts": {
+    "已实现并验证": 49,
+    "已实现，未单独专项实测": 28,
+    "APK1.1.1构建发布已验证；真机未测": 9,
+    "登录键盘操作已验证；其余未单独专项实测": 1,
+    "HTTPS及媒体浏览器已验证": 1,
+    "已实现并验证目录与导航": 1,
+    "已实现，接口已验证": 9,
+    "日程日期/状态列表已验证": 1,
+    "编辑及完成/恢复已浏览器验证": 1,
+    "真实助手及来源导航已验证": 1,
+    "已实现，安装已验证": 1,
+    "已部署；下架/停用接口与handler已验证": 2,
+    "已实现，真实AI接口已验证": 1,
+    "已实现，权益接口已验证": 3,
+    "已实现，真实收款待商户配置": 4,
+    "真实英语语音链路已验证；物理设备未测": 1,
+    "真实场景样例已验证；物理设备未测": 10,
+    "真实拍题/追问与公式界面已验证": 1,
+    "真实录音转写及笔记接口已验证": 1,
+    "连续语音与浏览器控制已验证": 1,
+    "已实现；单句限制隔离验证，完整会话待专项": 1,
+    "录音浏览器与真实转写接口已验证": 1,
+    "附件删除历史状态已全面验证；资产分页UI未专项": 1,
+    "已部署；图片选取上传预览与限制已验证": 1,
+    "真实媒体历史及删除占位已验证": 1,
+    "真实扣费及取消退款已验证": 1,
+    "本人来源定位与删除状态已浏览器/API验证": 1,
+    "订单重试幂等库层与生产UI已验证": 1,
+    "1505条完整自动分页已API/浏览器验证": 1,
+    "统计浏览器与数据库核对通过": 1,
+    "用户管理浏览器与接口已验证": 1,
+    "账号启停浏览器与接口已验证": 1,
+    "角色管理浏览器已验证": 1,
+    "套餐表单与持久化已浏览器验证": 2,
+    "套餐启停与前台卡片已浏览器验证": 1,
+    "已部署；插件排序API已验证": 1,
+    "签名与幂等已验证；真实收款待配置": 3,
+    "模型表单及参数库/API已验证": 1,
+    "密钥表单/存储/脱敏已验证": 1,
+    "模型启停UI及受控服务验证": 1,
+    "默认模型替换受控验证通过": 1,
+    "已实现，真实模型接口已验证": 1,
+    "站点展示UI与保存handler已验证": 1,
+    "审计浏览器与凭据脱敏已验证": 1,
+    "模型绑定/权限受控验证；原显示UI已验": 1,
+    "三种开关保存/执行拦截受控验证": 1,
+    "音色配置与下一请求受控验证": 1,
+    "待Android设备验收": 1,
+    "HTTP/HTTPS地址已验证；跨网络专项未测": 1,
+    "飞书需求与172项功能表已同步验证": 2,
+    "已部署；异常meta读写API已验证": 1,
+    "权限/下载边界与编译已验证；真机待验收": 1,
+    "自有串联语音已验证；原生Realtime不可用": 1,
+    "后端与生产媒体边界已验证": 1,
+    "浏览器媒体10项及真实合成音频轮已验证": 1,
+    "13场景均有真实样例证据；设备未测": 1,
+    "后续规划，未列入一期完成": 6
+  }
+}

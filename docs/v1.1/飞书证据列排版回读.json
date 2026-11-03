@@ -1,0 +1,3674 @@
+{
+  "前台": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 7444,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "I2:J22",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json 9/9：桌面首页与主要导航渲染；390px全部主要用户页面无整页横向溢出。desktop-overview.png / mobile-overview.png 已目视核验。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 Dashboard / LifeOS 与 app/api/app/route.js 对应实现已包含「多 Agent 说明」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「公开目录」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「分类筛选」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「插件搜索」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「套餐展示」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「购买入口」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "mobile-admin-results.json 3/3：390px真实公网地址浏览器通过键盘Enter提交登录表单并成功进入后台；regression-results.json覆盖错误密码和密码边界。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 Dashboard / LifeOS 与 app/api/app/route.js 对应实现已包含「加载和错误」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "登录键盘操作已验证；其余未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "mobile-admin-results.json验证登录表单可用键盘Enter提交；components/LifeOS.jsx包含表单label、按钮aria-label及原生键盘可操作控件。未完成全站无障碍审计。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "HTTPS及媒体浏览器已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "https-readiness.json11/11可信同IP证书/安全上下文，media-browser-results.json10/10及media-voice-browser-results.json生产HTTPS采集与WSS真实语音轮次通过；输入为合成WAV，非物理设备。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证目录与导航"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-browser-results.json10/10：13场景及用户中心三类入口、360/390px布局和底栏、页面无异常；13种内容没有逐一真实模型验证。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "I",
+            "J"
+          ],
+          "range": "I2:J22",
+          "row_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 42,
+      "revision": 57,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "用户中心": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 29007,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "I2:J89",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「真实统计」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：用户中心学习成长、生活管理、AI与效率、账户与应用四组入口显示；browser-results.json覆盖全部主要用户页面。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：用户中心学习成长、生活管理、AI与效率、账户与应用四组入口显示；browser-results.json覆盖全部主要用户页面。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json与mobile-admin-results.json：390px主要用户页面及全部13个后台tab无整页横向溢出、底栏可见；mobile-user.png / mobile-admin.png 经目视核验。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「选中状态」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「删除任务」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「筛选任务」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json真实表单保存并重新打开计划起止日期、每日学习分钟；record-contract-results.json拒绝结束早于开始，11/11通过。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "record-contract-results.json验证关联目标只能是本人且类型正确；目标完成状态与100%进度双向联动，创建/更新均验证。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「编辑删除目标式计划」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json课程URL保存后重新打开保持，列表提供可点击外链且安全rel正确；api-results.json覆盖course记录持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "record-contract-results.json：课程/目标完成=100%，100%自动完成；创建和修改均通过，后端数据持久化正确。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json课程URL保存后重新打开保持，列表提供可点击外链且安全rel正确；api-results.json覆盖course记录持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json：真实注册、创建任务、完成任务、刷新后会话和数据保持、新增知识笔记；api-results.json 16/16补充鉴权与数据持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json：本人知识笔记可修改并删除，数据隔离通过；browser-results.json已覆盖笔记新增。笔记编辑/删除的浏览器点击链未单独测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「搜索笔记」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json：本人知识笔记可修改并删除，数据隔离通过；browser-results.json已覆盖笔记新增。笔记编辑/删除的浏览器点击链未单独测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：习惯每周5天频率保存、重新打开及列表展示保持；record-contract-results.json拒绝非整数与1–7范围外频率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「每日打卡」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「打卡回看」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「删除习惯」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "event-status-results.json8项生产浏览器通过：新建默认进行中并可显式完成；跨天日期保留，完成/恢复后重载一致。原记录合同报告继续证明日期合法性与结束大于开始。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "日程日期/状态列表已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "event-status-results.json：桌面与手机全部/进行中/已完成筛选正常，跨天日期详情保持；旧done显示已完成且可恢复，无横向溢出。未把此项扩称所有时区转换专项验证。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "编辑及完成/恢复已浏览器验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "event-status-results.json8/8：快捷及编辑表单完成/恢复，重载保持状态和日期，兼容旧done；生产桌面/手机通过，零AI/支付调用。删除功能已实现，独立删除点击链未在该报告测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json使用受控浏览器时间验证真实25/5计时器开始/暂停/关闭重开、自动25分钟保存、5分钟休息不重复、手动1分钟保存；record-contract-results.json验证并发保存同一会话仅一条记录。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json使用受控浏览器时间验证真实25/5计时器开始/暂停/关闭重开、自动25分钟保存、5分钟休息不重复、手动1分钟保存；record-contract-results.json验证并发保存同一会话仅一条记录。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json使用受控浏览器时间验证真实25/5计时器开始/暂停/关闭重开、自动25分钟保存、5分钟休息不重复、手动1分钟保存；record-contract-results.json验证并发保存同一会话仅一条记录。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json收入/支出记录持久化；record-contract-results.json拒绝0与不足1分金额，1分存储为整数1。表单界面已实现，收支表单未单独浏览器实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json收入/支出记录持久化；record-contract-results.json拒绝0与不足1分金额，1分存储为整数1。表单界面已实现，收支表单未单独浏览器实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「收支汇总」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「记录删除」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json健康表单睡眠7.5小时、饮水1800ml、运动30分钟保存并重新打开保持；api-results.json覆盖健康记录持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json健康表单睡眠7.5小时、饮水1800ml、运动30分钟保存并重新打开保持；api-results.json覆盖健康记录持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json健康表单睡眠7.5小时、饮水1800ml、运动30分钟保存并重新打开保持；api-results.json覆盖健康记录持久化。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json健康页面渲染与390px布局通过，ui-flow-results.json真实健康数据保存重开通过；健康界面仅提供记录/趋势，不给出诊断。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json真实创建goal记录持久化；record-contract-results.json验证目标状态进度与关联归属。目标表单UI单独创建链未专项覆盖。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "record-contract-results.json：课程/目标完成=100%，100%自动完成；创建和修改均通过，后端数据持久化正确。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 RecordModal / RecordsPage / Knowledge / FocusTimer 与 app/api/app/route.js 对应实现已包含「手动复盘」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 AIChat / RecordsPage 与 app/api/app/route.js 对应实现已包含「AI 复盘」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "真实助手及来源导航已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "既有真实模型/会话与隔离证据保留；restored-contract14项验证本人来源及持久化，涉及模型传输受控；restored-ui5项生产浏览器点击来源打开准确本人记录，已删除来源保留标题且不可点击。该来源导航测试不产生AI调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json真实助手返回并保留本人历史且跨用户不可见；ui-flow-results.json实际浏览器获得135字模型回复，刷新后历史恢复，截图desktop-ai-real.png。 页面加载兼容修复已上线，navigation-diagnostic-chromium145.json和navigation-diagnostic-chromium156.json各52步导航通过、零运行时错误；156基础9项与业务UI15项重新通过。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 AIChat / RecordsPage 与 app/api/app/route.js 对应实现已包含「错误反馈」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 AgentStudio 与 app/api/app/route.js 对应实现已包含「目标输入」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 AgentStudio 与 app/api/app/route.js 对应实现已包含「过程显示」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json与ai-workflow-results.json：本人五阶段运行/结果持久化，跨用户隔离与再次读取通过；browser-results.json协作页及后台监控tab显示。单条历史展开链未专项覆盖。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，安装已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json真实免费插件安装通过；api-results.json权限校验通过；lib/payments.mjs与路由对用户/插件唯一安装处理，重复安装专项链未单独覆盖。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 PluginMarket / Membership / CheckoutModal 与 app/api/app/route.js 对应实现已包含「我的插件」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已部署；下架/停用接口与handler已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "restored-contract-results.json：下架已购仍可重装，未购不可新购/安装；下架运行保存笔记与来源，安全停用阻止运行安装。运行部分使用真实鉴权/DB与受控AI传输，不宣称本轮真实模型调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，真实AI接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json真实执行已安装插件AI并将输出保存知识笔记；regression-results.json验证缺失Agent时拒绝执行。插件执行按钮点击链未单独浏览器覆盖。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，权益接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json会员订单与人工支付权益发放通过；regression-results.json会员到期保留既有额度、管理员改会员行为通过；record-contract-results.json到期会员调额度不追加权益。会员购买UI未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，权益接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json会员订单与人工支付权益发放通过；regression-results.json会员到期保留既有额度、管理员改会员行为通过；record-contract-results.json到期会员调额度不追加权益。会员购买UI未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，权益接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json会员订单与人工支付权益发放通过；regression-results.json会员到期保留既有额度、管理员改会员行为通过；record-contract-results.json到期会员调额度不追加权益。会员购买UI未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「个人订单」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，真实收款待商户配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 UserCenter / Membership 与 app/api/app/route.js 对应实现已包含「结果查询」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json个人资料更新、退出后原会话失效、记录/会话/运行跨用户隔离均通过；restart-results.json会话与数据在进程重启后保持。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实英语语音链路已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-live-voice-results.json11项通过含英语两轮转写/PCM；media-voice-browser-results.json真实浏览器合成WAV→ASR→LLM→TTS实际非零PCM播放，历史2条，额度20→19，首音频3435ms/总3556ms；非真实声学设备。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，travel-talk真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，interview真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，study-qa真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，speech-practice真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。 英文输入得到相关中文反馈，未承诺同语种回复，也未将转写作为发音/语调评测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实拍题/追问与公式界面已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-live-results.json前5项通过含自制2x+5=17图片真实解答x=6与历史图片追问/来源；该旧报告后段ASR429失败保留。media-browser-results.json验证保存的实际数学回答Markdown/KaTeX可读显示、360/390px不溢出。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，essay-review真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，notes-organize真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，chart-explain真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，object-identify真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "meal-log真实最终样例1/1：只列broccoli/tomatoes/rice，时段/实际食用量/感受均待补充，不展示raw JSON，历史和原图来源保留，30→29；unit11/11、contract4/4受控验证结构化校验/模板/无效输出退款。初次与prompt-only失败保留，不能保证所有输入永不出错。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实录音转写及笔记接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-live-voice-results.json通过公网真实上传音频→gpt-4o-transcribe转写→知识笔记及私有音频来源；media-browser-results.json录制暂停/继续/试听为测试WAV输入，未测物理课堂录音。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实场景样例已验证；物理设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-scenes-results.json最终10/10，spoken-review真实HTTPS/WSS样例通过，结果/来源或文字历史持久化与扣费有记录。输入为合成语音或自制/AI生成图片，非物理麦克风/相机；不代表所有自然输入准确率。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "连续语音与浏览器控制已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "公网WSS真实两轮非零PCM、第三轮打断退款、结束持久化通过；完整浏览器单轮通过实际AudioWorklet采集及音频播放。10项UI含静音/打断/离开释放采集；使用合成音频，无硬件验收。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现；单句限制隔离验证，完整会话待专项"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-backend-results.json12/12含VAD短噪声忽略、700ms静音断句和长语音边界；20分钟会话上限未提供独立生产计时报告。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "录音浏览器与真实转写接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-browser-results.json10/10包含MediaRecorder暂停/继续、试听、上传前删除；公网真实转写入知识笔记由media-live-voice-results.json确认。录音输入为合成/静音测试样本，不是真实麦克风。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "附件删除历史状态已全面验证；资产分页UI未专项"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-attachments后台4/API4/浏览器5项：本人预览/链接有效，删除当前图片即时切为已删除、来源不可点击，手机重载不请求旧图片；录音删除移除笔记下载URL但保留正文。100MB配额隔离证据保留，完整附件库分页UI未独立覆盖。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "已部署；图片选取上传预览与限制已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "浏览器测试真实图片文件选择、预览和删除；backend12项覆盖解码重编码、魔数/损坏/字节超限拒绝。拍摄真实硬件与每个像素/多图边界未逐项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实媒体历史及删除占位已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "既有真实语音历史和图片追问通过；media-attachments-browser5项验证删除当前/历史图片后预览和来源显示已删除且正文不丢失，手机刷新无旧图请求。新增删除测试零provider调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "真实扣费及取消退款已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "公网voice报告3次成功操作扣3点、打断一次退款且历史保持；浏览器完整成功轮20→19。backend验证退款幂等，以及文字已完成后TTS失败保留结果不退款。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "本人来源定位与删除状态已浏览器/API验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "restored-ui5项来源链接定位准确本人记录、已删除来源保留标题无可点击链接；media-attachments后台4/API4/浏览器5项涵盖图片和音频、bootstrap/records/export去除失效URL且保留转写正文。输入资料展示不冒称逐句引用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "订单重试幂等库层与生产UI已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "order-idempotency14项隔离表并发/快照/409通过；restored-ui5项真实浏览器在服务器已创建订单后丢弃响应，再次点击复用同requestId，两提交仅1笔pending/manual订单，paidOrders=0，无实际收款。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "1505条完整自动分页已API/浏览器验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "restored-contract API及restored-ui生产浏览器共同验证500/500/500/5四页完整加载1505条、不重复漏失，最旧记录可搜索和编辑；全库统计与cursor归属隔离仍有原API证据。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "I",
+            "J"
+          ],
+          "range": "I2:J89",
+          "row_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 176,
+      "revision": 57,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "管理员后台": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 11845,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "I2:J36",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json普通用户管理接口403；record-contract-results.json停用用户及停用管理员已有会话不可继续访问；browser-results.json与mobile-admin-results.json管理员真实登录后台成功。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "统计浏览器与数据库核对通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json共17项通过，其中只读后台总览核对实际用户数、订单数、已付收入与协作运行数一致。此行仅按报告列出的计数证明，不扩称每个统计口径均专项核对。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "用户管理浏览器与接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json真实管理员UI搜索/编辑姓名、会员到期与精确AI余额并持久化；先前API脱敏和数据权限通过。仅使用临时账号，无真实收费或AI调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "账号启停浏览器与接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json真实UI停用临时账号后原会话失效且不能登录，恢复后可新登录；record-contract报告补充停用管理员敏感接口阻止。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "角色管理浏览器已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json临时普通用户提升/降级后实际后台页面访问立即改变；普通账号不能访问管理API。未修改用户既有账号角色。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "套餐表单与持久化已浏览器验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json：创建/编辑临时套餐，价格、周期、额度和多行权益保存重开一致；前台使用同一配置。该报告不收款，也不将表单保存等同真实支付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "套餐表单与持久化已浏览器验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json：创建/编辑临时套餐，价格、周期、额度和多行权益保存重开一致；前台使用同一配置。该报告不收款，也不将表单保存等同真实支付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "套餐启停与前台卡片已浏览器验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json：停用临时套餐后用户购买卡片消失，启用后恢复；真实付款未测试，服务端新单启用校验继续按实现及既有接口证据标注。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json真实管理员插件列表/编辑及订单列表/确认/详情流程通过；mobile-admin-results.json全部13个管理tab在390px正常呈现。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已部署；插件排序API已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "restored-contract-results.json：sortOrder写入SQL且目录排序一致，-90/10/50顺序正确，3个非法值拒绝；原版本/价格UI验收保留。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已部署；下架/停用接口与handler已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "restored-contract-results.json：下架已购仍可重装，未购不可新购/安装；下架运行保存笔记与来源，安全停用阻止运行安装。运行部分使用真实鉴权/DB与受控AI传输，不宣称本轮真实模型调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json真实管理员插件列表/编辑及订单列表/确认/详情流程通过；mobile-admin-results.json全部13个管理tab在390px正常呈现。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ui-flow-results.json：管理员创建插件version 1.2.3、改价7.31→9.37；用户按9.37下单、后台人工确认；详情展示流水与支付时间；已购重装不新增订单。真实商户收款不在此证据内。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，真实收款待商户配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "签名与幂等已验证；真实收款待配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json与regression-results.json：模拟有效签名通知、错误签名/金额、重复通知幂等、取消后晚到有效回调规则通过；未进行真实商户扣款。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "签名与幂等已验证；真实收款待配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json与regression-results.json：模拟有效签名通知、错误签名/金额、重复通知幂等、取消后晚到有效回调规则通过；未进行真实商户扣款。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，真实收款待商户配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "模型表单及参数库/API已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract17项：真实UI拒绝空Key、创建临时模型并加密存储、重开不泄密；restored-contract14项验证temperature/maxTokens边界/清空与受控参数透传。没有新增真实模型连通调用或参数表单逐值专项。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "密钥表单/存储/脱敏已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract17项验证临时模型Key加密入库、重开不返回原值，22次临时管理操作审计不含Key；原公开产物定向扫描证据保留。不是全站渗透测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "模型启停UI及受控服务验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract真实UI启停临时模型；media-settings8项隔离MySQL+实际handler/service验证停用绑定模型后能力不可用且上游调用0次。后者使用mock传输，不是真实供应商调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "默认模型替换受控验证通过"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "media-settings-results.json8项中：实际配置handler替换默认模型、清除旧默认，下一次普通chat服务调用命中新默认。使用隔离MySQL与mock provider；没有该动作浏览器或真实模型调用证明。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，真实模型接口已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json管理员分别测试两个已配置真实模型，均返回有效文本与耗时；browser-results.json模型配置页面渲染。管理员测试按钮点击未单独专项覆盖。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 Admin / AdminEditModal / AdminPayment / AdminAPK / AdminSiteSettings 与 app/api/app/route.js 对应实现已包含「错误诊断」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，未单独专项实测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "静态确认 components/LifeOS.jsx 的 Admin / AdminEditModal / AdminPayment / AdminAPK / AdminSiteSettings 与 app/api/app/route.js 对应实现已包含「运行列表」；相关生产API与主要页面测试通过，本行完整操作链未单独专项实测。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "API真实调用记录含模型/状态/用量；ai-client-results.json 9/9受控响应验证未知usage保留null、明确0保留0；生产schema默认NULL；browser-results.json AI调用记录tab渲染。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "站点展示UI与保存handler已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract只读浏览器字段与既存值一致；media-settings8项隔离MySQL实际handler保存4个站点字段并由公开bootstrap读取，媒体/支付配置不被覆盖。未改生产共享站点设置，不冒称真实浏览器保存测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "审计浏览器与凭据脱敏已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "admin-contract-results.json：22次临时管理动作，审计UI展示操作主体与目标标识，未包含测试Key明文；原账号/配置字节保持且fixture清理。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "模型绑定/权限受控验证；原显示UI已验"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-settings8项：隔离MySQL+实际route/service，普通用户403、无效模型/用途拒绝，4模型绑定改变后下一次服务请求使用新值。8个上游请求被mock捕获，无浏览器或实际provider推理；原媒体后台绑定显示已浏览器验收。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "三种开关保存/执行拦截受控验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-settings8项：三个能力独立开关保存回读；关闭图像/录音/已连接语音时，在模型请求和额度预留前阻止，providerCalls=0且余额不变。隔离表及actual handler/service验证，不是实际浏览器点击或真实模型调用。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "音色配置与下一请求受控验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "media-settings8项验证无效音色原子拒绝，alloy→nova保存后下一次实际合成服务调用携带新voice；provider传输mock捕获，不宣称真人听感或两音色真实生成对比。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "I",
+            "J"
+          ],
+          "range": "I2:J36",
+          "row_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 70,
+      "revision": 57,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "验收与依赖": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 7196,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "I2:J23",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json：不同用户记录、会话、协作运行隔离；付费插件必须获得权益，订单金额由服务端读取；ui-flow-results.json后台改价9.37后用户订单亦为9.37。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json普通用户管理接口403；record-contract-results.json停用用户及停用管理员已有会话不可继续访问；browser-results.json与mobile-admin-results.json管理员真实登录后台成功。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json：不同用户记录、会话、协作运行隔离；付费插件必须获得权益，订单金额由服务端读取；ui-flow-results.json后台改价9.37后用户订单亦为9.37。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json后台模型Key脱敏；deployment-results.json 19项中对53个公开/归档文件扫描无已配置密钥明文、公开页面与bootstrap不泄露；受限文件0600、目录0700。此为定向检查，不是全站渗透测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "restart-results.json 4/4：部署重启web/worker PID变化，之前保存记录和session保持；SIGKILL网页进程后systemd自动拉起，原记录/会话仍可读取，公开IP健康200。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ai-workflow-results.json真实run dec971ee-b416-4537-a784-09d595e1c472：规划→三专家并行→审阅，56.6秒、5条调用8810 tokens、余额30→25、1594字结果；阶段时序与DB二次回读一致。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "ai-client-results.json 9/9通过受控上游验证超时/重试/拒绝/空内容/截断/未知用量；regression-results.json验证协作预检、排队失败退款和幂等。故障注入为受控测试，非真实供应商事故。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "签名与幂等已验证；真实收款待配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "api-results.json与regression-results.json：模拟有效签名通知、错误签名/金额、重复通知幂等、取消后晚到有效回调规则通过；未进行真实商户扣款。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现，真实收款待商户配置"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现支付宝/微信易支付兼容网关配置、订单与配置缺失保护。尚未提供网关URL、商户PID、商户Key，真实在线收款未启用；当前可人工确认。见lib/payments.mjs、AdminPayment及api-results.json。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "browser-results.json与mobile-admin-results.json：390px主要用户页面及全部13个后台tab无整页横向溢出、底栏可见；mobile-user.png / mobile-admin.png 经目视核验。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK1.1.1构建发布已验证；真机未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "android-release-results.json12/12：1.1.1(4)、com.zhixu.lifeos、HTTPS3063、minSDK23、v1/v2/v3签名、包信息、下载SHA一致、构建失败保留旧包。android-download-boundaries.json4/4为嵌入脚本/源码边界与Java编译，不是Android运行时。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "待Android设备验收"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "APK真实构建、签名与下载已验证；当前没有连接Android真机或模拟器，设备安装/登录/返回/文件选择尚未验收。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "HTTP/HTTPS地址已验证；跨网络专项未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "HTTP3060保留，HTTPS3063可信证书及生产媒体浏览器/WSS通过；早期HTTP外部日志36次成功记录。独立受控跨网络浏览器与物理移动网络验收未执行。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "已实现并验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "restart-results.json 4/4：部署重启web/worker PID变化，之前保存记录和session保持；SIGKILL网页进程后systemd自动拉起，原记录/会话仍可读取，公开IP健康200。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "飞书需求与172项功能表已同步验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "同一飞书PRD与5张工作表扩展为172项；5条旧功能契约恢复，新增35行；完成后全文与全部A:J逐格回读、CSV/XLSX一致性检查，六条原P2保留。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "飞书需求与172项功能表已同步验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "同一飞书PRD与5张工作表扩展为172项；5条旧功能契约恢复，新增35行；完成后全文与全部A:J逐格回读、CSV/XLSX一致性检查，六条原P2保留。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "已部署；异常meta读写API已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "restored-contract-results.json：6条旧异常meta安全读取，8类新非法输入拒绝，合法checkedDates去重。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "权限/下载边界与编译已验证；真机待验收"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "1.1.1(4)清单/DEX检查权限/私有provider/恢复；android-download-boundaries.json4项通过嵌入blob脚本和源码检查，含2MB分块、撤销错误、同源Cookie下载/不跟随跳转、SAF。非Android设备执行。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "自有串联语音已验证；原生Realtime不可用"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "原生Realtime探测握手后account_deactivated，无可用转写/音频。当前ASR=gpt-4o-transcribe，chat/vision=gpt-4o-mini，TTS=gpt-4o-mini-tts；真实公网WSS和完整浏览器串联语音通过，不能宣称原生Realtime成功。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "后端与生产媒体边界已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "backend12项隔离验证格式/配额/退款/VAD/WS会话；公网voice11项补充匿名/Origin/伪文件拒绝、跨用户私有资产隔离、同用户第二连接拒绝、删除与退款。未作全站渗透测试。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "浏览器媒体10项及真实合成音频轮已验证"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "Chromium156实际getUserMedia/MediaRecorder/AudioWorklet/WSS，10项UI无异常，360/390px正常；完整语音轮已播放非零PCM。输入是虚拟麦克风合成WAV，不是物理硬件或人工听感验收。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "13场景均有真实样例证据；设备未测"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "vertical_alignment": "top"
+                },
+                "value": "原英语/拍题/课堂录音3场景，加media-scenes-results.json最终10/10，共13场景真实样例覆盖。补充测试累计6语音轮、9图像调用、1录音转写，16成功操作扣16点；初始harness和餐食质量失败保留。合成/生成输入不等于自然设备、全量准确率或人工听感。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "I",
+            "J"
+          ],
+          "range": "I2:J23",
+          "row_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 44,
+      "revision": 57,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  },
+  "后续规划": {
+    "ok": true,
+    "identity": "user",
+    "data": {
+      "approx_char_count": 1488,
+      "has_more": false,
+      "ranges": [
+        {
+          "actual_range": "I2:J7",
+          "cells": [
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "后续规划，未列入一期完成"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "保留既有P2定义，未以未来能力计入当前交付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "后续规划，未列入一期完成"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "保留既有P2定义，未以未来能力计入当前交付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "后续规划，未列入一期完成"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "保留既有P2定义，未以未来能力计入当前交付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "后续规划，未列入一期完成"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "保留既有P2定义，未以未来能力计入当前交付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "后续规划，未列入一期完成"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "保留既有P2定义，未以未来能力计入当前交付。"
+              }
+            ],
+            [
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "后续规划，未列入一期完成"
+              },
+              {
+                "cell_styles": {
+                  "background_color": "#FFF7E8",
+                  "font_size": 11,
+                  "number_format": "@",
+                  "vertical_alignment": "top"
+                },
+                "value": "保留既有P2定义，未以未来能力计入当前交付。"
+              }
+            ]
+          ],
+          "col_indices": [
+            "I",
+            "J"
+          ],
+          "range": "I2:J7",
+          "row_indices": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "truncated": false
+        }
+      ],
+      "returned_cell_count": 12,
+      "revision": 57,
+      "warning_message": "处理 ranges[n].cells 之前，必须先查看顶层 has_more，以及每个 range 的 actual_range / row_indices / col_indices。定位真实行号时用 row_indices[i]，定位真实列字母时用 col_indices[j]，不要按二维数组下标自己数行列；skip_hidden=true、skip_filter=true 或结果被截断时，这样会错位。"
+    }
+  }
+}

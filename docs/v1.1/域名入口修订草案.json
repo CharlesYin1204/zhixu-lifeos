@@ -1,0 +1,137 @@
+{
+  "status": "published_and_full_readback_verified",
+  "paragraphs": {
+    "6": "首选部署入口为https://xuexi.yinchao1204.vip，无需端口；原https://154.40.47.111:3063和http://154.40.47.111:3060继续兼容。代码根目录/www/wwwroot/xuexi，业务数据库MySQL xuexi。模型供应商文档由用户提供https://gpt-best.apifox.cn/，可用模型以后台连通性测试为准。凭证只留在服务器受限配置与环境变量，不写入飞书、文档或页面。",
+    "67": "Android为联网WebView容器，最低Android6.0/API23，使用同一平台及账号权限体系。当前1.1.1(4)仍加载https://154.40.47.111:3063/，新增首选域名不修改已发布安装包；只有调整APK内置站点URL时才需递增版本并重新构建。下载页展示真实应用名称、版本、文件信息与联网要求，仍非离线原生客户端。",
+    "70": "Android网络访问与实际配置站点保持一致；当前发布1.1.1(4)使用可信IP HTTPS3063，新增域名https://xuexi.yinchao1204.vip作为浏览器首选入口，原IP站点继续服务现有APK。尚未完成真实设备安装，状态仍为构建/签名/下载已验证、设备安装待验收，本轮不宣称生成域名版APK。",
+    "88": "部署采用systemd等可重启进程管理，保留构建日志、健康检查和备份；提供首选域名HTTPS及原IP端口入口。域名与IP代理一并纳入发布切换及配置恢复，媒体来源允许受控域名与既有IP入口。真实商户配置及备份恢复演练仍需补齐；未实际压测，不承诺任意并发或百分比可用性。",
+    "100": "首选域名https://xuexi.yinchao1204.vip已配置HTTPS；原IP HTTPS/HTTP入口保留。移动端发布渠道、正式签名保管方式、用户协议及数据保留规则仍需按运营要求确认。当前APK是可下载安装的联网WebView客户端，应用商店上架另行实施。",
+    "115": "浏览器首选HTTPS入口为https://xuexi.yinchao1204.vip；https://154.40.47.111:3063与HTTP3060继续兼容。录音/相机只在可信安全上下文及用户触发授权后调用，HTTP媒体操作引导到HTTPS；访客可了解场景，私人媒体与语音会话须用户登录。域名上传与同源WSS使用受控来源校验，不把允许新域名扩展为任意来源。",
+    "142": "首选产品落地页https://xuexi.yinchao1204.vip/，用户登录/login、用户中心/user、个人概览/user?view=overview、媒体工作区/user?view=media，后台/admin及/admin/login；均无需端口。/始终公开落地页，个人功能仍需有效user会话，旧/?view=...继续兼容跳转。原IP HTTPS3063和HTTP3060保留；APP_URL及现有易支付通知URL保持原HTTP IP配置，已发布APK1.1.1(4)仍使用IP HTTPS。最终Web发布{release}；五张功能表仍172项，六项P2不变。"
+  },
+  "features": {
+    "F-128": {
+      "5": "通过首选域名HTTPS访问公开首页、用户中心及后台，原IP端口继续兼容",
+      "6": "https://xuexi.yinchao1204.vip无需端口可打开，用户与管理员登录各自有效；IP3063/3060入口保持，个人页面鉴权及旧链接跳转正确"
+    },
+    "F-138": {
+      "5": "首选域名HTTPS提供录音、图片上传与同源WSS；保留IP HTTPS3063及HTTP3060",
+      "6": "域名证书可信、安全上下文有效；受控域名来源允许媒体请求与语音握手，未知来源继续拒绝；HTTP引导HTTPS"
+    }
+  },
+  "affectedFeatureIds": [
+    "F-128",
+    "F-138"
+  ],
+  "verification": {
+    "verifiedAt": "2026-10-14T15:27:27.811642+00:00",
+    "features": 172,
+    "newFeatures": 0,
+    "versionAddedFeatures": 35,
+    "sheets": {
+      "前台": 21,
+      "用户中心": 88,
+      "管理员后台": 35,
+      "验收与依赖": 22,
+      "后续规划": 6
+    },
+    "fullSheetCellsMatch": true,
+    "docFullTextMatchesXml": true,
+    "docSections": 31,
+    "docTopLevelParagraphs": 132,
+    "docTables": 1,
+    "documentRevision": 98,
+    "xlsxZipAndXmlValid": true,
+    "statusEvidenceCellsChecked": 344,
+    "clippedCells": 0,
+    "p2Unchanged": true,
+    "changedSheetCells": 8,
+    "csvAll172RowsMatch": true,
+    "xlsxAll172RowsMatch": true,
+    "coverageNoteCorrectionVerified": true,
+    "followupCorrectedCells": 1,
+    "totalSheetCellsWritten": 475,
+    "currentRelease": ".releases/20261014T152414Z-38684",
+    "loginHelp": {
+      "report": "docs/tests/login-help-inspection.json",
+      "productionChecks": 3,
+      "browserResponseFixtureChecks": 1,
+      "changedSheetCells": 3,
+      "documentParagraphsPatched": 4,
+      "all172RowsMatch": true,
+      "changedRowNoClipping": true
+    },
+    "previousSyncSheetCellsWritten": 467,
+    "changedRowLayoutCellsChecked": 10,
+    "portalSeparation": {
+      "reports": [
+        "portal-auth-results.json",
+        "portal-separation-results.json",
+        "portal-cookie-results.json",
+        "admin-portal-contract-results.json",
+        "media-settings-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-002",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-081",
+        "F-082",
+        "F-083",
+        "F-084",
+        "F-117",
+        "F-128"
+      ],
+      "changedSheetCells": 43,
+      "docPatchOperations": 19,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "secureHttpsVerified": true,
+      "legacyHistoryPreserved": true
+    },
+    "publicLanding": {
+      "reports": [
+        "public-landing-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-001",
+        "F-002",
+        "F-003",
+        "F-004",
+        "F-005",
+        "F-006",
+        "F-007",
+        "F-009",
+        "F-011",
+        "F-012",
+        "F-013",
+        "F-021",
+        "F-023",
+        "F-083",
+        "F-128"
+      ],
+      "changedSheetCells": 60,
+      "docPatchOperations": 12,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    },
+    "preferredDomain": {
+      "reports": [
+        "domain-results.json",
+        "media-origin-results.json"
+      ],
+      "affectedFeatureIds": [
+        "F-128",
+        "F-138"
+      ],
+      "changedSheetCells": 8,
+      "docPatchOperations": 10,
+      "all172RowsMatch": true,
+      "changedRowsNoClipping": true,
+      "legacyHistoryPreserved": true
+    }
+  }
+}
